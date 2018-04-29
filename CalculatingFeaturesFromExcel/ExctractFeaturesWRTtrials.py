@@ -3,7 +3,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 from DataImporting import DataFromExcel
-
+from CalculatingFeaturesFromExcel.RegressionFunctions import sine
 Fixation_length_cutoff = 100
 
 
@@ -27,31 +27,30 @@ class TrialsData:
 
     def get_Ratios(self):
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = sorted([set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects])
         All_fixations = [
             [self.fixation_dataset[
                  (self.fixation_dataset.Subject == subjects[i]) & (self.fixation_dataset.Trial == j)]
              for j in trials[i]] for i in range(len(subjects))]
 
-        Mean_Neutral = [[np.nanmean(All_fixations[i][j].Fixation_Duration[(self.fixation_dataset.AOI_Group == "N")]) for j in
+        Mean_Neutral = [[np.sum(All_fixations[i][j].Fixation_Duration[(self.fixation_dataset.AOI_Group == "N")]) for j in
              range(len(trials[i]))] for i in range(len(subjects))]
 
-        Mean_Disgusted = [[np.nanstd(All_fixations[i][j].Fixation_Duration[(self.fixation_dataset.AOI_Group == "D")]) for j in
+        Mean_Disgusted = [[np.sum(All_fixations[i][j].Fixation_Duration[(self.fixation_dataset.AOI_Group == "D")]) for j in
              range(len(trials[i]))] for i in range(len(subjects))]
 
-        Mean_WS = [[np.nanstd(All_fixations[i][j].Fixation_Duration[(self.fixation_dataset.AOI_Group == "White Space")]) for
+        Mean_WS = [[np.sum(All_fixations[i][j].Fixation_Duration[(self.fixation_dataset.AOI_Group == "White Space")]) for
              j in range(len(trials[i]))] for i in range(len(subjects))]
 
         Mean_Neutral = [[0 if math.isnan(x) else x for x in i] for i in Mean_Neutral]
         Mean_Disgusted = [[0 if math.isnan(x) else x for x in i] for i in Mean_Disgusted]
-        Mean_WS = [[0 if math.isnan(x) else x for x in i for i] in Mean_WS]
+        Mean_WS = [[0 if math.isnan(x) else x for x in i] for i in Mean_WS]
 
-        ratio_N_DN2 = [Mean_Neutral[i] / float(Mean_WS[i] + Mean_Neutral[i] + Mean_Disgusted[i]) for i in
-                 range(len(Mean_Disgusted))]
-
+        ratio_N_DN2 = [[Mean_Neutral[i][j] / float(Mean_WS[i][j] + Mean_Neutral[i][j] + Mean_Disgusted[i][j]) for j in
+            range(len(Mean_Disgusted[0]))] for i in range(len(Mean_Disgusted))]
 
         ratio_D_DN2 = [[Mean_Disgusted[i][j] / float(Mean_WS[i][j] + Mean_Neutral[i][j] + Mean_Disgusted[i][j]) for j in
-            range(Mean_Disgusted[0])]for i in range(len(Mean_Disgusted))]
+            range(len(Mean_Disgusted[0]))]for i in range(len(Mean_Disgusted))]
 
         ratio_WS_all = [[Mean_WS[i][j] / float(Mean_WS[i][j] + Mean_Neutral[i][j] + Mean_Disgusted[i][j]) for j in range(len(Mean_Disgusted[0]))]
                  for i in range(len(Mean_Disgusted))]
@@ -60,27 +59,65 @@ class TrialsData:
 
         ratio_D_DN = [[Mean_Disgusted[i][j] / float(Mean_Neutral[i][j] + Mean_Disgusted[i][j]) for j in range(len(Mean_Disgusted[0]))] for i in range(len(Mean_Disgusted))]
 
+        #est_std, est_phase, est_mean
+        reggression_ratio_N_DN2 = sine(ratio_N_DN2)
+        self.output_data_dict["trials_ratio_N_DN2_est_std"] = reggression_ratio_N_DN2[0]
+        self.output_data_dict["trials_ratio_N_DN2_est_phase"] = reggression_ratio_N_DN2[1]
+        self.output_data_dict["trials_ratio_N_DN2_est_mean"] = reggression_ratio_N_DN2[2]
+
+        reggression_ratio_D_DN2 = sine(ratio_D_DN2)
+        self.output_data_dict["trials_ratio_D_DN2_est_std"] = reggression_ratio_D_DN2[0]
+        self.output_data_dict["trials_ratio_D_DN2_est_phase"] = reggression_ratio_D_DN2[1]
+        self.output_data_dict["trials_ratio_D_DN2_est_mean"] = reggression_ratio_D_DN2[2]
+
+        reggression_ratio_WS_all = sine(ratio_WS_all)
+        self.output_data_dict["trials_ratio_WS_all_est_std"] = reggression_ratio_WS_all[0]
+        self.output_data_dict["trials_ratio_WS_all_est_phase"] = reggression_ratio_WS_all[1]
+        self.output_data_dict["trials_ratio_WS_all_est_mean"] = reggression_ratio_WS_all[2]
+
+        reggression_ratio_D_DN = sine(ratio_D_DN)
+        self.output_data_dict["trials_ratio_D_DN_est_std"] = reggression_ratio_D_DN[0]
+        self.output_data_dict["trials_ratio_D_DN_est_phase"] = reggression_ratio_D_DN[1]
+        self.output_data_dict["trials_ratio_D_DN_est_mean"] = reggression_ratio_D_DN[2]
+
+        reggression_ratio_N_DN = sine(ratio_N_DN)
+        self.output_data_dict["trials_ratio_N_DN_est_std"] = reggression_ratio_N_DN[0]
+        self.output_data_dict["trials_ratio_N_DN_est_phase"] = reggression_ratio_N_DN[1]
+        self.output_data_dict["trials_ratio_N_DN_est_mean"] = reggression_ratio_N_DN[2]
+
         return [ratio_D_DN, ratio_N_DN, ratio_WS_all, ratio_D_DN2, ratio_N_DN2]
 
 
     def get_mean_different_AOI_per_trial(self):
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = sorted([set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects])
         All_fixations = [
             [self.fixation_dataset[
                  (self.fixation_dataset.Subject == subjects[i]) & (self.fixation_dataset.Trial == j)]
              for j in trials[i]] for i in range(len(subjects))]
 
-        mean_AOIs = [[len(set(self.All_fixations[i][j].Area_of_Interest[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.Trial==j)])) for j in trials[i]] for i in range(len(subjects))]
+        mean_AOIs = [[len(set(All_fixations[i][k].Area_Of_Interest[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.Trial == j)])) for j,k in zip(trials[i],range(len(trials[i])))] for i in range(len(subjects))]
+
+        #est_std, est_phase, est_mean
+        reggression_mean_AOIs = sine(mean_AOIs)
+        self.output_data_dict["trials_mean_AOIs_est_std"] = reggression_mean_AOIs[0]
+        self.output_data_dict["trials_mean_AOIs_est_phase"] = reggression_mean_AOIs[1]
+        self.output_data_dict["trials_mean_AOIs_est_mean"] = reggression_mean_AOIs[2]
+
         return [mean_AOIs]
 
     def get_STD_fixation_length(self):
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = sorted([set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects])
+        print(trials)
         All_fixations = [
             [self.fixation_dataset[
                  (self.fixation_dataset.Subject == subjects[i]) & (self.fixation_dataset.Trial == j)]
              for j in trials[i]] for i in range(len(subjects))]
+        STD_All = [
+            [np.nanstd(All_fixations[i][j].Fixation_Duration) for j in
+             range(len(trials[i]))] for i in range(len(subjects))]
+
 
         STD_Neutral = [
             [np.nanstd(All_fixations[i][j].Fixation_Duration[(self.fixation_dataset.AOI_Group == "N")]) for j in
@@ -97,16 +134,18 @@ class TrialsData:
         STD_Disgusted = [[0 if math.isnan(x) else x for x in i] for i in STD_Disgusted]
         STD_WS = [[0 if math.isnan(x) else x for x in i] for i in STD_WS]
 
-        return [STD_Disgusted, STD_Neutral, STD_WS]
+        return [STD_Disgusted, STD_Neutral, STD_WS,STD_All]
 
 
     def get_amount_fixation_length(self):
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = sorted([set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects])
         All_fixations = [
             [self.fixation_dataset[
                  (self.fixation_dataset.Subject == subjects[i]) & (self.fixation_dataset.Trial == j)]
              for j in trials[i]] for i in range(len(subjects))]
+        amount_All = [[len(All_fixations[i][j].Fixation_Duration) for j in
+             range(len(trials[i]))] for i in range(len(subjects))]
 
         amount_Neutral = [
             [len(All_fixations[i][j].Fixation_Duration[(self.fixation_dataset.AOI_Group == "N")]) for j in
@@ -119,17 +158,36 @@ class TrialsData:
         amount_WS = [
             [len(All_fixations[i][j].Fixation_Duration[(self.fixation_dataset.AOI_Group == "White Space")]) for
              j in range(len(trials[i]))] for i in range(len(subjects))]
+        norm_amount_Neutral =[[amount_Neutral[i][j]/float(amount_All[i][j])for j in
+             range(len(trials[i]))] for i in range(len(subjects))]
+        norm_amount_Disgusted=[[amount_Disgusted[i][j]/float(amount_All[i][j])for j in
+             range(len(trials[i]))] for i in range(len(subjects))]
+        norm_amount_WS =[[amount_WS[i][j]/float(amount_All[i][j])for j in
+             range(len(trials[i]))] for i in range(len(subjects))]
 
-        return [amount_Disgusted, amount_Neutral, amount_WS]
+        reggression_amount_All = sine(mean_AOIs)
+        self.output_data_dict["trials_mean_AOIs_est_std"] = reggression_mean_AOIs[0]
+        self.output_data_dict["trials_mean_AOIs_est_phase"] = reggression_mean_AOIs[1]
+        self.output_data_dict["trials_mean_AOIs_est_mean"] = reggression_mean_AOIs[2]
+
+        reggression_mean_AOIs = sine(mean_AOIs)
+        self.output_data_dict["trials_mean_AOIs_est_std"] = reggression_mean_AOIs[0]
+        self.output_data_dict["trials_mean_AOIs_est_phase"] = reggression_mean_AOIs[1]
+        self.output_data_dict["trials_mean_AOIs_est_mean"] = reggression_mean_AOIs[2]
+
+
+        return [amount_Disgusted, amount_Neutral, amount_WS,amount_All,norm_amount_Disgusted,norm_amount_Neutral,norm_amount_WS]
 
     def get_sum_fixation_length(self):
 
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = sorted([set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects])
         All_fixations = [
             [self.fixation_dataset[
                  (self.fixation_dataset.Subject == subjects[i]) & (self.fixation_dataset.Trial == j)]
              for j in trials[i]] for i in range(len(subjects))]
+        sum_All = [[np.nansum(All_fixations[i][j].Fixation_Duration) for j in
+             range(len(trials[i]))] for i in range(len(subjects))]
 
         sum_Neutral = [
             [np.nansum(All_fixations[i][j].Fixation_Duration[(self.fixation_dataset.AOI_Group == "N")]) for j in
@@ -142,16 +200,24 @@ class TrialsData:
         sum_WS = [
             [np.nansum(All_fixations[i][j].Fixation_Duration[(self.fixation_dataset.AOI_Group == "White Space")]) for
              j in range(len(trials[i]))] for i in range(len(subjects))]
+        norm_sum_Neutral =[[sum_Neutral[i][j]/float(sum_All[i][j])for j in
+             range(len(trials[i]))] for i in range(len(subjects))]
+        norm_sum_Disgusted=[[sum_Disgusted[i][j]/float(sum_All[i][j])for j in
+             range(len(trials[i]))] for i in range(len(subjects))]
+        norm_sum_WS =[[sum_WS[i][j]/float(sum_All[i][j])for j in
+             range(len(trials[i]))] for i in range(len(subjects))]
 
-        return [sum_Disgusted, sum_Neutral, sum_WS]
+        return [sum_Disgusted, sum_Neutral, sum_WS,sum_All,norm_sum_Disgusted,norm_sum_Neutral,norm_sum_WS]
 
     def get_average_fixation_length_each_trial(self):
         # param order of trials
 
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = sorted([set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects])
         All_fixations = [[self.fixation_dataset[(self.fixation_dataset.Subject == subjects[i]) & (self.fixation_dataset.Trial == j)]
              for j in trials[i]] for i in range(len(subjects))]
+        mean_All = [[np.nanmean(All_fixations[i][j].Fixation_Duration) for j in
+             range(len(trials[i]))] for i in range(len(subjects))]
 
         mean_Neutral = [
             [np.nanmean(All_fixations[i][j].Fixation_Duration[(self.fixation_dataset.AOI_Group == "N")]) for j in
@@ -163,38 +229,12 @@ class TrialsData:
 
         mean_WS = [[np.mean(All_fixations[i][j].Fixation_Duration[(self.fixation_dataset.AOI_Group == "White Space")]) for j in
              range(len(trials[i]))] for i in range(len(subjects))]
+        norm_mean_Neutral =[[mean_Neutral[i][j]/float(mean_All[i][j])for j in
+             range(len(trials[i]))] for i in range(len(subjects))]
+        norm_mean_Disgusted=[[mean_Disgusted[i][j]/float(mean_All[i][j])for j in
+             range(len(trials[i]))] for i in range(len(subjects))]
+        norm_mean_WS =[[mean_WS[i][j]/float(mean_All[i][j])for j in
+             range(len(trials[i]))] for i in range(len(subjects))]
 
-        return [mean_Disgusted, mean_Neutral, mean_WS]
+        return [mean_Disgusted, mean_Neutral, mean_WS,mean_All,norm_mean_Disgusted,norm_mean_Neutral,norm_mean_WS]
 
-    def plot_timeline_between_trial(self):
-
-        [mean_Disgusted, mean_Neutral] = self.get_average_fixation_length_each_trial()
-        Disgusted_trials_mean = [np.mean([mean_Disgusted[i][j] for i in range(len(mean_Disgusted))]) for j in
-                                 range(len(mean_Disgusted[0]))]
-        Neutral_trials_mean = [np.mean([mean_Neutral[i][j] for i in range(len(mean_Neutral))]) for j in
-                               range(len(mean_Neutral[0]))]
-        N = len(mean_Disgusted[0])
-        fig, ax = plt.subplots()
-        ind = np.arange(N)  # the x locations for the groups
-        width = 0.35  # the width of the bars
-        p1 = ax.bar(ind, Disgusted_trials_mean, width, color='r')
-        p2 = ax.bar(ind + width, Neutral_trials_mean, width, color='y')
-        ax.set_xticklabels(range(len(Disgusted_trials_mean)))
-        ax.set_title('Scores by trials and mean fixation AOI')
-        ax.set_xticks(ind + width / 2)
-        ax.legend((p1[0], p2[0]), ('D', 'N'))
-        ax.autoscale_view()
-
-        plt.show()
-
-# Test_Data_path = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\Testers\\test data_ordered.xlsx"
-# Test_Data_path = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\Testers\\301.xlsx"
-# FIXATION_DATA_SHEET = 'Sheet1'
-# Data_Object = Data(Test_Data_path, FIXATION_DATA_SHEET)
-# Data_Object.get_amount_diff_AOI_transitions()
-# Test_Data_path = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\Testers\\337.xlsx"
-# FIXATION_DATA_SHEET = 'Sheet1'
-# Data_Object = Data(Test_Data_path, FIXATION_DATA_SHEET)
-# Data_Object.plot_timeline_between_trial()
-# Data_Object.var_threat_precentage_between_trials()
-# Data_Object.plot_timeline()

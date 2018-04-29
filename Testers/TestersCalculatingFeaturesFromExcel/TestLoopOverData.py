@@ -361,6 +361,94 @@ class TestFeatureExctraction(unittest.TestCase):
         self.Data_Object.amount_of_second_fixations()
         # assert
         self.assertEqual(self.Data_Object.output_data_dict["amount_of_second_fixations_on_WS"], [1])
+####
+
+
+    def test_get_average_pupil_size_Disgusted(self):
+        self.Data_Object = ExtractFeatures.Data(Test_Data_path, FIXATION_DATA_SHEET)
+        # act
+        self.Data_Object.get_average_pupil_size_Disgusted()
+        # assert
+        self.assertEqual(self.Data_Object.output_data_dict["average_pupil_size_Disgusted"], [4.803509])
+
+    def test_get_average_pupil_size_Disgusted_norm(self):
+        self.Data_Object = ExtractFeatures.Data(Test_Data_path, FIXATION_DATA_SHEET)
+        # act
+        self.Data_Object.get_average_pupil_size_Disgusted()
+        # assert
+        self.assertEqual(self.Data_Object.output_data_dict["normalized_mean_pupil_size_Disgusted"], [0.999])
+
+
+    def test_get_average_pupil_size_Neutral(self):
+        self.Data_Object = ExtractFeatures.Data(Test_Data_path, FIXATION_DATA_SHEET)
+        # act
+        self.Data_Object.get_average_pupil_size_Neutral()
+        # assert
+        self.assertEqual(self.Data_Object.output_data_dict["average_pupil_size_Neutral"], [4.841758])
+
+    def test_get_average_pupil_size_Neutral_norm(self):
+        self.Data_Object = ExtractFeatures.Data(Test_Data_path, FIXATION_DATA_SHEET)
+        # act
+        self.Data_Object.get_average_pupil_size_Neutral()
+        # assert
+        self.assertEqual(self.Data_Object.output_data_dict["normalized_mean_pupil_size_Neutral"], [1.007])
+
+    def test_get_average_pupil_size_White_Space(self):
+        self.Data_Object = ExtractFeatures.Data(Test_Data_path, FIXATION_DATA_SHEET)
+        # act
+        self.Data_Object.get_average_pupil_size_White_Space()
+        # assert
+        self.assertEqual(self.Data_Object.output_data_dict["average_pupil_size_White_Space"], [4.607142857])
+
+    def test_get_average_pupil_size_White_Space_norm(self):
+        self.Data_Object = ExtractFeatures.Data(Test_Data_path, FIXATION_DATA_SHEET)
+        # act
+        self.Data_Object.get_average_pupil_size_White_Space()
+        # assert
+        self.assertEqual(self.Data_Object.output_data_dict["normalized_mean_pupil_size_WS"], [0.9582])
+
+    def test_get_average_pupil_size_All(self):
+        self.Data_Object = ExtractFeatures.Data(Test_Data_path, FIXATION_DATA_SHEET)
+        # act
+        self.Data_Object.get_average_pupil_size_All()
+        # assert
+        self.assertEqual(self.Data_Object.output_data_dict["average_pupil_size_All"], [4.808025])
+
+    def test_get_STD_pupil_size_Disgusted(self):
+        self.Data_Object = ExtractFeatures.Data(Test_Data_path, FIXATION_DATA_SHEET)
+        # act
+        self.Data_Object.get_STD_pupil_size_Disgusted()
+        # assert
+        self.assertEqual(self.Data_Object.output_data_dict["STD_pupil_size_Disgusted"], [0.28835])
+
+    def test_get_STD_pupil_size_Neutral(self):
+        self.Data_Object = ExtractFeatures.Data(Test_Data_path, FIXATION_DATA_SHEET)
+        # act
+        self.Data_Object.get_STD_pupil_size_Neutral()
+        # assert
+        self.assertEqual(self.Data_Object.output_data_dict["STD_pupil_size_Neutral"], [0.343884])
+
+    def test_get_STD_pupil_size_White_Space(self):
+        self.Data_Object = ExtractFeatures.Data(Test_Data_path, FIXATION_DATA_SHEET)
+        # act
+        self.Data_Object.get_STD_pupil_size_White_Space()
+        # assert
+        self.assertEqual(self.Data_Object.output_data_dict["STD_pupil_size_White_Space"], [0.4978])
+
+    def test_get_STD_pupil_size_All(self):
+        self.Data_Object = ExtractFeatures.Data(Test_Data_path, FIXATION_DATA_SHEET)
+        # act
+        self.Data_Object.get_STD_pupil_size_All()
+        # assert
+        self.assertEqual(self.Data_Object.output_data_dict["STD_pupil_size_All"], [0.348184])
+
+    def test_get_mean_different_AOI_per_trial(self):
+        self.Data_Object = ExtractFeatures.Data(Test_Data_path, FIXATION_DATA_SHEET)
+        # act
+        self.Data_Object.get_mean_different_AOI_per_trial()
+        # assert
+        self.assertEqual(self.Data_Object.output_data_dict["mean_different_AOI_per_trial"], [10])
+
 
 if __name__ == '__main__':
     unittest.main()
