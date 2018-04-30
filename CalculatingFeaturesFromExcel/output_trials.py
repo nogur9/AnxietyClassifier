@@ -25,21 +25,16 @@ def create_Controls_File_Features():
     print(6)
     controls.get_group()
     print(7)
-    Trials_Controls = TrialsData(CONTROLS_FILE_PATH, FIXATION_DATA_SHEET)
-    results_avg = Trials_Controls.get_average_fixation_length_each_trial()
-    sine(results_avg[0])
-    results_sums = Trials_Controls.get_sum_fixation_length()
-    sine(results_sums[0])
-    results_std = Trials_Controls.get_STD_fixation_length()
-    sine(results_std[0])
-    results_ratio = Trials_Controls.get_Ratios()
-    sine(results_ratio[0])
-    results_amounts = Trials_Controls.get_amount_fixation_length()
-    sine(results_amounts[0])
-    results_aois = Trials_Controls.get_mean_different_AOI_per_trial()
-    sine(results_aois[0])
 
-    workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\formatted_features.xlsx')
+    Trials_Controls = TrialsData(CONTROLS_FILE_PATH, FIXATION_DATA_SHEET)
+    Trials_Controls.get_Ratios()
+    Trials_Controls.get_average_fixation_length_each_trial()
+    Trials_Controls.get_STD_fixation_length()
+
+    Trials_Controls.get_amount_fixation_length()
+    Trials_Controls.get_mean_different_AOI_per_trial()
+
+    workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\features_for_each_trial_controls.xlsx')
     worksheet = workbook.add_worksheet()
 
 
@@ -48,6 +43,14 @@ def create_Controls_File_Features():
         row = 0
         worksheet.write(row, col, key)
         for item in controls.output_data_dict[key]:
+            row += 1
+            worksheet.write(row, col, item)
+        col += 1
+
+    for key in Trials_Controls.output_data_dict.keys():
+        row = 0
+        worksheet.write(row, col, key)
+        for item in Trials_Controls.output_data_dict[key]:
             row += 1
             worksheet.write(row, col, item)
         col += 1
@@ -62,8 +65,17 @@ def create_SAD_File_Features():
     print(5)
     SAD.get_group()
     print (6)
+    print(1)
+    print(7)
+    Trials_SAD = TrialsData(SAD_FILE_PATH, FIXATION_DATA_SHEET)
+    Trials_SAD.get_average_fixation_length_each_trial()
+    Trials_SAD.get_STD_fixation_length()
+    Trials_SAD.get_Ratios()
+    Trials_SAD.get_amount_fixation_length()
+    Trials_SAD.get_mean_different_AOI_per_trial()
 
-    workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\formatted_features_SAD_updated.xlsx')
+
+    workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\features_for_each_trial_SAD.xlsx')
     worksheet = workbook.add_worksheet()
     col = 0
     for key in SAD.output_data_dict.keys():
@@ -73,9 +85,18 @@ def create_SAD_File_Features():
             row += 1
             worksheet.write(row, col, item)
         col += 1
+    for key in Trials_SAD.output_data_dict.keys():
+        row = 0
+        worksheet.write(row, col, key)
+        for item in Trials_SAD.output_data_dict[key]:
+            row += 1
+            worksheet.write(row, col, item)
+        col += 1
 
     workbook.close()
 
-create_SAD_File_Features()
-print("half!!!!!!")
+
+
 create_Controls_File_Features()
+print("half!!!!!!")
+create_SAD_File_Features()
