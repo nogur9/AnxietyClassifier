@@ -5,6 +5,7 @@ from CalculatingFeaturesFromExcel.RegressionFunctions import sine
 #from pandas import ExcelWriter
 import xlsxwriter
 import numpy as np
+import math
 
 #נבדקים:
 #311 - ציון LSAS - 48  סווג לקבוצת גבוהים בחרדה
@@ -27,13 +28,17 @@ def create_Controls_File_Features():
     print(7)
 
     Trials_Controls = TrialsData(CONTROLS_FILE_PATH, FIXATION_DATA_SHEET)
+    print(8)
     Trials_Controls.get_Ratios()
+    print(9)
     Trials_Controls.get_average_fixation_length_each_trial()
+    print(10)
     Trials_Controls.get_STD_fixation_length()
-
+    print(11)
     Trials_Controls.get_amount_fixation_length()
+    print(12)
     Trials_Controls.get_mean_different_AOI_per_trial()
-
+    print(13)
     workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\features_for_each_trial_controls.xlsx')
     worksheet = workbook.add_worksheet()
 
@@ -51,8 +56,11 @@ def create_Controls_File_Features():
         row = 0
         worksheet.write(row, col, key)
         for item in Trials_Controls.output_data_dict[key]:
-            row += 1
-            worksheet.write(row, col, item)
+            if math.isnan(item):
+                row += 1
+            else:
+                worksheet.write(row, col, item)
+                row += 1
         col += 1
 
     workbook.close()
@@ -65,7 +73,7 @@ def create_SAD_File_Features():
     print(5)
     SAD.get_group()
     print (6)
-    print(1)
+
     print(7)
     Trials_SAD = TrialsData(SAD_FILE_PATH, FIXATION_DATA_SHEET)
     Trials_SAD.get_average_fixation_length_each_trial()
@@ -89,8 +97,11 @@ def create_SAD_File_Features():
         row = 0
         worksheet.write(row, col, key)
         for item in Trials_SAD.output_data_dict[key]:
-            row += 1
-            worksheet.write(row, col, item)
+            if math.isnan(item):
+                row += 1
+            else:
+                worksheet.write(row, col, item)
+                row += 1
         col += 1
 
     workbook.close()
@@ -99,4 +110,4 @@ def create_SAD_File_Features():
 
 create_Controls_File_Features()
 print("half!!!!!!")
-create_SAD_File_Features()
+#create_SAD_File_Features()

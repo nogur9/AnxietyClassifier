@@ -46,18 +46,20 @@ class TrialsData:
         Mean_Disgusted = [[0 if math.isnan(x) else x for x in i] for i in Mean_Disgusted]
         Mean_WS = [[0 if math.isnan(x) else x for x in i] for i in Mean_WS]
 
+
+
         ratio_N_DN2 = [[Mean_Neutral[i][j] / float(Mean_WS[i][j] + Mean_Neutral[i][j] + Mean_Disgusted[i][j]) for j in
-            range(len(Mean_Disgusted[0]))] for i in range(len(Mean_Disgusted))]
+            range(len(Mean_Disgusted[i]))] for i in range(len(Mean_Disgusted))]
 
         ratio_D_DN2 = [[Mean_Disgusted[i][j] / float(Mean_WS[i][j] + Mean_Neutral[i][j] + Mean_Disgusted[i][j]) for j in
-            range(len(Mean_Disgusted[0]))]for i in range(len(Mean_Disgusted))]
+            range(len(Mean_Disgusted[i]))]for i in range(len(Mean_Disgusted))]
 
-        ratio_WS_all = [[Mean_WS[i][j] / float(Mean_WS[i][j] + Mean_Neutral[i][j] + Mean_Disgusted[i][j]) for j in range(len(Mean_Disgusted[0]))]
+        ratio_WS_all = [[Mean_WS[i][j] / float(Mean_WS[i][j] + Mean_Neutral[i][j] + Mean_Disgusted[i][j]) for j in range(len(Mean_Disgusted[i]))]
                  for i in range(len(Mean_Disgusted))]
 
-        ratio_N_DN = [[Mean_Neutral[i][j] / float(Mean_Neutral[i][j] + Mean_Disgusted[i][j]) for j in range(len(Mean_Disgusted[0]))]for i in range(len(Mean_Disgusted))]
+        ratio_N_DN = [[Mean_Neutral[i][j] / float(Mean_Neutral[i][j] + Mean_Disgusted[i][j]) for j in range(len(Mean_Disgusted[i]))]for i in range(len(Mean_Disgusted))]
 
-        ratio_D_DN = [[Mean_Disgusted[i][j] / float(Mean_Neutral[i][j] + Mean_Disgusted[i][j]) for j in range(len(Mean_Disgusted[0]))] for i in range(len(Mean_Disgusted))]
+        ratio_D_DN = [[Mean_Disgusted[i][j] / float(Mean_Neutral[i][j] + Mean_Disgusted[i][j]) for j in range(len(Mean_Disgusted[i]))] for i in range(len(Mean_Disgusted))]
 
         #est_std, est_phase, est_mean
         reggression_ratio_N_DN2 = sine(ratio_N_DN2)
@@ -96,7 +98,7 @@ class TrialsData:
                  (self.fixation_dataset.Subject == subjects[i]) & (self.fixation_dataset.Trial == j)]
              for j in trials[i]] for i in range(len(subjects))]
 
-        mean_AOIs = [[len(set(All_fixations[i][k].Area_Of_Interest[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.Trial == j)])) for j,k in zip(trials[i],range(len(trials[i])))] for i in range(len(subjects))]
+        mean_AOIs = [[len(set(All_fixations[i][k].Area_of_Interest[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.Trial == j)])) for j,k in zip(trials[i],range(len(trials[i])))] for i in range(len(subjects))]
 
         #est_std, est_phase, est_mean
         reggression_mean_AOIs = sine(mean_AOIs)
@@ -165,16 +167,43 @@ class TrialsData:
         norm_amount_WS =[[amount_WS[i][j]/float(amount_All[i][j])for j in
              range(len(trials[i]))] for i in range(len(subjects))]
 
-        reggression_amount_All = sine(mean_AOIs)
-        self.output_data_dict["trials_mean_AOIs_est_std"] = reggression_mean_AOIs[0]
-        self.output_data_dict["trials_mean_AOIs_est_phase"] = reggression_mean_AOIs[1]
-        self.output_data_dict["trials_mean_AOIs_est_mean"] = reggression_mean_AOIs[2]
+        reggression_amount_All = sine(amount_All)
+        self.output_data_dict["trials_amount_All_est_std"] = reggression_amount_All[0]
+        self.output_data_dict["trials_amount_All_est_phase"] = reggression_amount_All[1]
+        self.output_data_dict["trials_amount_All_est_mean"] = reggression_amount_All[2]
 
-        reggression_mean_AOIs = sine(mean_AOIs)
-        self.output_data_dict["trials_mean_AOIs_est_std"] = reggression_mean_AOIs[0]
-        self.output_data_dict["trials_mean_AOIs_est_phase"] = reggression_mean_AOIs[1]
-        self.output_data_dict["trials_mean_AOIs_est_mean"] = reggression_mean_AOIs[2]
+        reggression_amount_Disgusted = sine(amount_Disgusted)
+        self.output_data_dict["trials_amount_Disgusted_est_std"] = reggression_amount_Disgusted[0]
+        self.output_data_dict["trials_amount_Disgusted_est_phase"] = reggression_amount_Disgusted[1]
+        self.output_data_dict["trials_amount_Disgusted_est_mean"] = reggression_amount_Disgusted[2]
 
+
+        reggression_amount_Neutral = sine(amount_Neutral)
+        self.output_data_dict["trials_amount_Neutral_est_std"] = reggression_amount_Neutral[0]
+        self.output_data_dict["trials_amount_Neutral_est_phase"] = reggression_amount_Neutral[1]
+        self.output_data_dict["trials_amount_Neutral_est_mean"] = reggression_amount_Neutral[2]
+
+        reggression_amount_WS = sine(amount_WS)
+        self.output_data_dict["trials_amount_WS_est_std"] = reggression_amount_WS[0]
+        self.output_data_dict["trials_amount_WS_est_phase"] = reggression_amount_WS[1]
+        self.output_data_dict["trials_amount_WS_est_mean"] = reggression_amount_WS[2]
+
+
+        reggression_norm_amount_Disgusted = sine(norm_amount_Disgusted)
+        self.output_data_dict["trials_norm_amount_Disgusted_est_std"] = reggression_norm_amount_Disgusted[0]
+        self.output_data_dict["trials_norm_amount_Disgusted_est_phase"] = reggression_norm_amount_Disgusted[1]
+        self.output_data_dict["trials_norm_amount_Disgusted_mean"] = reggression_norm_amount_Disgusted[2]
+
+        reggression_norm_amount_Neutral = sine(norm_amount_Neutral)
+        self.output_data_dict["trials_norm_amount_Neutral_est_std"] = reggression_norm_amount_Neutral[0]
+        self.output_data_dict["trials_norm_amount_Neutral_est_phase"] = reggression_norm_amount_Neutral[1]
+        self.output_data_dict["trials_norm_amount_Neutral_est_mean"] = reggression_norm_amount_Neutral[2]
+
+
+        reggression_norm_amount_WS = sine(norm_amount_WS)
+        self.output_data_dict["trials_norm_amount_WS_est_std"] = reggression_norm_amount_WS[0]
+        self.output_data_dict["trials_norm_amount_WS_est_phase"] = reggression_norm_amount_WS[1]
+        self.output_data_dict["trials_norm_amount_WS_est_mean"] = reggression_norm_amount_WS[2]
 
         return [amount_Disgusted, amount_Neutral, amount_WS,amount_All,norm_amount_Disgusted,norm_amount_Neutral,norm_amount_WS]
 
@@ -235,6 +264,44 @@ class TrialsData:
              range(len(trials[i]))] for i in range(len(subjects))]
         norm_mean_WS =[[mean_WS[i][j]/float(mean_All[i][j])for j in
              range(len(trials[i]))] for i in range(len(subjects))]
+
+        reggression_mean_All = sine(mean_All)
+        self.output_data_dict["trials_mean_All_est_std"] = reggression_mean_All[0]
+        self.output_data_dict["trials_mean_All_est_phase"] = reggression_mean_All[1]
+        self.output_data_dict["trials_mean_All_est_mean"] = reggression_mean_All[2]
+
+        reggression_mean_Neutral = sine(mean_Neutral)
+        self.output_data_dict["trials_mean_Neutral_est_std"] = reggression_mean_Neutral[0]
+        self.output_data_dict["trials_mean_Neutral_est_phase"] = reggression_mean_Neutral[1]
+        self.output_data_dict["trials_mean_Neutral_est_mean"] = reggression_mean_Neutral[2]
+
+
+        reggression_mean_Disgusted = sine(mean_Disgusted)
+        self.output_data_dict["trials_mean_Disgusted_est_std"] = reggression_mean_Disgusted[0]
+        self.output_data_dict["trials_mean_Disgusted_est_phase"] = reggression_mean_Disgusted[1]
+        self.output_data_dict["trials_mean_Disgusted_est_mean"] = reggression_mean_Disgusted[2]
+
+        reggression_mean_WS = sine(mean_WS)
+        self.output_data_dict["trials_mean_WS_est_std"] = reggression_mean_WS[0]
+        self.output_data_dict["trials_mean_WS_est_phase"] = reggression_mean_WS[1]
+        self.output_data_dict["trials_mean_WS_est_mean"] = reggression_mean_WS[2]
+
+
+        reggression_norm_mean_Neutral = sine(norm_mean_Neutral)
+        self.output_data_dict["trials_norm_mean_Neutral_est_std"] = reggression_norm_mean_Neutral[0]
+        self.output_data_dict["trials_norm_mean_Neutral_est_phase"] = reggression_norm_mean_Neutral[1]
+        self.output_data_dict["trials_norm_mean_Neutral_mean"] = reggression_norm_mean_Neutral[2]
+
+        reggression_norm_mean_Disgusted = sine(norm_mean_Disgusted)
+        self.output_data_dict["trials_norm_mean_Disgusted_est_std"] = reggression_norm_mean_Disgusted[0]
+        self.output_data_dict["trials_norm_mean_Disgusted_est_phase"] = reggression_norm_mean_Disgusted[1]
+        self.output_data_dict["trials_norm_mean_Disgusted_est_mean"] = reggression_norm_mean_Disgusted[2]
+
+
+        reggression_norm_mean_WS = sine(norm_mean_WS)
+        self.output_data_dict["trials_norm_mean_WS_est_std"] = reggression_norm_mean_WS[0]
+        self.output_data_dict["trials_norm_mean_WS_est_phase"] = reggression_norm_mean_WS[1]
+        self.output_data_dict["trials_norm_mean_WS_est_mean"] = reggression_norm_mean_WS[2]
 
         return [mean_Disgusted, mean_Neutral, mean_WS,mean_All,norm_mean_Disgusted,norm_mean_Neutral,norm_mean_WS]
 

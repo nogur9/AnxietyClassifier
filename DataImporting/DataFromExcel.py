@@ -30,7 +30,7 @@ def print_data(dataset, group_column_name):
 
     #print(dataset.head(20))
     print(dataset.describe())
-    #print(dataset.shape)
+    print(dataset.shape)
     print(dataset.groupby(group_column_name).size())
 
 
