@@ -59,8 +59,8 @@ def create_Controls_File_Features():
             if math.isnan(item):
                 row += 1
             else:
-                worksheet.write(row, col, item)
                 row += 1
+                worksheet.write(row, col, item)
         col += 1
 
     workbook.close()
@@ -100,8 +100,8 @@ def create_SAD_File_Features():
             if math.isnan(item):
                 row += 1
             else:
-                worksheet.write(row, col, item)
                 row += 1
+                worksheet.write(row, col, item)
         col += 1
 
     workbook.close()
@@ -110,4 +110,4 @@ def create_SAD_File_Features():
 
 create_Controls_File_Features()
 print("half!!!!!!")
-#create_SAD_File_Features()
+create_SAD_File_Features()

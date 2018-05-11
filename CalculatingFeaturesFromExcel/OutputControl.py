@@ -11,23 +11,26 @@ import numpy as np
 #336 - ציון LSAS - 36 סווג לקבוצת נמוכים בחרדה
 
 #Define Envairoment Variables
-CONTROLS_FILE_PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\AmitsData\\Controls.xlsx"
-FIXATION_DATA_SHEET = 'fixation data'
-DEMOGRAPHICS_SHEET = 'Final all Results'
+#CONTROLS_FILE_PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\AmitsData\\Controls.xlsx"
+#CONTROLS_FILE_PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\\Nisans Data\\Nisan_pre.xlsx"
+CONTROLS_FILE_PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\\Testers\\NogasData.xlsx"
+#FIXATION_DATA_SHEET = 'fixation data'
+FIXATION_DATA_SHEET = 'Sheet1'
+#DEMOGRAPHICS_SHEET = 'Final all Results'
 SAD_FILE_PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\AmitsData\\SAD.xlsx"
 def create_Controls_File_Features():
     print(1)
-    controls = Data(CONTROLS_FILE_PATH, FIXATION_DATA_SHEET,DEMOGRAPHICS_SHEET)
+    controls = Data(CONTROLS_FILE_PATH, FIXATION_DATA_SHEET)
     print(2)
     controls.amount_of_second_fixations()
     print(3)
-    controls.get_age()
+#    controls.get_age()
     print(4)
-    controls.get_PHQ9()
+#    controls.get_PHQ9()
     print(5)
     controls.get_subject_number()
     print(6)
-    controls.get_group()
+#    controls.get_group()
     print(7)
     controls.get_sum_fixation_length_Disgusted()
     print(8)
@@ -79,6 +82,7 @@ def create_Controls_File_Features():
     print(31)
     controls.amount_of_first_fixations()
     print(32)
+
     controls.get_average_pupil_size_Disgusted()
     print(33)
     controls.get_average_pupil_size_Neutral()
@@ -97,7 +101,9 @@ def create_Controls_File_Features():
     print(40)
     controls.get_mean_different_AOI_per_trial()
     print(41)
-    workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\formatted_features.xlsx')
+    #workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\Nisan_formatted_features_pre.xlsx')
+    workbook = xlsxwriter.Workbook(
+        'C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\Noga_formatted_features_test.xlsx')
     worksheet = workbook.add_worksheet()
 
 
@@ -181,7 +187,7 @@ def create_SAD_File_Features():
     print(30)
     SAD.amount_of_first_fixations()
     print(31)
-    SAD.amount_of_second_fixations()
+    #SAD.amount_of_second_fixations()
     print(32)
     SAD.get_average_pupil_size_Disgusted()
     print(33)

@@ -1,12 +1,13 @@
 import numpy as np
 from scipy.optimize import leastsq
 import pylab as plt
-
+from sklearn.linear_model import LinearRegression
 
 def sine(data, plot=0):
     est_std_list = []
     est_phase_list = []
     est_mean_list = []
+    print([{range(60)[i], data[0][i]} for i in range(60)])
     for subject_data in data:
         N = len(subject_data)# number of data points
         t = np.linspace(0, 4*np.pi, N)
@@ -26,6 +27,7 @@ def sine(data, plot=0):
         est_std_list.append(est_std)
         est_phase_list.append(est_phase)
         est_mean_list.append(est_mean)
+
         if plot:
             data_fit = est_std * np.sin(t + est_phase) + est_mean
             plt.plot(subject_data, '.')
@@ -34,3 +36,23 @@ def sine(data, plot=0):
             plt.legend()
             plt.show()
     return [est_std_list, est_phase_list, est_mean_list]
+
+
+
+def linear(data, plot=0):
+    coeff = []
+    for subject_data in data:
+        N = len(subject_data)# number of data points
+        x = range(N)
+        y = np.array(subject_data)
+        z = np.polyfit(x, y, 1)
+        print('Coefficients: \n', z)
+
+        if plot:
+            p1 = np.poly1d(np.polyfit(x, y, 1))
+            plt.scatter(range(N), subject_data, color='black')
+            xp = np.linspace(-2, 6, 100)
+            _ = plt.plot(x, y, '.', xp, p(xp), '-', xp, p1(xp), '--')
+
+            plt.show()
+    return [coeff]

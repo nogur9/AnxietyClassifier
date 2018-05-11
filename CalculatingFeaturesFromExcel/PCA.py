@@ -1,24 +1,60 @@
 import numpy as np
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler
+
 from mpl_toolkits.mplot3d import Axes3D
 from DataImporting.DataFromExcel import get_data,refactor_labels
+from DataImporting.Data_Imputation import imputing_avarage
+from sklearn.decomposition import RandomizedPCA
 
-dataset = refactor_labels(get_data("C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\formatted_features_SAD.xlsx", "Sheet1"),"group")
-3:62
-X = np.array([[-1, -1], [-2, -1], [-3, -2], [1, 1], [2, 1], [3, 2]])
-pca = PCA(n_components=2)
-pca.fit(X)
-X = pca.transform(X)
-# Reorder the labels to have colors matching the cluster results
-fig = plt.figure(1, figsize=(4, 3))
-y = np.choose(y, [1, 2, 0]).astype(np.float)
-ax = Axes3D(fig, rect=[0, 0, .95, 1], elev=48, azim=134)
-ax.scatter(X[:, 0], X[:, 1], X[:, 2], c=y, cmap=plt.cm.spectral,
-           edgecolor='k')
 
-ax.w_xaxis.set_ticklabels([])
-ax.w_yaxis.set_ticklabels([])
-ax.w_zaxis.set_ticklabels([])
+def run_stuff ():
+    dataset = refactor_labels(get_data("C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\Alls_data.xlsx", "Sheet1"),"group")
+    dataset = imputing_avarage(dataset)
+    features_df = dataset.drop(['Age','group','PHQ9','Subject_Number'],1)
+    X = features_df.values
+    X = StandardScaler().fit_transform(X)
 
-plt.show()
+    #X = array[:,3:116]
+    pca = RandomizedPCA(50)
+    pca.fit(X)
+    plt.plot(np.cumsum(pca.explained_variance_ratio_))
+    plt.xlabel('number of components')
+    plt.ylabel('cumulative explained variance');
+    plt.show()
+    # plt.close()
+    #
+    # y = dataset["group"]
+    # k = 10
+    # pca = PCA(n_components=k)
+    # pca.fit(X)
+    # G = pca.transform(X)
+    # for l in range(1,k):
+    #     for j in range(0,l):
+    #         dim1 = [G[i][l] for i in range(len(X))]
+    #         dim2 = [G[i][j] for i in range(len(X))]
+    #         dim1_zero_vals = [dim1[i] for i in range(len(y)) if y[i] == 0.0]
+    #         dim2_zero_vals = [dim2[i] for i in range(len(y)) if y[i] == 0.0]
+    #         dim1_one_values = [dim1[i] for i in range(len(y)) if y[i] == 1.0]
+    #         dim2_one_values = [dim2[i] for i in range(len(y)) if y[i] == 1.0]
+    #         plt.scatter(dim1_zero_vals, dim2_zero_vals, c='r')
+    #         plt.scatter(dim1_one_values,dim2_one_values, c='b')
+    #         #plt.scatter(dim1,dim2)
+    #         plt.show()
+
+
+def PCA_transforme (df, k):
+    df = imputing_avarage(df)
+    features_df = df.drop(['Age', 'group', 'PHQ9', 'Subject_Number'], 1)
+    X = features_df.values
+    X = StandardScaler().fit_transform(X)
+
+    pca = PCA(n_components=k)
+    pca.fit(X)
+    return pca.transform(X)
+
+#run_stuff()
+
+
+

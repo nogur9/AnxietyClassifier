@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from CalculatingFeaturesFromExcel import ExctractFeaturesWRTtrials
-from CalculatingFeaturesFromExcel.RegressionFunctions import sine
+from CalculatingFeaturesFromExcel.RegressionFunctions import sine, linear
 def plot_timeline_between_trial_two_vars(TrialData):
     result = TrialData.get_average_fixation_length_each_trial()
 
@@ -33,7 +33,7 @@ def plot_timeline_between_trial_single_var(results, titles):
         N = len(result)
         fig, ax = plt.subplots()
         ind = np.arange(N)  # the x locations for the groups
-        width = 0.35  # the width of the bars
+        width = 1.5  # the width of the bars
         ax.bar(ind, result, width, color='b')
         ax.set_xticklabels([0,'','','','','','','','','',10,'','','','','','','','','',20,'','','','','','','','','',30,'','','','','','','','','',40,'','','','','','','','','',50])
         ax.set_title(title)
@@ -51,14 +51,14 @@ def runner():
     FIXATION_DATA_SHEET = 'fixation data'
     high_data_object = ExctractFeaturesWRTtrials.TrialsData(Test_Data_path_high,FIXATION_DATA_SHEET)
     #low_data_object = ExctractFeaturesWRTtrials.TrialsData(Test_Data_path_low,FIXATION_DATA_SHEET)
-    high_results_avg = high_data_object.get_average_fixation_length_each_trial()
-
-    high_results_sums = high_data_object.get_sum_fixation_length()
-    high_results_std = high_data_object.get_STD_fixation_length()
     high_results_ratio = high_data_object.get_Ratios()
+    linear(high_results_ratio[1], plot=1)
+    high_results_avg = high_data_object.get_average_fixation_length_each_trial()
     high_results_amounts = high_data_object.get_amount_fixation_length()
     high_results_aois = high_data_object.get_mean_different_AOI_per_trial()
-    #sine(high_results_ratio[1], plot=1)
+    high_results_sums = high_data_object.get_sum_fixation_length()
+    high_results_std = high_data_object.get_STD_fixation_length()
+
     plot_timeline_between_trial_single_var(high_results_avg,['mean_Disgusted high', 'mean_Neutral high', 'mean_WS high','mean_All high','norm_mean_Disgusted high','norm_mean_Neutral high','norm_mean_WS high'])
     plot_timeline_between_trial_single_var(high_results_sums,['sum_Disgusted high', 'sum_Neutral high','sum_WS','sum_All high','norm_sum_Disgusted high','norm_sum_Neutral high','norm_sum_WS high'])
     plot_timeline_between_trial_single_var(high_results_std, ['STD_Disgusted high', 'STD_Neutral high', 'STD_WS high','STD_All high'])
