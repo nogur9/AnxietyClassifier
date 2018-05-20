@@ -13,7 +13,7 @@ import numpy as np
 #Define Envairoment Variables
 #CONTROLS_FILE_PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\AmitsData\\Controls.xlsx"
 #CONTROLS_FILE_PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\\Nisans Data\\Nisan_pre.xlsx"
-CONTROLS_FILE_PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\\Testers\\NogasData.xlsx"
+CONTROLS_FILE_PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\\AmitsData\\no5.xlsx"
 #FIXATION_DATA_SHEET = 'fixation data'
 FIXATION_DATA_SHEET = 'Sheet1'
 #DEMOGRAPHICS_SHEET = 'Final all Results'
@@ -22,7 +22,8 @@ def create_Controls_File_Features():
     print(1)
     controls = Data(CONTROLS_FILE_PATH, FIXATION_DATA_SHEET)
     print(2)
-    controls.amount_of_second_fixations()
+    controls.get_average_pupil_size_Disgusted()
+    #controls.amount_of_second_fixations()
     print(3)
 #    controls.get_age()
     print(4)
@@ -80,10 +81,10 @@ def create_Controls_File_Features():
     print(30)
     controls.var_threat_precentage_between_trials()
     print(31)
-    controls.amount_of_first_fixations()
+    #controls.amount_of_first_fixations()
     print(32)
 
-    controls.get_average_pupil_size_Disgusted()
+
     print(33)
     controls.get_average_pupil_size_Neutral()
     print(34)
@@ -103,7 +104,7 @@ def create_Controls_File_Features():
     print(41)
     #workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\Nisan_formatted_features_pre.xlsx')
     workbook = xlsxwriter.Workbook(
-        'C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\Noga_formatted_features_test.xlsx')
+        'C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\\AmitsData\\noFive.xlsx')
     worksheet = workbook.add_worksheet()
 
 

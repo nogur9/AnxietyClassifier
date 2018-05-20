@@ -1,6 +1,6 @@
 import xlsxwriter
 from sklearn.model_selection import LeaveOneOut
-
+from CalculatingFeaturesFromExcel.PCA import PCA_transforme, meow
 # Libraries
 import matplotlib.pyplot as plt
 import numpy as np
@@ -40,26 +40,31 @@ from sklearn.preprocessing import MinMaxScaler
 #defining enviroment variables
 SEED = 7
 SCORING = 'accuracy'
-#PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\features_C&L_no_outliers.xlsx"
-PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\formatted_features.xlsx"
+PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\Alls_data_NO_specific_vars_wise.xlsx"
+#PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\Alls_data_NO_specific_vars_corr.xlsx"
+#PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\Alls_data.xlsx"
 SHEET_NAME = "Sheet1"
 
-def split_data(dataset):
+def get_data_no_pca (dataset):
     '''
 
     :param dataset: pandas DataFrame dataset.
     :return: Two np.array sets of Training ang Testsng features and labels. 
     slitted psuedo randomly by a 20:80 ratio.
     '''
+    dataset = imputing_avarage(dataset)
+    X_train = dataset.drop(['Age','group','PHQ9','Subject_Number'],1)
+    x2 = meow()
+    X_train = np.concatenate((X_train.values, x2), axis=1)
 
-    array = dataset.values
-    X = array[:, 3:19]
-    #X = array[:, 2:4]
-    Y = array[:, 0]
-    test_size = 0.05
-    X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_size=test_size, random_state=SEED)
-    return X_train, X_test, Y_train, Y_test
+    Y_train = dataset["group"]
 
+    return X_train,Y_train
+
+def get_data (dateset):
+    X_train = PCA_transforme(dateset,9)
+    Y_train = dateset["group"]
+    return X_train,Y_train
 
 def get_RFE_models():
     '''
@@ -118,7 +123,7 @@ def get_seleck_K_best_scoring():
     '''
 
     scoring_models = []
-    scoring_models.append(("chi2", chi2))
+    #scoring_models.append(("chi2", chi2))
     scoring_models.append(("mutual_info", mutual_info_classif))
     scoring_models.append(("f_classif", f_classif))
     return scoring_models
@@ -191,7 +196,8 @@ def RFE_cross_validation(models, dataset, prints=0):
     results = []
 
 
-    X_train, X_test, Y_train, Y_test = split_data(dataset)
+    #X_train, Y_train = get_data(dataset)
+    X_train, Y_train = get_data_no_pca(dataset)
     for model_name, model in models:
         if model_name == "SVM_linear":
             scaler = MinMaxScaler()
@@ -356,17 +362,17 @@ def select_K_best_CV(models, scoring_models, dataset):
     """
     results_list = []
 
+    #X_train_all, Y_train_all = get_data(dataset)
+    X_train_all, Y_train_all = get_data_no_pca(dataset)
+    for k in range(4, X_train_all.shape[1]):
 
-    for k in range(4, dataset.shape[1]-4):
-        X_train, X_test, Y_train, Y_test = split_data(dataset)
         for score_name, scoring_model in scoring_models:
-            #print("\nk={}".format(k))
-            select_feature = SelectKBest(scoring_model, k=k).fit(X_train, Y_train)
-            X_train = select_feature.transform(X_train)
+            print("\nk={}".format(k))
+            select_feature = SelectKBest(scoring_model, k=k).fit(X_train_all, Y_train_all)
+            X_train = select_feature.transform(X_train_all)
             for model_name, model in models:
                 #print("\nmodel={}".format(model_name))
-                results_list.append(
-                    single_model_CV(model_name, model, k, score_name, X_train, Y_train))
+                results_list.append(single_model_CV(model_name, model, k, score_name, X_train, Y_train_all))
     plot_select_K_best_results(results_list)
 
 
@@ -383,7 +389,7 @@ def test_set(dataset):
     """
 
 #    tmp_dataset = imputing_median(dataset)
-    X_train, X_test, Y_train, Y_test = split_data(dataset)
+    X_train, Y_train = get_data(dataset)
 
 #    scaler = MinMaxScaler()
 #    X_train_scaled = scaler.fit_transform(X_train)
@@ -427,12 +433,12 @@ def runner(path,sheet_name):
     dataset = DataFromExcel.refactor_labels(DataFromExcel.get_data(path, sheet_name),"group")
     SKB_models = get_select_K_best_models()
     RFE_models = get_RFE_models()
-#    SKB_scoring = get_seleck_K_best_scoring()
-#    RFE_cross_validation(RFE_models, dataset)
+    SKB_scoring = get_seleck_K_best_scoring()
+    RFE_cross_validation(RFE_models, dataset)
 
-    #select_K_best_CV(SKB_models, SKB_scoring, dataset)
+    select_K_best_CV(SKB_models, SKB_scoring, dataset)
 
-    test_set(dataset)
+    #test_set(dataset)
 
 
 

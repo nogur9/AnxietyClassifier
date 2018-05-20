@@ -511,7 +511,11 @@ class Data:
     def get_average_pupil_size_Disgusted (self):
         norm_factor = self.get_average_pupil_size_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        mean_Disgusted = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.AOI_Group == "D")&(self.fixation_dataset.Average_Pupil_Diameter!='-')]) for i in range(len(subjects))]
+        #mean_Disgusted = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.AOI_Group == "D")&(self.fixation_dataset.Average_Pupil_Diameter!='-')]) for i in range(len(subjects))]
+        mean_Disgusted = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[
+                                      (self.fixation_dataset.Subject == subjects[i]) & (
+                                                  self.fixation_dataset.AOI_Group == "D")]) for i in
+                          range(len(subjects))]
         mean_Disgusted = [0 if math.isnan(x) else x for x in mean_Disgusted]
         norm_disgusted =[mean_Disgusted[i] / float(norm_factor[i]) for i in range(len(mean_Disgusted))]
         norm_disgusted = [0 if math.isnan(x) else x for x in norm_disgusted]
@@ -523,7 +527,11 @@ class Data:
         norm_factor = self.get_average_pupil_size_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
-        mean_Neutral = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.AOI_Group == "N")&(self.fixation_dataset.Average_Pupil_Diameter!='-')]) for i in range(len(subjects))]
+        #mean_Neutral = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.AOI_Group == "N")&(self.fixation_dataset.Average_Pupil_Diameter!='-')]) for i in range(len(subjects))]
+        mean_Neutral = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[
+                                    (self.fixation_dataset.Subject == subjects[i]) & (
+                                                self.fixation_dataset.AOI_Group == "N")]) for i in
+                        range(len(subjects))]
         mean_Neutral = [0 if math.isnan(x) else x for x in mean_Neutral]
         norm_neutral =[mean_Neutral[i] / float(norm_factor[i]) for i in range(len(mean_Neutral))]
         norm_neutral = [0 if math.isnan(x) else x for x in norm_neutral]
@@ -534,7 +542,11 @@ class Data:
     def get_average_pupil_size_White_Space (self):
         norm_factor = self.get_average_pupil_size_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        mean_White_Space = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.AOI_Group == "White Space")&(self.fixation_dataset.Average_Pupil_Diameter!='-')]) for i in range(len(subjects))]
+        #mean_White_Space = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.AOI_Group == "White Space")&(self.fixation_dataset.Average_Pupil_Diameter!='-')]) for i in range(len(subjects))]
+        mean_White_Space = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[
+                                        (self.fixation_dataset.Subject == subjects[i]) & (
+                                                    self.fixation_dataset.AOI_Group == "White Space")]) for i in
+                            range(len(subjects))]
         mean_White_Space = [0 if math.isnan(x) else x for x in mean_White_Space]
         norm_WS =[mean_White_Space[i] / float(norm_factor[i]) for i in range(len(mean_White_Space))]
         norm_WS = [0 if math.isnan(x) else x for x in norm_WS]
@@ -546,7 +558,10 @@ class Data:
 
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
-        mean_All = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.Average_Pupil_Diameter!='-')]) for i in range(len(subjects))]
+        #mean_All = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.Average_Pupil_Diameter!='-')]) for i in range(len(subjects))]
+        mean_All = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[
+                                (self.fixation_dataset.Subject == subjects[i])]) for i in
+                    range(len(subjects))]
         mean_All = [0 if math.isnan(x) else x for x in mean_All]
 
         self.output_data_dict["average_pupil_size_All"] = mean_All
@@ -556,7 +571,11 @@ class Data:
     def get_STD_pupil_size_Disgusted(self):
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
-        STD_Disgusted = [np.std(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.AOI_Group == "D")&(self.fixation_dataset.Average_Pupil_Diameter!='-')]) for i in range(len(subjects))]
+        #STD_Disgusted = [np.std(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.AOI_Group == "D")&(self.fixation_dataset.Average_Pupil_Diameter!='-')]) for i in range(len(subjects))]
+        STD_Disgusted = [np.std(self.fixation_dataset.Average_Pupil_Diameter[
+                                    (self.fixation_dataset.Subject == subjects[i]) & (
+                                                self.fixation_dataset.AOI_Group == "D")]) for i in
+                         range(len(subjects))]
         STD_Disgusted = [0 if math.isnan(x) else x for x in STD_Disgusted]
 
         self.output_data_dict["STD_pupil_size_Disgusted"] = STD_Disgusted
@@ -565,7 +584,11 @@ class Data:
     def get_STD_pupil_size_Neutral(self):
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
-        STD_Neutral = [np.std(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.AOI_Group == "N")&(self.fixation_dataset.Average_Pupil_Diameter!='-')]) for i in range(len(subjects))]
+        #STD_Neutral = [np.std(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.AOI_Group == "N")&(self.fixation_dataset.Average_Pupil_Diameter!='-')]) for i in range(len(subjects))]
+        STD_Neutral = [np.std(self.fixation_dataset.Average_Pupil_Diameter[
+                                  (self.fixation_dataset.Subject == subjects[i]) & (
+                                              self.fixation_dataset.AOI_Group == "N")]) for i in
+                       range(len(subjects))]
         STD_Neutral = [0 if math.isnan(x) else x for x in STD_Neutral]
 
         self.output_data_dict["STD_pupil_size_Neutral"] = STD_Neutral
@@ -573,7 +596,11 @@ class Data:
 
     def get_STD_pupil_size_White_Space(self):
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        STD_White_Space = [np.std(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i]) & (self.fixation_dataset.AOI_Group == "White Space")&(self.fixation_dataset.Average_Pupil_Diameter!='-')])for i in range(len(subjects))]
+        #STD_White_Space = [np.std(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i]) & (self.fixation_dataset.AOI_Group == "White Space")&(self.fixation_dataset.Average_Pupil_Diameter!='-')])for i in range(len(subjects))]
+        STD_White_Space = [np.std(self.fixation_dataset.Average_Pupil_Diameter[
+                                      (self.fixation_dataset.Subject == subjects[i]) & (
+                                                  self.fixation_dataset.AOI_Group == "White Space")]) for i in
+                           range(len(subjects))]
         STD_White_Space = [0 if math.isnan(x) else x for x in STD_White_Space]
 
         self.output_data_dict["STD_pupil_size_White_Space"] = STD_White_Space
@@ -582,7 +609,10 @@ class Data:
     def get_STD_pupil_size_All(self):
 
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        STD_All = [np.std(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.Average_Pupil_Diameter!='-')])for i in range(len(subjects))]
+        #STD_All = [np.std(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.Average_Pupil_Diameter!='-')])for i in range(len(subjects))]
+        STD_All = [np.std(self.fixation_dataset.Average_Pupil_Diameter[
+                              (self.fixation_dataset.Subject == subjects[i])]) for i in
+                   range(len(subjects))]
         STD_All = [0 if math.isnan(x) else x for x in STD_All]
         self.output_data_dict["STD_pupil_size_All"] = STD_All
 

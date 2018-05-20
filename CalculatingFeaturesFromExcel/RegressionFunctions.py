@@ -40,14 +40,16 @@ def sine(data, plot=0):
 
 
 def linear(data, plot=0):
-    coeff = []
+    coeff1 = []
+    coeff2 = []
     for subject_data in data:
         N = len(subject_data)# number of data points
         x = range(N)
         y = np.array(subject_data)
         z = np.polyfit(x, y, 1)
         print('Coefficients: \n', z)
-
+        coeff1.append(z[0])
+        coeff2.append(z[1])
         if plot:
             p1 = np.poly1d(np.polyfit(x, y, 1))
             plt.scatter(range(N), subject_data, color='black')
@@ -55,4 +57,4 @@ def linear(data, plot=0):
             _ = plt.plot(x, y, '.', xp, p(xp), '-', xp, p1(xp), '--')
 
             plt.show()
-    return [coeff]
+    return [coeff1,coeff2]

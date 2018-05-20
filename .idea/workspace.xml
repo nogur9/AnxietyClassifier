@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8cbd6c00-86b4-4b9b-a5d9-24e55f5ebdb6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/featueEleemination.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RunningAlgorithms/LOO_section2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExctractFeaturesWRTtrials.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExctractFeaturesWRTtrials.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/OutputControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/OutputControl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/PCA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/RegressionFunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/RegressionFunctions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/Data_Imputation.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataImporting/Data_Imputation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/LOO_RFE_C&amp;L_0.1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/LOO_RFE_H&amp;L_0.05.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/LOO_RFE_all_0.05 new.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/LOO_RFE_all_0.05.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/LOO_RFE_all_0.1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/LOO_SKB_C&amp;L_0.05.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/LOO_SKB_C&amp;L_0.1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/LOO_SKB_all_0.05 new.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/LOO_SKB_all_0.05.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/LOO_SKB_all_0.1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/features_C&amp;L.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/features_C&amp;L_no_outliers.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/formatted_features.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/formatted_features_H&amp;L.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/formatted_features_SAD.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nisans Data/אחרי אקסל מתוקן.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nisans Data/לפני אקסל מתוקן.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RunningAlgorithms/LOO.py" beforeDir="false" afterPath="$PROJECT_DIR$/RunningAlgorithms/LOO.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/pandas/core/indexes/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="3744" selection-start-line="3744" selection-end-line="3744" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OutputControl.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/OutputControl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtractFeatures.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="560" column="75" selection-start-line="560" selection-start-column="75" selection-end-line="560" selection-end-column="75" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="validation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/sklearn/utils/validation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deprecation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/sklearn/utils/deprecation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PCA.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/PCA.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+      <find>All_fixations</find>
+      <find>high</find>
+      <find>controls</find>
+      <find>Area_of_Interest</find>
+      <find>Area_Of_Interest</find>
+      <find>group</find>
+      <find>of</find>
+      <find>nan</find>
+      <find>split_data</find>
+      <find>sine</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>low</replace>
+      <replace>SAD</replace>
+      <replace>get_data</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Testers/TestersCalculatingFeaturesFromExcel/TestLoopOverData.py" />
+        <option value="$PROJECT_DIR$/Testers/TestersCalculatingFeaturesFromExcel/TestExctractDataWRTtrials.py" />
+        <option value="$PROJECT_DIR$/DataImporting/DataFromExcel.py" />
+        <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/output_trials.py" />
+        <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_plots.py" />
+        <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/RegressionFunctions.py" />
+        <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExctractFeaturesWRTtrials.py" />
+        <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/featueEleemination.py" />
+        <option value="$PROJECT_DIR$/DataImporting/Data_Imputation.py" />
+        <option value="$PROJECT_DIR$/RunningAlgorithms/LOO.py" />
+        <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/PCA.py" />
+        <option value="$PROJECT_DIR$/RunningAlgorithms/LOO_section2.py" />
+        <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" />
+        <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/OutputControl.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="567" />
+    <option name="width" value="799" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AnxietyClassifier(2)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnxietyClassifier(2)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnxietyClassifier(2)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnxietyClassifier(2)" type="462c0819:PsiDirectoryNode" />
+              <item name="CalculatingFeaturesFromExcel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnxietyClassifier(2)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnxietyClassifier(2)" type="462c0819:PsiDirectoryNode" />
+              <item name="RunningAlgorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings sdk-home="C:\Users\user\venv\Scripts\python.exe" working-directory="$PROJECT_DIR$/../testit">
+        <option name="mySdkHome" value="C:\Users\user\venv\Scripts\python.exe" />
+        <option name="myWorkingDirectory" value="$PROJECT_DIR$/../testit" />
+        <option name="myAddSourceRoots" value="true" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\AnxietyClassifier(2)" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.OutputControl">
+    <configuration name="LOO" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnxietyClassifier(2)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RunningAlgorithms" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RunningAlgorithms/LOO.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="LOO_section2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnxietyClassifier(2)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RunningAlgorithms" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RunningAlgorithms/LOO_section2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="OutputControl" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnxietyClassifier(2)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CalculatingFeaturesFromExcel" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/OutputControl.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="PCA" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnxietyClassifier(2)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CalculatingFeaturesFromExcel" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/PCA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="output_trials" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnxietyClassifier(2)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CalculatingFeaturesFromExcel" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/output_trials.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.output_trials" />
+      <item itemvalue="Python.PCA" />
+      <item itemvalue="Python.LOO" />
+      <item itemvalue="Python.LOO_section2" />
+      <item itemvalue="Python.OutputControl" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.OutputControl" />
+        <item itemvalue="Python.LOO_section2" />
+        <item itemvalue="Python.LOO" />
+        <item itemvalue="Python.PCA" />
+        <item itemvalue="Python.output_trials" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8cbd6c00-86b4-4b9b-a5d9-24e55f5ebdb6" name="Default" comment="" />
+      <created>1524914088319</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1524914088319</updated>
+    </task>
+    <task id="LOCAL-00001" summary="&quot;&quot;">
+      <created>1524914712525</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524914712525</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;fuck it&quot;">
+      <created>1525008871666</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1525008871666</updated>
+    </task>
+    <task id="LOCAL-00003" summary="&quot;fuck it all&quot;">
+      <created>1525015380659</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1525015380659</updated>
+    </task>
+    <task id="LOCAL-00004" summary="&quot;why doesnt it works??&quot;">
+      <created>1525069068368</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1525069068368</updated>
+    </task>
+    <task id="LOCAL-00005" summary="&quot;never more&quot;">
+      <created>1525250575788</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1525250575788</updated>
+    </task>
+    <task id="LOCAL-00006" summary="&quot;quoth the raven never more&quot;">
+      <created>1526039281351</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1526039281351</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_TestExctractDataWRTtrials_py - 2018.04.29 at 16h 19m 38s.xml">
+      <configuration name="Unittests in TestExctractDataWRTtrials.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_TestExctractDataWRTtrials_py - 2018.04.29 at 16h 22m 31s.xml">
+      <configuration name="Unittests in TestExctractDataWRTtrials.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_TestExctractDataWRTtrials_TestFeatureExctraction_test_get_ratios - 2018.04.29 at 16h 28m 48s.xml">
+      <configuration name="Unittests for TestExctractDataWRTtrials.TestFeatureExctraction.test_get_ratios" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_TestExctractDataWRTtrials_TestFeatureExctraction_test_STD_fixation_length - 2018.04.29 at 16h 31m 06s.xml">
+      <configuration name="Unittests for TestExctractDataWRTtrials.TestFeatureExctraction.test_STD_fixation_length" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_TestExctractDataWRTtrials_py - 2018.04.30 at 15h 46m 29s.xml">
+      <configuration name="Unittests in TestExctractDataWRTtrials.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_TestExctractDataWRTtrials_TestFeatureExctraction_test_get_amount_fixation - 2018.05.02 at 08h 44m 41s.xml">
+      <configuration name="Unittests for TestExctractDataWRTtrials.TestFeatureExctraction.test_get_amount_fixation" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_TestExctractDataWRTtrials_py - 2018.05.02 at 08h 47m 13s.xml">
+      <configuration name="Unittests in TestExctractDataWRTtrials.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_TestExctractDataWRTtrials_TestFeatureExctraction_test_get_mean_different_AOI_per_trial - 2018.05.02 at 11h 25m 55s.xml">
+      <configuration name="Unittests for TestExctractDataWRTtrials.TestFeatureExctraction.test_get_mean_different_AOI_per_trial" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_TestExctractDataWRTtrials_py - 2018.05.02 at 11h 30m 46s.xml">
+      <configuration name="Unittests in TestExctractDataWRTtrials.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_TestExctractDataWRTtrials_TestFeatureExctraction_test_get_amount_fixation - 2018.05.02 at 11h 38m 38s.xml">
+      <configuration name="Unittests for TestExctractDataWRTtrials.TestFeatureExctraction.test_get_amount_fixation" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23065476" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8797364" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3294893" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.28830314" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19568452" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38714993" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29159802" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3294893" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;&quot;" />
+    <MESSAGE value="&quot;fuck it&quot;" />
+    <MESSAGE value="&quot;fuck it all&quot;" />
+    <MESSAGE value="&quot;why doesnt it works??&quot;" />
+    <MESSAGE value="&quot;never more&quot;" />
+    <MESSAGE value="&quot;quoth the raven never more&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;quoth the raven never more&quot;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
+          <line>482</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
+          <line>480</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
+          <line>484</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
+          <line>487</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
+          <line>495</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
+          <line>499</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
+          <line>501</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
+          <line>498</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DataImporting/DataFromExcel.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_plots.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_plots.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_plots.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/output_trials.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Testers/TestersCalculatingFeaturesFromExcel/TestExctractDataWRTtrials.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Testers/TestersCalculatingFeaturesFromExcel/TestExctractDataWRTtrials.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/output_trials.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/output_trials.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/output_trials.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_plots.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/RunningAlgorithms/LOO.py</url>
+          <line>370</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/RunningAlgorithms/LOO.py</url>
+          <line>371</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/RunningAlgorithms/LOO.py</url>
+          <line>374</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/RegressionFunctions.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/PCA.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/RunningAlgorithms/LOO_section2.py</url>
+          <line>143</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/RunningAlgorithms/LOO_section2.py</url>
+          <line>145</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/OutputControl.py</url>
+          <line>86</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/OutputControl.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/OutputControl.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="108" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>X_train.values</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>x2</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>X_train</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>X_train.merge (x2)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>X_train.merge (x2)
+    Y_train = dataset[&quot;group&quot;]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>[np.mean([result[i][j] for i in range(len(result))]) for j in
+                                 range(len(result[0]))]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>[np.mean([result[i][j] for i in range(len(result))]) for j in range(len(result[0]))]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(result)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>[self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])] for i in range(len(subjects))]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>[self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&amp;(self.fixation_dataset.Average_Pupil_Diameter!='-')] for i in range(len(subjects))]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>[np.mean(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&amp;(self.fixation_dataset.Average_Pupil_Diameter!='-')]) for i in range(len(subjects))]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>[i in</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(cols_names)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cols_names</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dataset_other</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dropping_titles</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(dataset_other)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/RunningAlgorithms/LOO_section2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RunningAlgorithms/LOO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="100" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="100" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/sklearn/utils/validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/sklearn/utils/deprecation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/PCA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RunningAlgorithms/LOO_section2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="144" column="105" lean-forward="true" selection-start-line="119" selection-start-column="55" selection-end-line="144" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RunningAlgorithms/LOO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="100" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="100" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/sklearn/utils/validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/sklearn/utils/deprecation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/PCA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RunningAlgorithms/LOO_section2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="134" column="17" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RunningAlgorithms/LOO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="100" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="100" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RunningAlgorithms/LOO_section2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2329">
+          <caret line="137" column="28" lean-forward="true" selection-start-line="137" selection-start-column="28" selection-end-line="137" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/sklearn/utils/validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/sklearn/utils/deprecation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/PCA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="14" lean-forward="true" selection-start-line="53" selection-end-line="54" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RunningAlgorithms/LOO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/Data_Imputation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/sklearn/utils/validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/sklearn/utils/deprecation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/PCA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RunningAlgorithms/LOO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="30" lean-forward="true" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/PCA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_plots.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/RegressionFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/output_trials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1870">
+          <caret line="110" column="31" lean-forward="true" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/scipy/optimize/minpack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="265" lean-forward="true" selection-start-line="265" selection-end-line="265" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExctractFeaturesnEachTrial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/pandas/plotting/_core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="2588" column="8" lean-forward="true" selection-start-line="2588" selection-start-column="8" selection-end-line="2588" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/pandas/plotting/_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="192" column="12" selection-start-line="192" selection-start-column="12" selection-end-line="192" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/matplotlib/lines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="936" selection-start-line="936" selection-end-line="936" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/xlsxwriter/worksheet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="511" selection-start-line="511" selection-end-line="511" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testers/TestersCalculatingFeaturesFromExcel/TestExctractDataWRTtrials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/pandas/core/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13260">
+          <caret line="815" selection-start-line="815" selection-end-line="815" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/sklearn/feature_selection/univariate_selection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="492" selection-start-line="492" selection-end-line="492" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/sklearn/linear_model/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="456" column="8" selection-start-line="456" selection-start-column="8" selection-end-line="456" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/RegressionFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_plots.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="52" column="47" lean-forward="true" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/output_trials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="85" column="142" lean-forward="true" selection-start-line="85" selection-start-column="142" selection-end-line="85" selection-end-column="142" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExctractFeaturesWRTtrials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="249" lean-forward="true" selection-start-line="249" selection-end-line="249" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/featueEleemination.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/sklearn/utils/validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/Data_Imputation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/PCA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/sklearn/utils/deprecation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RunningAlgorithms/LOO_section2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RunningAlgorithms/LOO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/DataFromExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/AnxietyClassifier/Lib/site-packages/pandas/core/indexes/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3744" selection-start-line="3744" selection-end-line="3744" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="560" column="75" selection-start-line="560" selection-start-column="75" selection-end-line="560" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/OutputControl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

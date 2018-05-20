@@ -3,7 +3,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 from DataImporting import DataFromExcel
-from CalculatingFeaturesFromExcel.RegressionFunctions import sine
+from CalculatingFeaturesFromExcel.RegressionFunctions import sine, linear
 Fixation_length_cutoff = 100
 
 
@@ -91,6 +91,7 @@ class TrialsData:
 
 
     def get_mean_different_AOI_per_trial(self):
+        #add linear
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
         trials = sorted([set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects])
         All_fixations = [
@@ -106,9 +107,17 @@ class TrialsData:
         self.output_data_dict["trials_mean_AOIs_est_phase"] = reggression_mean_AOIs[1]
         self.output_data_dict["trials_mean_AOIs_est_mean"] = reggression_mean_AOIs[2]
 
+
+        #linear
+        linear_mean_AOIs = linear(mean_AOIs)
+        self.output_data_dict["trials_mean_AOIs_1coeff"] = linear_mean_AOIs[0]
+        self.output_data_dict["trials_mean_AOIs_2coeff"] = linear_mean_AOIs[1]
+
+
         return [mean_AOIs]
 
     def get_STD_fixation_length(self):
+        #add linear
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
         trials = sorted([set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects])
         print(trials)
@@ -172,43 +181,75 @@ class TrialsData:
         self.output_data_dict["trials_amount_All_est_phase"] = reggression_amount_All[1]
         self.output_data_dict["trials_amount_All_est_mean"] = reggression_amount_All[2]
 
+        # linear
+        linear_amount_All = linear(amount_All)
+        self.output_data_dict["trials_amount_All_1coeff"] = linear_amount_All[0]
+        self.output_data_dict["trials_amount_All_2coeff"] = linear_amount_All[1]
+
         reggression_amount_Disgusted = sine(amount_Disgusted)
         self.output_data_dict["trials_amount_Disgusted_est_std"] = reggression_amount_Disgusted[0]
         self.output_data_dict["trials_amount_Disgusted_est_phase"] = reggression_amount_Disgusted[1]
         self.output_data_dict["trials_amount_Disgusted_est_mean"] = reggression_amount_Disgusted[2]
 
+        # linear
+        linear_amount_Disgusted = linear(amount_Disgusted)
+        self.output_data_dict["trials_amount_Disgusted_1coeff"] = linear_amount_Disgusted[0]
+        self.output_data_dict["trials_amount_Disgusted_2coeff"] = linear_amount_Disgusted[1]
 
         reggression_amount_Neutral = sine(amount_Neutral)
         self.output_data_dict["trials_amount_Neutral_est_std"] = reggression_amount_Neutral[0]
         self.output_data_dict["trials_amount_Neutral_est_phase"] = reggression_amount_Neutral[1]
         self.output_data_dict["trials_amount_Neutral_est_mean"] = reggression_amount_Neutral[2]
 
+        # linear
+        linear_amount_Neutral = linear(amount_Neutral)
+        self.output_data_dict["trials_amount_Neutral_1coeff"] = linear_amount_Neutral[0]
+        self.output_data_dict["trials_amount_Neutral_2coeff"] = linear_amount_Neutral[1]
+
         reggression_amount_WS = sine(amount_WS)
         self.output_data_dict["trials_amount_WS_est_std"] = reggression_amount_WS[0]
         self.output_data_dict["trials_amount_WS_est_phase"] = reggression_amount_WS[1]
         self.output_data_dict["trials_amount_WS_est_mean"] = reggression_amount_WS[2]
 
+        # linear
+        linear_amount_WS = linear(amount_WS)
+        self.output_data_dict["trials_amount_WS_1coeff"] = linear_amount_WS[0]
+        self.output_data_dict["trials_amount_WS_2coeff"] = linear_amount_WS[1]
 
         reggression_norm_amount_Disgusted = sine(norm_amount_Disgusted)
         self.output_data_dict["trials_norm_amount_Disgusted_est_std"] = reggression_norm_amount_Disgusted[0]
         self.output_data_dict["trials_norm_amount_Disgusted_est_phase"] = reggression_norm_amount_Disgusted[1]
         self.output_data_dict["trials_norm_amount_Disgusted_mean"] = reggression_norm_amount_Disgusted[2]
 
+        # linear
+        linear_norm_amount_Disgusted = linear(norm_amount_Disgusted)
+        self.output_data_dict["trials_norm_amount_Disgusted_1coeff"] = linear_norm_amount_Disgusted[0]
+        self.output_data_dict["trials_norm_amount_Disgusted_2coeff"] = linear_norm_amount_Disgusted[1]
+
         reggression_norm_amount_Neutral = sine(norm_amount_Neutral)
         self.output_data_dict["trials_norm_amount_Neutral_est_std"] = reggression_norm_amount_Neutral[0]
         self.output_data_dict["trials_norm_amount_Neutral_est_phase"] = reggression_norm_amount_Neutral[1]
         self.output_data_dict["trials_norm_amount_Neutral_est_mean"] = reggression_norm_amount_Neutral[2]
 
+        # linear
+        linear_norm_amount_Neutral = linear(norm_amount_Neutral)
+        self.output_data_dict["trials_norm_amount_Neutral_1coeff"] = linear_norm_amount_Neutral[0]
+        self.output_data_dict["trials_norm_amount_Neutral_2coeff"] = linear_norm_amount_Neutral[1]
 
         reggression_norm_amount_WS = sine(norm_amount_WS)
         self.output_data_dict["trials_norm_amount_WS_est_std"] = reggression_norm_amount_WS[0]
         self.output_data_dict["trials_norm_amount_WS_est_phase"] = reggression_norm_amount_WS[1]
         self.output_data_dict["trials_norm_amount_WS_est_mean"] = reggression_norm_amount_WS[2]
 
+        # linear
+        linear_norm_amount_WS = linear(norm_amount_WS)
+        self.output_data_dict["trials_norm_amount_WS_1coeff"] = linear_norm_amount_WS[0]
+        self.output_data_dict["trials_norm_amount_WS_2coeff"] = linear_norm_amount_WS[1]
+
         return [amount_Disgusted, amount_Neutral, amount_WS,amount_All,norm_amount_Disgusted,norm_amount_Neutral,norm_amount_WS]
 
     def get_sum_fixation_length(self):
-
+# maybe add linear
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
         trials = sorted([set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects])
         All_fixations = [
@@ -240,7 +281,7 @@ class TrialsData:
 
     def get_average_fixation_length_each_trial(self):
         # param order of trials
-
+#add linear
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
         trials = sorted([set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects])
         All_fixations = [[self.fixation_dataset[(self.fixation_dataset.Subject == subjects[i]) & (self.fixation_dataset.Trial == j)]
@@ -270,10 +311,23 @@ class TrialsData:
         self.output_data_dict["trials_mean_All_est_phase"] = reggression_mean_All[1]
         self.output_data_dict["trials_mean_All_est_mean"] = reggression_mean_All[2]
 
+
+        # linear
+        linear_mean_All = linear(mean_All)
+        self.output_data_dict["trials_mean_All_1coeff"] = linear_mean_All[0]
+        self.output_data_dict["trials_mean_All_2coeff"] = linear_mean_All[1]
+
+
         reggression_mean_Neutral = sine(mean_Neutral)
         self.output_data_dict["trials_mean_Neutral_est_std"] = reggression_mean_Neutral[0]
         self.output_data_dict["trials_mean_Neutral_est_phase"] = reggression_mean_Neutral[1]
         self.output_data_dict["trials_mean_Neutral_est_mean"] = reggression_mean_Neutral[2]
+
+
+        # linear
+        linear_mean_Neutral = linear(mean_Neutral)
+        self.output_data_dict["trials_mean_Neutral_1coeff"] = linear_mean_Neutral[0]
+        self.output_data_dict["trials_mean_Neutral_2coeff"] = linear_mean_Neutral[1]
 
 
         reggression_mean_Disgusted = sine(mean_Disgusted)
@@ -281,10 +335,23 @@ class TrialsData:
         self.output_data_dict["trials_mean_Disgusted_est_phase"] = reggression_mean_Disgusted[1]
         self.output_data_dict["trials_mean_Disgusted_est_mean"] = reggression_mean_Disgusted[2]
 
+
+        # linear
+        linear_mean_Disgusted = linear(mean_Disgusted)
+        self.output_data_dict["trials_mean_Disgusted_1coeff"] = linear_mean_Disgusted[0]
+        self.output_data_dict["trials_mean_Disgusted_2coeff"] = linear_mean_Disgusted[1]
+
+
         reggression_mean_WS = sine(mean_WS)
         self.output_data_dict["trials_mean_WS_est_std"] = reggression_mean_WS[0]
         self.output_data_dict["trials_mean_WS_est_phase"] = reggression_mean_WS[1]
         self.output_data_dict["trials_mean_WS_est_mean"] = reggression_mean_WS[2]
+
+
+        # linear
+        linear_mean_WS = linear(mean_WS)
+        self.output_data_dict["trials_mean_WS_1coeff"] = linear_mean_WS[0]
+        self.output_data_dict["trials_mean_WS_2coeff"] = linear_mean_WS[1]
 
 
         reggression_norm_mean_Neutral = sine(norm_mean_Neutral)
@@ -292,16 +359,36 @@ class TrialsData:
         self.output_data_dict["trials_norm_mean_Neutral_est_phase"] = reggression_norm_mean_Neutral[1]
         self.output_data_dict["trials_norm_mean_Neutral_mean"] = reggression_norm_mean_Neutral[2]
 
+
+        # linear
+        linear_norm_mean_Neutral = linear(norm_mean_Neutral)
+        self.output_data_dict["trials_norm_mean_Neutral_1coeff"] = linear_norm_mean_Neutral[0]
+        self.output_data_dict["trials_norm_mean_Neutral_2coeff"] = linear_norm_mean_Neutral[1]
+
+
         reggression_norm_mean_Disgusted = sine(norm_mean_Disgusted)
         self.output_data_dict["trials_norm_mean_Disgusted_est_std"] = reggression_norm_mean_Disgusted[0]
         self.output_data_dict["trials_norm_mean_Disgusted_est_phase"] = reggression_norm_mean_Disgusted[1]
         self.output_data_dict["trials_norm_mean_Disgusted_est_mean"] = reggression_norm_mean_Disgusted[2]
 
 
+        # linear
+        linear_norm_mean_Disgusted = linear(norm_mean_Disgusted)
+        self.output_data_dict["trials_norm_mean_Disgusted_1coeff"] = linear_norm_mean_Disgusted[0]
+        self.output_data_dict["trials_norm_mean_Disgusted_2coeff"] = linear_norm_mean_Disgusted[1]
+
+
         reggression_norm_mean_WS = sine(norm_mean_WS)
         self.output_data_dict["trials_norm_mean_WS_est_std"] = reggression_norm_mean_WS[0]
         self.output_data_dict["trials_norm_mean_WS_est_phase"] = reggression_norm_mean_WS[1]
         self.output_data_dict["trials_norm_mean_WS_est_mean"] = reggression_norm_mean_WS[2]
+
+
+        # linear
+        linear_norm_mean_WS = linear(norm_mean_WS)
+        self.output_data_dict["trials_norm_mean_WS_1coeff"] = linear_norm_mean_WS[0]
+        self.output_data_dict["trials_norm_mean_WS_2coeff"] = linear_norm_mean_WS[1]
+
 
         return [mean_Disgusted, mean_Neutral, mean_WS,mean_All,norm_mean_Disgusted,norm_mean_Neutral,norm_mean_WS]
 

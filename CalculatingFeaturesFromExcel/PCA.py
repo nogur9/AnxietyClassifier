@@ -10,7 +10,7 @@ from sklearn.decomposition import RandomizedPCA
 
 
 def run_stuff ():
-    dataset = refactor_labels(get_data("C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\Alls_data.xlsx", "Sheet1"),"group")
+    dataset = refactor_labels(get_data("C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\Alls_data_NO_specific_vars_corr.xlsx", "Sheet1"),"group")
     dataset = imputing_avarage(dataset)
     features_df = dataset.drop(['Age','group','PHQ9','Subject_Number'],1)
     X = features_df.values
@@ -44,9 +44,10 @@ def run_stuff ():
     #         plt.show()
 
 
-def PCA_transforme (df, k):
-    df = imputing_avarage(df)
-    features_df = df.drop(['Age', 'group', 'PHQ9', 'Subject_Number'], 1)
+def PCA_transforme (df, k, header = 1):
+    features_df = imputing_avarage(df)
+    if header:
+        features_df = df.drop(['Age', 'group', 'PHQ9', 'Subject_Number'], 1)
     X = features_df.values
     X = StandardScaler().fit_transform(X)
 
@@ -54,6 +55,9 @@ def PCA_transforme (df, k):
     pca.fit(X)
     return pca.transform(X)
 
+def meow ():
+    dataset = refactor_labels(get_data("C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\Alls_data_NO_specific_vars_corr.xlsx", "Sheet1"),"group")
+    return PCA_transforme(dataset,6)
 #run_stuff()
 
 

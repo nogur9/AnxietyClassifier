@@ -1,5 +1,5 @@
 from sklearn.preprocessing import Imputer
-import DataImporting.knn_imputer
+from DataImporting import knn_imputer
 
 
 def imputing_avarage(dataset):
