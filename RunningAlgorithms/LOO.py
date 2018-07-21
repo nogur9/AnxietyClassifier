@@ -40,7 +40,7 @@ from sklearn.preprocessing import MinMaxScaler
 #defining enviroment variables
 SEED = 7
 SCORING = 'accuracy'
-PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\Alls_data_NO_specific_vars_wise.xlsx"
+PATH = "C:\‏‏PycharmProjects\AnxietyClassifier\Alls_data_NO.xlsx"
 #PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\Alls_data_NO_specific_vars_corr.xlsx"
 #PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\Alls_data.xlsx"
 SHEET_NAME = "Sheet1"
@@ -62,7 +62,7 @@ def get_data_no_pca (dataset):
     return X_train,Y_train
 
 def get_data (dateset):
-    X_train = PCA_transforme(dateset,9)
+    X_train = PCA_transforme(dateset,130)
     Y_train = dateset["group"]
     return X_train,Y_train
 
@@ -274,22 +274,22 @@ def plot_select_K_best_results(results_list):
            "scoring method - {2}, with accuracy {3} and std {4}".format(results_list[index][2],
                                                                         results_list[index][3], results_list[index][4],
                                                                         results_list[index][0], results_list[index][1]))
-
-    # print to xlsx
-    workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\LOO_SKB_all_0.05 new.xlsx')
-    #workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\LOO_SKB_C&L_0.1.xlsx')
-    # workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\LOO_SKB_C&L_0.1_age_PHQ.xlsx')
-    worksheet = workbook.add_worksheet()
-
-    col = 1
-    for result in results_list:
-        row = 0
-        for item in result:
-            worksheet.write(row, col, item)
-            row += 1
-        col += 1
-
-    workbook.close()
+    #
+    # # print to xlsx
+    # workbook = xlsxwriter.Workbook('C:\‏‏PycharmProjects\AnxietyClassifier\LOO_SKB_all_0.05 new.xlsx')
+    # #workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\LOO_SKB_C&L_0.1.xlsx')
+    # # workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\LOO_SKB_C&L_0.1_age_PHQ.xlsx')
+    # worksheet = workbook.add_worksheet()
+    #
+    # col = 1
+    # for result in results_list:
+    #     row = 0
+    #     for item in result:
+    #         worksheet.write(row, col, item)
+    #         row += 1
+    #     col += 1
+    #
+    # workbook.close()
 
 
     # comparing model types.
@@ -362,12 +362,11 @@ def select_K_best_CV(models, scoring_models, dataset):
     """
     results_list = []
 
-    #X_train_all, Y_train_all = get_data(dataset)
-    X_train_all, Y_train_all = get_data_no_pca(dataset)
-    for k in range(4, X_train_all.shape[1]):
+    X_train_all, Y_train_all = get_data(dataset)
+    #X_train_all, Y_train_all = get_data_no_pca(dataset)
+    for k in range(4, 17):
 
         for score_name, scoring_model in scoring_models:
-            print("\nk={}".format(k))
             select_feature = SelectKBest(scoring_model, k=k).fit(X_train_all, Y_train_all)
             X_train = select_feature.transform(X_train_all)
             for model_name, model in models:
@@ -434,7 +433,7 @@ def runner(path,sheet_name):
     SKB_models = get_select_K_best_models()
     RFE_models = get_RFE_models()
     SKB_scoring = get_seleck_K_best_scoring()
-    RFE_cross_validation(RFE_models, dataset)
+   # RFE_cross_validation(RFE_models, dataset)
 
     select_K_best_CV(SKB_models, SKB_scoring, dataset)
 

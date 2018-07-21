@@ -1,10 +1,8 @@
-import pandas as pd
 from CalculatingFeaturesFromExcel.ExtractFeatures import Data
 from CalculatingFeaturesFromExcel.ExctractFeaturesWRTtrials import TrialsData
 from CalculatingFeaturesFromExcel.RegressionFunctions import sine
 #from pandas import ExcelWriter
 import xlsxwriter
-import numpy as np
 import math
 
 #נבדקים:

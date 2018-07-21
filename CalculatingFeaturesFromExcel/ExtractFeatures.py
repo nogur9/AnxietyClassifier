@@ -12,7 +12,7 @@ class Data:
     output_data_dict = {}
     demographic_dataset = None
 
-    def __init__(self ,path ,fixation_dataset_sheet_name,demographic_dataset_sheet_name = None, grouping_function=np.nansum):
+    def __init__(self, path, fixation_dataset_sheet_name,demographic_dataset_sheet_name = None, grouping_function=np.nansum):
 
         self.fixation_dataset = DataFromExcel.get_data(path, fixation_dataset_sheet_name)
         self.fixation_dataset = self.fixation_dataset[self.fixation_dataset.Fixation_Duration > Fixation_length_cutoff]
@@ -39,7 +39,9 @@ class Data:
         subject_number = list(sorted(set(self.fixation_dataset.Subject)))
         self.output_data_dict["Subject_Number"] = subject_number
 
-
+    def get_trial (self):
+        trial_number = list(sorted(set(self.fixation_dataset.Trial)))
+        self.output_data_dict["Trial"] = trial_number
     def get_group(self):
         group = [self.demographic_dataset.group[i] for i in range(len(self.demographic_dataset.group))]
         self.output_data_dict["group"] = group
@@ -47,6 +49,22 @@ class Data:
 
 
 # feature extraction - features need to be computed
+
+    def get_DT_each_stimulus_pet_trial (self):
+ #       subjects = list(sorted(set(self.fixation_dataset.Subject)))
+
+        trials =list(set(self.fixation_dataset.Stimulus))
+        images = list(set(self.fixation_dataset.Area_of_Interest))
+
+        for aoi in images:
+            for mat in trials:
+                sum_fix = np.nansum(self.fixation_dataset.Fixation_Duration[
+                                                    (self.fixation_dataset.Stimulus == mat) & (
+                                                    self.fixation_dataset.Area_of_Interest == aoi)])
+
+
+                title_name = "sum_fixations_on_stimulus_{0} Trial {1}".format(aoi,mat)
+                self.output_data_dict[title_name] = [sum_fix]
 
     def get_sum_fixation_length_Disgusted (self):
         norm_factor = self.get_sum_fixation_length_All()
@@ -144,7 +162,7 @@ class Data:
         mean_All = [np.mean(self.fixation_dataset.Fixation_Duration[self.fixation_dataset.Subject == subjects[i]]) for i in range(len(subjects))]
         mean_All = [0 if math.isnan(x) else x for x in mean_All]
 
-        self.output_data_dict ["average_fixation_length_All"] = mean_All
+        self.output_data_dict["average_fixation_length_All"] = mean_All
         return mean_All
 
     def get_amount_fixation_Disgusted (self):
@@ -609,7 +627,6 @@ class Data:
     def get_STD_pupil_size_All(self):
 
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        #STD_All = [np.std(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.Average_Pupil_Diameter!='-')])for i in range(len(subjects))]
         STD_All = [np.std(self.fixation_dataset.Average_Pupil_Diameter[
                               (self.fixation_dataset.Subject == subjects[i])]) for i in
                    range(len(subjects))]
@@ -628,10 +645,113 @@ class Data:
 
         self.output_data_dict["mean_different_AOI_per_trial"] = mean_AOIs
 
+    def get_difference_between_medians(self):
 
+        subjects = list(sorted(set(self.fixation_dataset.Subject)))
+        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        medians = [[np.median(self.fixation_dataset.Number[(self.fixation_dataset.Subject == subjects[i]) &
+                                                        (self.fixation_dataset.Trial == j)])
+                                                        for j in trials[i]] for i in range(len(subjects))]
+        #get sums
 
+        sum_white_space_first_median = [self.grouping_function([np.nansum(self.fixation_dataset.Fixation_Duration
+                            [(self.fixation_dataset.Subject == subjects[i]) &
+                            (self.fixation_dataset.Trial == j) & (self.fixation_dataset.AOI_Group == "White Space")
+                             & (self.fixation_dataset.Number <= medians[i][j])])
+                            for j in trials[i]]) for i in range(len(subjects))]
 
+        sum_white_space_second_median = [self.grouping_function([np.nansum(self.fixation_dataset.Fixation_Duration
+                            [(self.fixation_dataset.Subject == subjects[i]) &
+                            (self.fixation_dataset.Trial == j) & (self.fixation_dataset.AOI_Group == "White Space")
+                             (self.fixation_dataset.Number > medians[i][j])])
+                            for j in trials[i]]) for i in range(len(subjects))]
 
+        sum_disgusted_first_median = [self.grouping_function([np.nansum(self.fixation_dataset.Fixation_Duration
+                            [(self.fixation_dataset.Subject == subjects[i]) &
+                            (self.fixation_dataset.Trial == j) & (self.fixation_dataset.AOI_Group == "D")
+                             & (self.fixation_dataset.Number <= medians[i][j])])
+                            for j in trials[i]]) for i in range(len(subjects))]
+
+        sum_disgusted_second_median = [self.grouping_function([np.nansum(self.fixation_dataset.Fixation_Duration
+                            [(self.fixation_dataset.Subject == subjects[i]) &
+                            (self.fixation_dataset.Trial == j) & (self.fixation_dataset.AOI_Group == "D")
+                            & (self.fixation_dataset.Number > medians[i][j])])
+                            for j in trials[i]]) for i in range(len(subjects))]
+
+        sum_neutral_first_median = [self.grouping_function([np.nansum(self.fixation_dataset.Fixation_Duration
+                            [(self.fixation_dataset.Subject == subjects[i]) &
+                            (self.fixation_dataset.Trial == j) & (self.fixation_dataset.AOI_Group == "N")
+                             & (self.fixation_dataset.Number <= medians[i][j])])
+                            for j in trials[i]]) for i in range(len(subjects))]
+
+        sum_neutral_second_median = [self.grouping_function([np.nansum(self.fixation_dataset.Fixation_Duration
+                            [(self.fixation_dataset.Subject == subjects[i]) &
+                            (self.fixation_dataset.Trial == j) & (self.fixation_dataset.AOI_Group == "N")
+                            & (self.fixation_dataset.Number > medians[i][j])])
+                            for j in trials[i]]) for i in range(len(subjects))]
+
+        sum_all_first_median = [self.grouping_function([np.nansum(self.fixation_dataset.Fixation_Duration
+                            [(self.fixation_dataset.Subject == subjects[i]) &
+                            (self.fixation_dataset.Trial == j)
+                             & (self.fixation_dataset.Number <= medians[i][j])])
+                            for j in trials[i]]) for i in range(len(subjects))]
+
+        sum_all_second_median = [self.grouping_function([np.nansum(self.fixation_dataset.Fixation_Duration
+                            [(self.fixation_dataset.Subject == subjects[i]) &
+                            (self.fixation_dataset.Trial == j) &
+                             (self.fixation_dataset.Number > medians[i][j])])
+                            for j in trials[i]]) for i in range(len(subjects))]
+        #get norm sums
+        sum_all_first_median = [0 if math.isnan(x) else x for x in sum_all_first_median]
+        sum_all_second_median = [0 if math.isnan(x) else x for x in sum_all_second_median]
+
+        sum_white_space_first_median = [0 if math.isnan(x) else x for x in sum_white_space_first_median]
+        norm_WS_first_median =[sum_white_space_first_median[i] / float(sum_all_first_median[i]) for i in range(len(sum_white_space_first_median))]
+        norm_WS_first_median = [0 if math.isnan(x) else x for x in norm_WS_first_median]
+
+        sum_white_space_second_median = [0 if math.isnan(x) else x for x in sum_white_space_second_median]
+        norm_WS_second_median = [sum_white_space_second_median[i] / float(sum_all_second_median[i]) for i in range(len(sum_white_space_second_median))]
+        norm_WS_second_median = [0 if math.isnan(x) else x for x in norm_WS_second_median]
+
+        sum_disgusted_first_median = [0 if math.isnan(x) else x for x in sum_disgusted_first_median]
+        norm_disgusted_first_median = [sum_disgusted_first_median[i] / float(sum_all_first_median[i]) for i in range(len(sum_disgusted_first_median))]
+        norm_disgusted_first_median = [0 if math.isnan(x) else x for x in norm_disgusted_first_median]
+
+        sum_disgusted_second_median = [0 if math.isnan(x) else x for x in sum_disgusted_second_median]
+        norm_disgusted_second_median = [sum_disgusted_second_median[i] / float(sum_all_second_median[i]) for i in range(len(sum_disgusted_second_median))]
+        norm_disgusted_second_median = [0 if math.isnan(x) else x for x in norm_disgusted_second_median]
+
+        sum_neutral_first_median = [0 if math.isnan(x) else x for x in sum_neutral_first_median]
+        norm_neutral_first_median =[sum_neutral_first_median[i] / float(sum_all_first_median[i]) for i in range(len(sum_neutral_first_median))]
+        norm_neutral_first_median = [0 if math.isnan(x) else x for x in norm_neutral_first_median]
+
+        sum_neutral_second_median = [0 if math.isnan(x) else x for x in sum_neutral_second_median]
+        norm_neutral_second_median = [sum_neutral_second_median[i] / float(sum_all_second_median[i]) for i in range(len(sum_neutral_second_median))]
+        norm_neutral_second_median = [0 if math.isnan(x) else x for x in norm_neutral_second_median]
+
+        #get stds
+
+        std_disgusted_first_median = [np.std(self.fixation_dataset.Fixation_Duration[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.AOI_Group == "D") & (self.fixation_dataset.Number <= medians[i][j])]) for i in range(len(subjects))]
+        std_disgusted_first_median = [0 if math.isnan(x) else x for x in std_disgusted_first_median]
+
+        std_disgusted_second_median = [np.std(self.fixation_dataset.Fixation_Duration[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.AOI_Group == "D") (self.fixation_dataset.Number > medians[i][j])]) for i in range(len(subjects))]
+        std_disgusted_second_median = [0 if math.isnan(x) else x for x in std_disgusted_second_median]
+
+        std_neutral_first_median = [np.std(self.fixation_dataset.Fixation_Duration[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.AOI_Group == "N") & (self.fixation_dataset.Number <= medians[i][j])]) for i in range(len(subjects))]
+        std_neutral_first_median = [0 if math.isnan(x) else x for x in std_neutral_first_median]
+
+        std_neutral_second_median = [np.std(self.fixation_dataset.Fixation_Duration[(self.fixation_dataset.Subject == subjects[i])&(self.fixation_dataset.AOI_Group == "N") (self.fixation_dataset.Number > medians[i][j])]) for i in range(len(subjects))]
+        std_neutral_second_median = [0 if math.isnan(x) else x for x in std_neutral_second_median]
+
+        self.output_data_dict["STD_Disgusted_difference_between_medians"] = (std_disgusted_first_median/float(std_disgusted_second_median))
+        self.output_data_dict["STD_Neutral_difference_between_medians"] = (std_neutral_first_median/float(std_neutral_second_median))
+        self.output_data_dict["sum_disgusted_difference_between_medians"] = (sum_disgusted_first_median/float(sum_disgusted_second_median))
+        self.output_data_dict["norm_sum_disgusted_difference_between_medians"] = (norm_disgusted_first_median/float(norm_disgusted_second_median))
+        self.output_data_dict["sum_neutral_difference_between_medians"] = (sum_neutral_first_median/float(sum_neutral_second_median))
+        self.output_data_dict["norm_sum_disgusted_difference_between_medians"] = (norm_neutral_first_median/float(norm_neutral_second_median))
+        self.output_data_dict["sum_WS_difference_between_medians"] = (sum_white_space_first_median/float(sum_white_space_second_median))
+        self.output_data_dict["norm_sum_WS_difference_between_medians"] = (norm_WS_first_median/float(norm_WS_second_median))
+        self.output_data_dict["sum_all_difference_between_medians"] = (sum_all_first_median/float(sum_all_second_median))
 
 
 #Test_Data_path = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\Testers\\test data_ordered.xlsx"

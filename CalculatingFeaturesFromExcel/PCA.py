@@ -2,8 +2,6 @@ import numpy as np
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
-
-from mpl_toolkits.mplot3d import Axes3D
 from DataImporting.DataFromExcel import get_data,refactor_labels
 from DataImporting.Data_Imputation import imputing_avarage
 from sklearn.decomposition import RandomizedPCA
