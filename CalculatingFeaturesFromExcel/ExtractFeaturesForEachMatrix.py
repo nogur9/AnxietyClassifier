@@ -1,9 +1,9 @@
 import itertools
 import numpy as np
 import math
-from DataImporting import DataFromExcel
+from DataImporting import ImportData
 
-Fixation_length_cutoff = 100
+Fixation_length_cutoff = 99
 
 
 class Data:
@@ -18,11 +18,11 @@ class Data:
 
     def __init__(self, path, fixation_dataset_sheet_name, demographic_dataset_sheet_name=None):
 
-        self.fixation_dataset = DataFromExcel.get_data(path, fixation_dataset_sheet_name)
+        self.fixation_dataset = ImportData.get_data(path, fixation_dataset_sheet_name)
         self.fixation_dataset = self.fixation_dataset[self.fixation_dataset.Fixation_Duration > Fixation_length_cutoff]
 
         if not demographic_dataset_sheet_name is None:
-            self.demographic_dataset = DataFromExcel.get_data(path, demographic_dataset_sheet_name)
+            self.demographic_dataset = ImportData.get_data(path, demographic_dataset_sheet_name)
 
         self.Trials_count = np.array([len(set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == j])) for j in
                                       sorted(set(self.fixation_dataset.Subject))])
@@ -36,23 +36,27 @@ class Data:
                 self.trials_subject.append([self.subjects[i], matrix])
 
     def get_age(self):
-        Age = [self.demographic_dataset.Age[i] for i in range(len(self.demographic_dataset.Age))]
+        Age = [self.demographic_dataset.Age[(self.fixation_dataset.Subject == subject)
+                    & (self.fixation_dataset.Trial == matrix)] for [subject, matrix] in self.trials_subject]
         self.output_data_dict["Age"] = Age
 
     def get_PHQ9(self):
-        PHQ9 = [self.demographic_dataset.PHQ[i] for i in range(len(self.demographic_dataset.PHQ))]
+        PHQ9 = [self.demographic_dataset.PHQ[(self.fixation_dataset.Subject == subject)
+                                      & (self.fixation_dataset.Trial == matrix)]
+                                    for [subject, matrix] in self.trials_subject]
         self.output_data_dict["PHQ9"] = PHQ9
 
     def get_subject_number(self):
-        subject_number = list(sorted(set(self.fixation_dataset.Subject)))
+        subject_number = []
+        for [subject, _] in self.trials_subject:
+            subject_number.append([self.demographic_dataset.Subject[(self.demographic_dataset.Subject == subject)]][0].values[0])
+
         self.output_data_dict["Subject_Number"] = subject_number
 
-    def get_trial(self):
-        trial_number = list(sorted(set(self.fixation_dataset.Trial)))
-        self.output_data_dict["Trial"] = trial_number
-
     def get_group(self):
-        group = [self.demographic_dataset.group[i] for i in range(len(self.demographic_dataset.group))]
+        group = []
+        for [subject, _] in self.trials_subject:
+            group.append([self.demographic_dataset.group[(self.demographic_dataset.Subject == subject)]][0].values[0])
         self.output_data_dict["group"] = group
 
     # feature extraction - features need to be computed
@@ -219,7 +223,7 @@ class Data:
                     & (self.fixation_dataset.Trial == matrix)
                     & (self.fixation_dataset.AOI_Group == "D")]) for [subject,matrix] in self.trials_subject]
 
-        std_disgusted = [0 if math.isnan(x) else x for x in std_disgusted]
+        std_disgusted = ["" if math.isnan(x) else x for x in std_disgusted]
 
         self.output_data_dict["STD_fixation_length_Disgusted"] = std_disgusted
 
@@ -229,7 +233,7 @@ class Data:
                         & (self.fixation_dataset.Trial == matrix) & (self.fixation_dataset.AOI_Group == "N")]) for
                          [subject, matrix] in self.trials_subject]
 
-        std_neutral = [0 if math.isnan(x) else x for x in std_neutral]
+        std_neutral = ["" if math.isnan(x) else x for x in std_neutral]
 
         self.output_data_dict["STD_fixation_length_Neutral"] = std_neutral
 
@@ -239,7 +243,7 @@ class Data:
                            & (self.fixation_dataset.Trial == matrix) & (self.fixation_dataset.AOI_Group == "White Space")])
                            for [subject, matrix] in self.trials_subject]
 
-        std_white_space = [0 if math.isnan(x) else x for x in std_white_space]
+        std_white_space = ["" if math.isnan(x) else x for x in std_white_space]
 
         self.output_data_dict["STD_fixation_length_White_Space"] = std_white_space
 
@@ -248,7 +252,7 @@ class Data:
         std_all = [np.nanstd(self.fixation_dataset.Fixation_Duration[(self.fixation_dataset.Subject == subject)
                            & (self.fixation_dataset.Trial == matrix)])
                            for [subject, matrix] in self.trials_subject]
-        std_all = [0 if math.isnan(x) else x for x in std_all]
+        std_all = ["" if math.isnan(x) else x for x in std_all]
 
         self.output_data_dict["STD_fixation_length_All"] = std_all
 
@@ -405,8 +409,8 @@ class Data:
 
     def get_average_pupil_size_All(self):
 
-        mean_all = [np.nanmean(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subject)
-                        & (self.fixation_dataset.Trial == matrix)]) for
+        mean_all = [np.nanmean(np.array(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subject)
+                        & (self.fixation_dataset.Trial == matrix)],dtype=np.float32)) for
                          [subject, matrix] in self.trials_subject]
         mean_all = [0 if math.isnan(x) else x for x in mean_all]
 
@@ -417,7 +421,7 @@ class Data:
         std_disgusted = [np.nanstd(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subject)
                         & (self.fixation_dataset.Trial == matrix) & (self.fixation_dataset.AOI_Group == "D")]) for
                          [subject, matrix] in self.trials_subject]
-        std_disgusted = [0 if math.isnan(x) else x for x in std_disgusted]
+        std_disgusted = ["" if math.isnan(x) else x for x in std_disgusted]
 
         self.output_data_dict["STD_pupil_size_Disgusted"] = std_disgusted
 
@@ -425,7 +429,7 @@ class Data:
         std_neutral = [np.nanstd(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subject)
                         & (self.fixation_dataset.Trial == matrix) & (self.fixation_dataset.AOI_Group == "N")]) for
                          [subject, matrix] in self.trials_subject]
-        std_neutral = [0 if math.isnan(x) else x for x in std_neutral]
+        std_neutral = ["" if math.isnan(x) else x for x in std_neutral]
 
         self.output_data_dict["STD_pupil_size_Neutral"] = std_neutral
 
@@ -434,7 +438,7 @@ class Data:
         std_white_space = [np.nanstd(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subject)
                         & (self.fixation_dataset.Trial == matrix) & (self.fixation_dataset.AOI_Group == "White Space")]) for
                          [subject, matrix] in self.trials_subject]
-        std_white_space = [0 if math.isnan(x) else x for x in std_white_space]
+        std_white_space = ["" if math.isnan(x) else x for x in std_white_space]
 
         self.output_data_dict["STD_pupil_size_White_Space"] = std_white_space
 
@@ -443,7 +447,7 @@ class Data:
         std_all = [np.nanstd(self.fixation_dataset.Average_Pupil_Diameter[(self.fixation_dataset.Subject == subject)
                         & (self.fixation_dataset.Trial == matrix)]) for
                          [subject, matrix] in self.trials_subject]
-        std_all = [0 if math.isnan(x) else x for x in std_all]
+        std_all = ["" if math.isnan(x) else x for x in std_all]
         self.output_data_dict["STD_pupil_size_All"] = std_all
 
     def get_difference_between_medians(self):
@@ -553,7 +557,7 @@ class Data:
                                                     for i, [subject, matrix] in enumerate(self.trials_subject)]
         std_disgusted_second_median = [0 if math.isnan(x) else x for x in std_disgusted_second_median]
 
-        std_neutral_first_median = [np.nansum(self.fixation_dataset.Fixation_Duration
+        std_neutral_first_median = [np.nanstd(self.fixation_dataset.Fixation_Duration
                                                     [(self.fixation_dataset.Subject == subject) &
                                                     (self.fixation_dataset.Trial == matrix) &
                                                     (self.fixation_dataset.AOI_Group == "N") &
@@ -569,21 +573,25 @@ class Data:
                                                     for i, [subject, matrix] in enumerate(self.trials_subject)]
         std_neutral_second_median = [0 if math.isnan(x) else x for x in std_neutral_second_median]
 
-        self.output_data_dict["STD_Disgusted_difference_between_medians"] = (
-                    std_disgusted_first_median / float(std_disgusted_second_median))
-        self.output_data_dict["STD_Neutral_difference_between_medians"] = (
-                    std_neutral_first_median / float(std_neutral_second_median))
-        self.output_data_dict["sum_disgusted_difference_between_medians"] = (
-                    sum_disgusted_first_median / float(sum_disgusted_second_median))
-        self.output_data_dict["norm_sum_disgusted_difference_between_medians"] = (
-                    norm_disgusted_first_median / float(norm_disgusted_second_median))
-        self.output_data_dict["sum_neutral_difference_between_medians"] = (
-                    sum_neutral_first_median / float(sum_neutral_second_median))
-        self.output_data_dict["norm_sum_disgusted_difference_between_medians"] = (
-                    norm_neutral_first_median / float(norm_neutral_second_median))
-        self.output_data_dict["sum_WS_difference_between_medians"] = (
-                    sum_white_space_first_median / float(sum_white_space_second_median))
-        self.output_data_dict["norm_sum_WS_difference_between_medians"] = (
-                    norm_WS_first_median / float(norm_WS_second_median))
-        self.output_data_dict["sum_all_difference_between_medians"] = (
-                    sum_all_first_median / float(sum_all_second_median))
+
+
+        ratio_std_disgusted = [(std_disgusted_first_median[i] / float(std_disgusted_second_median[i])) if std_disgusted_second_median[i]>0 else "" for i in range(len(std_disgusted_first_median))]
+        self.output_data_dict["STD_Disgusted_difference_between_medians"] = ratio_std_disgusted
+
+        ratio_std_neutral = [(std_neutral_first_median[i] / float(std_neutral_second_median[i])) if std_neutral_second_median[i]>0 else "" for i in range(len(std_neutral_first_median))]
+        self.output_data_dict["STD_Neutral_difference_between_medians"] = ratio_std_neutral
+
+        ratio_sum_disgusted = [(sum_disgusted_first_median[i] / float(sum_disgusted_second_median[i])) if sum_disgusted_second_median[i]>0 else "" for i in range(len(sum_disgusted_first_median))]
+        self.output_data_dict["sum_disgusted_difference_between_medians"] = ratio_sum_disgusted
+
+        ratio_norm_sum_disgustd = [(norm_disgusted_first_median[i] / float(norm_disgusted_second_median[i])) if norm_disgusted_second_median[i]>0 else "" for i in range(len(norm_disgusted_first_median))]
+        self.output_data_dict["norm_sum_disgusted_difference_between_medians"] = ratio_norm_sum_disgustd
+
+        ratio_sum_neutral = [(sum_neutral_first_median[i] / float(sum_neutral_second_median[i])) if sum_neutral_second_median[i]>0 else "" for i in range(len(sum_neutral_first_median))]
+        self.output_data_dict["sum_neutral_difference_between_medians"] = ratio_sum_neutral
+
+        ratio_norm_sum_neutral = [(norm_neutral_first_median[i] / float(norm_neutral_second_median[i])) if norm_neutral_second_median[i]>0 else "" for i in range(len(norm_neutral_first_median))]
+        self.output_data_dict["norm_sum_neutral_difference_between_medians"] = ratio_norm_sum_neutral
+
+        ratio_sum_all = [(sum_all_first_median[i] / float(sum_all_second_median[i])) if sum_all_second_median[i]>0 else "" for i in range(len(sum_all_first_median))]
+        self.output_data_dict["sum_all_difference_between_medians"] = ratio_sum_all

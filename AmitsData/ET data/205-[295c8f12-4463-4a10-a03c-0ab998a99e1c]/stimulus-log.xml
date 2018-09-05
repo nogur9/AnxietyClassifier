@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocumentRoot>
+  <StimuliInfo>
+    <StimulusInformation GUID="445f94e8-c3f1-4050-9e16-dddb9822cc4f" Name="calibration-validation.jpg" Type="Image" />
+    <StimulusInformation GUID="e4a4282c-a29e-4f48-bf92-60656196cfdf" Name="Calibration" Type="Calibration" />
+    <StimulusInformation GUID="e4e41115-82ec-464d-8202-97ba7d452a81" Name="Validation" Type="Validation" StimulusFile="Validation.jpg" />
+    <StimulusInformation GUID="87b638ab-c10d-4a0f-be05-4b4ce4d3a43d" Name="instructions 1.jpg" Type="Image" />
+    <StimulusInformation GUID="ba5402af-04cb-4ddd-a307-952d51356f72" Name="instructions 2.jpg" Type="Image" />
+    <StimulusInformation GUID="957e8117-6a83-48be-afef-ec9731475b68" Name="instructions 3.jpg" Type="Image" />
+    <StimulusInformation GUID="2e3a0b31-1d04-4ce8-bb24-be9a7704b9da" Name="instructions 4.jpg" Type="Image" />
+    <StimulusInformation GUID="7f030aac-857d-47ba-a3c0-df02c0402142" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="c259fa4b-5b5d-4ba2-9d15-f5c9da656472" Name="b1matrix 0.jpg" Type="Image" StimulusFile="062cfba68d1f326e227b544493629587_1680x1050.jpg" />
+    <StimulusInformation GUID="86b6a0b9-a6fc-47df-bfc8-52c1b77aa10b" Name="RichText11.rtf" Type="Text" />
+    <StimulusInformation GUID="399e82f6-cbec-4c83-84db-30acddc47f5c" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="5b89d8d6-9944-40dd-b195-11ee17681b8a" Name="b1matrix 1.jpg" Type="Image" StimulusFile="46007c7573ffd13d1efc457c86a96512_1680x1050.jpg" />
+    <StimulusInformation GUID="aed18001-f439-46dc-81c6-e8233bff4b14" Name="RichText12.rtf" Type="Text" />
+    <StimulusInformation GUID="cabff1ad-fef9-4796-9282-b9648a1e88bd" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="f776d47b-d276-4f79-bb4e-375388de0c75" Name="b1matrix 2.jpg" Type="Image" StimulusFile="deb2d5524deca453c77eea5b7ee5c80b_1680x1050.jpg" />
+    <StimulusInformation GUID="c52ccc88-0015-40c1-a0db-da2412593034" Name="RichText.rtf" Type="Text" />
+    <StimulusInformation GUID="a8330dc5-fd5c-4edf-ae81-6d1c8773c4e1" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="58e23d37-3755-4689-8d4f-4e88cdacfe84" Name="b1matrix 3.jpg" Type="Image" StimulusFile="631c0a23ed3e484d49f8ad8c4e277458_1680x1050.jpg" />
+    <StimulusInformation GUID="d05a53d3-0589-4c0d-b76b-afbd0c47bde4" Name="RichText1.rtf" Type="Text" />
+    <StimulusInformation GUID="d9d47010-7349-4396-a688-7fd70ecae49d" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="2b36e3ba-8f82-44c1-a6bf-7ed04a365740" Name="b1matrix 4.jpg" Type="Image" StimulusFile="cd0e09373f9616ebe84d56e6dabafe1f_1680x1050.jpg" />
+    <StimulusInformation GUID="c8fa6916-8fff-4e10-a6c8-4aa215cff503" Name="RichText2.rtf" Type="Text" />
+    <StimulusInformation GUID="865d30d5-7522-4b11-89f9-aa9792cb9b6f" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="f01c7774-5352-4174-89ac-7fef677e6011" Name="b1matrix 5.jpg" Type="Image" StimulusFile="f51571ea5faeae6d3b6f2041d08a2c2a_1680x1050.jpg" />
+    <StimulusInformation GUID="6a136a6f-9bc6-412f-b584-d91e3aafd2e4" Name="RichText3.rtf" Type="Text" />
+    <StimulusInformation GUID="f8d28946-be0e-4a06-ae1c-ae713228ad65" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="adb1c199-3e51-420e-9c24-d8f68023bc25" Name="b1matrix 6.jpg" Type="Image" StimulusFile="b7f074481c6378c0d6a103df0fdcad7c_1680x1050.jpg" />
+    <StimulusInformation GUID="43298aa2-ff6a-462f-8303-88ebc19c0f97" Name="RichText4.rtf" Type="Text" />
+    <StimulusInformation GUID="eb0a9682-66ef-4124-9a8b-d4112064f59e" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="f6a00518-a7f8-4088-ba53-ccb7dc755b58" Name="b1matrix 7.jpg" Type="Image" StimulusFile="4910126c8f3e1ca96d552752047b4786_1680x1050.jpg" />
+    <StimulusInformation GUID="f7bcd05c-8ffa-4fa2-831c-1a6d9fb9735c" Name="RichText5.rtf" Type="Text" />
+    <StimulusInformation GUID="4b53d800-2390-4514-8aa4-d6b73d25e492" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="96fcc967-1da0-4d5e-8605-ba9977828b07" Name="b1matrix 8.jpg" Type="Image" StimulusFile="2bc56c7d5a1336831dbebcd4bae5d954_1680x1050.jpg" />
+    <StimulusInformation GUID="f526443b-221e-43d9-8da2-8a7b15592c91" Name="RichText6.rtf" Type="Text" />
+    <StimulusInformation GUID="22ccf580-381a-4f5b-a89e-8f958a8cb72f" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="d9405f77-0f97-4172-83c1-4cfcd439ee57" Name="b1matrix 9.jpg" Type="Image" StimulusFile="eff10e48e123389894ac2c8926fdd40c_1680x1050.jpg" />
+    <StimulusInformation GUID="fc886bcb-3aff-4401-b96b-3350d22319e7" Name="RichText7.rtf" Type="Text" />
+    <StimulusInformation GUID="a9fed14a-8cf3-4f17-ba47-81c9183a2eb9" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="3192883d-c7c2-4c6f-a9c9-a422281d5ff9" Name="b1matrix 10.jpg" Type="Image" StimulusFile="2db836811a020d6d59a1c269ed2590b9_1680x1050.jpg" />
+    <StimulusInformation GUID="348471c7-4c01-4141-be4d-fe399d590efe" Name="RichText8.rtf" Type="Text" />
+    <StimulusInformation GUID="33918b77-b660-44fa-83a8-1cfa205a5b88" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="32fee68c-2855-4c9e-956b-d2857c2ad3d2" Name="b1matrix 11.jpg" Type="Image" StimulusFile="34bea5a9fc2a1e43a07c14d93e44c65c_1680x1050.jpg" />
+    <StimulusInformation GUID="554c2918-2a8a-4110-999b-d7327243758b" Name="RichText9.rtf" Type="Text" />
+    <StimulusInformation GUID="2535cf54-8a5c-427f-b440-7e7b4a7e5cff" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="43d2d7dd-7c58-4bce-9ad3-22ad931e22b7" Name="b1matrix 12.jpg" Type="Image" StimulusFile="157ef5544a52ea3bf54f787a636f4d4a_1680x1050.jpg" />
+    <StimulusInformation GUID="890e289d-8611-463e-a11f-72cc4c230c5c" Name="RichText10.rtf" Type="Text" />
+    <StimulusInformation GUID="b7fa0e87-d9ac-4979-9fcf-af1c45319da9" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="d2ea6a61-d12f-490c-9171-d0b02daef715" Name="b1matrix 13.jpg" Type="Image" StimulusFile="879216793575c010630be3b5c77840d4_1680x1050.jpg" />
+    <StimulusInformation GUID="3ccbe443-7236-487a-95c8-113d4fc5f1ec" Name="RichText13.rtf" Type="Text" />
+    <StimulusInformation GUID="07594499-e2a9-40a4-84f1-80c92e599a31" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="30213dd1-ee06-4d06-8a08-927d4aa772ca" Name="b1matrix 14.jpg" Type="Image" StimulusFile="7d7bf7ed55744617428fc4e3be7084ee_1680x1050.jpg" />
+    <StimulusInformation GUID="a37006c7-3203-4e22-8dff-46f3c9c65016" Name="RichText14.rtf" Type="Text" />
+    <StimulusInformation GUID="6d8484a5-798f-45fa-ae45-a9f5078f47b7" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="1f4aa721-6948-47cc-a66e-ea14be8363bd" Name="b1matrix 15.jpg" Type="Image" StimulusFile="7fa72796ab69f0249a5c1063112d7b29_1680x1050.jpg" />
+    <StimulusInformation GUID="30addc0c-e285-46a4-970d-b368da585424" Name="RichText15.rtf" Type="Text" />
+    <StimulusInformation GUID="73a7d053-5442-4deb-b73b-2953823de4fe" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="cc7525a9-4106-4467-9abb-65c0f816b78b" Name="b1matrix 16.jpg" Type="Image" StimulusFile="101f4ac04a11efeff6c58eba5aa798fd_1680x1050.jpg" />
+    <StimulusInformation GUID="015b315e-7b0f-47ce-9dfd-01741c3aa2e5" Name="RichText16.rtf" Type="Text" />
+    <StimulusInformation GUID="e18af1b6-9dfb-486e-9da3-5f13d2ea9a02" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="1855f5e9-d4df-4a4b-86f1-79fdb2aa6e74" Name="b1matrix 17.jpg" Type="Image" StimulusFile="f9bb8c8c6b5f02328457b0d43f6ec6ae_1680x1050.jpg" />
+    <StimulusInformation GUID="8279adbe-af4e-46a9-ae80-f6f485800f1b" Name="RichText17.rtf" Type="Text" />
+    <StimulusInformation GUID="cb8d45bf-0aaf-4a22-b6b9-bb14504c3ea5" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="a6591e9d-ae07-42b4-b7a2-ee2204cc3421" Name="b1matrix 18.jpg" Type="Image" StimulusFile="c61fbf3a9d9e642fe4016d8236446416_1680x1050.jpg" />
+    <StimulusInformation GUID="ffd18441-52b2-4e72-9c96-a0b1dc5845a7" Name="RichText18.rtf" Type="Text" />
+    <StimulusInformation GUID="7289b107-117f-400f-99b4-e1eed9cbe112" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="74aa2dc3-a026-4e99-81f1-8c04f008e476" Name="b1matrix 19.jpg" Type="Image" StimulusFile="2c59efbc6ec61c1fadc1ebc4034b203d_1680x1050.jpg" />
+    <StimulusInformation GUID="6ae40726-42ae-4642-bd0f-f1cb8fc71fb0" Name="RichText19.rtf" Type="Text" />
+    <StimulusInformation GUID="4d3f66c4-e68d-4d0e-bc2b-e5d57deaa21e" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="88cb3c39-199b-4ae7-b882-9d97248988a1" Name="b1matrix 20.jpg" Type="Image" StimulusFile="2dcb581a4d186fd25c0376642fc06b0e_1680x1050.jpg" />
+    <StimulusInformation GUID="dcdbaf7c-9fa5-44b1-9405-26fbe7f47550" Name="RichText20.rtf" Type="Text" />
+    <StimulusInformation GUID="444f2ecf-7afd-4fb5-9821-85480157467b" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="04d15ac9-4387-44cf-bca0-915d18bda446" Name="b1matrix 21.jpg" Type="Image" StimulusFile="fb31b96f13375209fbd1faa0d7f3470e_1680x1050.jpg" />
+    <StimulusInformation GUID="1fb14d97-fd52-43ce-933d-297d26f1b1ec" Name="RichText21.rtf" Type="Text" />
+    <StimulusInformation GUID="1c880584-6685-42a6-b7f2-b858384488fd" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="4aa0467a-c5d3-448c-a028-80a333fa0c81" Name="b1matrix 22.jpg" Type="Image" StimulusFile="61e5d1f1951aefa8b554c3dd0f004edd_1680x1050.jpg" />
+    <StimulusInformation GUID="48d2dbf4-fbd0-4608-a46d-e8cf56a608bc" Name="RichText22.rtf" Type="Text" />
+    <StimulusInformation GUID="d5045904-100c-4644-996e-e4ae0136b384" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="16a6874d-2b42-4fd9-9f15-9ae1d57b3838" Name="b1matrix 23.jpg" Type="Image" StimulusFile="a2222051b7e5c44b3a873021ee3bf04e_1680x1050.jpg" />
+    <StimulusInformation GUID="ebf9ac61-5d40-4303-b001-9ddd52926257" Name="RichText23.rtf" Type="Text" />
+    <StimulusInformation GUID="dc77d511-0e6e-422f-afa8-3c6bf35d9ee5" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="d0efbb19-c875-488c-a85e-d09d5a2c3dcd" Name="b1matrix 24.jpg" Type="Image" StimulusFile="9fa8ff8dede41af8a7612b76673982ce_1680x1050.jpg" />
+    <StimulusInformation GUID="f8818efe-010e-49b7-a37e-159f0d13f902" Name="RichText24.rtf" Type="Text" />
+    <StimulusInformation GUID="ecc8a04c-ba67-4c5d-971a-4b22068fee12" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="6873e5b5-6fa8-4a01-baf8-d333ac83d80f" Name="b1matrix 25.jpg" Type="Image" StimulusFile="87f50864931d20097efa42bdacdce3d8_1680x1050.jpg" />
+    <StimulusInformation GUID="f8942968-792d-4781-ab92-2c8a2262aa1c" Name="RichText25.rtf" Type="Text" />
+    <StimulusInformation GUID="8ca9123a-5832-49a8-a275-b1e714616884" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="6b2f2f63-a122-42dd-aadb-b0cde8ad47e1" Name="b1matrix 26.jpg" Type="Image" StimulusFile="42b23eda53b59efe7858ff47b24722d6_1680x1050.jpg" />
+    <StimulusInformation GUID="361b1318-2f8c-4fc6-8917-25db48315650" Name="RichText33.rtf" Type="Text" />
+    <StimulusInformation GUID="370f5ec2-081d-4bc2-8396-e79fd9647c57" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="09e21c32-4d49-4ab8-8378-aa3fb317175d" Name="b1matrix 27.jpg" Type="Image" StimulusFile="7ed9be870adf9f962d2925e10bdd3cec_1680x1050.jpg" />
+    <StimulusInformation GUID="6b1e194e-0723-4b2c-a194-d8d3d0a48a96" Name="RichText34.rtf" Type="Text" />
+    <StimulusInformation GUID="9f32f90a-a9d0-402b-9645-b0ba7701a11c" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="d01e5cbf-7886-4dd9-bae3-d0db0088f61d" Name="b1matrix 28.jpg" Type="Image" StimulusFile="9d0e7a55d746a1f66c329ba7ffb727d4_1680x1050.jpg" />
+    <StimulusInformation GUID="65c8d3d6-6ab1-4b42-a8f6-3c7e1d7bffcb" Name="RichText35.rtf" Type="Text" />
+    <StimulusInformation GUID="2d535f24-40d1-401c-b0b1-4131cc5f7510" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="edfd8272-0f68-4aca-ad96-96b263f69d65" Name="b1matrix 29.jpg" Type="Image" StimulusFile="78a304a9478fa74accd209ae29e2edfe_1680x1050.jpg" />
+    <StimulusInformation GUID="c96c6cf2-38b9-4ffa-be82-ac9429392374" Name="RichText36.rtf" Type="Text" />
+    <StimulusInformation GUID="4759e136-6f13-46b0-b259-c8be131d8fbd" Name="RichText37.rtf" Type="Text" />
+    <StimulusInformation GUID="9e8993fa-a90e-4f0b-a9ac-d2dea92db42a" Name="instructions 4.jpg" Type="Image" />
+    <StimulusInformation GUID="69ff0cda-6e4e-4f54-bcda-1396d1aa6519" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="86ad30c4-2873-4b49-a4aa-fdd2c401adf7" Name="b2matrix 0.jpg" Type="Image" StimulusFile="74afe48b892825a78aaf6a1b80a54ded_1680x1050.jpg" />
+    <StimulusInformation GUID="a5d6a21a-e470-4d85-ae59-c93428b8a64f" Name="RichText38.rtf" Type="Text" />
+    <StimulusInformation GUID="fd1cb8fe-0b53-4f6b-8df9-d641b7f4e9e5" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="d72b7d40-5d19-4067-a6d6-6157946265e6" Name="b2matrix 1.jpg" Type="Image" StimulusFile="f1943564e0b088c0a5471f749936f291_1680x1050.jpg" />
+    <StimulusInformation GUID="86d17880-accd-4d49-8d93-99bc2b6a67e9" Name="RichText39.rtf" Type="Text" />
+    <StimulusInformation GUID="1f337858-3cda-49ba-bd5b-4fb5fa329860" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="adb71d20-efbb-4709-a4b6-6813df87ca40" Name="b2matrix 2.jpg" Type="Image" StimulusFile="85f4453a1cd164100a2734ac44ca60e9_1680x1050.jpg" />
+    <StimulusInformation GUID="dd791a86-4b49-4960-afa3-6d61b0a59b0b" Name="RichText40.rtf" Type="Text" />
+    <StimulusInformation GUID="44fe5d09-73ab-4938-ade8-e4080388792f" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="66c08795-811c-4d4f-b0fa-b00ebe74856e" Name="b2matrix 3.jpg" Type="Image" StimulusFile="e6a80fcf8432dd6832d2bbb12220d554_1680x1050.jpg" />
+    <StimulusInformation GUID="0e045f2b-2cd7-4aa9-a46c-28d2c7e3419a" Name="RichText41.rtf" Type="Text" />
+    <StimulusInformation GUID="21c92689-d21e-497d-9bc5-a4f6156f1e94" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="5105413a-9175-499a-93ab-d4a3637d5230" Name="b2matrix 4.jpg" Type="Image" StimulusFile="e85c1f36e3a48a645d85b7931b833e76_1680x1050.jpg" />
+    <StimulusInformation GUID="1065d27d-cd72-423b-b04a-032705b7bf93" Name="RichText42.rtf" Type="Text" />
+    <StimulusInformation GUID="0866940d-cc87-4a04-bebe-641fd0efe365" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="19d1d0e8-47bb-4b5d-9a3f-e60a76256602" Name="b2matrix 5.jpg" Type="Image" StimulusFile="5c9dff1523f9b1442ae116ea6956cbc2_1680x1050.jpg" />
+    <StimulusInformation GUID="2c307cea-b64a-4e4e-8b9e-72d67144054e" Name="RichText43.rtf" Type="Text" />
+    <StimulusInformation GUID="43a9e0ef-fb09-4537-b847-44024e01cc97" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="50bf92eb-c1a4-4dc9-bb15-45589cbbc2a1" Name="b2matrix 6.jpg" Type="Image" StimulusFile="726d0a5ee15efc937a1d78404493d9dc_1680x1050.jpg" />
+    <StimulusInformation GUID="98ca07b6-f9ac-4173-bdbe-1384ed7668b5" Name="RichText44.rtf" Type="Text" />
+    <StimulusInformation GUID="67456f5b-a16d-40cd-989d-2c60d12ea8dd" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="9ccd1da5-42d6-4d3e-b40b-67b076155353" Name="b2matrix 7.jpg" Type="Image" StimulusFile="41efba0ed9235286f02dd996a7892066_1680x1050.jpg" />
+    <StimulusInformation GUID="e1f36fd2-8da6-459d-bd2b-b5e667e7a1c3" Name="RichText45.rtf" Type="Text" />
+    <StimulusInformation GUID="af770750-8232-4661-9e59-e68bcfe262be" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="e1d7c64a-0040-4a3e-940a-8997d1b0df2b" Name="b2matrix 8.jpg" Type="Image" StimulusFile="be70d34434510293b7e5e1b4f766748b_1680x1050.jpg" />
+    <StimulusInformation GUID="9d5fd7ac-830d-4010-931a-05e99686cd7c" Name="RichText46.rtf" Type="Text" />
+    <StimulusInformation GUID="a756e5be-2a3a-44fc-b78b-1d5dfa69205d" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="e9771aac-e44d-492b-9820-42ff959eae07" Name="b2matrix 9.jpg" Type="Image" StimulusFile="ec2bae79f9f320fbb9c2fc10fd0ca543_1680x1050.jpg" />
+    <StimulusInformation GUID="cb6583a5-84bb-474f-ab0a-f58755324af2" Name="RichText47.rtf" Type="Text" />
+    <StimulusInformation GUID="e361df1f-6e4e-4c95-bf68-d4a9a7769040" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="cfc381b6-02a5-4575-a836-dc94daa7fe97" Name="b2matrix 10.jpg" Type="Image" StimulusFile="18dfb53dc4648539d7e3d7bb0c655fef_1680x1050.jpg" />
+    <StimulusInformation GUID="be0a223b-4d83-4060-a069-c7feeb142d49" Name="RichText48.rtf" Type="Text" />
+    <StimulusInformation GUID="064d2012-3ac6-4842-87bb-d94cbccc7785" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="ec54a0c0-6596-49d6-89c1-b547b27210c5" Name="b2matrix 11.jpg" Type="Image" StimulusFile="e2c305ff818d81af4189e8b0b83d78f6_1680x1050.jpg" />
+    <StimulusInformation GUID="5bab3460-e669-4d6f-8874-6ffff8c9538c" Name="RichText49.rtf" Type="Text" />
+    <StimulusInformation GUID="295de266-d4df-422d-af76-abbe942a054f" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="1a66d875-ee8b-4a7e-9b56-a0e71bace6e2" Name="b2matrix 12.jpg" Type="Image" StimulusFile="9a717a4b46c37a114cef8adf8726b5fa_1680x1050.jpg" />
+    <StimulusInformation GUID="848aa03c-3ae4-4121-99d0-0c5a1ab83cfa" Name="RichText50.rtf" Type="Text" />
+    <StimulusInformation GUID="2bdaeb0e-5405-4ef3-a1dc-5e5c3334b3bb" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="6e0af9b7-02d9-4da8-9558-49f3b4751620" Name="b2matrix 13.jpg" Type="Image" StimulusFile="245b77b6b73091f65588f17225d4b909_1680x1050.jpg" />
+    <StimulusInformation GUID="cdc389d6-7634-43f9-9a26-1050b7b6cb38" Name="RichText51.rtf" Type="Text" />
+    <StimulusInformation GUID="c9ba34c1-8230-4421-a9c9-9ff1e29dcf9d" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="494c2340-d6f1-4c25-be6c-71fd471f3244" Name="b2matrix 14.jpg" Type="Image" StimulusFile="6ac052cc495dab98c04e974c19abe58c_1680x1050.jpg" />
+    <StimulusInformation GUID="6e0ebb1d-6362-4d1c-9a2e-dead291475f5" Name="RichText52.rtf" Type="Text" />
+    <StimulusInformation GUID="1eb820aa-2e96-4a9e-94d8-e10844db9197" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="93bc6d54-6f7e-428f-bca0-5ae34274d4d9" Name="b2matrix 15.jpg" Type="Image" StimulusFile="3741fd4e9b0c92519ec22c6bb7769a89_1680x1050.jpg" />
+    <StimulusInformation GUID="582619ff-3a1d-46ef-9b71-6dcd71d90e6d" Name="RichText53.rtf" Type="Text" />
+    <StimulusInformation GUID="a1e8fb14-4d1c-41dc-9db7-ebfac80c5a7f" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="4bc3fb08-5ff1-4172-be3a-29489d2ee7bc" Name="b2matrix 16.jpg" Type="Image" StimulusFile="f5033b9f26204f281aab31a0f3362b70_1680x1050.jpg" />
+    <StimulusInformation GUID="0908ab4c-f121-4457-8693-26e10fbf257c" Name="RichText54.rtf" Type="Text" />
+    <StimulusInformation GUID="e2651bbf-e0e9-4971-a537-8736d759c2e7" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="d5efbe54-d16e-44e9-b8a0-513ac762142d" Name="b2matrix 17.jpg" Type="Image" StimulusFile="f34d37deb6998ae7ce3cf262ab5b3a6f_1680x1050.jpg" />
+    <StimulusInformation GUID="a7fdfb4d-8a97-4102-811d-1036246b0a18" Name="RichText55.rtf" Type="Text" />
+    <StimulusInformation GUID="231ebf36-1625-40a9-82f2-f64e58946c27" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="7b50b2aa-ce13-44fe-8b92-77fa0a028dc1" Name="b2matrix 18.jpg" Type="Image" StimulusFile="d78ebb913b1a7b3afd17ee2f93fb5d67_1680x1050.jpg" />
+    <StimulusInformation GUID="6956bb6c-b326-49fa-9551-d8ecc03be8dd" Name="RichText56.rtf" Type="Text" />
+    <StimulusInformation GUID="4e846832-cddf-4ad1-825a-6dce857c5e4c" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="3fc53330-30ca-40c0-a3ea-2bb80630457e" Name="b2matrix 19.jpg" Type="Image" StimulusFile="3ea80c5c166239796857885a314c59d1_1680x1050.jpg" />
+    <StimulusInformation GUID="1afb4bf8-0e0a-4222-8250-2aa4b359da77" Name="RichText57.rtf" Type="Text" />
+    <StimulusInformation GUID="255b7268-ff45-4f6d-80c0-d4f5feceb8d5" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="e87d733b-2e61-45f7-a7ae-601f38b5e9f0" Name="b2matrix 20.jpg" Type="Image" StimulusFile="8fd50a226bf08a5869d35c619b4b8120_1680x1050.jpg" />
+    <StimulusInformation GUID="ff5073ad-3bb7-4f2f-a6ae-9d58162efbca" Name="RichText58.rtf" Type="Text" />
+    <StimulusInformation GUID="652dc9d9-1b9d-458a-97a7-d90538695c96" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="74ba62cd-c539-4dd3-bfad-9f11e6f23dde" Name="b2matrix 21.jpg" Type="Image" StimulusFile="d42ce5f76c21b7478fd04c879f64e54e_1680x1050.jpg" />
+    <StimulusInformation GUID="8524c10e-4a5d-4e27-9a0e-0b77d7ab6a2b" Name="RichText59.rtf" Type="Text" />
+    <StimulusInformation GUID="cf55f84a-3edb-4c3a-981c-972b0d5485b4" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="655d59d5-f78c-4da0-be83-aa1495935ab8" Name="b2matrix 22.jpg" Type="Image" StimulusFile="27814a38c2ef20d0c7ca454cb0fbed72_1680x1050.jpg" />
+    <StimulusInformation GUID="a9257f53-8373-46e6-b283-ebb2eb0fdb92" Name="RichText60.rtf" Type="Text" />
+    <StimulusInformation GUID="c6b75888-6792-468e-9351-8112003c23bb" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="b1f0cc66-5633-4d5c-9874-0b1b8ff8a3dd" Name="b2matrix 23.jpg" Type="Image" StimulusFile="0a87a3d09f6b7faf282604d6f9b619c4_1680x1050.jpg" />
+    <StimulusInformation GUID="6843fd7a-06d8-41e4-b424-333ab99c0450" Name="RichText61.rtf" Type="Text" />
+    <StimulusInformation GUID="3d7b2589-ccd1-4405-9ae8-530c14294960" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="af82b23b-db2b-4597-9b48-cbf388ec5924" Name="b2matrix 24.jpg" Type="Image" StimulusFile="7055cb7a4c3d2b9f107087d8d74528d1_1680x1050.jpg" />
+    <StimulusInformation GUID="f8b590ce-1ec9-4137-8d9f-43531674e666" Name="RichText62.rtf" Type="Text" />
+    <StimulusInformation GUID="bb97916c-8f6f-4b00-b4e4-40d7fbbfd985" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="cf214564-5464-4d80-a177-24320e60479c" Name="b2matrix 25.jpg" Type="Image" StimulusFile="1228484104ef84ef55bd1f6d5d56d6be_1680x1050.jpg" />
+    <StimulusInformation GUID="419d35af-01fd-443d-8a91-73ac0b284d44" Name="RichText63.rtf" Type="Text" />
+    <StimulusInformation GUID="92422b79-12a7-46cd-a51a-44b73428643e" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="56ce742b-a34c-4715-9c9f-af49dbe877e6" Name="b2matrix 26.jpg" Type="Image" StimulusFile="99b1cb00245f8736e5bfb2256f439c15_1680x1050.jpg" />
+    <StimulusInformation GUID="d20dc116-cbe3-49c9-bf90-c2ddea1abcde" Name="RichText64.rtf" Type="Text" />
+    <StimulusInformation GUID="f9e6a39c-e495-4a8d-82ce-3479e08222ac" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="90196c9a-a62a-4823-9818-8db4fcff9dbe" Name="b2matrix 27.jpg" Type="Image" StimulusFile="4cd3a494467f3a1e63ac3c2b6d8b4632_1680x1050.jpg" />
+    <StimulusInformation GUID="868b83c6-a92b-4a71-9254-0090cc1025ef" Name="RichText65.rtf" Type="Text" />
+    <StimulusInformation GUID="34a68cf1-e13d-4a13-b274-698c44b1a580" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="f4a51563-dd59-442c-85c6-1d6489c2c1b2" Name="b2matrix 28.jpg" Type="Image" StimulusFile="af57bcd6f424f9c2a3c3faa53bb1be90_1680x1050.jpg" />
+    <StimulusInformation GUID="c5552c19-6a69-405f-b4a5-adfe5105eb8a" Name="RichText66.rtf" Type="Text" />
+    <StimulusInformation GUID="a5f4bd8e-2c40-4510-96ed-86a86e5e54bf" Name="fixation cross 4x4.jpg" Type="Image" />
+    <StimulusInformation GUID="89b6f69a-a073-463b-a201-f047fb594718" Name="b2matrix 29.jpg" Type="Image" StimulusFile="f8ba4734c40761d91b147e1f6ac644cd_1680x1050.jpg" />
+    <StimulusInformation GUID="f6b45a3b-0602-4b29-afce-804d97ec8b4c" Name="RichText130.rtf" Type="Text" />
+  </StimuliInfo>
+</DocumentRoot>

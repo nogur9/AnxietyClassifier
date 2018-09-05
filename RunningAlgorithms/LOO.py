@@ -5,7 +5,7 @@ from CalculatingFeaturesFromExcel.PCA import PCA_transforme, meow
 import matplotlib.pyplot as plt
 import numpy as np
 
-from DataImporting import DataFromExcel
+from DataImporting import ImportData
 
 # Missing values
 from DataImporting.Data_Imputation import imputing_median
@@ -429,7 +429,7 @@ def test_set(dataset):
 
 def runner(path,sheet_name):
 
-    dataset = DataFromExcel.refactor_labels(DataFromExcel.get_data(path, sheet_name),"group")
+    dataset = ImportData.refactor_labels(ImportData.get_data(path, sheet_name), "group")
     SKB_models = get_select_K_best_models()
     RFE_models = get_RFE_models()
     SKB_scoring = get_seleck_K_best_scoring()

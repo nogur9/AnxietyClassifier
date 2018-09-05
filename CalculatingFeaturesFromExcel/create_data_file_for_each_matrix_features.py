@@ -15,23 +15,20 @@ DATA_FILE_PATH = "C:\‏‏PycharmProjects\AnxietyClassifier\AmitsData\data.xlsx
 def create_data_File_Features():
     print(1)
     data = Data(DATA_FILE_PATH, FIXATION_DATA_SHEET, DEMOGRAPHICS_SHEET)
+    data.get_average_pupil_size_Disgusted()
     print(2)
-    data.get_age()
-    print(3)
-    data.get_PHQ9()
+    data.get_difference_between_medians()
     print(4)
     data.get_subject_number()
     print(5)
     data.get_group()
     print(6)
-
     data.get_sum_fixation_length_Disgusted()
     print(7)
     data.get_sum_fixation_length_Neutral()
     print(8)
     data.get_sum_fixation_length_White_Space()
     print(9)
-
     data.get_average_fixation_length_Disgusted()
     print(11)
     data.get_average_fixation_length_Neutral()
@@ -65,8 +62,6 @@ def create_data_File_Features():
     print(23)
     data.get_ratio_N_DN_2()
     print(24)
-
-    data.get_average_pupil_size_Disgusted()
     print(33)
     data.get_average_pupil_size_Neutral()
     print(34)
@@ -82,11 +77,9 @@ def create_data_File_Features():
     print(39)
     data.get_STD_pupil_size_All()
     print(41)
-
-    data.get_difference_between_medians()
     print(42)
     workbook = xlsxwriter.Workbook(
-        'C:\PycharmProjects\AnxietyClassifier\ExtractedFeatures\\data_features_for_each_matrix.xlsx')
+        'C:\\‏‏PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\data_features_for_each_matrix.xlsx')
     worksheet = workbook.add_worksheet()
     col = 0
     for key in data.output_data_dict.keys():
@@ -191,3 +184,5 @@ def create_data_File_Features_without_first_five_fixations():
         col += 1
 
     workbook.close()
+create_data_File_Features()
+create_data_File_Features_without_first_five_fixations()

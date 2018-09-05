@@ -5,7 +5,7 @@ from CalculatingFeaturesFromExcel.PCA import PCA_transforme
 import matplotlib.pyplot as plt
 import numpy as np
 from itertools import combinations
-from DataImporting import DataFromExcel
+from DataImporting import ImportData
 
 # Missing values
 from DataImporting.Data_Imputation import imputing_median
@@ -126,13 +126,13 @@ def looper (path_wise,path_corr,path_other,sheet_name):
     slitted psuedo randomly by a 20:80 ratio.
     '''
 
-    dataset_wise = DataFromExcel.refactor_labels(DataFromExcel.get_data(path_wise, sheet_name), "group")
+    dataset_wise = ImportData.refactor_labels(ImportData.get_data(path_wise, sheet_name), "group")
     dataset_wise = imputing_avarage(dataset_wise)
 
-    dataset_corr = DataFromExcel.get_data(path_corr, sheet_name)
+    dataset_corr = ImportData.get_data(path_corr, sheet_name)
     dataset_corr = imputing_avarage(dataset_corr)
 
-    dataset_other = DataFromExcel.get_data(path_other, sheet_name)
+    dataset_other = ImportData.get_data(path_other, sheet_name)
     dataset_other = imputing_avarage(dataset_other)
     cols_names = [i for i in dataset_other]
     iter_df = combinations(cols_names,COMB)

@@ -1,0 +1,252 @@
+before stress noga	202	00:00:00:000	Image	calibration-validation.jpg
+before stress noga	202	00:00:45:678	Calibration	
+before stress noga	202	00:00:58:299	Validation	
+before stress noga	202	00:12:00:560	Validation accuracy: LeftDevX = 0.6100 LeftDevY = 0.6950 RightDevX = 0.6100 RightDevY = 0.6950
+before stress noga	202	00:12:01:761	Image	instructions 1.jpg
+before stress noga	202	00:12:18:148	Image	instructions 2.jpg
+before stress noga	202	00:12:41:213	Image	instructions 3.jpg
+before stress noga	202	00:12:41:213	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:12:49:054	Image	instructions 4.jpg
+before stress noga	202	00:13:09:544	Image	fixation cross 4x4.jpg
+before stress noga	202	00:13:13:517	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:13:13:517	Image	b1matrix 0.jpg
+before stress noga	202	00:13:19:538	Text	RichText11.rtf
+before stress noga	202	00:13:21:557	Image	fixation cross 4x4.jpg
+before stress noga	202	00:13:36:758	Fixation trigger 1001ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:13:36:758	Image	b1matrix 1.jpg
+before stress noga	202	00:13:42:774	Text	RichText12.rtf
+before stress noga	202	00:13:44:791	Image	fixation cross 4x4.jpg
+before stress noga	202	00:13:47:931	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:13:47:931	Image	b1matrix 2.jpg
+before stress noga	202	00:13:53:947	Text	RichText.rtf
+before stress noga	202	00:13:55:950	Image	fixation cross 4x4.jpg
+before stress noga	202	00:14:01:121	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:14:01:122	Image	b1matrix 3.jpg
+before stress noga	202	00:14:07:141	Text	RichText1.rtf
+before stress noga	202	00:14:09:144	Image	fixation cross 4x4.jpg
+before stress noga	202	00:14:10:363	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:14:10:363	Image	b1matrix 4.jpg
+before stress noga	202	00:14:16:383	Text	RichText2.rtf
+before stress noga	202	00:14:18:401	Image	fixation cross 4x4.jpg
+before stress noga	202	00:14:19:656	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:14:19:656	Image	b1matrix 5.jpg
+before stress noga	202	00:14:25:672	Text	RichText3.rtf
+before stress noga	202	00:14:27:674	Image	fixation cross 4x4.jpg
+before stress noga	202	00:14:28:678	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:14:28:678	Image	b1matrix 6.jpg
+before stress noga	202	00:14:34:695	Text	RichText4.rtf
+before stress noga	202	00:14:36:699	Image	fixation cross 4x4.jpg
+before stress noga	202	00:14:38:609	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:14:38:609	Image	b1matrix 7.jpg
+before stress noga	202	00:14:44:622	Text	RichText5.rtf
+before stress noga	202	00:14:46:639	Image	fixation cross 4x4.jpg
+before stress noga	202	00:14:48:301	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:14:48:301	Image	b1matrix 8.jpg
+before stress noga	202	00:14:54:311	Text	RichText6.rtf
+before stress noga	202	00:14:56:314	Image	fixation cross 4x4.jpg
+before stress noga	202	00:15:34:124	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:15:34:124	Image	b1matrix 9.jpg
+before stress noga	202	00:15:40:129	Text	RichText7.rtf
+before stress noga	202	00:15:42:133	Image	fixation cross 4x4.jpg
+before stress noga	202	00:15:43:334	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:15:43:334	Image	b1matrix 10.jpg
+before stress noga	202	00:15:49:354	Text	RichText8.rtf
+before stress noga	202	00:15:51:357	Image	fixation cross 4x4.jpg
+before stress noga	202	00:15:52:376	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:15:52:377	Image	b1matrix 11.jpg
+before stress noga	202	00:15:58:395	Text	RichText9.rtf
+before stress noga	202	00:16:00:413	Image	fixation cross 4x4.jpg
+before stress noga	202	00:16:01:928	Fixation trigger 1001ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:16:01:929	Image	b1matrix 12.jpg
+before stress noga	202	00:16:07:937	Text	RichText10.rtf
+before stress noga	202	00:16:09:954	Image	fixation cross 4x4.jpg
+before stress noga	202	00:16:11:731	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:16:11:732	Image	b1matrix 13.jpg
+before stress noga	202	00:16:17:742	Text	RichText13.rtf
+before stress noga	202	00:16:19:745	Image	fixation cross 4x4.jpg
+before stress noga	202	00:16:26:726	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:16:26:731	Image	b1matrix 14.jpg
+before stress noga	202	00:16:32:740	Text	RichText14.rtf
+before stress noga	202	00:16:34:756	Image	fixation cross 4x4.jpg
+before stress noga	202	00:16:37:908	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:16:37:908	Image	b1matrix 15.jpg
+before stress noga	202	00:16:43:913	Text	RichText15.rtf
+before stress noga	202	00:16:45:915	Image	fixation cross 4x4.jpg
+before stress noga	202	00:16:55:202	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:16:55:202	Image	b1matrix 16.jpg
+before stress noga	202	00:17:01:210	Text	RichText16.rtf
+before stress noga	202	00:17:03:212	Image	fixation cross 4x4.jpg
+before stress noga	202	00:17:12:276	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:17:12:276	Image	b1matrix 17.jpg
+before stress noga	202	00:17:18:291	Text	RichText17.rtf
+before stress noga	202	00:17:20:292	Image	fixation cross 4x4.jpg
+before stress noga	202	00:17:24:097	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:17:24:097	Image	b1matrix 18.jpg
+before stress noga	202	00:17:30:119	Text	RichText18.rtf
+before stress noga	202	00:17:32:136	Image	fixation cross 4x4.jpg
+before stress noga	202	00:17:48:098	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:17:48:099	Image	b1matrix 19.jpg
+before stress noga	202	00:17:54:118	Text	RichText19.rtf
+before stress noga	202	00:17:56:120	Image	fixation cross 4x4.jpg
+before stress noga	202	00:18:11:739	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:18:11:739	Image	b1matrix 20.jpg
+before stress noga	202	00:18:17:754	Text	RichText20.rtf
+before stress noga	202	00:18:19:771	Image	fixation cross 4x4.jpg
+before stress noga	202	00:18:21:555	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:18:21:555	Image	b1matrix 21.jpg
+before stress noga	202	00:18:27:561	Text	RichText21.rtf
+before stress noga	202	00:18:29:563	Image	fixation cross 4x4.jpg
+before stress noga	202	00:18:31:592	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:18:31:592	Image	b1matrix 22.jpg
+before stress noga	202	00:18:37:601	Text	RichText22.rtf
+before stress noga	202	00:18:39:604	Image	fixation cross 4x4.jpg
+before stress noga	202	00:18:40:673	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:18:40:673	Image	b1matrix 23.jpg
+before stress noga	202	00:18:46:693	Text	RichText23.rtf
+before stress noga	202	00:18:48:711	Image	fixation cross 4x4.jpg
+before stress noga	202	00:18:51:299	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:18:51:299	Image	b1matrix 24.jpg
+before stress noga	202	00:18:57:319	Text	RichText24.rtf
+before stress noga	202	00:18:59:336	Image	fixation cross 4x4.jpg
+before stress noga	202	00:19:05:194	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:19:05:194	Image	b1matrix 25.jpg
+before stress noga	202	00:19:11:211	Text	RichText25.rtf
+before stress noga	202	00:19:13:230	Image	fixation cross 4x4.jpg
+before stress noga	202	00:19:27:504	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:19:27:504	Image	b1matrix 26.jpg
+before stress noga	202	00:19:33:512	Text	RichText33.rtf
+before stress noga	202	00:19:35:514	Image	fixation cross 4x4.jpg
+before stress noga	202	00:19:36:826	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:19:36:827	Image	b1matrix 27.jpg
+before stress noga	202	00:19:42:835	Text	RichText34.rtf
+before stress noga	202	00:19:44:838	Image	fixation cross 4x4.jpg
+before stress noga	202	00:19:48:351	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:19:48:351	Image	b1matrix 28.jpg
+before stress noga	202	00:19:54:365	Text	RichText35.rtf
+before stress noga	202	00:19:56:380	Image	fixation cross 4x4.jpg
+before stress noga	202	00:19:59:399	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:19:59:399	Image	b1matrix 29.jpg
+before stress noga	202	00:20:05:403	Text	RichText36.rtf
+before stress noga	202	00:20:07:406	Text	RichText37.rtf
+before stress noga	202	00:21:07:409	Image	instructions 4.jpg
+before stress noga	202	00:21:23:699	Image	fixation cross 4x4.jpg
+before stress noga	202	00:21:26:266	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:21:26:266	Image	b2matrix 0.jpg
+before stress noga	202	00:21:32:270	Text	RichText38.rtf
+before stress noga	202	00:21:34:274	Image	fixation cross 4x4.jpg
+before stress noga	202	00:21:56:548	Fixation trigger 1001ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:21:56:548	Image	b2matrix 1.jpg
+before stress noga	202	00:22:02:562	Text	RichText39.rtf
+before stress noga	202	00:22:04:580	Image	fixation cross 4x4.jpg
+before stress noga	202	00:22:05:832	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:22:05:833	Image	b2matrix 2.jpg
+before stress noga	202	00:22:11:852	Text	RichText40.rtf
+before stress noga	202	00:22:13:854	Image	fixation cross 4x4.jpg
+before stress noga	202	00:22:15:035	Fixation trigger 1001ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:22:15:035	Image	b2matrix 3.jpg
+before stress noga	202	00:22:21:043	Text	RichText41.rtf
+before stress noga	202	00:22:23:045	Image	fixation cross 4x4.jpg
+before stress noga	202	00:22:24:063	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:22:24:063	Image	b2matrix 4.jpg
+before stress noga	202	00:22:30:083	Text	RichText42.rtf
+before stress noga	202	00:22:32:085	Image	fixation cross 4x4.jpg
+before stress noga	202	00:22:33:191	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:22:33:191	Image	b2matrix 5.jpg
+before stress noga	202	00:22:39:212	Text	RichText43.rtf
+before stress noga	202	00:22:41:225	Image	fixation cross 4x4.jpg
+before stress noga	202	00:22:42:439	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:22:42:439	Image	b2matrix 6.jpg
+before stress noga	202	00:22:48:451	Text	RichText44.rtf
+before stress noga	202	00:22:50:467	Image	fixation cross 4x4.jpg
+before stress noga	202	00:22:51:488	Fixation trigger 1001ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:22:51:488	Image	b2matrix 7.jpg
+before stress noga	202	00:22:57:506	Text	RichText45.rtf
+before stress noga	202	00:22:59:523	Image	fixation cross 4x4.jpg
+before stress noga	202	00:23:00:541	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:23:00:542	Image	b2matrix 8.jpg
+before stress noga	202	00:23:06:561	Text	RichText46.rtf
+before stress noga	202	00:23:08:563	Image	fixation cross 4x4.jpg
+before stress noga	202	00:23:09:698	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:23:09:698	Image	b2matrix 9.jpg
+before stress noga	202	00:23:15:722	Text	RichText47.rtf
+before stress noga	202	00:23:17:737	Image	fixation cross 4x4.jpg
+before stress noga	202	00:23:18:756	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:23:18:756	Image	b2matrix 10.jpg
+before stress noga	202	00:23:24:776	Text	RichText48.rtf
+before stress noga	202	00:23:26:778	Image	fixation cross 4x4.jpg
+before stress noga	202	00:23:27:951	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:23:27:951	Image	b2matrix 11.jpg
+before stress noga	202	00:23:33:965	Text	RichText49.rtf
+before stress noga	202	00:23:35:967	Image	fixation cross 4x4.jpg
+before stress noga	202	00:23:36:971	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:23:36:971	Image	b2matrix 12.jpg
+before stress noga	202	00:23:42:992	Text	RichText50.rtf
+before stress noga	202	00:23:45:008	Image	fixation cross 4x4.jpg
+before stress noga	202	00:23:46:011	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:23:46:011	Image	b2matrix 13.jpg
+before stress noga	202	00:23:52:029	Text	RichText51.rtf
+before stress noga	202	00:23:54:034	Image	fixation cross 4x4.jpg
+before stress noga	202	00:23:55:051	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:23:55:052	Image	b2matrix 14.jpg
+before stress noga	202	00:24:01:070	Text	RichText52.rtf
+before stress noga	202	00:24:03:072	Image	fixation cross 4x4.jpg
+before stress noga	202	00:24:04:271	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:24:04:271	Image	b2matrix 15.jpg
+before stress noga	202	00:24:10:279	Text	RichText53.rtf
+before stress noga	202	00:24:12:297	Image	fixation cross 4x4.jpg
+before stress noga	202	00:24:13:400	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:24:13:400	Image	b2matrix 16.jpg
+before stress noga	202	00:24:19:421	Text	RichText54.rtf
+before stress noga	202	00:24:21:437	Image	fixation cross 4x4.jpg
+before stress noga	202	00:24:22:744	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:24:22:744	Image	b2matrix 17.jpg
+before stress noga	202	00:24:28:759	Text	RichText55.rtf
+before stress noga	202	00:24:30:778	Image	fixation cross 4x4.jpg
+before stress noga	202	00:24:36:110	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:24:36:110	Image	b2matrix 18.jpg
+before stress noga	202	00:24:42:120	Text	RichText56.rtf
+before stress noga	202	00:24:44:137	Image	fixation cross 4x4.jpg
+before stress noga	202	00:24:50:128	Fixation trigger 1001ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:24:50:128	Image	b2matrix 19.jpg
+before stress noga	202	00:24:56:146	Text	RichText57.rtf
+before stress noga	202	00:24:58:149	Image	fixation cross 4x4.jpg
+before stress noga	202	00:25:05:328	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:25:05:328	Image	b2matrix 20.jpg
+before stress noga	202	00:25:11:341	Text	RichText58.rtf
+before stress noga	202	00:25:13:344	Image	fixation cross 4x4.jpg
+before stress noga	202	00:25:14:606	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:25:14:606	Image	b2matrix 21.jpg
+before stress noga	202	00:25:20:615	Text	RichText59.rtf
+before stress noga	202	00:25:22:619	Image	fixation cross 4x4.jpg
+before stress noga	202	00:25:24:210	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:25:24:211	Image	b2matrix 22.jpg
+before stress noga	202	00:25:30:223	Text	RichText60.rtf
+before stress noga	202	00:25:32:225	Image	fixation cross 4x4.jpg
+before stress noga	202	00:25:33:652	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:25:33:653	Image	b2matrix 23.jpg
+before stress noga	202	00:25:39:664	Text	RichText61.rtf
+before stress noga	202	00:25:41:666	Image	fixation cross 4x4.jpg
+before stress noga	202	00:25:42:670	Fixation trigger 1001ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:25:42:670	Image	b2matrix 24.jpg
+before stress noga	202	00:25:48:687	Text	RichText62.rtf
+before stress noga	202	00:25:50:689	Image	fixation cross 4x4.jpg
+before stress noga	202	00:25:51:957	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:25:51:957	Image	b2matrix 25.jpg
+before stress noga	202	00:25:57:978	Text	RichText63.rtf
+before stress noga	202	00:25:59:981	Image	fixation cross 4x4.jpg
+before stress noga	202	00:26:01:460	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:26:01:460	Image	b2matrix 26.jpg
+before stress noga	202	00:26:07:468	Text	RichText64.rtf
+before stress noga	202	00:26:09:471	Image	fixation cross 4x4.jpg
+before stress noga	202	00:26:10:489	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:26:10:489	Image	b2matrix 27.jpg
+before stress noga	202	00:26:16:510	Text	RichText65.rtf
+before stress noga	202	00:26:18:512	Image	fixation cross 4x4.jpg
+before stress noga	202	00:26:20:094	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:26:20:095	Image	b2matrix 28.jpg
+before stress noga	202	00:26:26:099	Text	RichText66.rtf
+before stress noga	202	00:26:28:102	Image	fixation cross 4x4.jpg
+before stress noga	202	00:26:29:158	Fixation trigger 1000ms ResetWhenNotOnAOI Normal None
+before stress noga	202	00:26:29:158	Image	b2matrix 29.jpg
+before stress noga	202	00:26:35:174	Text	RichText130.rtf
+before stress noga	202	00:26:37:243	End of Experiment

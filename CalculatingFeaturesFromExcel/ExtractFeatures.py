@@ -28,24 +28,24 @@ class Data:
                                       sorted(set(self.fixation_dataset.Subject))])
 
     def get_age(self):
-        Age = [self.demographic_dataset.Age[i] for i in range(len(self.demographic_dataset.Age))]
+        subjects = list(sorted(set(self.fixation_dataset.Subject)))
+        Age = [self.demographic_dataset.Age[(self.fixation_dataset.Subject == subjects[i])] for i in range(len(subjects))]
         self.output_data_dict["Age"] = Age
 
     def get_PHQ9(self):
-        PHQ9 = [self.demographic_dataset.PHQ[i] for i in range(len(self.demographic_dataset.PHQ))]
+        subjects = list(sorted(set(self.fixation_dataset.Subject)))
+        PHQ9 = [self.demographic_dataset.PHQ[(self.fixation_dataset.Subject == subjects[i])] for i in range(len(subjects))]
         self.output_data_dict["PHQ9"] = PHQ9
 
     def get_subject_number(self):
-
         subject_number = list(sorted(set(self.fixation_dataset.Subject)))
         self.output_data_dict["Subject_Number"] = subject_number
 
-    def get_trial(self):
-        trial_number = list(sorted(set(self.fixation_dataset.Trial)))
-        self.output_data_dict["Trial"] = trial_number
-
     def get_group(self):
-        group = [self.demographic_dataset.group[i] for i in range(len(self.demographic_dataset.group))]
+        subjects = list(sorted(set(self.fixation_dataset.Subject)))
+        group = []
+        for subject in subjects:
+            group.append([self.demographic_dataset.group[(self.demographic_dataset.Subject == subject)]][0].values[0])
         self.output_data_dict["group"] = group
 
     # feature extraction - features need to be computed
@@ -73,8 +73,8 @@ class Data:
 
         Sum_Disgusted = [self.grouping_function([np.sum(self.fixation_dataset.Fixation_Duration[
                                                             (self.fixation_dataset.Subject == subjects[i]) & (
-                                                                        self.fixation_dataset.Trial == j) & (
-                                                                        self.fixation_dataset.AOI_Group == "D")]) for j
+                                                                    self.fixation_dataset.Trial == j) & (
+                                                                    self.fixation_dataset.AOI_Group == "D")]) for j
                                                  in trials[i]]) for i in range(len(subjects))]
         Sum_Disgusted = [0 if math.isnan(x) else x for x in Sum_Disgusted]
         norm_disgusted = [Sum_Disgusted[i] / float(norm_factor[i]) for i in range(len(Sum_Disgusted))]
@@ -90,8 +90,8 @@ class Data:
 
         Sum_Neutral = [self.grouping_function([np.sum(self.fixation_dataset.Fixation_Duration[
                                                           (self.fixation_dataset.Subject == subjects[i]) & (
-                                                                      self.fixation_dataset.Trial == j) & (
-                                                                      self.fixation_dataset.AOI_Group == "N")]) for j in
+                                                                  self.fixation_dataset.Trial == j) & (
+                                                                  self.fixation_dataset.AOI_Group == "N")]) for j in
                                                trials[i]]) for i in range(len(subjects))]
         Sum_Neutral = [0 if math.isnan(x) else x for x in Sum_Neutral]
         norm_neutral = [Sum_Neutral[i] / float(norm_factor[i]) for i in range(len(Sum_Neutral))]
@@ -108,8 +108,8 @@ class Data:
 
         Sum_White_Space = [self.grouping_function([np.nansum(self.fixation_dataset.Fixation_Duration[
                                                                  (self.fixation_dataset.Subject == subjects[i]) & (
-                                                                             self.fixation_dataset.Trial == j) & (
-                                                                             self.fixation_dataset.AOI_Group == "White Space")])
+                                                                         self.fixation_dataset.Trial == j) & (
+                                                                         self.fixation_dataset.AOI_Group == "White Space")])
                                                    for j in trials[i]]) for i in range(len(subjects))]
         Sum_White_Space = [0 if math.isnan(x) else x for x in Sum_White_Space]
         norm_WS = [Sum_White_Space[i] / float(norm_factor[i]) for i in range(len(Sum_White_Space))]
@@ -125,7 +125,7 @@ class Data:
 
         Sum_All = [self.grouping_function([np.sum(self.fixation_dataset.Fixation_Duration[
                                                       (self.fixation_dataset.Subject == subjects[i]) & (
-                                                                  self.fixation_dataset.Trial == j)]) for j in
+                                                              self.fixation_dataset.Trial == j)]) for j in
                                            trials[i]]) for i in range(len(subjects))]
         Sum_All = [0 if math.isnan(x) else x for x in Sum_All]
 
@@ -138,7 +138,7 @@ class Data:
 
         mean_Disgusted = [np.mean(self.fixation_dataset.Fixation_Duration[
                                       (self.fixation_dataset.Subject == subjects[i]) & (
-                                                  self.fixation_dataset.AOI_Group == "D")]) for i in
+                                              self.fixation_dataset.AOI_Group == "D")]) for i in
                           range(len(subjects))]
         mean_Disgusted = [0 if math.isnan(x) else x for x in mean_Disgusted]
         norm_disgusted = [mean_Disgusted[i] / float(norm_factor[i]) for i in range(len(mean_Disgusted))]
@@ -153,7 +153,7 @@ class Data:
 
         mean_Neutral = [np.mean(self.fixation_dataset.Fixation_Duration[
                                     (self.fixation_dataset.Subject == subjects[i]) & (
-                                                self.fixation_dataset.AOI_Group == "N")]) for i in range(len(subjects))]
+                                            self.fixation_dataset.AOI_Group == "N")]) for i in range(len(subjects))]
         mean_Neutral = [0 if math.isnan(x) else x for x in mean_Neutral]
         norm_neutral = [mean_Neutral[i] / float(norm_factor[i]) for i in range(len(mean_Neutral))]
         norm_neutral = [0 if math.isnan(x) else x for x in norm_neutral]
@@ -167,7 +167,7 @@ class Data:
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
         mean_White_Space = [np.mean(self.fixation_dataset.Fixation_Duration[
                                         (self.fixation_dataset.Subject == subjects[i]) & (
-                                                    self.fixation_dataset.AOI_Group == "White Space")]) for i in
+                                                self.fixation_dataset.AOI_Group == "White Space")]) for i in
                             range(len(subjects))]
         mean_White_Space = [0 if math.isnan(x) else x for x in mean_White_Space]
         norm_WS = [mean_White_Space[i] / float(norm_factor[i]) for i in range(len(mean_White_Space))]
@@ -195,8 +195,8 @@ class Data:
 
         amount_Disgusted = [self.grouping_function([len(self.fixation_dataset.Fixation_Duration[
                                                             (self.fixation_dataset.Subject == subjects[i]) & (
-                                                                        self.fixation_dataset.Trial == j) & (
-                                                                        self.fixation_dataset.AOI_Group == "D")]) for j
+                                                                    self.fixation_dataset.Trial == j) & (
+                                                                    self.fixation_dataset.AOI_Group == "D")]) for j
                                                     in trials[i]]) for i in range(len(subjects))]
         amount_Disgusted = [0 if math.isnan(x) else x for x in amount_Disgusted]
         norm_disgusted = [amount_Disgusted[i] / float(norm_factor[i]) for i in range(len(amount_Disgusted))]
@@ -213,8 +213,8 @@ class Data:
 
         amount_Neutral = [self.grouping_function([len(self.fixation_dataset.Fixation_Duration[
                                                           (self.fixation_dataset.Subject == subjects[i]) & (
-                                                                      self.fixation_dataset.Trial == j) & (
-                                                                      self.fixation_dataset.AOI_Group == "N")]) for j in
+                                                                  self.fixation_dataset.Trial == j) & (
+                                                                  self.fixation_dataset.AOI_Group == "N")]) for j in
                                                   trials[i]]) for i in range(len(subjects))]
         amount_Neutral = [0 if math.isnan(x) else x for x in amount_Neutral]
         norm_neutral = [amount_Neutral[i] / float(norm_factor[i]) for i in range(len(amount_Neutral))]
@@ -231,8 +231,8 @@ class Data:
 
         amount_White_Space = [self.grouping_function([len(self.fixation_dataset.Fixation_Duration[
                                                               (self.fixation_dataset.Subject == subjects[i]) & (
-                                                                          self.fixation_dataset.Trial == j) & (
-                                                                          self.fixation_dataset.AOI_Group == "White Space")])
+                                                                      self.fixation_dataset.Trial == j) & (
+                                                                      self.fixation_dataset.AOI_Group == "White Space")])
                                                       for j in trials[i]]) for i in range(len(subjects))]
         amount_White_Space = [0 if math.isnan(x) else x for x in amount_White_Space]
         norm_WS = [amount_White_Space[i] / float(norm_factor[i]) for i in range(len(amount_White_Space))]
@@ -249,7 +249,7 @@ class Data:
 
         amount_All = [self.grouping_function([len(self.fixation_dataset.Fixation_Duration[
                                                       (self.fixation_dataset.Subject == subjects[i]) & (
-                                                                  self.fixation_dataset.Trial == j)]) for j in
+                                                              self.fixation_dataset.Trial == j)]) for j in
                                               trials[i]]) for i in range(len(subjects))]
         amount_All = [0 if math.isnan(x) else x for x in amount_All]
 
@@ -261,7 +261,7 @@ class Data:
 
         STD_Disgusted = [np.std(self.fixation_dataset.Fixation_Duration[
                                     (self.fixation_dataset.Subject == subjects[i]) & (
-                                                self.fixation_dataset.AOI_Group == "D")]) for i in range(len(subjects))]
+                                            self.fixation_dataset.AOI_Group == "D")]) for i in range(len(subjects))]
         STD_Disgusted = [0 if math.isnan(x) else x for x in STD_Disgusted]
 
         self.output_data_dict["STD_fixation_length_Disgusted"] = STD_Disgusted
@@ -270,7 +270,7 @@ class Data:
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
         STD_Neutral = [np.std(self.fixation_dataset.Fixation_Duration[(self.fixation_dataset.Subject == subjects[i]) & (
-                    self.fixation_dataset.AOI_Group == "N")]) for i in range(len(subjects))]
+                self.fixation_dataset.AOI_Group == "N")]) for i in range(len(subjects))]
         STD_Neutral = [0 if math.isnan(x) else x for x in STD_Neutral]
 
         self.output_data_dict["STD_fixation_length_Neutral"] = STD_Neutral
@@ -279,7 +279,7 @@ class Data:
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
         STD_White_Space = [np.std(self.fixation_dataset.Fixation_Duration[
                                       (self.fixation_dataset.Subject == subjects[i]) & (
-                                                  self.fixation_dataset.AOI_Group == "White Space")]) for i in
+                                              self.fixation_dataset.AOI_Group == "White Space")]) for i in
                            range(len(subjects))]
 
         STD_White_Space = [0 if math.isnan(x) else x for x in STD_White_Space]
@@ -305,12 +305,12 @@ class Data:
 
         mean_Disgusted = [np.nanmean(self.fixation_dataset.Fixation_Duration[
                                          (self.fixation_dataset.Subject == subjects[i]) & (
-                                                     self.fixation_dataset.AOI_Group == "D")]) for i in
+                                                 self.fixation_dataset.AOI_Group == "D")]) for i in
                           range(len(subjects))]
 
         mean_Neutral = [np.nanmean(self.fixation_dataset.Fixation_Duration[
                                        (self.fixation_dataset.Subject == subjects[i]) & (
-                                                   self.fixation_dataset.AOI_Group == "N")]) for i in
+                                               self.fixation_dataset.AOI_Group == "N")]) for i in
                         range(len(subjects))]
 
         ratio = [mean_Disgusted[i] / float(mean_Neutral[i] + mean_Disgusted[i]) for i in range(len(mean_Disgusted))]
@@ -328,7 +328,7 @@ class Data:
 
         mean_Disgusted = [np.nanmean(self.fixation_dataset.Fixation_Duration[
                                          (self.fixation_dataset.Subject == subjects[i]) & (
-                                                     self.fixation_dataset.AOI_Group == "D")])
+                                                 self.fixation_dataset.AOI_Group == "D")])
                           for i in range(len(subjects))]
 
         mean_Neutral = [np.nanmean(self.fixation_dataset.Fixation_Duration[
@@ -355,10 +355,10 @@ class Data:
                           range(len(subjects))]
         mean_Neutral = [np.nanmean(self.fixation_dataset.Fixation_Duration[
                                        (self.fixation_dataset.Subject == subjects[i]) & (
-                                                   self.fixation_dataset.AOI_Group == "N")]) for i in
+                                               self.fixation_dataset.AOI_Group == "N")]) for i in
                         range(len(subjects))]
         mean_WS = [np.nanmean(self.fixation_dataset.Fixation_Duration[(self.fixation_dataset.Subject == subjects[i]) & (
-                    self.fixation_dataset.AOI_Group == "White Space")]) for i in range(len(subjects))]
+                self.fixation_dataset.AOI_Group == "White Space")]) for i in range(len(subjects))]
 
         ratio = [mean_WS[i] / float(mean_WS[i] + mean_Neutral[i] + mean_Disgusted[i]) for i in
                  range(len(mean_Disgusted))]
@@ -384,7 +384,7 @@ class Data:
                         for i in range(len(subjects))]
         mean_WS = [np.nanmean(self.fixation_dataset.Fixation_Duration[
                                   (self.fixation_dataset.Subject == subjects[i]) & (
-                                              self.fixation_dataset.AOI_Group == "White Space")])
+                                          self.fixation_dataset.AOI_Group == "White Space")])
                    for i in range(len(subjects))]
 
         ratio = [mean_Disgusted[i] / float(mean_WS[i] + mean_Neutral[i] + mean_Disgusted[i]) for i in
@@ -411,7 +411,7 @@ class Data:
                         for i in range(len(subjects))]
         mean_WS = [np.nanmean(self.fixation_dataset.Fixation_Duration[
                                   (self.fixation_dataset.Subject == subjects[i]) & (
-                                              self.fixation_dataset.AOI_Group == "White Space")])
+                                          self.fixation_dataset.AOI_Group == "White Space")])
                    for i in range(len(subjects))]
 
         ratio = [mean_Neutral[i] / float(mean_WS[i] + mean_Neutral[i] + mean_Disgusted[i]) for i in
@@ -513,6 +513,7 @@ class Data:
         self.output_data_dict["amount_NN_transitions"] = NN_transitions
         self.output_data_dict["norm_amount_NN_transitions"] = norm_NN_transitions
 
+
     def get_amount_diff_AOI_transitions(self):
         # didnt add the trials splitting option
         norm_factor = self.get_amount_fixation_All()
@@ -535,6 +536,7 @@ class Data:
         self.output_data_dict["amount_diff_AOI_transitions"] = diff_AOI_transitions
         self.output_data_dict["norm_amount_diff_AOI_transitions"] = norm_diff_AOI_transitions
 
+
     def var_threat_precentage_between_trials(self):
         """
 
@@ -546,12 +548,12 @@ class Data:
         Mean_Disgusted = [[np.nanmean(self.fixation_dataset.Fixation_Duration[
                                           (self.fixation_dataset.Subject == subjects[i]) &
                                           (self.fixation_dataset.Trial == j) &
-                                          (self.fixation_dataset.AOI_Group == "D")])  for j in trials[i]]
-                                          for i in range(len(subjects))]
+                                          (self.fixation_dataset.AOI_Group == "D")]) for j in trials[i]]
+                          for i in range(len(subjects))]
         Mean_Neutral = [[np.nanmean(self.fixation_dataset.Fixation_Duration[
                                         (self.fixation_dataset.Subject == subjects[i]) &
                                         (self.fixation_dataset.Trial == j) & (self.fixation_dataset.AOI_Group == "N")])
-                                        for j in trials[i]] for i in range(len(subjects))]
+                         for j in trials[i]] for i in range(len(subjects))]
 
         ratio = [np.var([(Mean_Disgusted[i][j] / float(Mean_Neutral[i][j] + Mean_Disgusted[i][j]))
                          for j in range(len(trials[i]))]) for i in range(len(Mean_Disgusted))]
@@ -700,7 +702,7 @@ class Data:
 
         mean_AOIs = [np.nanmean([len(set(self.fixation_dataset.Area_of_Interest[
                                              (self.fixation_dataset.Subject == subjects[i]) & (
-                                                         self.fixation_dataset.Trial == j)])) for j in trials[i]]) for i
+                                                     self.fixation_dataset.Trial == j)])) for j in trials[i]]) for i
                      in range(len(subjects))]
         mean_AOIs = [0 if math.isnan(x) else x for x in mean_AOIs]
 
@@ -732,7 +734,7 @@ class Data:
                 i]) &
                                                                          (self.fixation_dataset.Trial ==
                                                                           list(trials[i])[j]) & (
-                                                                                     self.fixation_dataset.AOI_Group == "D")
+                                                                                 self.fixation_dataset.AOI_Group == "D")
                                                                          & (self.fixation_dataset.Number <= medians[i][
                 j])])
                                                               for j in range(len(trials[i]))]) for i in
@@ -743,7 +745,7 @@ class Data:
                 i]) &
                                                                           (self.fixation_dataset.Trial ==
                                                                            list(trials[i])[j]) & (
-                                                                                      self.fixation_dataset.AOI_Group == "D")
+                                                                                  self.fixation_dataset.AOI_Group == "D")
                                                                           & (self.fixation_dataset.Number > medians[i][
                 j])])
                                                                for j in range(len(trials[i]))]) for i in
@@ -753,7 +755,7 @@ class Data:
                                                                       [(self.fixation_dataset.Subject == subjects[i]) &
                                                                        (self.fixation_dataset.Trial == list(trials[i])[
                                                                            j]) & (
-                                                                                   self.fixation_dataset.AOI_Group == "N")
+                                                                               self.fixation_dataset.AOI_Group == "N")
                                                                        & (self.fixation_dataset.Number <= medians[i][
                 j])])
                                                             for j in range(len(trials[i]))]) for i in
@@ -763,7 +765,7 @@ class Data:
                                                                        [(self.fixation_dataset.Subject == subjects[i]) &
                                                                         (self.fixation_dataset.Trial == list(trials[i])[
                                                                             j]) & (
-                                                                                    self.fixation_dataset.AOI_Group == "N")
+                                                                                self.fixation_dataset.AOI_Group == "N")
                                                                         & (self.fixation_dataset.Number > medians[i][
                 j])])
                                                              for j in range(len(trials[i]))]) for i in
@@ -828,7 +830,7 @@ class Data:
                                                                       [(self.fixation_dataset.Subject == subjects[i]) &
                                                                        (self.fixation_dataset.Trial == list(trials[i])[
                                                                            j]) & (
-                                                                                   self.fixation_dataset.AOI_Group == "D")
+                                                                               self.fixation_dataset.AOI_Group == "D")
                                                                        & (self.fixation_dataset.Number > medians[i][
                 j])])
                                                                for j in range(len(trials[i]))]) for i in
@@ -897,7 +899,7 @@ class Data:
 
     def calc_increamental_mean(self, probability_distribution_value, p_disgusted, learning_rate):
         increamental_mean = probability_distribution_value + learning_rate * (
-                    p_disgusted - probability_distribution_value)
+                p_disgusted - probability_distribution_value)
         return increamental_mean
 
 
@@ -909,10 +911,14 @@ class Data:
 
 
     def find_area(self, x_pos, y_pos):
-        areas_map = [((1072, 759), (1279, 966)), ((851, 761), (1058, 968)), ((623, 758), (830, 965)), ((400, 758), (607, 965)),
-                     ((1071, 535), (1278, 742)), ((850, 535), (1057, 742)), ((622, 534), (829, 471)), ((399, 534), (606, 741)),
-                     ((1073, 308), (1280, 515)), ((848, 310), (1055, 517)), ((624, 307), (831, 514)), ((401, 307), (608, 514)),
-                     ((1072, 84), (1279, 291)), ((847, 84), (1054, 291)), ((623, 83), (830, 290)), ((400, 83), (607, 290))]
+        areas_map = [((1072, 759), (1279, 966)), ((851, 761), (1058, 968)), ((623, 758), (830, 965)),
+                     ((400, 758), (607, 965)),
+                     ((1071, 535), (1278, 742)), ((850, 535), (1057, 742)), ((622, 534), (829, 471)),
+                     ((399, 534), (606, 741)),
+                     ((1073, 308), (1280, 515)), ((848, 310), (1055, 517)), ((624, 307), (831, 514)),
+                     ((401, 307), (608, 514)),
+                     ((1072, 84), (1279, 291)), ((847, 84), (1054, 291)), ((623, 83), (830, 290)),
+                     ((400, 83), (607, 290))]
         for index, elem in enumerate(areas_map):
             top = areas_map[index][1]
             bottom = areas_map[index][0]
@@ -922,18 +928,22 @@ class Data:
 
     def get_probability_distribution(self, trial, subject, last_probability_distribution=None):
         num_of_aois = 16
-        areas_map = [((1072, 759), (1279, 966)), ((851, 761), (1058, 968)), ((623, 758), (830, 965)), ((400, 758), (607, 965)),
-                     ((1071, 535), (1278, 742)), ((850, 535), (1057, 742)), ((622, 534), (829, 471)), ((399, 534), (606, 741)),
-                     ((1073, 308), (1280, 515)), ((848, 310), (1055, 517)), ((624, 307), (831, 514)), ((401, 307), (608, 514)),
-                     ((1072, 84), (1279, 291)), ((847, 84), (1054, 291)), ((623, 83), (830, 290)), ((400, 83), (607, 290))]
+        areas_map = [((1072, 759), (1279, 966)), ((851, 761), (1058, 968)), ((623, 758), (830, 965)),
+                     ((400, 758), (607, 965)),
+                     ((1071, 535), (1278, 742)), ((850, 535), (1057, 742)), ((622, 534), (829, 471)),
+                     ((399, 534), (606, 741)),
+                     ((1073, 308), (1280, 515)), ((848, 310), (1055, 517)), ((624, 307), (831, 514)),
+                     ((401, 307), (608, 514)),
+                     ((1072, 84), (1279, 291)), ((847, 84), (1054, 291)), ((623, 83), (830, 290)),
+                     ((400, 83), (607, 290))]
         # get all watched aoi's in the last trial
         if trial == 0:
             return {areas_map[i]: [0.5, self.learning_rate_iter()] for i in range(num_of_aois)}
         else:
             trial_aois_tuple = (self.fixation_dataset.AOI_Group[(self.fixation_dataset.Subject == subject) & (
-                        self.fixation_dataset.Trial == trial)],
+                    self.fixation_dataset.Trial == trial)],
                                 self.fixation_dataset.Area_of_Interest[(self.fixation_dataset.Subject == subject) & (
-                                            self.fixation_dataset.Trial == trial)])
+                                        self.fixation_dataset.Trial == trial)])
 
             # update the probability distribution map
             # by the increamental_mean rule
@@ -942,9 +952,13 @@ class Data:
                     p_disgusted = float((trial_aois_tuple[0].values[trial_aois_tuple[1].values ==
                                                                     'AOI {}'.format(i + 1)] == 'D')[0])
                     positions = (self.fixation_dataset.Position_X[(self.fixation_dataset.Subject == subject) & (
-                        self.fixation_dataset.Trial == trial) & (self.fixation_dataset.Area_of_Interest == 'AOI {}'.format(i + 1))],
-                        self.fixation_dataset.Position_Y[(self.fixation_dataset.Subject == subject) & (
-                        self.fixation_dataset.Trial == trial) & (self.fixation_dataset.Area_of_Interest == 'AOI {}'.format(i + 1))])
+                            self.fixation_dataset.Trial == trial) & (
+                                                                              self.fixation_dataset.Area_of_Interest == 'AOI {}'.format(
+                                                                          i + 1))],
+                                 self.fixation_dataset.Position_Y[(self.fixation_dataset.Subject == subject) & (
+                                         self.fixation_dataset.Trial == trial) & (
+                                                                              self.fixation_dataset.Area_of_Interest == 'AOI {}'.format(
+                                                                          i + 1))])
                     area = self.find_area(positions[0].values[0], positions[1].values[0])
                     last_probability_distribution[area][0] = \
                         self.calc_increamental_mean(last_probability_distribution[area][0],
@@ -963,7 +977,7 @@ class Data:
         all_fixations_durations = [
             [self.fixation_dataset.Fixation_Duration[(self.fixation_dataset.Subject == subjects[i]) &
                                                      (self.fixation_dataset.Trial == j)] for j in trials[i]] for i in
-                                                    range(len(subjects))]
+            range(len(subjects))]
         p_disgusted_times_first_fixation_duration = []
         for i, subject in enumerate(subjects):
             p_disgusted_times_first_fixation_duration.append([])
@@ -978,9 +992,11 @@ class Data:
                     first_fixation_duration = all_fixations_durations[i][j].values[fixation_index]
 
                 positions = (self.fixation_dataset.Position_X[(self.fixation_dataset.Subject == subject) &
-                                                              (self.fixation_dataset.Trial == trial) & (self.fixation_dataset.Area_of_Interest == first_aoi)],
+                                                              (self.fixation_dataset.Trial == trial) & (
+                                                                          self.fixation_dataset.Area_of_Interest == first_aoi)],
                              self.fixation_dataset.Position_Y[(self.fixation_dataset.Subject == subject) &
-                                                              (self.fixation_dataset.Trial == trial) & (self.fixation_dataset.Area_of_Interest == first_aoi)])
+                                                              (self.fixation_dataset.Trial == trial) & (
+                                                                          self.fixation_dataset.Area_of_Interest == first_aoi)])
                 area = self.find_area(positions[0].values[0], positions[1].values[0])
                 p_disgusted_times_first_fixation_duration[i].append(p_map[area][0] * first_fixation_duration)
 

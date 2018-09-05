@@ -1,11 +1,11 @@
 import unittest
-from DataImporting.DataFromExcel import get_data
+from DataImporting.ImportData import get_data
 from CalculatingFeaturesFromExcel import ExtractFeatures
 Test_Data_path = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\Testers\\test data_ordered.xlsx"
 FIXATION_DATA_SHEET = 'Sheet1'
 #DEMOGRAPHICS_SHEET = 'Final all Results'
 
-
+test_data_for_p_disgusted = "C:\\‏‏PycharmProjects\\AnxietyClassifier\\Testers\\test_data_for_p_disgusted_times_first_fixation_duration.xlsx"
 class TestFeatureExctraction(unittest.TestCase):
     Data_Object = None
 
@@ -449,6 +449,12 @@ class TestFeatureExctraction(unittest.TestCase):
         # assert
         self.assertEqual(self.Data_Object.output_data_dict["mean_different_AOI_per_trial"], [10])
 
+    def test_p_disgusted_times_first_fixation_duration(self):
+        self.Data_Object = ExtractFeatures.Data(test_data_for_p_disgusted, FIXATION_DATA_SHEET)
+        # act
+        self.Data_Object.get_p_disgusted_times_first_fixation_duration()
+        # assert
+        self.assertEqual(self.Data_Object.output_data_dict["p_disgusted_times_first_fixation_duration"], [139.25])
 
 if __name__ == '__main__':
     unittest.main()

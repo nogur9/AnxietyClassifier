@@ -14,16 +14,17 @@ import math
 #Define Envairoment Variables
 FIXATION_DATA_SHEET = 'fixation_data'
 DEMOGRAPHICS_SHEET = 'demographic'
-DATA_FILE_PATH = "C:\‏‏PycharmProjects\AnxietyClassifier\AmitsData\data.xlsx"
+DATA_FILE_PATH = r"C:\‏‏PycharmProjects\AnxietyClassifier\AmitsData\data.xlsx"
+
+
 def create_features_file():
     print(1)
     controls = Data(DATA_FILE_PATH, FIXATION_DATA_SHEET,DEMOGRAPHICS_SHEET)
     print(2)
-    controls.get_subject_number()
-    print(6)
     controls.get_group()
     print(7)
-
+    controls.get_subject_number()
+    print(6)
     trials_controls = TrialsData(DATA_FILE_PATH, FIXATION_DATA_SHEET)
     print(8)
     trials_controls.get_Ratios()
@@ -37,10 +38,8 @@ def create_features_file():
     trials_controls.get_mean_different_AOI_per_trial()
     print(13)
     workbook = xlsxwriter.Workbook(
-        'C:\PycharmProjects\AnxietyClassifier\ExtractedFeatures\\features_with_respect_to_trials.xlsx')
+        'C:\\‏‏PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\Features_with_respect_to_trials.xlsx')
     worksheet = workbook.add_worksheet()
-
-
     col = 0
     for key in controls.output_data_dict.keys():
         row = 0

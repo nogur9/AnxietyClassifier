@@ -1,0 +1,2339 @@
+13361476	2	1	NewSession
+13361497	0	1	Monday, 14 May 2018  11:53:43 AM
+13363179	0	1	SMI Experiment Center 3.6.53.5785 SHA 8a2fba53
+13363192	0	1	LoadExperiment before stress noga
+13651515	0	1	Experiment.IsChanged = true
+13653748	0	1	Experiment.IsChanged = true
+13795263	0	1	SceneRecordingController.Stop
+13822201	0	1	LoadExperiment end
+14120698	0	1	AddPreviewControl SMI_Experiment_Center.Views.ImagePreview
+16197620	0	4	CPU 9.44 %, MEM Free 4.49 GB, Used 40.97 %
+21295905	0	4	CPU 0.99 %, MEM Free 4.49 GB, Used 40.92 %
+23714564	0	1	CmdExecuted : ScreenIdent
+26786779	0	4	CPU 1.94 %, MEM Free 4.48 GB, Used 41.01 %
+27301908	0	1	CmdExecuted : iViewXSettingsDlg 
+27542889	0	1	SceneRecordingController.LoadData 
+29737061	0	1	SceneRecordingController.StoreData 
+29789461	0	1	LptPortController::StoreData 
+31850323	0	4	CPU 3.38 %, MEM Free 4.49 GB, Used 40.93 %
+36987962	0	4	CPU 1.76 %, MEM Free 4.51 GB, Used 40.74 %
+42097531	0	4	CPU 7.13 %, MEM Free 4.45 GB, Used 41.53 %
+47242989	0	4	CPU 1.76 %, MEM Free 4.45 GB, Used 41.48 %
+52384475	0	4	CPU 1.36 %, MEM Free 4.45 GB, Used 41.43 %
+57532581	0	4	CPU 0.91 %, MEM Free 4.46 GB, Used 41.40 %
+62665115	0	4	CPU 1.74 %, MEM Free 4.46 GB, Used 41.33 %
+67812028	0	4	CPU 0.42 %, MEM Free 4.46 GB, Used 41.29 %
+72957426	0	4	CPU 2.01 %, MEM Free 4.46 GB, Used 41.27 %
+78098373	0	4	CPU 0.15 %, MEM Free 4.46 GB, Used 41.27 %
+83229548	0	4	CPU 1.10 %, MEM Free 4.48 GB, Used 41.13 %
+88374315	0	4	CPU 2.89 %, MEM Free 4.48 GB, Used 41.14 %
+93506741	0	4	CPU 0.23 %, MEM Free 4.48 GB, Used 41.09 %
+98652814	0	4	CPU 0.91 %, MEM Free 4.48 GB, Used 41.09 %
+103797474	0	4	CPU 2.99 %, MEM Free 4.48 GB, Used 41.09 %
+108947745	0	4	CPU 0.00 %, MEM Free 4.48 GB, Used 41.09 %
+114095147	0	4	CPU 1.82 %, MEM Free 4.48 GB, Used 41.07 %
+119244957	0	4	CPU 1.06 %, MEM Free 4.48 GB, Used 41.06 %
+124349999	0	4	CPU 5.11 %, MEM Free 4.45 GB, Used 41.42 %
+129449536	0	4	CPU 2.37 %, MEM Free 4.44 GB, Used 41.60 %
+134550960	0	4	CPU 22.74 %, MEM Free 4.38 GB, Used 42.42 %
+139694993	0	4	CPU 15.37 %, MEM Free 4.37 GB, Used 42.57 %
+144821214	0	4	CPU 7.35 %, MEM Free 4.32 GB, Used 43.22 %
+149928394	0	4	CPU 8.08 %, MEM Free 4.28 GB, Used 43.73 %
+155032073	0	4	CPU 8.80 %, MEM Free 4.27 GB, Used 43.80 %
+160173736	0	4	CPU 7.61 %, MEM Free 4.23 GB, Used 44.42 %
+165318593	0	4	CPU 6.74 %, MEM Free 4.18 GB, Used 45.05 %
+170426945	0	4	CPU 7.52 %, MEM Free 4.14 GB, Used 45.60 %
+175532418	0	4	CPU 9.26 %, MEM Free 4.11 GB, Used 45.92 %
+180653992	0	4	CPU 8.52 %, MEM Free 3.98 GB, Used 47.58 %
+185757642	0	4	CPU 9.22 %, MEM Free 3.93 GB, Used 48.28 %
+190864401	0	4	CPU 11.47 %, MEM Free 3.90 GB, Used 48.73 %
+195968760	0	4	CPU 10.59 %, MEM Free 3.87 GB, Used 49.05 %
+201069839	0	4	CPU 18.04 %, MEM Free 3.88 GB, Used 48.91 %
+206172277	0	4	CPU 14.68 %, MEM Free 3.88 GB, Used 48.91 %
+211316221	0	4	CPU 14.91 %, MEM Free 3.89 GB, Used 48.89 %
+216421751	0	4	CPU 15.15 %, MEM Free 3.89 GB, Used 48.79 %
+221517146	0	4	CPU 14.87 %, MEM Free 3.90 GB, Used 48.74 %
+226621244	0	4	CPU 16.59 %, MEM Free 3.90 GB, Used 48.72 %
+231724067	0	4	CPU 13.88 %, MEM Free 3.90 GB, Used 48.71 %
+236831119	0	4	CPU 16.25 %, MEM Free 3.90 GB, Used 48.74 %
+241952448	0	4	CPU 18.94 %, MEM Free 3.89 GB, Used 48.79 %
+247055324	0	4	CPU 25.72 %, MEM Free 3.94 GB, Used 48.20 %
+252164187	0	4	CPU 22.32 %, MEM Free 3.96 GB, Used 47.89 %
+257270780	0	4	CPU 17.07 %, MEM Free 4.01 GB, Used 47.32 %
+262387987	0	4	CPU 16.63 %, MEM Free 4.00 GB, Used 47.35 %
+267491518	0	4	CPU 16.01 %, MEM Free 4.00 GB, Used 47.44 %
+272628539	0	4	CPU 27.98 %, MEM Free 4.02 GB, Used 47.09 %
+277722916	0	4	CPU 36.40 %, MEM Free 4.04 GB, Used 46.83 %
+282824875	0	4	CPU 19.11 %, MEM Free 4.04 GB, Used 46.85 %
+287936457	0	4	CPU 13.30 %, MEM Free 4.04 GB, Used 46.88 %
+293042104	0	4	CPU 13.38 %, MEM Free 4.05 GB, Used 46.76 %
+298144516	0	4	CPU 32.68 %, MEM Free 3.94 GB, Used 48.12 %
+303286228	0	4	CPU 15.18 %, MEM Free 4.13 GB, Used 45.69 %
+308423883	0	4	CPU 0.61 %, MEM Free 4.14 GB, Used 45.51 %
+313555742	0	4	CPU 1.52 %, MEM Free 4.16 GB, Used 45.28 %
+318696747	0	4	CPU 0.80 %, MEM Free 4.17 GB, Used 45.12 %
+323842400	0	4	CPU 2.65 %, MEM Free 4.19 GB, Used 44.95 %
+328992216	0	4	CPU 0.00 %, MEM Free 4.21 GB, Used 44.65 %
+334130714	0	4	CPU 1.25 %, MEM Free 4.23 GB, Used 44.35 %
+339274828	0	4	CPU 2.66 %, MEM Free 4.25 GB, Used 44.10 %
+344439423	0	4	CPU 0.41 %, MEM Free 4.28 GB, Used 43.64 %
+349599159	0	4	CPU 0.91 %, MEM Free 4.30 GB, Used 43.40 %
+354749144	0	4	CPU 1.10 %, MEM Free 4.32 GB, Used 43.19 %
+359895118	0	4	CPU 1.78 %, MEM Free 4.33 GB, Used 43.02 %
+365033872	0	4	CPU 0.00 %, MEM Free 4.34 GB, Used 42.90 %
+370174378	0	4	CPU 0.61 %, MEM Free 4.35 GB, Used 42.81 %
+375323913	0	4	CPU 1.70 %, MEM Free 4.36 GB, Used 42.70 %
+380471281	0	4	CPU 0.19 %, MEM Free 4.37 GB, Used 42.56 %
+385609273	0	4	CPU 1.86 %, MEM Free 4.38 GB, Used 42.42 %
+390748673	0	4	CPU 2.55 %, MEM Free 4.38 GB, Used 42.38 %
+395897482	0	4	CPU 1.14 %, MEM Free 4.40 GB, Used 42.17 %
+401035483	0	4	CPU 1.14 %, MEM Free 4.41 GB, Used 42.04 %
+406179214	0	4	CPU 1.03 %, MEM Free 4.42 GB, Used 41.86 %
+411324772	0	4	CPU 0.87 %, MEM Free 4.43 GB, Used 41.72 %
+416474951	0	4	CPU 0.83 %, MEM Free 4.44 GB, Used 41.58 %
+421621761	0	4	CPU 1.89 %, MEM Free 4.45 GB, Used 41.45 %
+426767544	0	4	CPU 1.44 %, MEM Free 4.46 GB, Used 41.29 %
+431917658	0	4	CPU 2.04 %, MEM Free 4.47 GB, Used 41.15 %
+437066251	0	4	CPU 0.00 %, MEM Free 4.48 GB, Used 41.02 %
+442212915	0	4	CPU 0.68 %, MEM Free 4.49 GB, Used 40.89 %
+447359297	0	4	CPU 3.18 %, MEM Free 4.50 GB, Used 40.74 %
+452475128	0	4	CPU 0.61 %, MEM Free 4.52 GB, Used 40.53 %
+457611194	0	4	CPU 2.29 %, MEM Free 4.53 GB, Used 40.40 %
+462758339	0	4	CPU 0.08 %, MEM Free 4.54 GB, Used 40.29 %
+467895611	0	4	CPU 1.70 %, MEM Free 4.55 GB, Used 40.19 %
+473031389	0	4	CPU 1.52 %, MEM Free 4.54 GB, Used 40.29 %
+478169996	0	4	CPU 0.53 %, MEM Free 4.55 GB, Used 40.22 %
+483317951	0	4	CPU 1.89 %, MEM Free 4.55 GB, Used 40.11 %
+488470382	0	4	CPU 0.72 %, MEM Free 4.56 GB, Used 40.00 %
+493621191	0	4	CPU 2.61 %, MEM Free 4.56 GB, Used 39.98 %
+498759624	0	4	CPU 0.30 %, MEM Free 4.57 GB, Used 39.91 %
+503900978	0	4	CPU 1.51 %, MEM Free 4.57 GB, Used 39.83 %
+509041178	0	4	CPU 1.06 %, MEM Free 4.58 GB, Used 39.75 %
+514187318	0	4	CPU 0.79 %, MEM Free 4.59 GB, Used 39.66 %
+519320780	0	4	CPU 1.29 %, MEM Free 4.59 GB, Used 39.58 %
+524443195	0	4	CPU 0.45 %, MEM Free 4.60 GB, Used 39.51 %
+529577995	0	4	CPU 1.79 %, MEM Free 4.60 GB, Used 39.47 %
+534712177	0	4	CPU 0.49 %, MEM Free 4.61 GB, Used 39.37 %
+539853250	0	4	CPU 2.36 %, MEM Free 4.62 GB, Used 39.26 %
+544967932	0	4	CPU 4.13 %, MEM Free 4.60 GB, Used 39.56 %
+550059943	0	4	CPU 13.42 %, MEM Free 4.58 GB, Used 39.70 %
+555161620	0	4	CPU 11.70 %, MEM Free 4.56 GB, Used 40.06 %
+560311051	0	4	CPU 9.70 %, MEM Free 4.55 GB, Used 40.12 %
+565767353	0	4	CPU 9.56 %, MEM Free 4.56 GB, Used 40.07 %
+571176809	0	4	CPU 9.41 %, MEM Free 4.56 GB, Used 40.06 %
+576654985	0	4	CPU 9.26 %, MEM Free 4.57 GB, Used 39.92 %
+582144396	0	4	CPU 9.67 %, MEM Free 4.56 GB, Used 39.99 %
+587508058	0	4	CPU 9.27 %, MEM Free 4.56 GB, Used 40.02 %
+592978921	0	4	CPU 9.80 %, MEM Free 4.56 GB, Used 40.03 %
+598336142	0	4	CPU 10.18 %, MEM Free 4.56 GB, Used 40.02 %
+603635618	0	4	CPU 10.51 %, MEM Free 4.56 GB, Used 39.99 %
+608887761	0	4	CPU 9.85 %, MEM Free 4.56 GB, Used 39.98 %
+614343347	0	4	CPU 9.79 %, MEM Free 4.56 GB, Used 39.98 %
+619931082	0	4	CPU 9.85 %, MEM Free 4.56 GB, Used 40.01 %
+625379356	0	4	CPU 10.32 %, MEM Free 4.56 GB, Used 40.07 %
+630799109	0	4	CPU 10.85 %, MEM Free 4.58 GB, Used 39.82 %
+636235529	0	4	CPU 8.09 %, MEM Free 4.59 GB, Used 39.66 %
+641830050	0	4	CPU 11.72 %, MEM Free 4.58 GB, Used 39.74 %
+647159202	0	4	CPU 10.25 %, MEM Free 4.61 GB, Used 39.34 %
+652455960	0	4	CPU 11.72 %, MEM Free 4.60 GB, Used 39.46 %
+657800329	0	4	CPU 11.45 %, MEM Free 4.59 GB, Used 39.60 %
+662771267	0	1	CmdExecuted : RecordSlideShow
+662939680	0	4	CPU 11.14 %, MEM Free 4.59 GB, Used 39.64 %
+663712619	0	1	ExternalVideoController.Stop
+663721611	0	1	BuildRandomList
+663944245	0	1	Keyboard: @keyboard.inf,%*pnp0303.devicedesc%;Standard PS/2 Keyboard
+668008564	0	4	CPU 12.17 %, MEM Free 4.53 GB, Used 40.39 %
+673328117	0	4	CPU 10.49 %, MEM Free 4.55 GB, Used 40.21 %
+678751332	0	4	CPU 11.01 %, MEM Free 4.55 GB, Used 40.13 %
+684021429	0	4	CPU 9.76 %, MEM Free 4.55 GB, Used 40.16 %
+684553277	0	1	Record the Experiment before stress noga
+684553850	0	1	MainForm does not intersect with StimulusWindow
+684557233	0	1	ApplicationController.PrepareStimulusWindow
+684569266	0	1	AddStimulusControl ImageStimulusControl
+684805636	0	1	AddStimulusControl PdfStimulusControl
+684809298	0	1	AddStimulusControl QuestionStimulusControl
+684812765	0	1	MoviePlayerStimulusControl.Clear()
+684812770	0	1	AddStimulusControl MoviePlayerStimulusControl
+684815942	0	1	AddStimulusControl CalibrationStimulusControl
+684821593	0	1	AddStimulusControl ExternalVideoStimulusControl
+684839474	0	1	ScreenSaverController.StoreData
+684862890	0	1	NameController::create participant folder::D:\Results\before stress noga\201-[d8979ea7-4468-4176-a29f-5b5141d9449a]
+684863225	0	1	Execution of Experiment before stress noga
+684867035	0	1	Eye Tracker Source End
+684867893	0	1	Eye Tracker Source Begin
+684896067	0	1	Screen DPI is 1
+684898456	0	1	m_isCalibrationQualityUsed = True
+684901698	0	1	ExecuteCurrentObject Image
+684902624	0	1	AddPreviewControl SMI_Experiment_Center.Views.StimulusMonitor
+684903894	0	16	DoTheWork Start Image
+684904945	0	16	AddProtocolLine calibration-validation.jpg
+684905399	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\instructions\calibration-validation.jpg
+684964553	0	1	Show StimulusWindow
+684965986	0	16	PutDataIntoStimulusControl - ImageObject
+685025727	0	1	ShowSlideShowWindow_Loaded Left=1600, Top=0, ActualWidth=1680, ActualHeight=1050
+685281088	0	18	ShowDataOfObject D:\Experiments\before stress noga\calibration-validation.jpg
+685281554	0	16	Recording disabled for this stimulus
+689633390	0	4	CPU 10.50 %, MEM Free 4.53 GB, Used 40.40 %
+695193161	0	4	CPU 9.73 %, MEM Free 4.54 GB, Used 40.33 %
+700583639	0	4	CPU 10.43 %, MEM Free 4.54 GB, Used 40.32 %
+705833523	0	4	CPU 10.50 %, MEM Free 4.54 GB, Used 40.32 %
+706884921	0	1	Image - Space - Key pressed
+706885001	0	1	StopExecution Image
+706887407	0	16	OnStimulusCompleted
+706887676	0	16	ExecuteCurrentObject Calibration
+706887765	0	6	DoTheWork Start Calibration
+706887846	0	6	AddProtocolLine 
+706888341	0	16	stopExecutionEvent set after 21604.1754992805 ms
+706888344	0	16	DoTheWork End Image
+706888952	0	6	Calibration : StartStimulus
+706946520	0	1	Show StimulusWindow
+706962881	0	6	PutDataIntoStimulusControl - CalibrationObject
+707304132	0	6	Recording disabled for this stimulus
+707305768	0	22	Calibration : NextPoint = 1  X=840  Y=525
+709171113	0	1	Calibration - Space - Key pressed
+709172335	0	22	Calibration : NextPoint = 2  X=420  Y=105
+710374924	0	22	Calibration : NextPoint = 3  X=1512  Y=263
+711418653	0	4	CPU 10.60 %, MEM Free 4.54 GB, Used 40.30 %
+711577483	0	22	Calibration : NextPoint = 4  X=1260  Y=945
+712779968	0	22	Calibration : NextPoint = 5  X=168  Y=788
+713988167	0	8	Calibration : CaliFinnished
+714182022	0	8	StopExecution Calibration
+714184417	0	6	Calibration : StopStimulus
+715389037	0	6	OnStimulusCompleted
+715389076	0	6	ExecuteCurrentObject Validation
+715389183	0	6	stopExecutionEvent set after 6877.1375609957 ms
+715389188	0	6	DoTheWork End Calibration
+715389210	0	15	DoTheWork Start Validation
+715389250	0	15	AddProtocolLine 
+715392112	0	15	PutDataIntoStimulusControl - ValidationObject
+715395493	0	15	Calibration : StartStimulus
+715405829	0	15	ContinueMessage Validation.jpg
+715406265	0	15	Validation : CaliFinnished
+715414212	3	15	ShowValidation
+715438750	0	22	Calibration : ShowNextValidationPoint
+716477437	0	4	CPU 12.07 %, MEM Free 4.53 GB, Used 40.46 %
+716623839	0	22	Calibration : ShowNextValidationPoint
+717835909	0	22	Calibration : ShowNextValidationPoint
+719048806	0	22	Calibration : ShowNextValidationPoint
+720261751	0	22	iv_GetAccuracy: RET_SUCCESS
+722560409	0	4	CPU 11.37 %, MEM Free 4.50 GB, Used 40.81 %
+727887302	0	4	CPU 11.07 %, MEM Free 4.50 GB, Used 40.83 %
+733197482	0	4	CPU 11.07 %, MEM Free 4.50 GB, Used 40.75 %
+738134683	0	1	StopExecution Validation
+738134849	0	15	Calibration : StopStimulus
+738237261	0	4	CPU 10.98 %, MEM Free 4.51 GB, Used 40.72 %
+739335215	0	15	OnStimulusCompleted
+739335235	0	15	ExecuteCurrentObject Image
+739335310	0	10	DoTheWork Start Image
+739335330	0	10	AddProtocolLine instructions 1.jpg
+739335332	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\instructions\instructions 1.jpg
+739335370	0	15	stopExecutionEvent set after 22720.6157154597 ms
+739335373	0	15	DoTheWork End Validation
+739335442	0	1	Show StimulusWindow
+739335969	0	10	PutDataIntoStimulusControl - ImageObject
+739347084	0	10	Recording disabled for this stimulus
+739347136	0	18	ShowDataOfObject D:\Experiments\before stress noga\instructions 1.jpg
+743617268	0	4	CPU 10.93 %, MEM Free 4.51 GB, Used 40.67 %
+745446934	0	1	Image - Space - Key pressed
+745446943	0	1	StopExecution Image
+745447013	0	10	OnStimulusCompleted
+745447034	0	10	ExecuteCurrentObject Image
+745447111	0	10	stopExecutionEvent set after 6099.93385577679 ms
+745447113	0	10	DoTheWork End Image
+745447241	0	15	DoTheWork Start Image
+745447265	0	15	AddProtocolLine instructions 2.jpg
+745447268	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\instructions\instructions 2.jpg
+745447281	0	15	PutDataIntoStimulusControl - ImageObject
+745451392	0	18	ShowDataOfObject D:\Experiments\before stress noga\instructions 2.jpg
+745451381	0	15	Recording disabled for this stimulus
+748832842	0	4	CPU 10.63 %, MEM Free 4.51 GB, Used 40.67 %
+754038846	0	4	CPU 9.89 %, MEM Free 4.51 GB, Used 40.63 %
+757742862	0	21	StopExecution Image
+757742932	0	15	OnStimulusCompleted
+757742950	0	15	ExecuteCurrentObject Image
+757743026	0	15	stopExecutionEvent set after 12291.5377171192 ms
+757743027	0	15	DoTheWork End Image
+757743032	0	6	DoTheWork Start Image
+757743050	0	6	AddProtocolLine instructions 3.jpg
+757743052	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\instructions\instructions 3.jpg
+757743063	0	6	PutDataIntoStimulusControl - ImageObject
+757744192	0	18	ShowDataOfObject D:\Experiments\before stress noga\instructions 3.jpg
+757744176	0	6	Recording disabled for this stimulus
+760014895	0	4	CPU 10.85 %, MEM Free 4.50 GB, Used 40.80 %
+760910861	0	1	Image - Space - Key pressed
+760910867	0	1	StopExecution Image
+760910925	0	6	OnStimulusCompleted
+760910948	0	6	ExecuteCurrentObject Image
+760911036	0	6	stopExecutionEvent set after 3166.7900710088 ms
+760911038	0	6	DoTheWork End Image
+760911049	0	16	DoTheWork Start Image
+760911075	0	16	AddProtocolLine instructions 4.jpg
+760911077	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\instructions\instructions 4.jpg
+760911090	0	16	PutDataIntoStimulusControl - ImageObject
+760912704	0	18	ShowDataOfObject D:\Experiments\before stress noga\instructions 4.jpg
+760912765	0	16	Recording disabled for this stimulus
+765351913	0	4	CPU 11.25 %, MEM Free 4.51 GB, Used 40.66 %
+770642900	0	4	CPU 11.57 %, MEM Free 4.50 GB, Used 40.81 %
+772140753	0	1	Image - Space - Key pressed
+772140763	0	1	StopExecution Image
+772140815	0	16	OnStimulusCompleted
+772140839	0	16	ExecuteCurrentObject Image
+772141016	0	15	DoTheWork Start Image
+772141054	0	15	AddProtocolLine fixation cross 4x4.jpg
+772141058	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+772141172	0	15	PutDataIntoStimulusControl - ImageObject
+772141188	0	16	stopExecutionEvent set after 11228.0316757278 ms
+772141193	0	16	DoTheWork End Image
+772155200	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+772155278	0	15	Recording disabled for this stimulus
+773157324	0	21	StopExecution Image
+773157395	0	15	OnStimulusCompleted
+773157424	0	15	ExecuteCurrentObject Image
+773157528	0	15	stopExecutionEvent set after 1002.24154132867 ms
+773157533	0	15	DoTheWork End Image
+773157560	0	6	DoTheWork Start Image
+773157598	0	6	AddProtocolLine b1matrix 0.jpg
+773157603	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 0.jpg
+773157624	0	6	PutDataIntoStimulusControl - ImageObject
+773172160	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 0.jpg
+773191618	0	6	ContinueMessage 062cfba68d1f326e227b544493629587_1680x1050.jpg
+776363243	0	4	CPU 10.73 %, MEM Free 4.49 GB, Used 40.88 %
+779175491	4	6	ShowImage expected : 6000
+779175550	0	6	OnStimulusCompleted
+779175568	0	6	ExecuteCurrentObject Text
+779175641	0	6	stopExecutionEvent set after 6000.06925315368 ms
+779175654	0	6	DoTheWork End Image
+779175664	0	16	DoTheWork Start Text
+779175797	0	16	AddProtocolLine RichText11.rtf
+779176226	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText11.rtf
+779176523	0	16	PutDataIntoStimulusControl - TextObject
+779193393	0	16	Recording disabled for this stimulus
+779193472	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText11.rtf
+781193605	0	16	OnStimulusCompleted
+781193626	0	16	ExecuteCurrentObject Image
+781193742	0	15	DoTheWork Start Image
+781193774	0	15	AddProtocolLine fixation cross 4x4.jpg
+781193778	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+781193795	0	15	PutDataIntoStimulusControl - ImageObject
+781193892	0	16	stopExecutionEvent set after 2000.03098671257 ms
+781193895	0	16	DoTheWork End Text
+781194752	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+781194781	0	15	Recording disabled for this stimulus
+781320438	0	4	CPU 10.71 %, MEM Free 4.49 GB, Used 40.90 %
+782197140	0	21	StopExecution Image
+782197213	0	15	OnStimulusCompleted
+782197237	0	15	ExecuteCurrentObject Image
+782197326	0	15	stopExecutionEvent set after 1002.45023389328 ms
+782197330	0	15	DoTheWork End Image
+782197362	0	10	DoTheWork Start Image
+782197388	0	10	AddProtocolLine b1matrix 1.jpg
+782197391	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 1.jpg
+782197398	0	10	PutDataIntoStimulusControl - ImageObject
+782212416	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 1.jpg
+782225790	0	10	ContinueMessage 46007c7573ffd13d1efc457c86a96512_1680x1050.jpg
+786444730	0	4	CPU 11.96 %, MEM Free 4.49 GB, Used 40.96 %
+788213873	4	10	ShowImage expected : 6000
+788213930	0	10	OnStimulusCompleted
+788213946	0	10	ExecuteCurrentObject Text
+788214013	0	10	stopExecutionEvent set after 6000.0982007612 ms
+788214014	0	10	DoTheWork End Image
+788214035	0	6	DoTheWork Start Text
+788214058	0	6	AddProtocolLine RichText12.rtf
+788214060	0	6	Text : StartStimulus D:\Experiments\before stress noga\RichText12.rtf
+788214073	0	6	PutDataIntoStimulusControl - TextObject
+788216576	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText12.rtf
+788216578	0	6	Recording disabled for this stimulus
+790217538	0	6	OnStimulusCompleted
+790217556	0	6	ExecuteCurrentObject Image
+790217623	0	6	stopExecutionEvent set after 2000.96153324449 ms
+790217625	0	6	DoTheWork End Text
+790217653	0	10	DoTheWork Start Image
+790217672	0	10	AddProtocolLine fixation cross 4x4.jpg
+790217674	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+790217686	0	10	PutDataIntoStimulusControl - ImageObject
+790218240	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+790218235	0	10	Recording disabled for this stimulus
+791219160	0	21	StopExecution Image
+791219236	0	10	OnStimulusCompleted
+791219251	0	10	ExecuteCurrentObject Image
+791219489	0	10	stopExecutionEvent set after 1001.00355579627 ms
+791219492	0	10	DoTheWork End Image
+791219529	0	10	DoTheWork Start Image
+791219544	0	10	AddProtocolLine b1matrix 2.jpg
+791219545	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 2.jpg
+791219549	0	10	PutDataIntoStimulusControl - ImageObject
+791235584	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 2.jpg
+791244724	0	10	ContinueMessage deb2d5524deca453c77eea5b7ee5c80b_1680x1050.jpg
+792286385	0	4	CPU 11.61 %, MEM Free 4.48 GB, Used 41.12 %
+797238050	4	10	ShowImage expected : 6000
+797238103	0	10	OnStimulusCompleted
+797238118	0	10	ExecuteCurrentObject Text
+797238195	0	6	DoTheWork Start Text
+797238219	0	6	AddProtocolLine RichText.rtf
+797238222	0	6	Text : StartStimulus D:\Experiments\before stress noga\RichText.rtf
+797238234	0	6	PutDataIntoStimulusControl - TextObject
+797238395	0	10	stopExecutionEvent set after 6000.20584300649 ms
+797238398	0	10	DoTheWork End Image
+797240760	0	6	Recording disabled for this stimulus
+797240768	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText.rtf
+798323244	0	4	CPU 12.10 %, MEM Free 4.48 GB, Used 41.02 %
+799240837	0	6	OnStimulusCompleted
+799240857	0	6	ExecuteCurrentObject Image
+799240969	0	10	DoTheWork Start Image
+799240995	0	10	AddProtocolLine fixation cross 4x4.jpg
+799240997	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+799241029	0	10	PutDataIntoStimulusControl - ImageObject
+799241124	0	6	stopExecutionEvent set after 2000.07083293211 ms
+799241127	0	6	DoTheWork End Text
+799241536	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+799241552	0	10	Recording disabled for this stimulus
+800243013	0	21	StopExecution Image
+800243049	0	10	OnStimulusCompleted
+800243065	0	10	ExecuteCurrentObject Image
+800243122	0	10	stopExecutionEvent set after 1001.44971500349 ms
+800243124	0	10	DoTheWork End Image
+800243150	0	6	DoTheWork Start Image
+800243164	0	6	AddProtocolLine b1matrix 3.jpg
+800243166	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 3.jpg
+800243176	0	6	PutDataIntoStimulusControl - ImageObject
+800259904	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 3.jpg
+800271296	0	6	ContinueMessage 631c0a23ed3e484d49f8ad8c4e277458_1680x1050.jpg
+803583799	0	4	CPU 10.44 %, MEM Free 4.47 GB, Used 41.20 %
+806264010	4	6	ShowImage expected : 6000
+806264138	0	6	OnStimulusCompleted
+806264167	0	6	ExecuteCurrentObject Text
+806264292	0	6	stopExecutionEvent set after 6000.16804645181 ms
+806264297	0	6	DoTheWork End Image
+806264334	0	15	DoTheWork Start Text
+806264377	0	15	AddProtocolLine RichText1.rtf
+806264382	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText1.rtf
+806264404	0	15	PutDataIntoStimulusControl - TextObject
+806281152	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText1.rtf
+806281136	0	15	Recording disabled for this stimulus
+808281097	0	15	OnStimulusCompleted
+808281123	0	15	ExecuteCurrentObject Image
+808281208	0	15	stopExecutionEvent set after 2000.00301795948 ms
+808281212	0	15	DoTheWork End Text
+808281266	0	15	DoTheWork Start Image
+808281290	0	15	AddProtocolLine fixation cross 4x4.jpg
+808281293	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+808281308	0	15	PutDataIntoStimulusControl - ImageObject
+808282176	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+808282195	0	15	Recording disabled for this stimulus
+809283003	0	21	StopExecution Image
+809283071	0	15	OnStimulusCompleted
+809283089	0	15	ExecuteCurrentObject Image
+809283139	0	15	stopExecutionEvent set after 1000.83650926781 ms
+809283141	0	15	DoTheWork End Image
+809283174	0	16	DoTheWork Start Image
+809283189	0	16	AddProtocolLine b1matrix 4.jpg
+809283191	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 4.jpg
+809283195	0	16	PutDataIntoStimulusControl - ImageObject
+809299136	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 4.jpg
+809308404	0	16	ContinueMessage cd0e09373f9616ebe84d56e6dabafe1f_1680x1050.jpg
+809484738	0	4	CPU 10.32 %, MEM Free 4.47 GB, Used 41.14 %
+815030415	0	4	CPU 11.20 %, MEM Free 4.48 GB, Used 41.10 %
+815301214	4	16	ShowImage expected : 6000
+815301275	0	16	OnStimulusCompleted
+815301291	0	16	ExecuteCurrentObject Text
+815301355	0	16	stopExecutionEvent set after 6000.17614406061 ms
+815301357	0	16	DoTheWork End Image
+815301440	0	10	DoTheWork Start Text
+815301458	0	10	AddProtocolLine RichText2.rtf
+815301460	0	10	Text : StartStimulus D:\Experiments\before stress noga\RichText2.rtf
+815301472	0	10	PutDataIntoStimulusControl - TextObject
+815304256	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText2.rtf
+815304325	0	10	Recording disabled for this stimulus
+817304337	0	10	OnStimulusCompleted
+817304355	0	10	ExecuteCurrentObject Image
+817304465	0	6	DoTheWork Start Image
+817304486	0	6	AddProtocolLine fixation cross 4x4.jpg
+817304488	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+817304500	0	6	PutDataIntoStimulusControl - ImageObject
+817304553	0	10	stopExecutionEvent set after 2000.01784492326 ms
+817304556	0	10	DoTheWork End Text
+817305088	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+817305076	0	6	Recording disabled for this stimulus
+818640971	0	21	StopExecution Image
+818641030	0	6	OnStimulusCompleted
+818641048	0	6	ExecuteCurrentObject Image
+818641112	0	6	stopExecutionEvent set after 1335.94298743892 ms
+818641114	0	6	DoTheWork End Image
+818641135	0	10	DoTheWork Start Image
+818641147	0	10	AddProtocolLine b1matrix 5.jpg
+818641149	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 5.jpg
+818641159	0	10	PutDataIntoStimulusControl - ImageObject
+818656448	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 5.jpg
+818665368	0	10	ContinueMessage f51571ea5faeae6d3b6f2041d08a2c2a_1680x1050.jpg
+820837327	0	4	CPU 10.61 %, MEM Free 4.47 GB, Used 41.26 %
+824659704	4	10	ShowImage expected : 6000
+824659798	0	10	OnStimulusCompleted
+824659819	0	10	ExecuteCurrentObject Text
+824659905	0	10	stopExecutionEvent set after 6000.21631819022 ms
+824659907	0	10	DoTheWork End Image
+824659945	0	15	DoTheWork Start Text
+824659982	0	15	AddProtocolLine RichText3.rtf
+824659985	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText3.rtf
+824660002	0	15	PutDataIntoStimulusControl - TextObject
+824660800	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText3.rtf
+824660844	0	15	Recording disabled for this stimulus
+825830832	0	4	CPU 10.79 %, MEM Free 4.47 GB, Used 41.24 %
+826661650	0	15	OnStimulusCompleted
+826661671	0	15	ExecuteCurrentObject Image
+826661744	0	15	stopExecutionEvent set after 2000.78609757566 ms
+826661746	0	15	DoTheWork End Text
+826661771	0	10	DoTheWork Start Image
+826661789	0	10	AddProtocolLine fixation cross 4x4.jpg
+826661791	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+826661801	0	10	PutDataIntoStimulusControl - ImageObject
+826662400	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+826662385	0	10	Recording disabled for this stimulus
+827664907	0	21	StopExecution Image
+827664965	0	10	OnStimulusCompleted
+827664990	0	10	ExecuteCurrentObject Image
+827665051	0	10	stopExecutionEvent set after 1002.56859169698 ms
+827665053	0	10	DoTheWork End Image
+827665084	0	15	DoTheWork Start Image
+827665098	0	15	AddProtocolLine b1matrix 6.jpg
+827665101	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 6.jpg
+827665106	0	15	PutDataIntoStimulusControl - ImageObject
+827679680	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 6.jpg
+827689376	0	15	ContinueMessage b7f074481c6378c0d6a103df0fdcad7c_1680x1050.jpg
+831063774	0	4	CPU 11.00 %, MEM Free 4.46 GB, Used 41.29 %
+833681578	4	15	ShowImage expected : 6000
+833681755	0	15	OnStimulusCompleted
+833681785	0	15	ExecuteCurrentObject Text
+833681930	0	10	DoTheWork Start Text
+833682033	0	10	AddProtocolLine RichText4.rtf
+833682041	0	10	Text : StartStimulus D:\Experiments\before stress noga\RichText4.rtf
+833682061	0	10	PutDataIntoStimulusControl - TextObject
+833682110	0	15	stopExecutionEvent set after 6000.18411853898 ms
+833682116	0	15	DoTheWork End Image
+833684963	0	10	Recording disabled for this stimulus
+833684992	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText4.rtf
+835685901	0	10	OnStimulusCompleted
+835685921	0	10	ExecuteCurrentObject Image
+835686021	0	15	DoTheWork Start Image
+835686042	0	15	AddProtocolLine fixation cross 4x4.jpg
+835686044	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+835686056	0	15	PutDataIntoStimulusControl - ImageObject
+835686286	0	10	stopExecutionEvent set after 2000.97469627988 ms
+835686290	0	10	DoTheWork End Text
+835702912	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+835702946	0	15	Recording disabled for this stimulus
+836704767	0	21	StopExecution Image
+836704826	0	15	OnStimulusCompleted
+836704843	0	15	ExecuteCurrentObject Image
+836704903	0	15	stopExecutionEvent set after 1001.9164152211 ms
+836704905	0	15	DoTheWork End Image
+836704925	0	6	DoTheWork Start Image
+836704937	0	6	AddProtocolLine b1matrix 7.jpg
+836704939	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 7.jpg
+836704950	0	6	PutDataIntoStimulusControl - ImageObject
+836719936	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 7.jpg
+836728796	0	6	ContinueMessage 4910126c8f3e1ca96d552752047b4786_1680x1050.jpg
+836740271	0	4	CPU 10.91 %, MEM Free 4.46 GB, Used 41.33 %
+842148667	0	4	CPU 11.74 %, MEM Free 4.45 GB, Used 41.43 %
+842721439	4	6	ShowImage expected : 6000
+842721511	0	6	OnStimulusCompleted
+842721531	0	6	ExecuteCurrentObject Text
+842721652	0	16	DoTheWork Start Text
+842721691	0	16	AddProtocolLine RichText5.rtf
+842721698	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText5.rtf
+842721722	0	16	PutDataIntoStimulusControl - TextObject
+842722437	0	6	stopExecutionEvent set after 6000.15425139403 ms
+842722440	0	6	DoTheWork End Image
+842725115	0	16	Recording disabled for this stimulus
+842726784	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText5.rtf
+844725185	0	16	OnStimulusCompleted
+844725204	0	16	ExecuteCurrentObject Image
+844725269	0	16	stopExecutionEvent set after 2000.06581944585 ms
+844725272	0	16	DoTheWork End Text
+844725298	0	10	DoTheWork Start Image
+844725317	0	10	AddProtocolLine fixation cross 4x4.jpg
+844725319	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+844725331	0	10	PutDataIntoStimulusControl - ImageObject
+844725824	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+844725873	0	10	Recording disabled for this stimulus
+845856744	0	21	StopExecution Image
+845856775	0	10	OnStimulusCompleted
+845856792	0	10	ExecuteCurrentObject Image
+845856846	0	10	stopExecutionEvent set after 1130.89128871882 ms
+845856848	0	10	DoTheWork End Image
+845856852	0	6	DoTheWork Start Image
+845856866	0	6	AddProtocolLine b1matrix 8.jpg
+845856868	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 8.jpg
+845856872	0	6	PutDataIntoStimulusControl - ImageObject
+845860224	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 8.jpg
+845873313	0	6	ContinueMessage 2bc56c7d5a1336831dbebcd4bae5d954_1680x1050.jpg
+848169610	0	4	CPU 13.39 %, MEM Free 4.46 GB, Used 41.30 %
+851861628	4	6	ShowImage expected : 6000
+851861681	0	6	OnStimulusCompleted
+851861699	0	6	ExecuteCurrentObject Text
+851861799	0	16	DoTheWork Start Text
+851861822	0	16	AddProtocolLine RichText6.rtf
+851861824	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText6.rtf
+851861839	0	16	PutDataIntoStimulusControl - TextObject
+851862000	0	6	stopExecutionEvent set after 6000.1339098326 ms
+851862002	0	6	DoTheWork End Image
+851864406	0	16	Recording disabled for this stimulus
+851864448	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText6.rtf
+853864419	0	16	OnStimulusCompleted
+853864440	0	16	ExecuteCurrentObject Image
+853864556	0	10	DoTheWork Start Image
+853864617	0	10	AddProtocolLine fixation cross 4x4.jpg
+853864622	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+853864634	0	10	PutDataIntoStimulusControl - ImageObject
+853864660	0	16	stopExecutionEvent set after 2000.03686451209 ms
+853864665	0	16	DoTheWork End Text
+853866432	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+853866454	0	10	Recording disabled for this stimulus
+853998038	0	4	CPU 11.14 %, MEM Free 4.46 GB, Used 41.31 %
+854868619	0	21	StopExecution Image
+854868654	0	10	OnStimulusCompleted
+854868672	0	10	ExecuteCurrentObject Image
+854868730	0	10	stopExecutionEvent set after 1002.16071088004 ms
+854868732	0	10	DoTheWork End Image
+854868764	0	6	DoTheWork Start Image
+854868778	0	6	AddProtocolLine b1matrix 9.jpg
+854868781	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 9.jpg
+854868791	0	6	PutDataIntoStimulusControl - ImageObject
+854883456	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 9.jpg
+854893734	0	6	ContinueMessage eff10e48e123389894ac2c8926fdd40c_1680x1050.jpg
+859470259	0	4	CPU 10.90 %, MEM Free 4.46 GB, Used 41.38 %
+860887183	4	6	ShowImage expected : 6000
+860887245	0	6	OnStimulusCompleted
+860887263	0	6	ExecuteCurrentObject Text
+860887368	0	10	DoTheWork Start Text
+860887388	0	10	AddProtocolLine RichText7.rtf
+860887390	0	10	Text : StartStimulus D:\Experiments\before stress noga\RichText7.rtf
+860887402	0	10	PutDataIntoStimulusControl - TextObject
+860887710	0	6	stopExecutionEvent set after 6000.19413073301 ms
+860887713	0	6	DoTheWork End Image
+860888128	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText7.rtf
+860888149	0	10	Recording disabled for this stimulus
+862888697	0	10	OnStimulusCompleted
+862888715	0	10	ExecuteCurrentObject Image
+862888773	0	10	stopExecutionEvent set after 2000.57191011846 ms
+862888776	0	10	DoTheWork End Text
+862888805	0	15	DoTheWork Start Image
+862888823	0	15	AddProtocolLine fixation cross 4x4.jpg
+862888825	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+862888835	0	15	PutDataIntoStimulusControl - ImageObject
+862889408	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+862889459	0	15	Recording disabled for this stimulus
+864044731	0	21	StopExecution Image
+864044806	0	15	OnStimulusCompleted
+864044839	0	15	ExecuteCurrentObject Image
+864044984	0	6	DoTheWork Start Image
+864045021	0	6	AddProtocolLine b1matrix 10.jpg
+864045026	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 10.jpg
+864045036	0	6	PutDataIntoStimulusControl - ImageObject
+864045304	0	15	stopExecutionEvent set after 1155.3139738642 ms
+864045313	0	15	DoTheWork End Image
+864057728	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 10.jpg
+864068529	0	6	ContinueMessage 2db836811a020d6d59a1c269ed2590b9_1680x1050.jpg
+865248996	0	4	CPU 11.07 %, MEM Free 4.46 GB, Used 41.31 %
+870059269	4	6	ShowImage expected : 6000
+870059328	0	6	OnStimulusCompleted
+870059357	0	6	ExecuteCurrentObject Text
+870059415	0	6	stopExecutionEvent set after 6000.21471557426 ms
+870059417	0	6	DoTheWork End Image
+870059457	0	16	DoTheWork Start Text
+870059474	0	16	AddProtocolLine RichText8.rtf
+870059477	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText8.rtf
+870059490	0	16	PutDataIntoStimulusControl - TextObject
+870061952	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText8.rtf
+870061982	0	16	Recording disabled for this stimulus
+871191128	0	4	CPU 10.84 %, MEM Free 4.46 GB, Used 41.30 %
+872061995	0	16	OnStimulusCompleted
+872062029	0	16	ExecuteCurrentObject Image
+872062132	0	16	stopExecutionEvent set after 2000.03117065036 ms
+872062137	0	16	DoTheWork End Text
+872062160	0	10	DoTheWork Start Image
+872062195	0	10	AddProtocolLine fixation cross 4x4.jpg
+872062199	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+872062218	0	10	PutDataIntoStimulusControl - ImageObject
+872064000	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+872064034	0	10	Recording disabled for this stimulus
+873064523	0	21	StopExecution Image
+873064554	0	10	OnStimulusCompleted
+873064570	0	10	ExecuteCurrentObject Image
+873064621	0	10	stopExecutionEvent set after 1000.55917786288 ms
+873064623	0	10	DoTheWork End Image
+873064663	0	15	DoTheWork Start Image
+873064675	0	15	AddProtocolLine b1matrix 11.jpg
+873064677	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 11.jpg
+873064681	0	15	PutDataIntoStimulusControl - ImageObject
+873081152	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 11.jpg
+873090586	0	15	ContinueMessage 34bea5a9fc2a1e43a07c14d93e44c65c_1680x1050.jpg
+876385728	0	4	CPU 10.64 %, MEM Free 4.45 GB, Used 41.46 %
+879082618	4	15	ShowImage expected : 6000
+879082675	0	15	OnStimulusCompleted
+879082704	0	15	ExecuteCurrentObject Text
+879082769	0	15	stopExecutionEvent set after 6000.0964110496 ms
+879082771	0	15	DoTheWork End Image
+879082799	0	6	DoTheWork Start Text
+879082818	0	6	AddProtocolLine RichText9.rtf
+879082820	0	6	Text : StartStimulus D:\Experiments\before stress noga\RichText9.rtf
+879082830	0	6	PutDataIntoStimulusControl - TextObject
+879085248	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText9.rtf
+879085218	0	6	Recording disabled for this stimulus
+881085280	0	6	OnStimulusCompleted
+881085321	0	6	ExecuteCurrentObject Image
+881085449	0	6	stopExecutionEvent set after 2000.07402343595 ms
+881085454	0	6	DoTheWork End Text
+881085486	0	16	DoTheWork Start Image
+881085548	0	16	AddProtocolLine fixation cross 4x4.jpg
+881085556	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+881085586	0	16	PutDataIntoStimulusControl - ImageObject
+881086720	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+881086784	0	16	Recording disabled for this stimulus
+882088380	0	21	StopExecution Image
+882088439	0	16	OnStimulusCompleted
+882088456	0	16	ExecuteCurrentObject Image
+882088555	0	10	DoTheWork Start Image
+882088571	0	10	AddProtocolLine b1matrix 12.jpg
+882088573	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 12.jpg
+882088579	0	10	PutDataIntoStimulusControl - ImageObject
+882088651	0	16	stopExecutionEvent set after 1001.65791466725 ms
+882088653	0	16	DoTheWork End Image
+882104320	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 12.jpg
+882115915	0	10	ContinueMessage 157ef5544a52ea3bf54f787a636f4d4a_1680x1050.jpg
+882223188	0	4	CPU 10.57 %, MEM Free 4.43 GB, Used 41.71 %
+887463620	0	4	CPU 10.14 %, MEM Free 4.45 GB, Used 41.45 %
+888105876	4	10	ShowImage expected : 6000
+888106016	0	10	OnStimulusCompleted
+888106046	0	10	ExecuteCurrentObject Text
+888106215	0	6	DoTheWork Start Text
+888106260	0	6	AddProtocolLine RichText10.rtf
+888106264	0	6	Text : StartStimulus D:\Experiments\before stress noga\RichText10.rtf
+888106288	0	6	PutDataIntoStimulusControl - TextObject
+888106451	0	10	stopExecutionEvent set after 6000.16610546708 ms
+888106460	0	10	DoTheWork End Image
+888108573	0	6	Recording disabled for this stimulus
+888108544	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText10.rtf
+890108569	0	6	OnStimulusCompleted
+890108607	0	6	ExecuteCurrentObject Image
+890108724	0	6	stopExecutionEvent set after 2000.0066390661 ms
+890108730	0	6	DoTheWork End Text
+890108763	0	15	DoTheWork Start Image
+890108805	0	15	AddProtocolLine fixation cross 4x4.jpg
+890108810	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+890108831	0	15	PutDataIntoStimulusControl - ImageObject
+890110016	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+890109990	0	15	Recording disabled for this stimulus
+891112367	0	21	StopExecution Image
+891112433	0	15	OnStimulusCompleted
+891112453	0	15	ExecuteCurrentObject Image
+891112531	0	15	stopExecutionEvent set after 1002.47764962041 ms
+891112532	0	10	DoTheWork Start Image
+891112534	0	15	DoTheWork End Image
+891112551	0	10	AddProtocolLine b1matrix 13.jpg
+891112554	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 13.jpg
+891112566	0	10	PutDataIntoStimulusControl - ImageObject
+891127552	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 13.jpg
+891141649	0	10	ContinueMessage 879216793575c010630be3b5c77840d4_1680x1050.jpg
+893455953	0	4	CPU 10.71 %, MEM Free 4.46 GB, Used 41.27 %
+897129103	4	10	ShowImage expected : 6000
+897129158	0	10	OnStimulusCompleted
+897129175	0	10	ExecuteCurrentObject Text
+897129237	0	10	stopExecutionEvent set after 6000.10311688507 ms
+897129239	0	10	DoTheWork End Image
+897129247	0	15	DoTheWork Start Text
+897129267	0	15	AddProtocolLine RichText13.rtf
+897129268	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText13.rtf
+897129279	0	15	PutDataIntoStimulusControl - TextObject
+897131732	0	15	Recording disabled for this stimulus
+897131712	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText13.rtf
+899131779	0	15	OnStimulusCompleted
+899131800	0	15	ExecuteCurrentObject Image
+899131878	0	15	stopExecutionEvent set after 2000.00133480597 ms
+899131880	0	15	DoTheWork End Text
+899131911	0	6	DoTheWork Start Image
+899131930	0	6	AddProtocolLine fixation cross 4x4.jpg
+899131932	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+899131943	0	6	PutDataIntoStimulusControl - ImageObject
+899133824	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+899133840	0	6	Recording disabled for this stimulus
+899201412	0	4	CPU 10.73 %, MEM Free 4.47 GB, Used 41.27 %
+900136438	0	21	StopExecution Image
+900136544	0	6	OnStimulusCompleted
+900136579	0	6	ExecuteCurrentObject Image
+900136696	0	6	stopExecutionEvent set after 1002.76435637164 ms
+900136700	0	6	DoTheWork End Image
+900136745	0	10	DoTheWork Start Image
+900136784	0	10	AddProtocolLine b1matrix 14.jpg
+900136789	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 14.jpg
+900136799	0	10	PutDataIntoStimulusControl - ImageObject
+900150848	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 14.jpg
+900170868	0	10	ContinueMessage 7d7bf7ed55744617428fc4e3be7084ee_1680x1050.jpg
+904654407	0	4	CPU 11.98 %, MEM Free 4.46 GB, Used 41.29 %
+906152425	4	10	ShowImage expected : 6000
+906152501	0	10	OnStimulusCompleted
+906152521	0	10	ExecuteCurrentObject Text
+906152612	0	15	DoTheWork Start Text
+906152636	0	15	AddProtocolLine RichText14.rtf
+906152638	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText14.rtf
+906152653	0	15	PutDataIntoStimulusControl - TextObject
+906152843	0	10	stopExecutionEvent set after 6000.09539048648 ms
+906152846	0	10	DoTheWork End Image
+906156096	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText14.rtf
+906156079	0	15	Recording disabled for this stimulus
+908156046	0	15	OnStimulusCompleted
+908156068	0	15	ExecuteCurrentObject Image
+908156279	0	15	stopExecutionEvent set after 2000.01372270536 ms
+908156282	0	15	DoTheWork End Text
+908156321	0	10	DoTheWork Start Image
+908156336	0	10	AddProtocolLine fixation cross 4x4.jpg
+908156339	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+908156350	0	10	PutDataIntoStimulusControl - ImageObject
+908156992	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+908157057	0	10	Recording disabled for this stimulus
+909158156	0	21	StopExecution Image
+909158220	0	10	OnStimulusCompleted
+909158239	0	10	ExecuteCurrentObject Image
+909158300	0	10	stopExecutionEvent set after 1001.0998948977 ms
+909158302	0	10	DoTheWork End Image
+909158306	0	6	DoTheWork Start Image
+909158317	0	6	AddProtocolLine b1matrix 15.jpg
+909158319	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 15.jpg
+909158329	0	6	PutDataIntoStimulusControl - ImageObject
+909174144	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 15.jpg
+909185586	0	6	ContinueMessage 7fa72796ab69f0249a5c1063112d7b29_1680x1050.jpg
+910495872	0	4	CPU 10.63 %, MEM Free 4.46 GB, Used 41.31 %
+915175547	4	6	ShowImage expected : 6000
+915175633	0	6	OnStimulusCompleted
+915175667	0	6	ExecuteCurrentObject Text
+915175732	0	6	stopExecutionEvent set after 6000.03358609414 ms
+915175733	0	6	DoTheWork End Image
+915175760	0	16	DoTheWork Start Text
+915175777	0	16	AddProtocolLine RichText15.rtf
+915175779	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText15.rtf
+915175791	0	16	PutDataIntoStimulusControl - TextObject
+915179264	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText15.rtf
+915179303	0	16	Recording disabled for this stimulus
+915336288	0	4	CPU 10.24 %, MEM Free 4.46 GB, Used 41.29 %
+917180344	0	16	OnStimulusCompleted
+917180382	0	16	ExecuteCurrentObject Image
+917180492	0	16	stopExecutionEvent set after 2000.99597885191 ms
+917180497	0	16	DoTheWork End Text
+917180529	0	6	DoTheWork Start Image
+917180580	0	6	AddProtocolLine fixation cross 4x4.jpg
+917180586	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+917180609	0	6	PutDataIntoStimulusControl - ImageObject
+917197376	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+917197420	0	6	Recording disabled for this stimulus
+918198067	0	21	StopExecution Image
+918198125	0	6	OnStimulusCompleted
+918198144	0	6	ExecuteCurrentObject Image
+918198206	0	6	stopExecutionEvent set after 1000.68708600771 ms
+918198208	0	6	DoTheWork End Image
+918198229	0	10	DoTheWork Start Image
+918198241	0	10	AddProtocolLine b1matrix 16.jpg
+918198243	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 16.jpg
+918198248	0	10	PutDataIntoStimulusControl - ImageObject
+918214400	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 16.jpg
+918225516	0	10	ContinueMessage 101f4ac04a11efeff6c58eba5aa798fd_1680x1050.jpg
+921411841	0	4	CPU 11.29 %, MEM Free 4.54 GB, Used 40.29 %
+924216377	4	10	ShowImage expected : 6000
+924216431	0	10	OnStimulusCompleted
+924216450	0	10	ExecuteCurrentObject Text
+924216521	0	16	DoTheWork Start Text
+924216538	0	16	AddProtocolLine RichText16.rtf
+924216540	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText16.rtf
+924216549	0	16	PutDataIntoStimulusControl - TextObject
+924217957	0	10	stopExecutionEvent set after 6000.1948757304 ms
+924217959	0	10	DoTheWork End Image
+924219008	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText16.rtf
+924218978	0	16	Recording disabled for this stimulus
+926219554	0	16	OnStimulusCompleted
+926219575	0	16	ExecuteCurrentObject Image
+926219641	0	16	stopExecutionEvent set after 2000.61060294354 ms
+926219643	0	16	DoTheWork End Text
+926219670	0	10	DoTheWork Start Image
+926219687	0	10	AddProtocolLine fixation cross 4x4.jpg
+926219689	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+926219700	0	10	PutDataIntoStimulusControl - ImageObject
+926220352	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+926220366	0	10	Recording disabled for this stimulus
+927376033	0	4	CPU 10.89 %, MEM Free 4.54 GB, Used 40.29 %
+927584184	0	21	StopExecution Image
+927584228	0	10	OnStimulusCompleted
+927584246	0	10	ExecuteCurrentObject Image
+927584342	0	16	DoTheWork Start Image
+927584356	0	16	AddProtocolLine b1matrix 17.jpg
+927584359	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 17.jpg
+927584364	0	16	PutDataIntoStimulusControl - ImageObject
+927584679	0	10	stopExecutionEvent set after 1363.87972574162 ms
+927584681	0	10	DoTheWork End Image
+927588608	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 17.jpg
+927601408	0	16	ContinueMessage f9bb8c8c6b5f02328457b0d43f6ec6ae_1680x1050.jpg
+933364312	0	4	CPU 10.31 %, MEM Free 4.53 GB, Used 40.38 %
+933590225	4	16	ShowImage expected : 6000
+933590293	0	16	OnStimulusCompleted
+933590313	0	16	ExecuteCurrentObject Text
+933590381	0	16	stopExecutionEvent set after 6000.13543453836 ms
+933590383	0	16	DoTheWork End Image
+933590421	0	15	DoTheWork Start Text
+933590441	0	15	AddProtocolLine RichText17.rtf
+933590443	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText17.rtf
+933590455	0	15	PutDataIntoStimulusControl - TextObject
+933592832	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText17.rtf
+933592849	0	15	Recording disabled for this stimulus
+935593868	0	15	OnStimulusCompleted
+935593889	0	15	ExecuteCurrentObject Image
+935593957	0	15	stopExecutionEvent set after 2000.97266109049 ms
+935593959	0	15	DoTheWork End Text
+935594002	0	15	DoTheWork Start Image
+935594019	0	15	AddProtocolLine fixation cross 4x4.jpg
+935594021	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+935594031	0	15	PutDataIntoStimulusControl - ImageObject
+935610880	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+935610896	0	15	Recording disabled for this stimulus
+936612048	0	21	StopExecution Image
+936612120	0	15	OnStimulusCompleted
+936612143	0	15	ExecuteCurrentObject Image
+936612252	0	10	DoTheWork Start Image
+936612267	0	10	AddProtocolLine b1matrix 18.jpg
+936612270	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 18.jpg
+936612278	0	10	PutDataIntoStimulusControl - ImageObject
+936613075	0	15	stopExecutionEvent set after 1001.24136558223 ms
+936613078	0	15	DoTheWork End Image
+936628864	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 18.jpg
+936640471	0	10	ContinueMessage c61fbf3a9d9e642fe4016d8236446416_1680x1050.jpg
+938829300	0	4	CPU 11.07 %, MEM Free 4.52 GB, Used 40.50 %
+942630838	4	10	ShowImage expected : 6000
+942630915	0	10	OnStimulusCompleted
+942630952	0	10	ExecuteCurrentObject Text
+942631047	0	16	DoTheWork Start Text
+942631073	0	16	AddProtocolLine RichText18.rtf
+942631075	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText18.rtf
+942631089	0	16	PutDataIntoStimulusControl - TextObject
+942632021	0	10	stopExecutionEvent set after 6000.14109308279 ms
+942632024	0	10	DoTheWork End Image
+942632699	0	16	Recording disabled for this stimulus
+942634944	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText18.rtf
+943791714	0	4	CPU 10.77 %, MEM Free 4.52 GB, Used 40.51 %
+944633130	0	16	OnStimulusCompleted
+944633163	0	16	ExecuteCurrentObject Image
+944633264	0	6	DoTheWork Start Image
+944633284	0	6	AddProtocolLine fixation cross 4x4.jpg
+944633292	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+944633305	0	6	PutDataIntoStimulusControl - ImageObject
+944633355	0	16	stopExecutionEvent set after 2000.42567938304 ms
+944633357	0	16	DoTheWork End Text
+944634112	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+944634450	0	6	Recording disabled for this stimulus
+946254264	0	21	StopExecution Image
+946254298	0	6	OnStimulusCompleted
+946254316	0	6	ExecuteCurrentObject Image
+946254404	0	16	DoTheWork Start Image
+946254416	0	16	AddProtocolLine b1matrix 19.jpg
+946254418	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 19.jpg
+946254431	0	16	PutDataIntoStimulusControl - ImageObject
+946254511	0	6	stopExecutionEvent set after 1620.12588503098 ms
+946254514	0	6	DoTheWork End Image
+946269184	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 19.jpg
+946279572	0	16	ContinueMessage 2c59efbc6ec61c1fadc1ebc4034b203d_1680x1050.jpg
+949510552	0	4	CPU 11.71 %, MEM Free 4.53 GB, Used 40.46 %
+952271201	4	16	ShowImage expected : 6000
+952271261	0	16	OnStimulusCompleted
+952271280	0	16	ExecuteCurrentObject Text
+952271343	0	16	stopExecutionEvent set after 6000.11243531442 ms
+952271345	0	16	DoTheWork End Image
+952271377	0	15	DoTheWork Start Text
+952271396	0	15	AddProtocolLine RichText19.rtf
+952271398	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText19.rtf
+952271410	0	15	PutDataIntoStimulusControl - TextObject
+952273344	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText19.rtf
+952273383	0	15	Recording disabled for this stimulus
+954273409	0	15	OnStimulusCompleted
+954273437	0	15	ExecuteCurrentObject Image
+954273506	0	15	stopExecutionEvent set after 2000.06754809749 ms
+954273508	0	15	DoTheWork End Text
+954273670	0	6	DoTheWork Start Image
+954273689	0	6	AddProtocolLine fixation cross 4x4.jpg
+954273691	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+954273702	0	6	PutDataIntoStimulusControl - ImageObject
+954275456	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+954275470	0	6	Recording disabled for this stimulus
+955306347	0	21	StopExecution Image
+955306439	0	6	OnStimulusCompleted
+955306474	0	6	ExecuteCurrentObject Image
+955306577	0	6	stopExecutionEvent set after 1030.96562397242 ms
+955306582	0	6	DoTheWork End Image
+955306636	0	10	DoTheWork Start Image
+955306673	0	10	AddProtocolLine b1matrix 20.jpg
+955306677	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 20.jpg
+955306687	0	10	PutDataIntoStimulusControl - ImageObject
+955309504	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 20.jpg
+955330855	0	10	ContinueMessage 2dcb581a4d186fd25c0376642fc06b0e_1680x1050.jpg
+955492829	0	4	CPU 10.12 %, MEM Free 4.51 GB, Used 40.69 %
+960641043	0	4	CPU 11.89 %, MEM Free 4.52 GB, Used 40.57 %
+961310993	4	10	ShowImage expected : 6000
+961311059	0	10	OnStimulusCompleted
+961311077	0	10	ExecuteCurrentObject Text
+961311170	0	16	DoTheWork Start Text
+961311189	0	16	AddProtocolLine RichText20.rtf
+961311191	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText20.rtf
+961311203	0	16	PutDataIntoStimulusControl - TextObject
+961311318	0	10	stopExecutionEvent set after 6000.12835683584 ms
+961311320	0	10	DoTheWork End Image
+961313728	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText20.rtf
+961313688	0	16	Recording disabled for this stimulus
+963313689	0	16	OnStimulusCompleted
+963313710	0	16	ExecuteCurrentObject Image
+963313769	0	16	stopExecutionEvent set after 2000.0277589463 ms
+963313772	0	16	DoTheWork End Text
+963313807	0	15	DoTheWork Start Image
+963313827	0	15	AddProtocolLine fixation cross 4x4.jpg
+963313829	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+963313841	0	15	PutDataIntoStimulusControl - ImageObject
+963315712	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+963315705	0	15	Recording disabled for this stimulus
+964318000	0	21	StopExecution Image
+964318034	0	15	OnStimulusCompleted
+964318053	0	15	ExecuteCurrentObject Image
+964318112	0	15	stopExecutionEvent set after 1002.32455076182 ms
+964318113	0	15	DoTheWork End Image
+964318136	0	16	DoTheWork Start Image
+964318149	0	16	AddProtocolLine b1matrix 21.jpg
+964318151	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 21.jpg
+964318155	0	16	PutDataIntoStimulusControl - ImageObject
+964332736	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 21.jpg
+964343235	0	16	ContinueMessage fb31b96f13375209fbd1faa0d7f3470e_1680x1050.jpg
+966608720	0	4	CPU 12.00 %, MEM Free 4.51 GB, Used 40.64 %
+970334411	4	16	ShowImage expected : 6000
+970334457	0	16	OnStimulusCompleted
+970334473	0	16	ExecuteCurrentObject Text
+970334530	0	16	stopExecutionEvent set after 6000.22297299492 ms
+970334531	0	16	DoTheWork End Image
+970334603	0	10	DoTheWork Start Text
+970334620	0	10	AddProtocolLine RichText21.rtf
+970334621	0	10	Text : StartStimulus D:\Experiments\before stress noga\RichText21.rtf
+970334631	0	10	PutDataIntoStimulusControl - TextObject
+970336896	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText21.rtf
+970336984	0	10	Recording disabled for this stimulus
+972336944	0	10	OnStimulusCompleted
+972336966	0	10	ExecuteCurrentObject Image
+972337063	0	6	DoTheWork Start Image
+972337085	0	6	AddProtocolLine fixation cross 4x4.jpg
+972337087	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+972337139	0	6	PutDataIntoStimulusControl - ImageObject
+972337209	0	10	stopExecutionEvent set after 2000.04890158832 ms
+972337212	0	10	DoTheWork End Text
+972339008	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+972338987	0	6	Recording disabled for this stimulus
+972423993	0	4	CPU 10.82 %, MEM Free 4.51 GB, Used 40.63 %
+973340005	0	21	StopExecution Image
+973340085	0	6	OnStimulusCompleted
+973340109	0	6	ExecuteCurrentObject Image
+973340177	0	6	stopExecutionEvent set after 1001.0690832051 ms
+973340179	0	6	DoTheWork End Image
+973340219	0	15	DoTheWork Start Image
+973340241	0	15	AddProtocolLine b1matrix 22.jpg
+973340245	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 22.jpg
+973340258	0	15	PutDataIntoStimulusControl - ImageObject
+973356096	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 22.jpg
+973373199	0	15	ContinueMessage 61e5d1f1951aefa8b554c3dd0f004edd_1680x1050.jpg
+977839627	0	4	CPU 10.83 %, MEM Free 4.53 GB, Used 40.41 %
+979359948	4	15	ShowImage expected : 6000
+979360008	0	15	OnStimulusCompleted
+979360027	0	15	ExecuteCurrentObject Text
+979360091	0	15	stopExecutionEvent set after 6000.0607996943 ms
+979360093	0	15	DoTheWork End Image
+979360102	0	16	DoTheWork Start Text
+979360123	0	16	AddProtocolLine RichText22.rtf
+979360125	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText22.rtf
+979360136	0	16	PutDataIntoStimulusControl - TextObject
+979377152	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText22.rtf
+979377174	0	16	Recording disabled for this stimulus
+981377199	0	16	OnStimulusCompleted
+981377223	0	16	ExecuteCurrentObject Image
+981377317	0	15	DoTheWork Start Image
+981377340	0	15	AddProtocolLine fixation cross 4x4.jpg
+981377342	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+981377414	0	15	PutDataIntoStimulusControl - ImageObject
+981377446	0	16	stopExecutionEvent set after 2000.04627080524 ms
+981377449	0	16	DoTheWork End Text
+981379136	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+981379203	0	15	Recording disabled for this stimulus
+982379820	0	21	StopExecution Image
+982379897	0	15	OnStimulusCompleted
+982379916	0	15	ExecuteCurrentObject Image
+982379975	0	15	stopExecutionEvent set after 1000.63895995939 ms
+982379977	0	15	DoTheWork End Image
+982380017	0	15	DoTheWork Start Image
+982380028	0	15	AddProtocolLine b1matrix 23.jpg
+982380031	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 23.jpg
+982380035	0	15	PutDataIntoStimulusControl - ImageObject
+982396288	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 23.jpg
+982408240	0	15	ContinueMessage a2222051b7e5c44b3a873021ee3bf04e_1680x1050.jpg
+983602649	0	4	CPU 11.00 %, MEM Free 4.52 GB, Used 40.52 %
+988402731	4	15	ShowImage expected : 6000
+988402848	0	15	OnStimulusCompleted
+988402881	0	15	ExecuteCurrentObject Text
+988402982	0	15	stopExecutionEvent set after 6000.254062451 ms
+988403007	0	15	DoTheWork End Image
+988403024	0	10	DoTheWork Start Text
+988403066	0	10	AddProtocolLine RichText23.rtf
+988403071	0	10	Text : StartStimulus D:\Experiments\before stress noga\RichText23.rtf
+988403093	0	10	PutDataIntoStimulusControl - TextObject
+988417536	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText23.rtf
+988417563	0	10	Recording disabled for this stimulus
+988590456	0	4	CPU 11.10 %, MEM Free 4.53 GB, Used 40.36 %
+990418446	0	10	OnStimulusCompleted
+990418468	0	10	ExecuteCurrentObject Image
+990418535	0	10	stopExecutionEvent set after 2000.97672770512 ms
+990418537	0	10	DoTheWork End Text
+990418551	0	15	DoTheWork Start Image
+990418571	0	15	AddProtocolLine fixation cross 4x4.jpg
+990418573	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+990418584	0	15	PutDataIntoStimulusControl - ImageObject
+990419072	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+990419127	0	15	Recording disabled for this stimulus
+991419756	0	21	StopExecution Image
+991419820	0	15	OnStimulusCompleted
+991419839	0	15	ExecuteCurrentObject Image
+991419897	0	15	stopExecutionEvent set after 1000.62396661532 ms
+991419899	0	15	DoTheWork End Image
+991419922	0	16	DoTheWork Start Image
+991419934	0	16	AddProtocolLine b1matrix 24.jpg
+991419936	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 24.jpg
+991419941	0	16	PutDataIntoStimulusControl - ImageObject
+991436544	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 24.jpg
+991447587	0	16	ContinueMessage 9fa8ff8dede41af8a7612b76673982ce_1680x1050.jpg
+993667434	0	4	CPU 11.26 %, MEM Free 4.52 GB, Used 40.50 %
+997438115	4	16	ShowImage expected : 6000
+997438240	0	16	OnStimulusCompleted
+997438274	0	16	ExecuteCurrentObject Text
+997438372	0	16	stopExecutionEvent set after 6000.24551071966 ms
+997438376	0	16	DoTheWork End Image
+997438395	0	10	DoTheWork Start Text
+997438431	0	10	AddProtocolLine RichText24.rtf
+997438435	0	10	Text : StartStimulus D:\Experiments\before stress noga\RichText24.rtf
+997438454	0	10	PutDataIntoStimulusControl - TextObject
+997440704	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText24.rtf
+997440773	0	10	Recording disabled for this stimulus
+999440748	0	10	OnStimulusCompleted
+999440773	0	10	ExecuteCurrentObject Image
+999440861	0	10	stopExecutionEvent set after 2000.04380822122 ms
+999440863	0	10	DoTheWork End Text
+999440868	0	6	DoTheWork Start Image
+999440948	0	6	AddProtocolLine fixation cross 4x4.jpg
+999440951	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+999440961	0	6	PutDataIntoStimulusControl - ImageObject
+999442688	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+999442765	0	6	Recording disabled for this stimulus
+999471774	0	4	CPU 10.37 %, MEM Free 4.53 GB, Used 40.48 %
+1000443834	0	21	StopExecution Image
+1000443938	0	6	OnStimulusCompleted
+1000443973	0	6	ExecuteCurrentObject Image
+1000444087	0	6	stopExecutionEvent set after 1001.10069971716 ms
+1000444092	0	6	DoTheWork End Image
+1000444128	0	10	DoTheWork Start Image
+1000444165	0	10	AddProtocolLine b1matrix 25.jpg
+1000444169	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 25.jpg
+1000444180	0	10	PutDataIntoStimulusControl - ImageObject
+1000459840	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 25.jpg
+1000472994	0	10	ContinueMessage 87f50864931d20097efa42bdacdce3d8_1680x1050.jpg
+1004905913	0	4	CPU 10.79 %, MEM Free 4.52 GB, Used 40.58 %
+1006461883	4	10	ShowImage expected : 6000
+1006461957	0	10	OnStimulusCompleted
+1006461988	0	10	ExecuteCurrentObject Text
+1006462074	0	15	DoTheWork Start Text
+1006462093	0	15	AddProtocolLine RichText25.rtf
+1006462096	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText25.rtf
+1006462109	0	15	PutDataIntoStimulusControl - TextObject
+1006462220	0	10	stopExecutionEvent set after 6000.23067918324 ms
+1006462222	0	10	DoTheWork End Image
+1006464002	0	15	Recording disabled for this stimulus
+1006465472	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText25.rtf
+1008464015	0	15	OnStimulusCompleted
+1008464038	0	15	ExecuteCurrentObject Image
+1008464202	0	15	stopExecutionEvent set after 2000.01397694933 ms
+1008464204	0	15	DoTheWork End Text
+1008464244	0	16	DoTheWork Start Image
+1008464261	0	16	AddProtocolLine fixation cross 4x4.jpg
+1008464263	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1008464273	0	16	PutDataIntoStimulusControl - ImageObject
+1008465984	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1008466072	0	16	Recording disabled for this stimulus
+1009467565	0	21	StopExecution Image
+1009467635	0	16	OnStimulusCompleted
+1009467659	0	16	ExecuteCurrentObject Image
+1009467732	0	16	stopExecutionEvent set after 1001.51651848245 ms
+1009467735	0	16	DoTheWork End Image
+1009467768	0	6	DoTheWork Start Image
+1009467787	0	6	AddProtocolLine b1matrix 26.jpg
+1009467790	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 26.jpg
+1009467803	0	6	PutDataIntoStimulusControl - ImageObject
+1009483136	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 26.jpg
+1009494746	0	6	ContinueMessage 42b23eda53b59efe7858ff47b24722d6_1680x1050.jpg
+1010706154	0	4	CPU 11.35 %, MEM Free 4.51 GB, Used 40.74 %
+1015484668	4	6	ShowImage expected : 6000
+1015484724	0	6	OnStimulusCompleted
+1015484757	0	6	ExecuteCurrentObject Text
+1015484819	0	6	stopExecutionEvent set after 6000.13769113016 ms
+1015484821	0	6	DoTheWork End Image
+1015484845	0	10	DoTheWork Start Text
+1015484864	0	10	AddProtocolLine RichText33.rtf
+1015484865	0	10	Text : StartStimulus D:\Experiments\before stress noga\RichText33.rtf
+1015484876	0	10	PutDataIntoStimulusControl - TextObject
+1015488256	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText33.rtf
+1015488266	0	10	Recording disabled for this stimulus
+1015622732	0	4	CPU 10.83 %, MEM Free 4.51 GB, Used 40.67 %
+1017488288	0	10	OnStimulusCompleted
+1017488319	0	10	ExecuteCurrentObject Image
+1017488418	0	15	DoTheWork Start Image
+1017488447	0	15	AddProtocolLine fixation cross 4x4.jpg
+1017488450	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1017488516	0	15	PutDataIntoStimulusControl - ImageObject
+1017488558	0	10	stopExecutionEvent set after 2000.0239964695 ms
+1017488561	0	10	DoTheWork End Text
+1017489280	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1017489342	0	15	Recording disabled for this stimulus
+1018491644	0	21	StopExecution Image
+1018491756	0	15	OnStimulusCompleted
+1018491792	0	15	ExecuteCurrentObject Image
+1018491927	0	6	DoTheWork Start Image
+1018491963	0	6	AddProtocolLine b1matrix 27.jpg
+1018491968	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 27.jpg
+1018491989	0	6	PutDataIntoStimulusControl - ImageObject
+1018492102	0	15	stopExecutionEvent set after 1002.30535698664 ms
+1018492108	0	15	DoTheWork End Image
+1018509056	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 27.jpg
+1018527718	0	6	ContinueMessage 7ed9be870adf9f962d2925e10bdd3cec_1680x1050.jpg
+1020825422	0	4	CPU 10.73 %, MEM Free 4.50 GB, Used 40.83 %
+1024510827	4	6	ShowImage expected : 6000
+1024510879	0	6	OnStimulusCompleted
+1024510911	0	6	ExecuteCurrentObject Text
+1024510996	0	16	DoTheWork Start Text
+1024511014	0	16	AddProtocolLine RichText34.rtf
+1024511016	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText34.rtf
+1024511029	0	16	PutDataIntoStimulusControl - TextObject
+1024511076	0	6	stopExecutionEvent set after 6000.41704385531 ms
+1024511078	0	6	DoTheWork End Image
+1024528512	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText34.rtf
+1024528614	0	16	Recording disabled for this stimulus
+1026528569	0	16	OnStimulusCompleted
+1026528610	0	16	ExecuteCurrentObject Image
+1026528775	0	6	DoTheWork Start Image
+1026528816	0	6	AddProtocolLine fixation cross 4x4.jpg
+1026528887	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1026528915	0	6	PutDataIntoStimulusControl - ImageObject
+1026529072	0	16	stopExecutionEvent set after 2000.04347055984 ms
+1026529079	0	16	DoTheWork End Text
+1026546624	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1026546634	0	6	Recording disabled for this stimulus
+1026583401	0	4	CPU 10.53 %, MEM Free 4.50 GB, Used 40.86 %
+1027547399	0	21	StopExecution Image
+1027547440	0	6	OnStimulusCompleted
+1027547465	0	6	ExecuteCurrentObject Image
+1027547564	0	10	DoTheWork Start Image
+1027547579	0	10	AddProtocolLine b1matrix 28.jpg
+1027547581	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 28.jpg
+1027547592	0	10	PutDataIntoStimulusControl - ImageObject
+1027547657	0	6	stopExecutionEvent set after 1000.87816394401 ms
+1027547659	0	6	DoTheWork End Image
+1027563648	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 28.jpg
+1027573589	0	10	ContinueMessage 9d0e7a55d746a1f66c329ba7ffb727d4_1680x1050.jpg
+1031827742	0	4	CPU 11.49 %, MEM Free 4.49 GB, Used 40.91 %
+1033565077	4	10	ShowImage expected : 6000
+1033565171	0	10	OnStimulusCompleted
+1033565216	0	10	ExecuteCurrentObject Text
+1033565388	0	15	DoTheWork Start Text
+1033565429	0	15	AddProtocolLine RichText35.rtf
+1033565434	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText35.rtf
+1033565457	0	15	PutDataIntoStimulusControl - TextObject
+1033565604	0	10	stopExecutionEvent set after 6000.15611335695 ms
+1033565613	0	10	DoTheWork End Image
+1033567886	0	15	Recording disabled for this stimulus
+1033569600	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText35.rtf
+1035568821	0	15	OnStimulusCompleted
+1035568861	0	15	ExecuteCurrentObject Image
+1035568969	0	15	stopExecutionEvent set after 2000.93407666755 ms
+1035568975	0	15	DoTheWork End Text
+1035569044	0	15	DoTheWork Start Image
+1035569080	0	15	AddProtocolLine fixation cross 4x4.jpg
+1035569085	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1035569105	0	15	PutDataIntoStimulusControl - ImageObject
+1035585920	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1035585873	0	15	Recording disabled for this stimulus
+1036587463	0	21	StopExecution Image
+1036587553	0	15	OnStimulusCompleted
+1036587590	0	15	ExecuteCurrentObject Image
+1036587700	0	15	stopExecutionEvent set after 1001.67527282858 ms
+1036587705	0	15	DoTheWork End Image
+1036587737	0	6	DoTheWork Start Image
+1036587774	0	6	AddProtocolLine b1matrix 29.jpg
+1036587779	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block1\b1matrix 29.jpg
+1036587801	0	6	PutDataIntoStimulusControl - ImageObject
+1036603840	0	18	ShowDataOfObject D:\Experiments\before stress noga\b1matrix 29.jpg
+1036622857	0	6	ContinueMessage 78a304a9478fa74accd209ae29e2edfe_1680x1050.jpg
+1036770346	0	4	CPU 11.02 %, MEM Free 4.48 GB, Used 41.01 %
+1042035077	0	4	CPU 11.12 %, MEM Free 4.49 GB, Used 40.97 %
+1042605600	4	6	ShowImage expected : 6000
+1042605660	0	6	OnStimulusCompleted
+1042605698	0	6	ExecuteCurrentObject Text
+1042605768	0	6	stopExecutionEvent set after 6000.07877110803 ms
+1042605770	0	6	DoTheWork End Image
+1042605774	0	15	DoTheWork Start Text
+1042605797	0	15	AddProtocolLine RichText36.rtf
+1042605798	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText36.rtf
+1042605810	0	15	PutDataIntoStimulusControl - TextObject
+1042608064	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText36.rtf
+1042608031	0	15	Recording disabled for this stimulus
+1044608109	0	15	OnStimulusCompleted
+1044608150	0	15	ExecuteCurrentObject Text
+1044608268	0	15	stopExecutionEvent set after 2000.02796294272 ms
+1044608274	0	15	DoTheWork End Text
+1044608298	0	16	DoTheWork Start Text
+1044608339	0	16	AddProtocolLine RichText37.rtf
+1044608344	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText37.rtf
+1044608365	0	16	PutDataIntoStimulusControl - TextObject
+1044609728	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText37.rtf
+1044609796	0	16	Recording disabled for this stimulus
+1048123849	0	4	CPU 11.16 %, MEM Free 4.50 GB, Used 40.83 %
+1053734649	0	4	CPU 10.88 %, MEM Free 4.50 GB, Used 40.79 %
+1059176439	0	4	CPU 10.28 %, MEM Free 4.50 GB, Used 40.79 %
+1064437893	0	4	CPU 11.16 %, MEM Free 4.50 GB, Used 40.78 %
+1069525292	0	4	CPU 10.98 %, MEM Free 4.50 GB, Used 40.76 %
+1074838681	0	4	CPU 11.09 %, MEM Free 4.51 GB, Used 40.71 %
+1080266406	0	4	CPU 11.13 %, MEM Free 4.51 GB, Used 40.71 %
+1085622041	0	4	CPU 10.64 %, MEM Free 4.51 GB, Used 40.66 %
+1090994852	0	4	CPU 10.37 %, MEM Free 4.51 GB, Used 40.66 %
+1096257023	0	4	CPU 10.80 %, MEM Free 4.51 GB, Used 40.66 %
+1101528747	0	4	CPU 10.39 %, MEM Free 4.51 GB, Used 40.66 %
+1104609858	0	16	OnStimulusCompleted
+1104609910	0	16	ExecuteCurrentObject Image
+1104610145	0	10	DoTheWork Start Image
+1104610171	0	10	AddProtocolLine instructions 4.jpg
+1104610174	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\instructions\instructions 4.jpg
+1104610187	0	10	PutDataIntoStimulusControl - ImageObject
+1104612051	0	16	stopExecutionEvent set after 60000.0592740285 ms
+1104612055	0	16	DoTheWork End Text
+1104621849	0	10	Recording disabled for this stimulus
+1104621824	0	18	ShowDataOfObject D:\Experiments\before stress noga\instructions 4.jpg
+1106929658	0	4	CPU 10.96 %, MEM Free 4.51 GB, Used 40.72 %
+1112288297	0	4	CPU 10.88 %, MEM Free 4.51 GB, Used 40.66 %
+1113997515	0	1	Image - Space - Key pressed
+1113997521	0	1	StopExecution Image
+1113997585	0	10	OnStimulusCompleted
+1113997611	0	10	ExecuteCurrentObject Image
+1113997693	0	15	DoTheWork Start Image
+1113997710	0	15	AddProtocolLine fixation cross 4x4.jpg
+1113997712	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1113997723	0	15	PutDataIntoStimulusControl - ImageObject
+1113997741	0	10	stopExecutionEvent set after 9375.69301668835 ms
+1113997742	0	10	DoTheWork End Image
+1114012160	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1114012165	0	15	Recording disabled for this stimulus
+1115525546	0	21	StopExecution Image
+1115525611	0	15	OnStimulusCompleted
+1115525638	0	15	ExecuteCurrentObject Image
+1115525715	0	15	stopExecutionEvent set after 1513.51320671773 ms
+1115525717	0	15	DoTheWork End Image
+1115525747	0	10	DoTheWork Start Image
+1115525760	0	10	AddProtocolLine b2matrix 0.jpg
+1115525762	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 0.jpg
+1115525767	0	10	PutDataIntoStimulusControl - ImageObject
+1115530112	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 0.jpg
+1115541278	0	10	ContinueMessage 74afe48b892825a78aaf6a1b80a54ded_1680x1050.jpg
+1117787559	0	4	CPU 12.77 %, MEM Free 4.50 GB, Used 40.78 %
+1121531838	4	10	ShowImage expected : 6000
+1121531972	0	10	OnStimulusCompleted
+1121532007	0	10	ExecuteCurrentObject Text
+1121532155	0	15	DoTheWork Start Text
+1121532195	0	15	AddProtocolLine RichText38.rtf
+1121532200	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText38.rtf
+1121532222	0	15	PutDataIntoStimulusControl - TextObject
+1121532460	0	10	stopExecutionEvent set after 6000.21575397277 ms
+1121532467	0	10	DoTheWork End Image
+1121533952	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText38.rtf
+1121533956	0	15	Recording disabled for this stimulus
+1123534392	0	15	OnStimulusCompleted
+1123534415	0	15	ExecuteCurrentObject Image
+1123534506	0	16	DoTheWork Start Image
+1123534528	0	16	AddProtocolLine fixation cross 4x4.jpg
+1123534530	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1123534536	0	16	PutDataIntoStimulusControl - ImageObject
+1123534609	0	15	stopExecutionEvent set after 2000.50907808948 ms
+1123534611	0	15	DoTheWork End Text
+1123535360	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1123535342	0	16	Recording disabled for this stimulus
+1123589041	0	4	CPU 10.71 %, MEM Free 4.52 GB, Used 40.60 %
+1124729450	0	21	StopExecution Image
+1124729510	0	16	OnStimulusCompleted
+1124729529	0	16	ExecuteCurrentObject Image
+1124729586	0	16	stopExecutionEvent set after 1194.2148747673 ms
+1124729587	0	16	DoTheWork End Image
+1124729611	0	15	DoTheWork Start Image
+1124729623	0	15	AddProtocolLine b2matrix 1.jpg
+1124729625	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 1.jpg
+1124729635	0	15	PutDataIntoStimulusControl - ImageObject
+1124736384	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 1.jpg
+1124748878	0	15	ContinueMessage f1943564e0b088c0a5471f749936f291_1680x1050.jpg
+1128856377	0	4	CPU 10.25 %, MEM Free 4.51 GB, Used 40.74 %
+1130740581	4	15	ShowImage expected : 6000
+1130740637	0	15	OnStimulusCompleted
+1130740671	0	15	ExecuteCurrentObject Text
+1130740727	0	15	stopExecutionEvent set after 6000.17432832837 ms
+1130740728	0	15	DoTheWork End Image
+1130740837	0	10	DoTheWork Start Text
+1130740854	0	10	AddProtocolLine RichText39.rtf
+1130740855	0	10	Text : StartStimulus D:\Experiments\before stress noga\RichText39.rtf
+1130740865	0	10	PutDataIntoStimulusControl - TextObject
+1130757760	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText39.rtf
+1130757742	0	10	Recording disabled for this stimulus
+1132758667	0	10	OnStimulusCompleted
+1132758690	0	10	ExecuteCurrentObject Image
+1132758830	0	6	DoTheWork Start Image
+1132758849	0	6	AddProtocolLine fixation cross 4x4.jpg
+1132758851	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1132758863	0	6	PutDataIntoStimulusControl - ImageObject
+1132758910	0	10	stopExecutionEvent set after 2000.97278171992 ms
+1132758912	0	10	DoTheWork End Text
+1132775680	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1132775748	0	6	Recording disabled for this stimulus
+1133777592	0	21	StopExecution Image
+1133777681	0	6	OnStimulusCompleted
+1133777716	0	6	ExecuteCurrentObject Image
+1133777818	0	6	stopExecutionEvent set after 1001.91839420104 ms
+1133777823	0	6	DoTheWork End Image
+1133777875	0	15	DoTheWork Start Image
+1133777912	0	15	AddProtocolLine b2matrix 2.jpg
+1133777917	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 2.jpg
+1133777926	0	15	PutDataIntoStimulusControl - ImageObject
+1133793792	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 2.jpg
+1133812633	0	15	ContinueMessage 85f4453a1cd164100a2734ac44ca60e9_1680x1050.jpg
+1133968508	0	4	CPU 10.24 %, MEM Free 4.49 GB, Used 40.90 %
+1139378432	0	4	CPU 10.55 %, MEM Free 4.50 GB, Used 40.82 %
+1139795813	4	15	ShowImage expected : 6000
+1139795932	0	15	OnStimulusCompleted
+1139795968	0	15	ExecuteCurrentObject Text
+1139796091	0	15	stopExecutionEvent set after 6000.04676575232 ms
+1139796097	0	16	DoTheWork Start Text
+1139796099	0	15	DoTheWork End Image
+1139796138	0	16	AddProtocolLine RichText40.rtf
+1139796143	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText40.rtf
+1139796165	0	16	PutDataIntoStimulusControl - TextObject
+1139797528	0	16	Recording disabled for this stimulus
+1139797504	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText40.rtf
+1141797947	0	16	OnStimulusCompleted
+1141797971	0	16	ExecuteCurrentObject Image
+1141798039	0	16	stopExecutionEvent set after 2000.50598393774 ms
+1141798041	0	16	DoTheWork End Text
+1141798062	0	6	DoTheWork Start Image
+1141798080	0	6	AddProtocolLine fixation cross 4x4.jpg
+1141798082	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1141798093	0	6	PutDataIntoStimulusControl - ImageObject
+1141799936	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1141799935	0	6	Recording disabled for this stimulus
+1142801279	0	21	StopExecution Image
+1142801347	0	6	OnStimulusCompleted
+1142801373	0	6	ExecuteCurrentObject Image
+1142801454	0	6	stopExecutionEvent set after 1001.47418714452 ms
+1142801456	0	6	DoTheWork End Image
+1142801489	0	15	DoTheWork Start Image
+1142801506	0	15	AddProtocolLine b2matrix 3.jpg
+1142801508	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 3.jpg
+1142801512	0	15	PutDataIntoStimulusControl - ImageObject
+1142816896	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 3.jpg
+1142825979	0	15	ContinueMessage e6a80fcf8432dd6832d2bbb12220d554_1680x1050.jpg
+1145120493	0	4	CPU 11.02 %, MEM Free 4.50 GB, Used 40.86 %
+1148820735	4	15	ShowImage expected : 6000
+1148820799	0	15	OnStimulusCompleted
+1148820819	0	15	ExecuteCurrentObject Text
+1148820890	0	16	DoTheWork Start Text
+1148820909	0	16	AddProtocolLine RichText41.rtf
+1148820910	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText41.rtf
+1148820922	0	16	PutDataIntoStimulusControl - TextObject
+1148821009	0	15	stopExecutionEvent set after 6000.21643434811 ms
+1148821011	0	15	DoTheWork End Image
+1148838272	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText41.rtf
+1148838294	0	16	Recording disabled for this stimulus
+1150839198	0	16	OnStimulusCompleted
+1150839222	0	16	ExecuteCurrentObject Image
+1150839283	0	16	stopExecutionEvent set after 2000.98962502718 ms
+1150839286	0	16	DoTheWork End Text
+1150839323	0	15	DoTheWork Start Image
+1150839342	0	15	AddProtocolLine fixation cross 4x4.jpg
+1150839344	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1150839355	0	15	PutDataIntoStimulusControl - ImageObject
+1150856192	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1150856209	0	15	Recording disabled for this stimulus
+1150904291	0	4	CPU 10.21 %, MEM Free 4.50 GB, Used 40.82 %
+1151857275	0	21	StopExecution Image
+1151857352	0	15	OnStimulusCompleted
+1151857380	0	15	ExecuteCurrentObject Image
+1151857461	0	15	stopExecutionEvent set after 1001.08814718056 ms
+1151857464	0	15	DoTheWork End Image
+1151857506	0	10	DoTheWork Start Image
+1151857527	0	10	AddProtocolLine b2matrix 4.jpg
+1151857530	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 4.jpg
+1151857544	0	10	PutDataIntoStimulusControl - ImageObject
+1151873280	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 4.jpg
+1151885599	0	10	ContinueMessage e85c1f36e3a48a645d85b7931b833e76_1680x1050.jpg
+1156079413	0	4	CPU 11.08 %, MEM Free 4.49 GB, Used 40.91 %
+1157878123	4	10	ShowImage expected : 6000
+1157878217	0	10	OnStimulusCompleted
+1157878247	0	10	ExecuteCurrentObject Text
+1157878364	0	16	DoTheWork Start Text
+1157878454	0	16	AddProtocolLine RichText42.rtf
+1157878459	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText42.rtf
+1157878476	0	16	PutDataIntoStimulusControl - TextObject
+1157878652	0	10	stopExecutionEvent set after 6000.23667895126 ms
+1157878658	0	10	DoTheWork End Image
+1157894459	0	16	Recording disabled for this stimulus
+1157895424	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText42.rtf
+1159894492	0	16	OnStimulusCompleted
+1159894520	0	16	ExecuteCurrentObject Image
+1159894598	0	16	stopExecutionEvent set after 2000.02383438396 ms
+1159894601	0	16	DoTheWork End Text
+1159894646	0	16	DoTheWork Start Image
+1159894667	0	16	AddProtocolLine fixation cross 4x4.jpg
+1159894669	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1159894681	0	16	PutDataIntoStimulusControl - ImageObject
+1159896576	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1159896552	0	16	Recording disabled for this stimulus
+1161831560	0	21	StopExecution Image
+1161831620	0	16	OnStimulusCompleted
+1161831641	0	16	ExecuteCurrentObject Image
+1161831747	0	10	DoTheWork Start Image
+1161831763	0	10	AddProtocolLine b2matrix 5.jpg
+1161831765	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 5.jpg
+1161831771	0	10	PutDataIntoStimulusControl - ImageObject
+1161831856	0	16	stopExecutionEvent set after 1935.11036385417 ms
+1161831859	0	16	DoTheWork End Image
+1161847552	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 5.jpg
+1161857016	0	10	ContinueMessage 5c9dff1523f9b1442ae116ea6956cbc2_1680x1050.jpg
+1161921110	0	4	CPU 11.24 %, MEM Free 4.47 GB, Used 41.16 %
+1167337623	0	4	CPU 10.74 %, MEM Free 4.48 GB, Used 41.05 %
+1167848922	4	10	ShowImage expected : 6000
+1167848973	0	10	OnStimulusCompleted
+1167849013	0	10	ExecuteCurrentObject Text
+1167849080	0	10	stopExecutionEvent set after 6000.2164487226 ms
+1167849082	0	10	DoTheWork End Image
+1167849289	0	6	DoTheWork Start Text
+1167849305	0	6	AddProtocolLine RichText43.rtf
+1167849307	0	6	Text : StartStimulus D:\Experiments\before stress noga\RichText43.rtf
+1167849316	0	6	PutDataIntoStimulusControl - TextObject
+1167852800	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText43.rtf
+1167852799	0	6	Recording disabled for this stimulus
+1169852746	0	6	OnStimulusCompleted
+1169852770	0	6	ExecuteCurrentObject Image
+1169852861	0	16	DoTheWork Start Image
+1169852867	0	6	stopExecutionEvent set after 2000.0111229701 ms
+1169852870	0	6	DoTheWork End Text
+1169852880	0	16	AddProtocolLine fixation cross 4x4.jpg
+1169852883	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1169852894	0	16	PutDataIntoStimulusControl - ImageObject
+1169853696	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1169853664	0	16	Recording disabled for this stimulus
+1170855408	0	21	StopExecution Image
+1170855468	0	16	OnStimulusCompleted
+1170855489	0	16	ExecuteCurrentObject Image
+1170855548	0	16	stopExecutionEvent set after 1001.83757496905 ms
+1170855550	0	16	DoTheWork End Image
+1170855574	0	10	DoTheWork Start Image
+1170855585	0	10	AddProtocolLine b2matrix 6.jpg
+1170855588	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 6.jpg
+1170855592	0	10	PutDataIntoStimulusControl - ImageObject
+1170872064	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 6.jpg
+1170881284	0	10	ContinueMessage 726d0a5ee15efc937a1d78404493d9dc_1680x1050.jpg
+1172976708	0	4	CPU 10.88 %, MEM Free 4.56 GB, Used 40.07 %
+1176876026	4	10	ShowImage expected : 6000
+1176876082	0	10	OnStimulusCompleted
+1176876102	0	10	ExecuteCurrentObject Text
+1176876171	0	10	stopExecutionEvent set after 6000.2485731163 ms
+1176876173	0	10	DoTheWork End Image
+1176876208	0	6	DoTheWork Start Text
+1176876227	0	6	AddProtocolLine RichText44.rtf
+1176876229	0	6	Text : StartStimulus D:\Experiments\before stress noga\RichText44.rtf
+1176876240	0	6	PutDataIntoStimulusControl - TextObject
+1176893005	0	6	Recording disabled for this stimulus
+1176892928	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText44.rtf
+1178180033	0	4	CPU 10.07 %, MEM Free 4.56 GB, Used 39.98 %
+1178893042	0	6	OnStimulusCompleted
+1178893070	0	6	ExecuteCurrentObject Image
+1178893150	0	6	stopExecutionEvent set after 2000.04638625574 ms
+1178893152	0	6	DoTheWork End Text
+1178893198	0	16	DoTheWork Start Image
+1178893216	0	16	AddProtocolLine fixation cross 4x4.jpg
+1178893218	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1178893229	0	16	PutDataIntoStimulusControl - ImageObject
+1178893952	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1178893957	0	16	Recording disabled for this stimulus
+1179895392	0	21	StopExecution Image
+1179895456	0	16	OnStimulusCompleted
+1179895481	0	16	ExecuteCurrentObject Image
+1179895556	0	16	stopExecutionEvent set after 1001.43497529697 ms
+1179895559	0	16	DoTheWork End Image
+1179895578	0	6	DoTheWork Start Image
+1179895600	0	6	AddProtocolLine b2matrix 7.jpg
+1179895603	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 7.jpg
+1179895610	0	6	PutDataIntoStimulusControl - ImageObject
+1179911168	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 7.jpg
+1179922624	0	6	ContinueMessage 41efba0ed9235286f02dd996a7892066_1680x1050.jpg
+1183436454	0	4	CPU 10.26 %, MEM Free 4.55 GB, Used 40.14 %
+1185912507	4	6	ShowImage expected : 6000
+1185912562	0	6	OnStimulusCompleted
+1185912583	0	6	ExecuteCurrentObject Text
+1185912647	0	6	stopExecutionEvent set after 6000.13182856417 ms
+1185912649	0	6	DoTheWork End Image
+1185912676	0	15	DoTheWork Start Text
+1185912695	0	15	AddProtocolLine RichText45.rtf
+1185912697	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText45.rtf
+1185912709	0	15	PutDataIntoStimulusControl - TextObject
+1185916288	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText45.rtf
+1185916295	0	15	Recording disabled for this stimulus
+1187916326	0	15	OnStimulusCompleted
+1187916360	0	15	ExecuteCurrentObject Image
+1187916428	0	15	stopExecutionEvent set after 2000.0939757998 ms
+1187916430	0	15	DoTheWork End Text
+1187916453	0	6	DoTheWork Start Image
+1187916472	0	6	AddProtocolLine fixation cross 4x4.jpg
+1187916474	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1187916485	0	6	PutDataIntoStimulusControl - ImageObject
+1187917312	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1187917346	0	6	Recording disabled for this stimulus
+1188919471	0	21	StopExecution Image
+1188919618	0	6	OnStimulusCompleted
+1188919651	0	6	ExecuteCurrentObject Image
+1188919758	0	6	stopExecutionEvent set after 1002.23441774893 ms
+1188919763	0	6	DoTheWork End Image
+1188919835	0	6	DoTheWork Start Image
+1188919862	0	6	AddProtocolLine b2matrix 8.jpg
+1188919867	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 8.jpg
+1188919875	0	6	PutDataIntoStimulusControl - ImageObject
+1188935424	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 8.jpg
+1188951829	0	6	ContinueMessage be70d34434510293b7e5e1b4f766748b_1680x1050.jpg
+1189088017	0	4	CPU 10.79 %, MEM Free 4.53 GB, Used 40.41 %
+1194529327	0	4	CPU 11.03 %, MEM Free 4.54 GB, Used 40.23 %
+1194936766	4	6	ShowImage expected : 6000
+1194936827	0	6	OnStimulusCompleted
+1194936867	0	6	ExecuteCurrentObject Text
+1194936962	0	15	DoTheWork Start Text
+1194936982	0	15	AddProtocolLine RichText46.rtf
+1194937036	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText46.rtf
+1194937050	0	15	PutDataIntoStimulusControl - TextObject
+1194937084	0	6	stopExecutionEvent set after 6000.01700592327 ms
+1194937086	0	6	DoTheWork End Image
+1194939520	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText46.rtf
+1194939589	0	15	Recording disabled for this stimulus
+1196940579	0	15	OnStimulusCompleted
+1196940621	0	15	ExecuteCurrentObject Image
+1196940731	0	16	DoTheWork Start Image
+1196940751	0	16	AddProtocolLine fixation cross 4x4.jpg
+1196940753	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1196940775	0	16	PutDataIntoStimulusControl - ImageObject
+1196940821	0	15	stopExecutionEvent set after 2000.98144301558 ms
+1196940824	0	15	DoTheWork End Text
+1196957568	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1196957583	0	16	Recording disabled for this stimulus
+1197959149	0	21	StopExecution Image
+1197959210	0	16	OnStimulusCompleted
+1197959231	0	16	ExecuteCurrentObject Image
+1197959293	0	16	stopExecutionEvent set after 1001.70690374041 ms
+1197959295	0	16	DoTheWork End Image
+1197959317	0	10	DoTheWork Start Image
+1197959330	0	10	AddProtocolLine b2matrix 9.jpg
+1197959332	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 9.jpg
+1197959342	0	10	PutDataIntoStimulusControl - ImageObject
+1197974656	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 9.jpg
+1197987536	0	10	ContinueMessage ec2bae79f9f320fbb9c2fc10fd0ca543_1680x1050.jpg
+1200194297	0	4	CPU 11.39 %, MEM Free 4.56 GB, Used 40.05 %
+1203976211	4	10	ShowImage expected : 6000
+1203976339	0	10	OnStimulusCompleted
+1203976373	0	10	ExecuteCurrentObject Text
+1203976487	0	10	stopExecutionEvent set after 6000.21902342248 ms
+1203976493	0	10	DoTheWork End Image
+1203976548	0	16	DoTheWork Start Text
+1203976588	0	16	AddProtocolLine RichText47.rtf
+1203976592	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText47.rtf
+1203976615	0	16	PutDataIntoStimulusControl - TextObject
+1203979884	0	16	Recording disabled for this stimulus
+1203979904	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText47.rtf
+1205979923	0	16	OnStimulusCompleted
+1205979965	0	16	ExecuteCurrentObject Image
+1205980077	0	16	stopExecutionEvent set after 2000.06817039394 ms
+1205980082	0	16	DoTheWork End Text
+1205980142	0	15	DoTheWork Start Image
+1205980184	0	15	AddProtocolLine fixation cross 4x4.jpg
+1205980189	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1205980212	0	15	PutDataIntoStimulusControl - ImageObject
+1205997952	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1205997942	0	15	Recording disabled for this stimulus
+1206149385	0	4	CPU 10.71 %, MEM Free 4.56 GB, Used 39.97 %
+1206999322	0	21	StopExecution Image
+1206999407	0	15	OnStimulusCompleted
+1206999446	0	15	ExecuteCurrentObject Image
+1206999576	0	16	DoTheWork Start Image
+1206999613	0	16	AddProtocolLine b2matrix 10.jpg
+1206999618	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 10.jpg
+1206999628	0	16	PutDataIntoStimulusControl - ImageObject
+1206999773	0	15	stopExecutionEvent set after 1001.50127427959 ms
+1206999779	0	15	DoTheWork End Image
+1207015680	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 10.jpg
+1207032528	0	16	ContinueMessage 18dfb53dc4648539d7e3d7bb0c655fef_1680x1050.jpg
+1211518288	0	4	CPU 11.54 %, MEM Free 4.55 GB, Used 40.12 %
+1213017460	4	16	ShowImage expected : 6000
+1213017522	0	16	OnStimulusCompleted
+1213017562	0	16	ExecuteCurrentObject Text
+1213017628	0	16	stopExecutionEvent set after 6000.5537438283 ms
+1213017630	0	16	DoTheWork End Image
+1213017762	0	10	DoTheWork Start Text
+1213017777	0	10	AddProtocolLine RichText48.rtf
+1213017779	0	10	Text : StartStimulus D:\Experiments\before stress noga\RichText48.rtf
+1213017790	0	10	PutDataIntoStimulusControl - TextObject
+1213020047	0	10	Recording disabled for this stimulus
+1213020032	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText48.rtf
+1215020114	0	10	OnStimulusCompleted
+1215020137	0	10	ExecuteCurrentObject Image
+1215020208	0	10	stopExecutionEvent set after 2000.01896148467 ms
+1215020210	0	10	DoTheWork End Text
+1215020233	0	6	DoTheWork Start Image
+1215020253	0	6	AddProtocolLine fixation cross 4x4.jpg
+1215020256	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1215020267	0	6	PutDataIntoStimulusControl - ImageObject
+1215020853	0	6	Recording disabled for this stimulus
+1215020928	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1216023065	0	21	StopExecution Image
+1216023130	0	6	OnStimulusCompleted
+1216023158	0	6	ExecuteCurrentObject Image
+1216023235	0	6	stopExecutionEvent set after 1002.26117156768 ms
+1216023238	0	6	DoTheWork End Image
+1216023259	0	16	DoTheWork Start Image
+1216023278	0	16	AddProtocolLine b2matrix 11.jpg
+1216023281	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 11.jpg
+1216023288	0	16	PutDataIntoStimulusControl - ImageObject
+1216039168	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 11.jpg
+1216048472	0	16	ContinueMessage e2c305ff818d81af4189e8b0b83d78f6_1680x1050.jpg
+1217291746	0	4	CPU 11.01 %, MEM Free 4.54 GB, Used 40.24 %
+1222040764	4	16	ShowImage expected : 6000
+1222040815	0	16	OnStimulusCompleted
+1222040835	0	16	ExecuteCurrentObject Text
+1222040920	0	10	DoTheWork Start Text
+1222040937	0	10	AddProtocolLine RichText49.rtf
+1222040939	0	10	Text : StartStimulus D:\Experiments\before stress noga\RichText49.rtf
+1222040998	0	10	PutDataIntoStimulusControl - TextObject
+1222041032	0	16	stopExecutionEvent set after 6000.25364852142 ms
+1222041036	0	16	DoTheWork End Image
+1222043307	0	10	Recording disabled for this stimulus
+1222043264	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText49.rtf
+1223122772	0	4	CPU 10.56 %, MEM Free 4.54 GB, Used 40.23 %
+1224043427	0	10	OnStimulusCompleted
+1224043480	0	10	ExecuteCurrentObject Image
+1224043563	0	16	DoTheWork Start Image
+1224043591	0	16	AddProtocolLine fixation cross 4x4.jpg
+1224043593	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1224043608	0	16	PutDataIntoStimulusControl - ImageObject
+1224043721	0	10	stopExecutionEvent set after 2000.08194549417 ms
+1224043725	0	10	DoTheWork End Text
+1224044288	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1224044335	0	16	Recording disabled for this stimulus
+1225961299	0	21	StopExecution Image
+1225961364	0	16	OnStimulusCompleted
+1225961392	0	16	ExecuteCurrentObject Image
+1225961461	0	16	stopExecutionEvent set after 1917.01097105908 ms
+1225961463	0	16	DoTheWork End Image
+1225961464	0	10	DoTheWork Start Image
+1225961475	0	10	AddProtocolLine b2matrix 12.jpg
+1225961478	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 12.jpg
+1225961488	0	10	PutDataIntoStimulusControl - ImageObject
+1225962368	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 12.jpg
+1225974591	0	10	ContinueMessage 9a717a4b46c37a114cef8adf8726b5fa_1680x1050.jpg
+1228192317	0	4	CPU 11.09 %, MEM Free 4.53 GB, Used 40.42 %
+1231963950	4	10	ShowImage expected : 6000
+1231964016	0	10	OnStimulusCompleted
+1231964036	0	10	ExecuteCurrentObject Text
+1231964140	0	15	DoTheWork Start Text
+1231964160	0	15	AddProtocolLine RichText50.rtf
+1231964162	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText50.rtf
+1231964175	0	15	PutDataIntoStimulusControl - TextObject
+1231964226	0	10	stopExecutionEvent set after 6000.18581735539 ms
+1231964228	0	10	DoTheWork End Image
+1231967616	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText50.rtf
+1231967680	0	15	Recording disabled for this stimulus
+1233967666	0	15	OnStimulusCompleted
+1233967706	0	15	ExecuteCurrentObject Image
+1233967837	0	6	DoTheWork Start Image
+1233967857	0	6	AddProtocolLine fixation cross 4x4.jpg
+1233967859	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1233967872	0	6	PutDataIntoStimulusControl - ImageObject
+1233967881	0	15	stopExecutionEvent set after 2000.11362309146 ms
+1233967883	0	15	DoTheWork End Text
+1233968640	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1233968642	0	6	Recording disabled for this stimulus
+1234129009	0	4	CPU 11.07 %, MEM Free 4.53 GB, Used 40.36 %
+1234969252	0	21	StopExecution Image
+1234969314	0	6	OnStimulusCompleted
+1234969337	0	6	ExecuteCurrentObject Image
+1234969397	0	6	stopExecutionEvent set after 1000.60962035036 ms
+1234969399	0	6	DoTheWork End Image
+1234969418	0	15	DoTheWork Start Image
+1234969433	0	15	AddProtocolLine b2matrix 13.jpg
+1234969435	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 13.jpg
+1234969446	0	15	PutDataIntoStimulusControl - ImageObject
+1234985728	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 13.jpg
+1234994852	0	15	ContinueMessage 245b77b6b73091f65588f17225d4b909_1680x1050.jpg
+1239425296	0	4	CPU 12.16 %, MEM Free 4.53 GB, Used 40.44 %
+1240987301	4	15	ShowImage expected : 6000
+1240987366	0	15	OnStimulusCompleted
+1240987386	0	15	ExecuteCurrentObject Text
+1240987455	0	15	stopExecutionEvent set after 6000.0714601295 ms
+1240987457	0	15	DoTheWork End Image
+1240987462	0	10	DoTheWork Start Text
+1240987482	0	10	AddProtocolLine RichText51.rtf
+1240987484	0	10	Text : StartStimulus D:\Experiments\before stress noga\RichText51.rtf
+1240987495	0	10	PutDataIntoStimulusControl - TextObject
+1240990976	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText51.rtf
+1240990912	0	10	Recording disabled for this stimulus
+1242990922	0	10	OnStimulusCompleted
+1242990944	0	10	ExecuteCurrentObject Image
+1242991005	0	10	stopExecutionEvent set after 2000.01268668151 ms
+1242991007	0	10	DoTheWork End Text
+1242991043	0	6	DoTheWork Start Image
+1242991062	0	6	AddProtocolLine fixation cross 4x4.jpg
+1242991064	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1242991076	0	6	PutDataIntoStimulusControl - ImageObject
+1242991744	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1242991793	0	6	Recording disabled for this stimulus
+1243993084	0	21	StopExecution Image
+1243993139	0	6	OnStimulusCompleted
+1243993162	0	6	ExecuteCurrentObject Image
+1243993225	0	6	stopExecutionEvent set after 1001.33191078162 ms
+1243993227	0	6	DoTheWork End Image
+1243993230	0	10	DoTheWork Start Image
+1243993246	0	10	AddProtocolLine b2matrix 14.jpg
+1243993248	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 14.jpg
+1243993253	0	10	PutDataIntoStimulusControl - ImageObject
+1244009984	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 14.jpg
+1244018774	0	10	ContinueMessage 6ac052cc495dab98c04e974c19abe58c_1680x1050.jpg
+1245198346	0	4	CPU 10.78 %, MEM Free 4.52 GB, Used 40.54 %
+1250011786	4	10	ShowImage expected : 6000
+1250011835	0	10	OnStimulusCompleted
+1250011854	0	10	ExecuteCurrentObject Text
+1250011924	0	16	DoTheWork Start Text
+1250011942	0	16	AddProtocolLine RichText52.rtf
+1250011944	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText52.rtf
+1250011957	0	16	PutDataIntoStimulusControl - TextObject
+1250012009	0	10	stopExecutionEvent set after 6000.10437398291 ms
+1250012012	0	10	DoTheWork End Image
+1250014135	0	16	Recording disabled for this stimulus
+1250014080	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText52.rtf
+1251053288	0	4	CPU 10.36 %, MEM Free 4.52 GB, Used 40.53 %
+1252014234	0	16	OnStimulusCompleted
+1252014259	0	16	ExecuteCurrentObject Image
+1252014342	0	10	DoTheWork Start Image
+1252014366	0	10	AddProtocolLine fixation cross 4x4.jpg
+1252014369	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1252014381	0	10	PutDataIntoStimulusControl - ImageObject
+1252014464	0	16	stopExecutionEvent set after 2000.08869677711 ms
+1252014467	0	16	DoTheWork End Text
+1252015232	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1252015246	0	10	Recording disabled for this stimulus
+1253017026	0	21	StopExecution Image
+1253017083	0	10	OnStimulusCompleted
+1253017103	0	10	ExecuteCurrentObject Image
+1253017153	0	10	stopExecutionEvent set after 1001.79138328671 ms
+1253017155	0	10	DoTheWork End Image
+1253017182	0	6	DoTheWork Start Image
+1253017197	0	6	AddProtocolLine b2matrix 15.jpg
+1253017199	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 15.jpg
+1253017209	0	6	PutDataIntoStimulusControl - ImageObject
+1253033216	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 15.jpg
+1253042866	0	6	ContinueMessage 3741fd4e9b0c92519ec22c6bb7769a89_1680x1050.jpg
+1256382261	0	4	CPU 11.51 %, MEM Free 4.52 GB, Used 40.57 %
+1259035115	4	6	ShowImage expected : 6000
+1259035251	0	6	OnStimulusCompleted
+1259035360	0	6	ExecuteCurrentObject Text
+1259035515	0	6	stopExecutionEvent set after 6000.27127946949 ms
+1259035521	0	6	DoTheWork End Image
+1259035548	0	16	DoTheWork Start Text
+1259035584	0	16	AddProtocolLine RichText53.rtf
+1259035588	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText53.rtf
+1259035609	0	16	PutDataIntoStimulusControl - TextObject
+1259037266	0	16	Recording disabled for this stimulus
+1259037312	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText53.rtf
+1261037460	0	16	OnStimulusCompleted
+1261037483	0	16	ExecuteCurrentObject Image
+1261037585	0	15	DoTheWork Start Image
+1261037606	0	15	AddProtocolLine fixation cross 4x4.jpg
+1261037609	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1261037620	0	15	PutDataIntoStimulusControl - ImageObject
+1261037622	0	16	stopExecutionEvent set after 2000.21336616635 ms
+1261037625	0	16	DoTheWork End Text
+1261039488	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1261039495	0	15	Recording disabled for this stimulus
+1262041123	0	21	StopExecution Image
+1262041226	0	15	OnStimulusCompleted
+1262041266	0	15	ExecuteCurrentObject Image
+1262041385	0	15	stopExecutionEvent set after 1001.6545632906 ms
+1262041389	0	15	DoTheWork End Image
+1262041435	0	16	DoTheWork Start Image
+1262041478	0	16	AddProtocolLine b2matrix 16.jpg
+1262041482	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 16.jpg
+1262041492	0	16	PutDataIntoStimulusControl - ImageObject
+1262056576	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 16.jpg
+1262070385	0	16	ContinueMessage f5033b9f26204f281aab31a0f3362b70_1680x1050.jpg
+1262169861	0	4	CPU 10.66 %, MEM Free 4.52 GB, Used 40.60 %
+1267607756	0	4	CPU 11.70 %, MEM Free 4.52 GB, Used 40.49 %
+1268059494	4	16	ShowImage expected : 6000
+1268059606	0	16	OnStimulusCompleted
+1268059639	0	16	ExecuteCurrentObject Text
+1268059739	0	16	stopExecutionEvent set after 6000.1754745481 ms
+1268059743	0	16	DoTheWork End Image
+1268059763	0	15	DoTheWork Start Text
+1268059798	0	15	AddProtocolLine RichText54.rtf
+1268059801	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText54.rtf
+1268059820	0	15	PutDataIntoStimulusControl - TextObject
+1268060672	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText54.rtf
+1268060632	0	15	Recording disabled for this stimulus
+1270060723	0	15	OnStimulusCompleted
+1270060746	0	15	ExecuteCurrentObject Image
+1270060801	0	15	stopExecutionEvent set after 2000.11914016461 ms
+1270060803	0	15	DoTheWork End Text
+1270060836	0	10	DoTheWork Start Image
+1270060855	0	10	AddProtocolLine fixation cross 4x4.jpg
+1270060857	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1270060868	0	10	PutDataIntoStimulusControl - ImageObject
+1270062720	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1270062794	0	10	Recording disabled for this stimulus
+1271064922	0	21	StopExecution Image
+1271064959	0	10	OnStimulusCompleted
+1271064985	0	10	ExecuteCurrentObject Image
+1271065057	0	10	stopExecutionEvent set after 1002.17503923368 ms
+1271065060	0	10	DoTheWork End Image
+1271065086	0	6	DoTheWork Start Image
+1271065100	0	6	AddProtocolLine b2matrix 17.jpg
+1271065103	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 17.jpg
+1271065108	0	6	PutDataIntoStimulusControl - ImageObject
+1271079680	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 17.jpg
+1271089043	0	6	ContinueMessage f34d37deb6998ae7ce3cf262ab5b3a6f_1680x1050.jpg
+1273306505	0	4	CPU 10.71 %, MEM Free 4.52 GB, Used 40.55 %
+1277081748	4	6	ShowImage expected : 6000
+1277081861	0	6	OnStimulusCompleted
+1277081900	0	6	ExecuteCurrentObject Text
+1277082052	0	16	DoTheWork Start Text
+1277082093	0	16	AddProtocolLine RichText55.rtf
+1277082098	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText55.rtf
+1277082121	0	16	PutDataIntoStimulusControl - TextObject
+1277082613	0	6	stopExecutionEvent set after 6000.08953787398 ms
+1277082619	0	6	DoTheWork End Image
+1277084032	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText55.rtf
+1277084268	0	16	Recording disabled for this stimulus
+1278277474	0	4	CPU 10.57 %, MEM Free 4.52 GB, Used 40.52 %
+1279084999	0	16	OnStimulusCompleted
+1279085024	0	16	ExecuteCurrentObject Image
+1279085110	0	6	DoTheWork Start Image
+1279085135	0	6	AddProtocolLine fixation cross 4x4.jpg
+1279085138	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1279085151	0	6	PutDataIntoStimulusControl - ImageObject
+1279085230	0	16	stopExecutionEvent set after 2000.90663320208 ms
+1279085232	0	16	DoTheWork End Text
+1279085824	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1279085822	0	6	Recording disabled for this stimulus
+1280086708	0	21	StopExecution Image
+1280086766	0	6	OnStimulusCompleted
+1280086788	0	6	ExecuteCurrentObject Image
+1280086849	0	6	stopExecutionEvent set after 1001.00431266713 ms
+1280086851	0	6	DoTheWork End Image
+1280086924	0	16	DoTheWork Start Image
+1280086935	0	16	AddProtocolLine b2matrix 18.jpg
+1280086937	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 18.jpg
+1280086947	0	16	PutDataIntoStimulusControl - ImageObject
+1280103040	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 18.jpg
+1280114264	0	16	ContinueMessage d78ebb913b1a7b3afd17ee2f93fb5d67_1680x1050.jpg
+1284318507	0	4	CPU 11.18 %, MEM Free 4.52 GB, Used 40.56 %
+1286106666	4	16	ShowImage expected : 6000
+1286106727	0	16	OnStimulusCompleted
+1286106750	0	16	ExecuteCurrentObject Text
+1286106810	0	16	stopExecutionEvent set after 6000.10160172868 ms
+1286106812	0	16	DoTheWork End Image
+1286106838	0	15	DoTheWork Start Text
+1286106855	0	15	AddProtocolLine RichText56.rtf
+1286106857	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText56.rtf
+1286106869	0	15	PutDataIntoStimulusControl - TextObject
+1286107392	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText56.rtf
+1286107491	0	15	Recording disabled for this stimulus
+1288108304	0	15	OnStimulusCompleted
+1288108350	0	15	ExecuteCurrentObject Image
+1288108480	0	15	stopExecutionEvent set after 2000.82543328619 ms
+1288108485	0	15	DoTheWork End Text
+1288108508	0	6	DoTheWork Start Image
+1288108553	0	6	AddProtocolLine fixation cross 4x4.jpg
+1288108559	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1288108582	0	6	PutDataIntoStimulusControl - ImageObject
+1288126336	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1288126333	0	6	Recording disabled for this stimulus
+1289128769	0	21	StopExecution Image
+1289128828	0	6	OnStimulusCompleted
+1289128852	0	6	ExecuteCurrentObject Image
+1289128914	0	6	stopExecutionEvent set after 1002.42949204421 ms
+1289128916	0	6	DoTheWork End Image
+1289128919	0	16	DoTheWork Start Image
+1289128933	0	16	AddProtocolLine b2matrix 19.jpg
+1289128935	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 19.jpg
+1289128941	0	16	PutDataIntoStimulusControl - ImageObject
+1289143296	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 19.jpg
+1289156016	0	16	ContinueMessage 3ea80c5c166239796857885a314c59d1_1680x1050.jpg
+1290234106	0	4	CPU 11.77 %, MEM Free 4.52 GB, Used 40.50 %
+1295144821	4	16	ShowImage expected : 6000
+1295144880	0	16	OnStimulusCompleted
+1295144905	0	16	ExecuteCurrentObject Text
+1295144969	0	16	stopExecutionEvent set after 6000.11910216951 ms
+1295144971	0	16	DoTheWork End Image
+1295144996	0	15	DoTheWork Start Text
+1295145014	0	15	AddProtocolLine RichText57.rtf
+1295145015	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText57.rtf
+1295145026	0	15	PutDataIntoStimulusControl - TextObject
+1295148544	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText57.rtf
+1295148529	0	15	Recording disabled for this stimulus
+1295214637	0	4	CPU 11.26 %, MEM Free 4.53 GB, Used 40.37 %
+1297148565	0	15	OnStimulusCompleted
+1297148610	0	15	ExecuteCurrentObject Image
+1297148681	0	15	stopExecutionEvent set after 2000.06940750885 ms
+1297148684	0	15	DoTheWork End Text
+1297148720	0	10	DoTheWork Start Image
+1297148738	0	10	AddProtocolLine fixation cross 4x4.jpg
+1297148740	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1297148751	0	10	PutDataIntoStimulusControl - ImageObject
+1297149312	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1297149354	0	10	Recording disabled for this stimulus
+1298150752	0	21	StopExecution Image
+1298150851	0	10	OnStimulusCompleted
+1298150896	0	10	ExecuteCurrentObject Image
+1298151015	0	10	stopExecutionEvent set after 1001.45573568892 ms
+1298151020	0	10	DoTheWork End Image
+1298151035	0	15	DoTheWork Start Image
+1298151075	0	15	AddProtocolLine b2matrix 20.jpg
+1298151080	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 20.jpg
+1298151089	0	15	PutDataIntoStimulusControl - ImageObject
+1298166784	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 20.jpg
+1298181809	0	15	ContinueMessage 8fd50a226bf08a5869d35c619b4b8120_1680x1050.jpg
+1300460931	0	4	CPU 11.77 %, MEM Free 4.53 GB, Used 40.41 %
+1304168130	4	15	ShowImage expected : 6000
+1304168245	0	15	OnStimulusCompleted
+1304168285	0	15	ExecuteCurrentObject Text
+1304168434	0	16	DoTheWork Start Text
+1304168475	0	16	AddProtocolLine RichText58.rtf
+1304168480	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText58.rtf
+1304168503	0	16	PutDataIntoStimulusControl - TextObject
+1304168653	0	15	stopExecutionEvent set after 6000.0457968514 ms
+1304168660	0	15	DoTheWork End Image
+1304171776	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText58.rtf
+1304171823	0	16	Recording disabled for this stimulus
+1306172810	0	16	OnStimulusCompleted
+1306172835	0	16	ExecuteCurrentObject Image
+1306172901	0	16	stopExecutionEvent set after 2000.96990081072 ms
+1306172903	0	16	DoTheWork End Text
+1306172936	0	10	DoTheWork Start Image
+1306172956	0	10	AddProtocolLine fixation cross 4x4.jpg
+1306172958	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1306172970	0	10	PutDataIntoStimulusControl - ImageObject
+1306189824	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1306189832	0	10	Recording disabled for this stimulus
+1306264277	0	4	CPU 11.40 %, MEM Free 4.53 GB, Used 40.40 %
+1307190545	0	21	StopExecution Image
+1307190607	0	10	OnStimulusCompleted
+1307190629	0	10	ExecuteCurrentObject Image
+1307190694	0	10	stopExecutionEvent set after 1000.8474817481 ms
+1307190695	0	10	DoTheWork End Image
+1307190726	0	6	DoTheWork Start Image
+1307190742	0	6	AddProtocolLine b2matrix 21.jpg
+1307190744	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 21.jpg
+1307190754	0	6	PutDataIntoStimulusControl - ImageObject
+1307206784	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 21.jpg
+1307215797	0	6	ContinueMessage d42ce5f76c21b7478fd04c879f64e54e_1680x1050.jpg
+1311548703	0	4	CPU 10.27 %, MEM Free 4.52 GB, Used 40.50 %
+1313208626	4	6	ShowImage expected : 6000
+1313208693	0	6	OnStimulusCompleted
+1313208716	0	6	ExecuteCurrentObject Text
+1313208784	0	6	stopExecutionEvent set after 6000.16445566034 ms
+1313208786	0	6	DoTheWork End Image
+1313208802	0	16	DoTheWork Start Text
+1313208821	0	16	AddProtocolLine RichText59.rtf
+1313208823	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText59.rtf
+1313208836	0	16	PutDataIntoStimulusControl - TextObject
+1313212032	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText59.rtf
+1313212065	0	16	Recording disabled for this stimulus
+1315213108	0	16	OnStimulusCompleted
+1315213152	0	16	ExecuteCurrentObject Image
+1315213226	0	16	stopExecutionEvent set after 2000.99490111947 ms
+1315213228	0	16	DoTheWork End Text
+1315213264	0	6	DoTheWork Start Image
+1315213283	0	6	AddProtocolLine fixation cross 4x4.jpg
+1315213285	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1315213296	0	6	PutDataIntoStimulusControl - ImageObject
+1315230080	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1315230121	0	6	Recording disabled for this stimulus
+1316232397	0	21	StopExecution Image
+1316232480	0	6	OnStimulusCompleted
+1316232508	0	6	ExecuteCurrentObject Image
+1316232574	0	6	stopExecutionEvent set after 1002.33366456318 ms
+1316232576	0	6	DoTheWork End Image
+1316232616	0	6	DoTheWork Start Image
+1316232628	0	6	AddProtocolLine b2matrix 22.jpg
+1316232630	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 22.jpg
+1316232635	0	6	PutDataIntoStimulusControl - ImageObject
+1316247040	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 22.jpg
+1316256067	0	6	ContinueMessage 27814a38c2ef20d0c7ca454cb0fbed72_1680x1050.jpg
+1317493958	0	4	CPU 10.75 %, MEM Free 4.51 GB, Used 40.62 %
+1322248558	4	6	ShowImage expected : 6000
+1322248628	0	6	OnStimulusCompleted
+1322248651	0	6	ExecuteCurrentObject Text
+1322248756	0	10	DoTheWork Start Text
+1322248776	0	10	AddProtocolLine RichText60.rtf
+1322248779	0	10	Text : StartStimulus D:\Experiments\before stress noga\RichText60.rtf
+1322248793	0	10	PutDataIntoStimulusControl - TextObject
+1322248859	0	6	stopExecutionEvent set after 6000.17287731409 ms
+1322248861	0	6	DoTheWork End Image
+1322252288	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText60.rtf
+1322252328	0	10	Recording disabled for this stimulus
+1323508414	0	4	CPU 11.63 %, MEM Free 4.52 GB, Used 40.52 %
+1324253341	0	10	OnStimulusCompleted
+1324253364	0	10	ExecuteCurrentObject Image
+1324253429	0	10	stopExecutionEvent set after 2000.98871776724 ms
+1324253431	0	10	DoTheWork End Text
+1324253461	0	15	DoTheWork Start Image
+1324253480	0	15	AddProtocolLine fixation cross 4x4.jpg
+1324253483	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1324253494	0	15	PutDataIntoStimulusControl - ImageObject
+1324270363	0	15	Recording disabled for this stimulus
+1324270336	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1325272370	0	21	StopExecution Image
+1325272403	0	15	OnStimulusCompleted
+1325272445	0	15	ExecuteCurrentObject Image
+1325272501	0	15	stopExecutionEvent set after 1002.00656581688 ms
+1325272502	0	15	DoTheWork End Image
+1325272507	0	10	DoTheWork Start Image
+1325272521	0	10	AddProtocolLine b2matrix 23.jpg
+1325272523	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 23.jpg
+1325272528	0	10	PutDataIntoStimulusControl - ImageObject
+1325287296	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 23.jpg
+1325296894	0	10	ContinueMessage 0a87a3d09f6b7faf282604d6f9b619c4_1680x1050.jpg
+1328617964	0	4	CPU 11.50 %, MEM Free 4.52 GB, Used 40.57 %
+1331290720	4	10	ShowImage expected : 6000
+1331290797	0	10	OnStimulusCompleted
+1331290830	0	10	ExecuteCurrentObject Text
+1331290932	0	10	stopExecutionEvent set after 6000.20616695023 ms
+1331290933	0	6	DoTheWork Start Text
+1331290936	0	10	DoTheWork End Image
+1331290957	0	6	AddProtocolLine RichText61.rtf
+1331290960	0	6	Text : StartStimulus D:\Experiments\before stress noga\RichText61.rtf
+1331290973	0	6	PutDataIntoStimulusControl - TextObject
+1331308544	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText61.rtf
+1331308622	0	6	Recording disabled for this stimulus
+1333308634	0	6	OnStimulusCompleted
+1333308677	0	6	ExecuteCurrentObject Image
+1333308797	0	10	DoTheWork Start Image
+1333308823	0	10	AddProtocolLine fixation cross 4x4.jpg
+1333308825	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1333308838	0	10	PutDataIntoStimulusControl - ImageObject
+1333308910	0	6	stopExecutionEvent set after 2000.01305887723 ms
+1333308915	0	6	DoTheWork End Text
+1333309696	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1333309654	0	10	Recording disabled for this stimulus
+1334512036	0	4	CPU 10.75 %, MEM Free 4.52 GB, Used 40.59 %
+1335834955	0	21	StopExecution Image
+1335835005	0	10	OnStimulusCompleted
+1335835031	0	10	ExecuteCurrentObject Image
+1335835105	0	10	stopExecutionEvent set after 2525.36648853827 ms
+1335835107	0	10	DoTheWork End Image
+1335835116	0	15	DoTheWork Start Image
+1335835137	0	15	AddProtocolLine b2matrix 24.jpg
+1335835140	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 24.jpg
+1335835153	0	15	PutDataIntoStimulusControl - ImageObject
+1335845632	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 24.jpg
+1335858122	0	15	ContinueMessage 7055cb7a4c3d2b9f107087d8d74528d1_1680x1050.jpg
+1340206556	0	4	CPU 11.38 %, MEM Free 4.51 GB, Used 40.74 %
+1341847352	4	15	ShowImage expected : 6000
+1341847479	0	15	OnStimulusCompleted
+1341847515	0	15	ExecuteCurrentObject Text
+1341847670	0	15	stopExecutionEvent set after 6000.18242828655 ms
+1341847675	0	10	DoTheWork Start Text
+1341847676	0	15	DoTheWork End Image
+1341847719	0	10	AddProtocolLine RichText62.rtf
+1341847724	0	10	Text : StartStimulus D:\Experiments\before stress noga\RichText62.rtf
+1341847745	0	10	PutDataIntoStimulusControl - TextObject
+1341849856	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText62.rtf
+1341849945	0	10	Recording disabled for this stimulus
+1343850903	0	10	OnStimulusCompleted
+1343850933	0	10	ExecuteCurrentObject Image
+1343851001	0	10	stopExecutionEvent set after 2000.98097131014 ms
+1343851003	0	10	DoTheWork End Text
+1343851021	0	6	DoTheWork Start Image
+1343851043	0	6	AddProtocolLine fixation cross 4x4.jpg
+1343851045	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1343851057	0	6	PutDataIntoStimulusControl - ImageObject
+1343868032	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1343867981	0	6	Recording disabled for this stimulus
+1344870831	0	21	StopExecution Image
+1344870869	0	6	OnStimulusCompleted
+1344870896	0	6	ExecuteCurrentObject Image
+1344870956	0	6	stopExecutionEvent set after 1002.90275079036 ms
+1344870957	0	6	DoTheWork End Image
+1344870965	0	16	DoTheWork Start Image
+1344870981	0	16	AddProtocolLine b2matrix 25.jpg
+1344870983	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 25.jpg
+1344870987	0	16	PutDataIntoStimulusControl - ImageObject
+1344885888	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 25.jpg
+1344898284	0	16	ContinueMessage 1228484104ef84ef55bd1f6d5d56d6be_1680x1050.jpg
+1346141184	0	4	CPU 11.72 %, MEM Free 4.50 GB, Used 40.85 %
+1350887926	4	16	ShowImage expected : 6000
+1350887990	0	16	OnStimulusCompleted
+1350888011	0	16	ExecuteCurrentObject Text
+1350888079	0	16	stopExecutionEvent set after 6000.18335007262 ms
+1350888081	0	16	DoTheWork End Image
+1350888107	0	15	DoTheWork Start Text
+1350888125	0	15	AddProtocolLine RichText63.rtf
+1350888127	0	15	Text : StartStimulus D:\Experiments\before stress noga\RichText63.rtf
+1350888137	0	15	PutDataIntoStimulusControl - TextObject
+1350890156	0	15	Recording disabled for this stimulus
+1350890112	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText63.rtf
+1352096102	0	4	CPU 10.67 %, MEM Free 4.51 GB, Used 40.65 %
+1352890217	0	15	OnStimulusCompleted
+1352890269	0	15	ExecuteCurrentObject Image
+1352890364	0	10	DoTheWork Start Image
+1352890386	0	10	AddProtocolLine fixation cross 4x4.jpg
+1352890388	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1352890400	0	10	PutDataIntoStimulusControl - ImageObject
+1352890452	0	15	stopExecutionEvent set after 2000.0175679934 ms
+1352890454	0	15	DoTheWork End Text
+1352891136	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1352891163	0	10	Recording disabled for this stimulus
+1353892726	0	21	StopExecution Image
+1353892785	0	10	OnStimulusCompleted
+1353892808	0	10	ExecuteCurrentObject Image
+1353892867	0	10	stopExecutionEvent set after 1001.7145485909 ms
+1353892869	0	10	DoTheWork End Image
+1353892894	0	6	DoTheWork Start Image
+1353892909	0	6	AddProtocolLine b2matrix 26.jpg
+1353892911	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 26.jpg
+1353892922	0	6	PutDataIntoStimulusControl - ImageObject
+1353909248	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 26.jpg
+1353919005	0	6	ContinueMessage 99b1cb00245f8736e5bfb2256f439c15_1680x1050.jpg
+1357289211	0	4	CPU 11.67 %, MEM Free 4.51 GB, Used 40.70 %
+1359910980	4	6	ShowImage expected : 6000
+1359911059	0	6	OnStimulusCompleted
+1359911100	0	6	ExecuteCurrentObject Text
+1359911178	0	6	stopExecutionEvent set after 6000.19817703629 ms
+1359911180	0	6	DoTheWork End Image
+1359911186	0	10	DoTheWork Start Text
+1359911206	0	10	AddProtocolLine RichText64.rtf
+1359911208	0	10	Text : StartStimulus D:\Experiments\before stress noga\RichText64.rtf
+1359911218	0	10	PutDataIntoStimulusControl - TextObject
+1359913472	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText64.rtf
+1359913445	0	10	Recording disabled for this stimulus
+1361913456	0	10	OnStimulusCompleted
+1361913481	0	10	ExecuteCurrentObject Image
+1361913553	0	10	stopExecutionEvent set after 2000.04699996281 ms
+1361913555	0	10	DoTheWork End Text
+1361913576	0	16	DoTheWork Start Image
+1361913595	0	16	AddProtocolLine fixation cross 4x4.jpg
+1361913597	0	16	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1361913608	0	16	PutDataIntoStimulusControl - ImageObject
+1361914496	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1361914487	0	16	Recording disabled for this stimulus
+1362916788	0	21	StopExecution Image
+1362916873	0	16	OnStimulusCompleted
+1362916909	0	16	ExecuteCurrentObject Image
+1362917026	0	10	DoTheWork Start Image
+1362917055	0	10	AddProtocolLine b2matrix 27.jpg
+1362917059	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 27.jpg
+1362917070	0	10	PutDataIntoStimulusControl - ImageObject
+1362917298	0	16	stopExecutionEvent set after 1002.42636100888 ms
+1362917304	0	16	DoTheWork End Image
+1362932992	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 27.jpg
+1362955461	0	10	ContinueMessage 4cd3a494467f3a1e63ac3c2b6d8b4632_1680x1050.jpg
+1363065287	0	4	CPU 11.00 %, MEM Free 4.49 GB, Used 40.92 %
+1368404537	0	4	CPU 11.21 %, MEM Free 4.50 GB, Used 40.82 %
+1368935007	4	10	ShowImage expected : 6000
+1368935060	0	10	OnStimulusCompleted
+1368935082	0	10	ExecuteCurrentObject Text
+1368935178	0	16	DoTheWork Start Text
+1368935206	0	16	AddProtocolLine RichText65.rtf
+1368935209	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText65.rtf
+1368935221	0	16	PutDataIntoStimulusControl - TextObject
+1368935303	0	10	stopExecutionEvent set after 6000.07829359221 ms
+1368935306	0	10	DoTheWork End Image
+1368936704	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText65.rtf
+1368936684	0	16	Recording disabled for this stimulus
+1370936701	0	16	OnStimulusCompleted
+1370936731	0	16	ExecuteCurrentObject Image
+1370936817	0	16	stopExecutionEvent set after 2000.06182692671 ms
+1370936819	0	16	DoTheWork End Text
+1370936842	0	10	DoTheWork Start Image
+1370936860	0	10	AddProtocolLine fixation cross 4x4.jpg
+1370936862	0	10	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1370936873	0	10	PutDataIntoStimulusControl - ImageObject
+1370938752	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1370938728	0	10	Recording disabled for this stimulus
+1371940655	0	21	StopExecution Image
+1371940690	0	10	OnStimulusCompleted
+1371940714	0	10	ExecuteCurrentObject Image
+1371940776	0	10	stopExecutionEvent set after 1002.00494076753 ms
+1371940777	0	10	DoTheWork End Image
+1371940811	0	6	DoTheWork Start Image
+1371940826	0	6	AddProtocolLine b2matrix 28.jpg
+1371940828	0	6	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 28.jpg
+1371940839	0	6	PutDataIntoStimulusControl - ImageObject
+1371955712	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 28.jpg
+1371970106	0	6	ContinueMessage af57bcd6f424f9c2a3c3faa53bb1be90_1680x1050.jpg
+1374193857	0	4	CPU 11.00 %, MEM Free 4.51 GB, Used 40.67 %
+1377962102	4	6	ShowImage expected : 6000
+1377962157	0	6	OnStimulusCompleted
+1377962180	0	6	ExecuteCurrentObject Text
+1377962269	0	16	DoTheWork Start Text
+1377962288	0	16	AddProtocolLine RichText66.rtf
+1377962290	0	16	Text : StartStimulus D:\Experiments\before stress noga\RichText66.rtf
+1377962302	0	16	PutDataIntoStimulusControl - TextObject
+1377962371	0	6	stopExecutionEvent set after 6000.14443544078 ms
+1377962374	0	6	DoTheWork End Image
+1377976978	0	16	Recording disabled for this stimulus
+1377976960	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText66.rtf
+1379976966	0	16	OnStimulusCompleted
+1379976991	0	16	ExecuteCurrentObject Image
+1379977071	0	15	DoTheWork Start Image
+1379977091	0	15	AddProtocolLine fixation cross 4x4.jpg
+1379977094	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\fixation cross 4x4.jpg
+1379977106	0	15	PutDataIntoStimulusControl - ImageObject
+1379977244	0	16	stopExecutionEvent set after 2000.07419587922 ms
+1379977246	0	16	DoTheWork End Text
+1379979008	0	18	ShowDataOfObject D:\Experiments\before stress noga\fixation cross 4x4.jpg
+1379979013	0	15	Recording disabled for this stimulus
+1380108217	0	4	CPU 10.87 %, MEM Free 4.51 GB, Used 40.65 %
+1380980616	0	21	StopExecution Image
+1380980681	0	15	OnStimulusCompleted
+1380980710	0	15	ExecuteCurrentObject Image
+1380980788	0	15	stopExecutionEvent set after 1001.6039200151 ms
+1380980791	0	15	DoTheWork End Image
+1380980841	0	15	DoTheWork Start Image
+1380980859	0	15	AddProtocolLine b2matrix 29.jpg
+1380980862	0	15	Image : StartStimulus C:\Users\User23\Desktop\A&R - visual attention\Free Viewing\stimuli and more\4x4 group 1\baseline\block2\b2matrix 29.jpg
+1380980867	0	15	PutDataIntoStimulusControl - ImageObject
+1380996096	0	18	ShowDataOfObject D:\Experiments\before stress noga\b2matrix 29.jpg
+1381009801	0	15	ContinueMessage f8ba4734c40761d91b147e1f6ac644cd_1680x1050.jpg
+1385280256	0	4	CPU 10.61 %, MEM Free 4.51 GB, Used 40.64 %
+1386997602	4	15	ShowImage expected : 6000
+1386997703	0	15	OnStimulusCompleted
+1386997739	0	15	ExecuteCurrentObject Text
+1386997850	0	15	stopExecutionEvent set after 6000.16983047938 ms
+1386997855	0	15	DoTheWork End Image
+1386997882	0	6	DoTheWork Start Text
+1386997920	0	6	AddProtocolLine RichText130.rtf
+1386997924	0	6	Text : StartStimulus D:\Experiments\before stress noga\RichText130.rtf
+1386997945	0	6	PutDataIntoStimulusControl - TextObject
+1387000284	0	6	Recording disabled for this stimulus
+1387000320	0	18	ShowDataOfObject D:\Experiments\before stress noga\RichText130.rtf
+1389001233	0	6	OnStimulusCompleted
+1389110446	0	1	Hide StimulusWindow
+1389110508	0	6	Experiment Execution Completed
+1389131323	0	6	Eye Tracker Source End
+1389151372	0	1	SceneRecordingController.Stop
+1389197660	0	1	SaveRecordedData D:\Results\before stress noga\201-[d8979ea7-4468-4176-a29f-5b5141d9449a]\201-eye_data.idf
+1389327051	0	1	Sending command ET_SAV "C:\Program Files\SMI\iView X\temp\201-eye_data.idf" "description" "201" "OVR"
+1389442879	2	1	Return

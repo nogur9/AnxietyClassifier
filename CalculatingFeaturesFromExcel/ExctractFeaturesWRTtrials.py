@@ -2,7 +2,7 @@ import itertools
 import numpy as np
 import math
 import matplotlib.pyplot as plt
-from DataImporting import DataFromExcel
+from DataImporting import ImportData
 from CalculatingFeaturesFromExcel.RegressionFunctions import sine, linear
 Fixation_length_cutoff = 100
 
@@ -17,7 +17,7 @@ class TrialsData:
     def __init__(self, path, fixation_dataset_sheet_name, demographic_dataset_sheet_name=None,
                  grouping_function=np.nansum):
 
-        self.fixation_dataset = DataFromExcel.get_data(path, fixation_dataset_sheet_name)
+        self.fixation_dataset = ImportData.get_data(path, fixation_dataset_sheet_name)
         self.fixation_dataset = self.fixation_dataset[self.fixation_dataset.Fixation_Duration > Fixation_length_cutoff]
         self.grouping_function = grouping_function
         self.Trials_count = np.array([len(set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == j])) for j in
@@ -252,12 +252,11 @@ class TrialsData:
 # maybe add linear
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
         trials = sorted([set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects])
-        All_fixations = [
-            [self.fixation_dataset[
-                 (self.fixation_dataset.Subject == subjects[i]) & (self.fixation_dataset.Trial == j)]
-             for j in trials[i]] for i in range(len(subjects))]
+        All_fixations = [[self.fixation_dataset[(self.fixation_dataset.Subject == subjects[i]) &
+                                                (self.fixation_dataset.Trial == j)] for j in trials[i]]
+                                                for i in range(len(subjects))]
         sum_All = [[np.nansum(All_fixations[i][j].Fixation_Duration) for j in
-             range(len(trials[i]))] for i in range(len(subjects))]
+                                                range(len(trials[i]))] for i in range(len(subjects))]
 
         sum_Neutral = [
             [np.nansum(All_fixations[i][j].Fixation_Duration[(self.fixation_dataset.AOI_Group == "N")]) for j in

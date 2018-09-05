@@ -10,15 +10,14 @@ import xlsxwriter
 # Define Envairoment Variables
 FIXATION_DATA_SHEET = 'fixation_data'
 DEMOGRAPHICS_SHEET = 'demographic'
-DATA_FILE_PATH = "C:\‏‏PycharmProjects\AnxietyClassifier\AmitsData\data.xlsx"
+DATA_FILE_PATH = r"C:\‏‏PycharmProjects\AnxietyClassifier\AmitsData\data.xlsx"
 
 def create_data_File_Features():
     print(1)
     data = Data(DATA_FILE_PATH, FIXATION_DATA_SHEET, DEMOGRAPHICS_SHEET)
-    print(2)
-    data.get_age()
-    print(3)
-    data.get_PHQ9()
+    data.get_difference_between_medians()
+    print("0.0.0.0.")
+    data.get_average_pupil_size_Disgusted()
     print(4)
     data.get_subject_number()
     print(5)
@@ -75,9 +74,8 @@ def create_data_File_Features():
     print(30)
     data.amount_of_first_fixations()
     print(31)
-    data.amount_of_second_fixations()
+#    data.amount_of_second_fixations()
     print(32)
-    data.get_average_pupil_size_Disgusted()
     print(33)
     data.get_average_pupil_size_Neutral()
     print(34)
@@ -95,10 +93,9 @@ def create_data_File_Features():
     print(40)
     data.get_mean_different_AOI_per_trial()
     print(41)
-    data.get_difference_between_medians()
     print(42)
     workbook = xlsxwriter.Workbook(
-        'C:\PycharmProjects\AnxietyClassifier\ExtractedFeatures\\all_trials_data_features.xlsx')
+        'C:\\‏‏PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\all_trials_data_features.xlsx')
     worksheet = workbook.add_worksheet()
     col = 0
     for key in data.output_data_dict.keys():
@@ -111,7 +108,7 @@ def create_data_File_Features():
 
     workbook.close()
 
-create_data_File_Features()
+#create_data_File_Features()
 
 DATA_FILE_PATH_WITHOUT_FIRST_FIVE_FIXATIONS = "C:\‏‏PycharmProjects\AnxietyClassifier\AmitsData\data_cut_first_five_fixations.xlsx"
 
@@ -120,9 +117,6 @@ def create_data_File_Features_without_first_five_fixations():
     print(1)
     data = Data(DATA_FILE_PATH_WITHOUT_FIRST_FIVE_FIXATIONS, FIXATION_DATA_SHEET, DEMOGRAPHICS_SHEET)
     print(2)
-    data.get_age()
-    print(3)
-    data.get_PHQ9()
     print(4)
     data.get_subject_number()
     print(5)
@@ -198,7 +192,7 @@ def create_data_File_Features_without_first_five_fixations():
     data.get_difference_between_medians()
     print(42)
     workbook = xlsxwriter.Workbook(
-        'C:\PycharmProjects\AnxietyClassifier\ExtractedFeatures\\all_trials_data_features_without_first_five_fixations.xlsx')
+        'C:\\‏‏PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\all_trials_data_features_without_first_five_fixations.xlsx')
     worksheet = workbook.add_worksheet()
     col = 0
     for key in data.output_data_dict.keys():
@@ -210,3 +204,6 @@ def create_data_File_Features_without_first_five_fixations():
         col += 1
 
     workbook.close()
+
+create_data_File_Features()
+create_data_File_Features_without_first_five_fixations()
