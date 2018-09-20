@@ -7,6 +7,7 @@ file_b = 'ExtractedFeatures\\all_trials_data_features_without_first_five_fixatio
 file_c = 'ExtractedFeatures\\data_features_for_each_matrix.xlsx'
 file_d = 'C:\‏‏PycharmProjects\\AnxietyClassifier\ExtractedFeatures\\Features_with_respect_to_trials.xlsx'
 file_e = 'C:\‏‏PycharmProjects\\AnxietyClassifier\ExtractedFeatures\\Book1.xlsx'
+file_f = 'C:\‏‏PycharmProjects\\AnxietyClassifier\ExtractedFeatures\\subject_features_before_selection.xlsx'
 
 def visualize_features_interactivly():
     files = [file_a, file_b, file_c, file_d]
@@ -38,10 +39,11 @@ def visualize_features_interactivly():
         func_dict[vis_type]()
 
 def auto_visualize_features():
-    visualization_object = DataVisualizationObj(get_data(file_e, 'Sheet1'))
-    visualization_object.print_variance()
-    visualization_object.print_missing_values()
-#    visualization_object.create_binary_hist("C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\\visualizations\\Features_with_respect_to_trials")
+    visualization_object = DataVisualizationObj(get_data(file_a, 'Sheet1'))
+    visualization_object.print_variance(path="C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\\visualizations\\all_trials_data_features")
+    visualization_object.print_missing_values(path="C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\\visualizations\\all_trials_data_features")
+    visualization_object.create_binary_hist("C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\\visualizations\\all_trials_data_features")
+    visualization_object.create_two_hists_by_group("C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\\visualizations\\all_trials_data_features")
 
 
 

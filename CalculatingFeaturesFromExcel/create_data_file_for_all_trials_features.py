@@ -93,6 +93,7 @@ def create_data_File_Features():
     print(40)
     data.get_mean_different_AOI_per_trial()
     print(41)
+    data.get_p_disgusted_times_first_fixation_duration()
     print(42)
     workbook = xlsxwriter.Workbook(
         'C:\\‏‏PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\all_trials_data_features.xlsx')
@@ -206,4 +207,4 @@ def create_data_File_Features_without_first_five_fixations():
     workbook.close()
 
 create_data_File_Features()
-create_data_File_Features_without_first_five_fixations()
+#create_data_File_Features_without_first_five_fixations()
