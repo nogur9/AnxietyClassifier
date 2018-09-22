@@ -39,12 +39,12 @@ def visualize_features_interactivly():
         func_dict[vis_type]()
 
 def auto_visualize_features():
-    visualization_object = DataVisualizationObj(get_data(file_a, 'Sheet1'))
-    visualization_object.print_variance(path="C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\\visualizations\\all_trials_data_features")
-    visualization_object.print_missing_values(path="C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\\visualizations\\all_trials_data_features")
-    visualization_object.create_binary_hist("C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\\visualizations\\all_trials_data_features")
-    visualization_object.create_two_hists_by_group("C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\\visualizations\\all_trials_data_features")
-
+    visualization_object = DataVisualizationObj(get_data(file_f, 'Sheet1'))
+    #visualization_object.print_variance(path="C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\\visualizations\\subject_features_before_selection")
+    #visualization_object.print_missing_values(path="C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\\visualizations\\subject_features_before_selection")
+    #visualization_object.create_binary_hist(path = "C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\\visualizations\\subject_features_before_selection")
+    #visualization_object.create_two_hists_by_group(path = "C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\\visualizations\\subject_features_before_selection")
+    visualization_object.plot_correlation_matrix(path="C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\\visualizations\\subject_features_before_selection")
 
 
 auto_visualize_features()

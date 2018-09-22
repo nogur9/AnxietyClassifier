@@ -1,4 +1,6 @@
 import random
+import string
+
 import numpy
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
@@ -17,33 +19,72 @@ class DataVisualizationObj:
         self.dataset = refactor_labels(data_set, group_column)
         self.group_column = group_column
 
+    def create_two_hists_by_group(self, path = None):
+        df = self.dataset.dropna(axis=1)
+        for feature in df:
+            x = df[df[self.group_column] == 1][feature]
+            #blue
+            y = df[df[self.group_column] == 0][feature]
+            #red
+
+            bins = numpy.linspace(min(df[feature]),max(df[feature]), 100)
+            fig, axs = plt.subplots(2, 1, sharex=True)
+            fig.suptitle(feature, fontsize=16)
+            axs[0].hist(x, bins=bins, color='b')
+            axs[0].set_title("high")
+            axs[1].hist(y, bins=bins, color='c')
+            axs[1].set_title("low")
+
+            if path:
+                plt.savefig(os.path.join(path,"subplot_hist_{}.png".format(self.format_filename(str(feature)))))
+            else:
+                plt.show()
+
+    def format_filename(self, s):
+        """Take a string and return a valid filename constructed from the string.
+    Uses a whitelist approach: any characters not present in valid_chars are
+    removed. Also spaces are replaced with underscores.
+
+    Note: this method may produce invalid filenames such as ``, `.` or `..`
+    When I use this method I prepend a date string like '2009_01_15_19_46_32_'
+    and append a file extension like '.txt', so I avoid the potential of using
+    an invalid filename.
+
+    """
+        valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
+        filename = ''.join(c for c in s if c in valid_chars)
+        filename = filename.replace(' ', '_')  # I don't like spaces in filenames.
+        return filename
 
     def create_binary_hist(self, path = None):
-        for feature in self.dataset:
-            x = self.dataset[feature][self.dataset[self.group_column] == 1]
+        df = self.dataset.dropna(axis=1)
+        for feature in df:
+            x = df[df[self.group_column] == 1][feature]
             #blue
-            y = self.dataset[feature][self.dataset[self.group_column] == 0]
+            y = df[df[self.group_column] == 0][feature]
             #red
-            bins = numpy.linspace(-10, 10, 100)
+
+            bins = numpy.linspace(min(df[feature]),max(df[feature]), 100)
             red_patch = mpatches.Patch(color='red', label='low')
             blue_patch = mpatches.Patch(color='blue', label='high')
             plt.legend(handles=[red_patch, blue_patch])
-            plt.hist(x, bins, alpha=0.5, label='high')
-            plt.hist(y, bins, alpha=0.5, label='low')
+            plt.hist(x, bins, alpha=0.7, label='high', color='b')
+            plt.hist(y, bins, alpha=0.7, label='low', color='r')
             plt.title(feature)
             if path:
-                plt.savefig(os.path.join(path,"binary_hist_{}.png".format(str(feature))))
+                plt.savefig(os.path.join(path,"binary_hist_{}.png".format(self.format_filename(str(feature)))))
             else:
                 plt.show()
 
 
-    def plot_scatters(self):
+    def plot_scatters(self, path=None):
         """
     
         :param self.dataset: Pandas DataFrame self.dataset
     
         Makes scatter plot of each two features.
         """
+        df = self.dataset.dropna(axis=1)
         zero_vals = [self.dataset.values[i] for i in range(len(self.dataset.values)) if self.dataset.values[i][0] == 0.0]
         one_values = [self.dataset.values[i] for i in range(len(self.dataset.values)) if self.dataset.values[i][0] == 1.0]
     
@@ -59,9 +100,7 @@ class DataVisualizationObj:
                             [float(zero_vals[k][j]) for k in range(len(zero_vals))], c='r')
                 plt.scatter([float(one_values[k][i]) for k in range(len(one_values))],
                             [float(one_values[k][j]) for k in range(len(one_values))], c='b')
-                plt.show()
-                plt.hold(False)
-                plt.close()
+                plt.savefig(os.path.join(path, "correlations_figure_{}.png"))
 
     def box_plot(self):
         """
@@ -100,7 +139,7 @@ class DataVisualizationObj:
         plt.yticks(range(len(corr.columns)), corr.columns)
         plt.show()
 
-    def plot_correlation_matrix(self):
+    def plot_correlation_matrix(self, path=None):
         """
 
         :param dataset: Pandas DataFrame dataset
@@ -108,17 +147,22 @@ class DataVisualizationObj:
         creates correlation matrix and prints the correlation that are higher then 0.5
         in comment - printing correlation that are lower then -0.5, but in this data its empty.
         """
-
-        names = list(self.dataset)
+        df = self.dataset.dropna(axis=1)
+        names = list(df)
         names.remove('group')
-        correlations = sorted(self.dataset.corr())
+        correlations = df.corr()
         # plot correlation matrix
         fig = plt.figure()
         ax = fig.add_subplot(111)
         cax = ax.matshow(correlations, vmin=-1, vmax=1)
+        #correlations = sorted(correlations)
         print("Correlations:")
-        print(*[[names[i], names[j], correlations.values[i][j]] for i in range(len(names)) for j in range(len(names))
-                if (not i == j) and ((correlations > 0.5).values[i][j] or (correlations < -0.5).values[i][j])], sep="\n")
+        all_corr = [[names[i], names[j], correlations.values[i][j]] for i in range(len(names)) for j in range(len(names))]
+        high_corr = [[names[i], names[j], correlations.values[i][j]] for i in range(len(names)) for j in range(len(names))
+                if (not i == j) and ((correlations > 0.5).values[i][j] or (correlations < -0.5).values[i][j])]
+        all_corr.sort(key=lambda x: x[2])
+        high_corr.sort(key=lambda x: x[2])
+        print(*high_corr, sep="\n")
 
         fig.colorbar(cax)
         ticks = np.arange(0, 9, 1)
@@ -127,8 +171,14 @@ class DataVisualizationObj:
         ax.set_xticklabels(names)
         ax.set_yticklabels(names)
         plt.title('Correlations matrix')
-        plt.show()
-        plt.close()
+        plt.savefig(os.path.join(path, "correlations_figure.png"))
+        if path:
+            with open(os.path.join(path, "high_correlation.txt"),"w") as f:
+                for i in high_corr:
+                    f.write(str(i)+"\n")
+            with open(os.path.join(path, "all_correlation.txt"),"w") as f:
+                for i in all_corr:
+                    f.write(str(i)+"\n")
 
 
     def print_data(self):
@@ -139,16 +189,26 @@ class DataVisualizationObj:
         print(self.dataset.groupby(self.group_column).size())
 
 
-    def print_missing_values(self):
+    def print_missing_values(self, path=None):
         print("Missing Values")
         print(self.dataset.isnull().sum())
+        result = [(name,self.dataset[name].isnull().sum()) for name in self.dataset.keys()]
+        if path:
+            with open(os.path.join(path, "missing.txt"),"w") as f:
+                for i in result:
+                    f.write(str(i)+"\n")
 
 
-    def print_variance(self):
-        max_abs_scaler = preprocessing.MaxAbsScaler()
-        data = max_abs_scaler.fit_transform(self.dataset)
+    def print_variance(self, path=None):
+        df = self.dataset.dropna(axis=1)
+        max_abs_scaler = preprocessing.StandardScaler()
+        data = max_abs_scaler.fit_transform(df)
         selector = VarianceThreshold()
         selector.fit_transform(data)
-        result = sorted(zip(list(self.dataset), selector.variances_), key=lambda x: x[1])
+        result = sorted(zip(list(df), selector.variances_), key=lambda x: x[1])
         print("Variance")
         print(*result, sep="\n")
+        if path:
+            with open(os.path.join(path, "variance.txt"),"w") as f:
+                for i in result:
+                    f.write(str(i)+"\n")

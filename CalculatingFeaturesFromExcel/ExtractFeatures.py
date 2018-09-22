@@ -911,13 +911,17 @@ class Data:
 
 
     def find_area(self, x_pos, y_pos):
-        areas_map = [((1072, 759), (1279, 966)), ((851, 761), (1058, 968)), ((623, 758), (830, 965)),
+        areas_map = [((1072, 759), (1279, 966)), ((851, 761), (1058, 968)),
+                     ((623, 758), (830, 965)),
                      ((400, 758), (607, 965)),
-                     ((1071, 535), (1278, 742)), ((850, 535), (1057, 742)), ((622, 534), (829, 471)),
+                     ((1071, 535), (1278, 742)), ((850, 535), (1057, 742)),
+                     ((622, 534), (829, 741)),
                      ((399, 534), (606, 741)),
-                     ((1073, 308), (1280, 515)), ((848, 310), (1055, 517)), ((624, 307), (831, 514)),
+                     ((1073, 308), (1280, 515)), ((848, 310), (1055, 517)),
+                     ((624, 307), (831, 514)),
                      ((401, 307), (608, 514)),
-                     ((1072, 84), (1279, 291)), ((847, 84), (1054, 291)), ((623, 83), (830, 290)),
+                     ((1072, 84), (1279, 291)), ((847, 84), (1054, 291)),
+                     ((623, 83), (830, 290)),
                      ((400, 83), (607, 290))]
         for index, elem in enumerate(areas_map):
             top = areas_map[index][1]
@@ -930,7 +934,7 @@ class Data:
         num_of_aois = 16
         areas_map = [((1072, 759), (1279, 966)), ((851, 761), (1058, 968)), ((623, 758), (830, 965)),
                      ((400, 758), (607, 965)),
-                     ((1071, 535), (1278, 742)), ((850, 535), (1057, 742)), ((622, 534), (829, 471)),
+                     ((1071, 535), (1278, 742)), ((850, 535), (1057, 742)), ((622, 534), (829, 741)),
                      ((399, 534), (606, 741)),
                      ((1073, 308), (1280, 515)), ((848, 310), (1055, 517)), ((624, 307), (831, 514)),
                      ((401, 307), (608, 514)),
@@ -983,6 +987,7 @@ class Data:
             p_disgusted_times_first_fixation_duration.append([])
             p_map = self.get_probability_distribution(0, subject)
             for j, trial in enumerate(trials[i]):
+                print(subject, trial)
                 fixation_index = 0
                 first_aoi = all_fixations_aoi[i][j].values[fixation_index]
                 first_fixation_duration = all_fixations_durations[i][j].values[fixation_index]
@@ -999,7 +1004,8 @@ class Data:
                                                                           self.fixation_dataset.Area_of_Interest == first_aoi)])
                 area = self.find_area(positions[0].values[0], positions[1].values[0])
                 p_disgusted_times_first_fixation_duration[i].append(p_map[area][0] * first_fixation_duration)
-
+                if (subject, trial) == (345, 22):
+                    print(i)
                 p_map = self.get_probability_distribution(trial, subject, last_probability_distribution=p_map)
 
         self.output_data_dict["p_disgusted_times_first_fixation_duration"] = \

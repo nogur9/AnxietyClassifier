@@ -1,6 +1,5 @@
 import xlsxwriter
-from sklearn.model_selection import LeaveOneOut
-from CalculatingFeaturesFromExcel.PCA import PCA_transforme, meow
+from dim_reduction.PCA import PCA_transforme, meow
 # Libraries
 import matplotlib.pyplot as plt
 import numpy as np
@@ -15,17 +14,12 @@ from DataImporting.Data_Imputation import imputing_most_frequent
 
 # feature selection
 from sklearn.feature_selection import SelectKBest
-from sklearn.feature_selection import chi2
 from sklearn.feature_selection import mutual_info_classif
 from sklearn.feature_selection import f_classif
 from sklearn.feature_selection import RFECV
 
 # model selection
 from sklearn import model_selection
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import classification_report
-from sklearn.metrics import precision_recall_fscore_support
 
 # models
 from sklearn.linear_model import LogisticRegression

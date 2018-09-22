@@ -15,6 +15,8 @@ DATA_FILE_PATH = r"C:\‏‏PycharmProjects\AnxietyClassifier\AmitsData\data.xls
 def create_data_File_Features():
     print(1)
     data = Data(DATA_FILE_PATH, FIXATION_DATA_SHEET, DEMOGRAPHICS_SHEET)
+    data.get_p_disgusted_times_first_fixation_duration()
+
     data.get_difference_between_medians()
     print("0.0.0.0.")
     data.get_average_pupil_size_Disgusted()
@@ -93,7 +95,6 @@ def create_data_File_Features():
     print(40)
     data.get_mean_different_AOI_per_trial()
     print(41)
-    data.get_p_disgusted_times_first_fixation_duration()
     print(42)
     workbook = xlsxwriter.Workbook(
         'C:\\‏‏PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\all_trials_data_features.xlsx')

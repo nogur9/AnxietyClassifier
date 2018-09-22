@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cbd6c00-86b4-4b9b-a5d9-24e55f5ebdb6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/AnxietyClassifier(2).iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AnxietyClassifier(2).iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AmitsData/data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/AmitsData/data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_all_trials_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_all_trials_features.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_each_matrix_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_each_matrix_features.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataImporting/DataVisualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataImporting/DataVisualization.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_STD_Disgusted_difference_between_medians.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_STD_Neutral_difference_between_medians.png" beforeDir="false" />
@@ -100,8 +98,8 @@
       <file leaf-file-name="ExtractFeatures.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="969" column="53" selection-start-line="969" selection-start-column="8" selection-end-line="969" selection-end-column="53" />
+            <state relative-caret-position="319">
+              <caret line="1009" selection-start-line="1009" selection-end-line="1009" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -109,32 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_data_file_for_all_trials_features.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_all_trials_features.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestLoopOverData.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testers/TestersCalculatingFeaturesFromExcel/TestLoopOverData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="454" column="25" selection-start-line="454" selection-start-column="25" selection-end-line="454" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="visualize_features.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="visualize_features.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataImporting/visualize_features.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="75">
+              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -142,23 +119,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataVisualization.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataImporting/DataVisualization.py">
+      <file leaf-file-name="_axes.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Anaconda/Lib/site-packages/matplotlib/axes/_axes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="202" column="42" selection-start-line="202" selection-start-column="41" selection-end-line="202" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-139">
+              <caret line="7305" column="8" selection-start-line="7305" selection-start-column="8" selection-end-line="7305" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.py" pinned="false" current-in-tab="true">
-        <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/preprocessing/data.py">
+      <file leaf-file-name="DataVisualization.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataImporting/DataVisualization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4956">
-              <caret line="749" column="12" selection-start-line="749" selection-start-column="12" selection-end-line="749" selection-end-column="12" />
+            <state relative-caret-position="-1004">
+              <caret line="122" column="4" selection-start-line="122" selection-start-column="4" selection-end-line="122" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,6 +169,7 @@
       <find>refactor_labels</find>
       <find>print</find>
       <find>get_p_disgusted_times_first_fixation_duration</find>
+      <find>find_area</find>
     </findStrings>
     <replaceStrings>
       <replace>low</replace>
@@ -230,19 +208,20 @@
         <option value="$PROJECT_DIR$/Testers/TestersCalculatingFeaturesFromExcel/TestLoopOverData.py" />
         <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExctractFeaturesWRTtrials.py" />
         <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_time_dependant_features.py" />
-        <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" />
         <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeaturesForEachMatrix.py" />
         <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_each_matrix_features.py" />
-        <option value="$PROJECT_DIR$/DataImporting/DataVisualization.py" />
         <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_all_trials_features.py" />
+        <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" />
         <option value="$PROJECT_DIR$/DataImporting/visualize_features.py" />
+        <option value="$PROJECT_DIR$/DataImporting/DataVisualization.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -318,7 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.create_data_file_for_all_trials_features">
+  <component name="RunManager" selected="Python.visualize_features">
     <configuration name="DataVisualization" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AnxietyClassifier(2)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -332,24 +311,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataImporting/DataVisualization.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="ExtractFeaturesForEachMatrix" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AnxietyClassifier(2)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CalculatingFeaturesFromExcel" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeaturesForEachMatrix.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -391,6 +352,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="create_data_file_for_time_dependant_features" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnxietyClassifier(2)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CalculatingFeaturesFromExcel" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_time_dependant_features.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="visualize_features" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AnxietyClassifier(2)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -411,18 +390,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.visualize_features" />
-      <item itemvalue="Python.create_data_file_for_each_matrix_features" />
       <item itemvalue="Python.create_data_file_for_all_trials_features" />
-      <item itemvalue="Python.ExtractFeaturesForEachMatrix" />
       <item itemvalue="Python.DataVisualization" />
+      <item itemvalue="Python.create_data_file_for_time_dependant_features" />
+      <item itemvalue="Python.create_data_file_for_each_matrix_features" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.create_data_file_for_all_trials_features" />
         <item itemvalue="Python.visualize_features" />
-        <item itemvalue="Python.DataVisualization" />
-        <item itemvalue="Python.ExtractFeaturesForEachMatrix" />
         <item itemvalue="Python.create_data_file_for_each_matrix_features" />
+        <item itemvalue="Python.create_data_file_for_time_dependant_features" />
+        <item itemvalue="Python.create_data_file_for_all_trials_features" />
+        <item itemvalue="Python.DataVisualization" />
       </list>
     </recent_temporary>
   </component>
@@ -528,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536145802374</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="&quot;quoth the raven never more&quot;">
+      <created>1537469067855</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1537469067856</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -574,43 +560,44 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.39136904" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23363096" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32755905" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32838285" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24183007" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37254903" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32838285" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.35313532" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3480392" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32755905" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5181102" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14934114" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32838285" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5181102" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35313532" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32838285" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32838285" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -733,6 +720,21 @@
           <line>25</line>
           <option name="timeStamp" value="153" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_all_trials_features.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
+          <line>1007</line>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
+          <line>966</line>
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -744,136 +746,118 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="155" />
+      <option name="time" value="183" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>names</expression-string>
+        <expression-string>correlations</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>len(names)</expression-string>
+        <expression-string>df</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[i for i in range(len(names)) ]</expression-string>
+        <expression-string>[[names[i], names[j], correlations.values[i][j]] for i in range(len(names)) for j in range(len(names))]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[[[names[i], names[j], correlations.values[i][j]] for i in range(len(names)-1) if
-                (correlations &gt; 0.5).values[i][j]] for j in range(len(names)-1)]</expression-string>
+        <expression-string>ax.matshow(correlations, vmin=-1, vmax=1)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[[[names[i], names[j], correlations.values[i][j]] for i in range(len(names)) if
-                (correlations &gt; 0.5).values[i][j]] for j in range(len(names))]</expression-string>
+        <expression-string>ax.matshow(correlations)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[self.grouping_function([np.nansum(self.fixation_dataset.Fixation_Duration
-                            [(self.fixation_dataset.Subject == subjects[i]) &amp;
-                            (self.fixation_dataset.Trial == list(trials[i])[j]) &amp; (self.fixation_dataset.AOI_Group == &quot;D&quot;)
-                             &amp; (self.fixation_dataset.Number &lt;= medians[i][j])])
-                            for j in range(len(trials[i]))]) for i in range(len(subjects))]</expression-string>
+        <expression-string>areas_map = [((1072, 759), (1279, 966)), ((851, 761), (1058, 968)), ((623, 758), (830, 965)),
+             ((400, 758), (607, 965)),
+             ((1071, 535), (1278, 742)), ((850, 535), (1057, 742)), ((622, 534), (829, 471)),
+             ((399, 534), (606, 741)),
+             ((1073, 308), (1280, 515)), ((848, 310), (1055, 517)), ((624, 307), (831, 514)),
+             ((401, 307), (608, 514)),
+             ((1072, 84), (1279, 291)), ((847, 84), (1054, 291)), ((623, 83), (830, 290)),
+             ((400, 83), (607, 290))]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[self.grouping_function([np.nansum(self.fixation_dataset.Fixation_Duration
-                            [(self.fixation_dataset.Subject == subjects[i]) &amp;
-                            (self.fixation_dataset.Trial == list(trials[i])[j]) &amp; (self.fixation_dataset.AOI_Group == &quot;D&quot;)
-                             &amp; (self.fixation_dataset.Number &lt;= medians[i][j])])
-                            for j in range(len(list(trials[i])))]) for i in range(len(subjects))]</expression-string>
+        <expression-string>last_probability_distribution</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[self.grouping_function([np.nansum(self.fixation_dataset.Fixation_Duration
-                            [(self.fixation_dataset.Subject == subjects[i]) &amp;
-                            (self.fixation_dataset.Trial == trials[i][j]) &amp; (self.fixation_dataset.AOI_Group == &quot;D&quot;)
-                             &amp; (self.fixation_dataset.Number &lt;= medians[i][j])])
-                            for j in range(len(trials[i]))]) for i in range(len(subjects))]</expression-string>
+        <expression-string>last_probability_distribution[area][1]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[self.grouping_function([np.nansum(self.fixation_dataset.Fixation_Duration
-                            [(self.fixation_dataset.Subject == subjects[i]) &amp;
-                            (self.fixation_dataset.Trial == j) &amp; (self.fixation_dataset.AOI_Group == &quot;D&quot;)
-                             &amp; (self.fixation_dataset.Number &lt;= medians[i][0])])
-                            for j in trials[i]]) for i in range(len(subjects))]</expression-string>
+        <expression-string>p_disgusted</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>[self.demographic_dataset.group[(self.demographic_dataset.Subject == subject)]][0].values[0]</expression-string>
+        <expression-string>ax.matshow(correlations</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[self.demographic_dataset.group[(self.demographic_dataset.Subject == subject)]][0].values</expression-string>
+        <expression-string>df.corr()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[self.demographic_dataset.group[(self.demographic_dataset.Subject == subject)]].values</expression-string>
+        <expression-string>correlations</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[self.demographic_dataset.group[(self.demographic_dataset.Subject == subject)]][0]</expression-string>
+        <expression-string>ax.matshow(correlations, vmin=-1, vmax=1)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[self.demographic_dataset.group[(self.demographic_dataset.Subject == subject)]][0][0]</expression-string>
+        <expression-string>matshow</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[self.demographic_dataset.group[(self.demographic_dataset.Subject == subject)]]</expression-string>
+        <expression-string>(positions[0].values[0], positions[1].values[0])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[self.demographic_dataset.group[(self.demographic_dataset.Subject == subject)]][1]</expression-string>
+        <expression-string>self.find_area(positions[0].values[0], positions[1].values[0])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[self.demographic_dataset.group[(self.demographic_dataset.Subject == subject)]][0][1]</expression-string>
+        <expression-string>positions[0].values[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[item for item in controls.output_data_dict['group']]</expression-string>
+        <expression-string>positions[0].values[0], positions[1].values[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>area</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/binary_hist_trials_ratio_N_DN2_est_phase.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/binary_hist_Subject_Number.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/binary_hist_group.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/subplot_hist_trials_amount_Disgusted_est_phase.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/subplot_hist_trials_mean_All_est_mean.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -897,12 +881,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/a_missing.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/a_variance.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/a_missing.txt" />
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/a_variance.txt" />
     <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/subplot_hist_trials_ratio_N_DN2_est_std.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -955,23 +935,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/missing.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_amount_fixation_All.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_sum_disgusted_difference_between_medians.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/missing.txt" />
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_amount_fixation_All.png" />
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_sum_disgusted_difference_between_medians.png" />
     <entry file="file://$PROJECT_DIR$/DataImporting/Data_Imputation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/subplot_hist_neutral_-_2.png">
       <provider selected="true" editor-type-id="images" />
@@ -994,9 +962,7 @@
     <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/subplot_hist_sum_disgusted_difference_between_medians.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_sum_fixation_length_Neutral.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_sum_fixation_length_Neutral.png" />
     <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/subplot_hist_amount_DD_transitions.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1015,57 +981,87 @@
     <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/subplot_hist_mean_different_AOI_per_trial.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_all_trials_features.py">
+    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/preprocessing/data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+        <state relative-caret-position="4956">
+          <caret line="749" column="12" selection-start-line="749" selection-start-column="12" selection-end-line="749" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testers/TestersCalculatingFeaturesFromExcel/TestLoopOverData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7684">
+          <caret line="454" column="25" selection-start-line="454" selection-start-column="25" selection-end-line="454" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_time_dependant_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_each_matrix_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_all_trials_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/subplot_hist_p_disgusted_times_first_fixation_duration.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://C:/Anaconda/Lib/site-packages/matplotlib/axes/_axes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-139">
+          <caret line="7305" column="8" selection-start-line="7305" selection-start-column="8" selection-end-line="7305" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="969" column="53" selection-start-line="969" selection-start-column="8" selection-end-line="969" selection-end-column="53" />
+        <state relative-caret-position="319">
+          <caret line="1009" selection-start-line="1009" selection-end-line="1009" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualize_features.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testers/TestersCalculatingFeaturesFromExcel/TestLoopOverData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="454" column="25" selection-start-line="454" selection-start-column="25" selection-end-line="454" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataImporting/DataVisualization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="202" column="42" selection-start-line="202" selection-start-column="41" selection-end-line="202" selection-end-column="42" />
+        <state relative-caret-position="-1004">
+          <caret line="122" column="4" selection-start-line="122" selection-start-column="4" selection-end-line="122" selection-end-column="4" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/preprocessing/data.py">
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualize_features.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4956">
-          <caret line="749" column="12" selection-start-line="749" selection-start-column="12" selection-end-line="749" selection-end-column="12" />
+        <state relative-caret-position="75">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
