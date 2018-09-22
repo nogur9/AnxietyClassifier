@@ -3,9 +3,11 @@ import matplotlib.pyplot as plt
 from pandas.plotting import scatter_matrix
 import matplotlib.patches as mpatches
 
-def get_data(path, sheet_name):
-
-    dataset = pd.read_excel(path, sheet_name=sheet_name)
+def get_data(path, sheet_name, csv=None):
+    if csv:
+        dataset = pd.read_csv(path, sep=",", engine='python')
+    else:
+        dataset = pd.read_excel(path, sheet_name=sheet_name)
     return dataset
 
 

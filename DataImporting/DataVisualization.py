@@ -202,7 +202,7 @@ class DataVisualizationObj:
     def print_variance(self, path=None):
         df = self.dataset.dropna(axis=1)
         df = df.drop('group', 1)
-        standard_scaler = preprocessing.StandardScaler()
+        standard_scaler = preprocessing.MinMaxScaler()
         data = standard_scaler.fit_transform(df)
         selector = VarianceThreshold()
         selector.fit_transform(data)

@@ -17,8 +17,7 @@ class PCA_Obj:
         if remove_missing_values:
             features_df = features_df.dropna(axis=1)
 
-        X = features_df.values
-        self.X = StandardScaler().fit_transform(X)
+        self.X = features_df.values
 
     def explained_variance_graph(self, path):
         pca = PCA().fit(self.X)
@@ -39,14 +38,14 @@ class PCA_Obj:
 
 
     def save_pca_data(self,path, Y=None):
-        self.create_new_df(predefined_info_columns= Y).to_csv(path, sep='\t')
+        self.create_new_df(predefined_info_columns=Y).to_csv(path)
 
     def create_new_df(self, predefined_info_columns=None, group_column='group', subject_number_column= 'Subject_Number'):
-        if predefined_info_columns:
+        if not predefined_info_columns is None:
             info_columns = predefined_info_columns
         else:
             info_columns = pd.DataFrame(self.dataset[[group_column, subject_number_column]])
 
         transformed_x = pd.DataFrame(self.transformed_data)
-        df = pd.concat([info_columns,transformed_x])
+        df = pd.concat([info_columns,transformed_x], axis=1)
         return df
