@@ -2,89 +2,278 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cbd6c00-86b4-4b9b-a5d9-24e55f5ebdb6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/dim_reduction/PCA_Obj.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dim_reduction/RFE.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dim_reduction/feature_selection_pipeline.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AmitsData/data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/AmitsData/data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_all_trials_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_all_trials_features.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataImporting/DataVisualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataImporting/DataVisualization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_STD_Disgusted_difference_between_medians.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_STD_Neutral_difference_between_medians.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_STD_fixation_length_All.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_STD_fixation_length_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_STD_fixation_length_Neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_STD_fixation_length_White_Space.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_Subject_Number.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_amount_fixation_All.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_amount_fixation_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_amount_fixation_Neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_amount_fixation_White_Space.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_average_fixation_length_All.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_average_fixation_length_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_average_fixation_length_Neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_average_fixation_length_White_Space.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_average_pupil_size_All.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_average_pupil_size_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_group.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_norm_sum_disgusted_difference_between_medians.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_norm_sum_neutral_difference_between_medians.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_normalized_amount_fixation_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_normalized_amount_fixation_Neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_normalized_amount_fixation_WS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_normalized_mean_fixation_length_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_normalized_mean_fixation_length_Neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_normalized_mean_fixation_length_WS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_normalized_mean_pupil_size_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_normalized_sum_fixation_length_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_normalized_sum_fixation_length_Neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_normalized_sum_fixation_length_WS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_sum_all_difference_between_medians.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_sum_disgusted_difference_between_medians.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_sum_fixation_length_All.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_sum_fixation_length_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_sum_fixation_length_Neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_sum_fixation_length_White_Space.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_sum_neutral_difference_between_medians.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_STD_Disgusted_difference_between_medians.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_STD_Neutral_difference_between_medians.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_STD_fixation_length_All.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_STD_fixation_length_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_STD_fixation_length_Neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_STD_fixation_length_White_Space.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_Subject_Number.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_amount_fixation_All.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_amount_fixation_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_amount_fixation_Neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_amount_fixation_White_Space.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_average_fixation_length_All.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_average_fixation_length_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_average_fixation_length_Neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_average_fixation_length_White_Space.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_average_pupil_size_All.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_average_pupil_size_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_group.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_norm_sum_disgusted_difference_between_medians.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_norm_sum_neutral_difference_between_medians.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_normalized_amount_fixation_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_normalized_amount_fixation_Neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_normalized_amount_fixation_WS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_normalized_mean_fixation_length_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_normalized_mean_fixation_length_Neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_normalized_mean_fixation_length_WS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_normalized_mean_pupil_size_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_normalized_sum_fixation_length_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_normalized_sum_fixation_length_Neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_normalized_sum_fixation_length_WS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_sum_all_difference_between_medians.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_sum_disgusted_difference_between_medians.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_sum_fixation_length_All.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_sum_fixation_length_Disgusted.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_sum_fixation_length_Neutral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_sum_fixation_length_White_Space.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/binary_hist_sum_neutral_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/all_correlation.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_Ratio_D_DN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_Ratio_N_DN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_Ratio_WS_WSND.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_STD_Disgusted_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_STD_Neutral_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_STD_fixation_length_All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_STD_fixation_length_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_STD_fixation_length_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_STD_fixation_length_White_Space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_STD_pupil_size_All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_STD_pupil_size_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_STD_pupil_size_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_STD_pupil_size_White_Space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_Subject_Number.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_amount_DD_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_amount_DN_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_amount_ND_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_amount_NN_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_amount_diff_AOI_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_amount_fixation_All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_amount_fixation_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_amount_fixation_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_amount_fixation_White_Space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_amount_of_first_fixations_on_WS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_amount_of_first_fixations_on_neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_amount_of_first_fixations_on_threat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_average_fixation_length_All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_average_fixation_length_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_average_fixation_length_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_average_fixation_length_White_Space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_average_pupil_size_All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_average_pupil_size_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_average_pupil_size_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_average_pupil_size_White_Space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_group.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_mean_different_AOI_per_trial.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_neutral_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_norm_amount_DD_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_norm_amount_DN_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_norm_amount_ND_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_norm_amount_NN_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_norm_amount_diff_AOI_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_norm_sum_disgusted_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_norm_sum_neutral_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_normalized_amount_fixation_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_normalized_amount_fixation_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_normalized_amount_fixation_WS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_normalized_mean_fixation_length_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_normalized_mean_fixation_length_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_normalized_mean_fixation_length_WS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_normalized_mean_pupil_size_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_normalized_mean_pupil_size_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_normalized_mean_pupil_size_WS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_normalized_sum_fixation_length_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_normalized_sum_fixation_length_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_normalized_sum_fixation_length_WS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_p_disgusted_times_first_fixation_duration.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_sum_all_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_sum_disgusted_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_sum_fixation_length_All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_sum_fixation_length_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_sum_fixation_length_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_sum_fixation_length_White_Space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_sum_neutral_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_threat__2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_All_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_All_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_All_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_All_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_All_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_Disgusted_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_Disgusted_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_Disgusted_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_Disgusted_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_Disgusted_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_Neutral_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_Neutral_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_Neutral_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_Neutral_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_Neutral_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_WS_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_WS_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_WS_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_WS_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_amount_WS_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_mean_AOIs_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_mean_AOIs_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_mean_AOIs_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_mean_AOIs_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_mean_AOIs_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_mean_All_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_mean_All_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_mean_All_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_mean_All_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_mean_All_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_mean_Disgusted_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_mean_Neutral_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_Disgusted_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_Disgusted_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_Disgusted_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_Disgusted_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_Disgusted_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_Neutral_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_Neutral_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_Neutral_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_Neutral_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_Neutral_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_WS_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_WS_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_WS_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_WS_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_WS_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_mean_Disgusted_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_mean_Neutral_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_D_DN2_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_D_DN2_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_D_DN2_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_D_DN_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_D_DN_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_D_DN_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_N_DN2_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_N_DN2_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_N_DN2_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_N_DN_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_N_DN_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_N_DN_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_WS_all_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_WS_all_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_WS_all_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_var_ratio_D_DN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/correlations_figure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/high_correlation.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/missing.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_Ratio_D_DN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_Ratio_N_DN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_Ratio_WS_WSND.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_STD_Disgusted_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_STD_Neutral_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_STD_fixation_length_All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_STD_fixation_length_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_STD_fixation_length_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_STD_fixation_length_White_Space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_STD_pupil_size_All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_STD_pupil_size_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_STD_pupil_size_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_STD_pupil_size_White_Space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_Subject_Number.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_amount_DD_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_amount_DN_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_amount_ND_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_amount_NN_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_amount_diff_AOI_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_amount_fixation_All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_amount_fixation_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_amount_fixation_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_amount_fixation_White_Space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_amount_of_first_fixations_on_WS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_amount_of_first_fixations_on_neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_amount_of_first_fixations_on_threat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_average_fixation_length_All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_average_fixation_length_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_average_fixation_length_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_average_fixation_length_White_Space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_average_pupil_size_All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_average_pupil_size_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_average_pupil_size_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_average_pupil_size_White_Space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_group.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_mean_different_AOI_per_trial.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_neutral_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_norm_amount_DD_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_norm_amount_DN_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_norm_amount_ND_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_norm_amount_NN_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_norm_amount_diff_AOI_transitions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_norm_sum_disgusted_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_norm_sum_neutral_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_normalized_amount_fixation_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_normalized_amount_fixation_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_normalized_amount_fixation_WS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_normalized_mean_fixation_length_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_normalized_mean_fixation_length_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_normalized_mean_fixation_length_WS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_normalized_mean_pupil_size_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_normalized_mean_pupil_size_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_normalized_mean_pupil_size_WS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_normalized_sum_fixation_length_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_normalized_sum_fixation_length_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_normalized_sum_fixation_length_WS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_p_disgusted_times_first_fixation_duration.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_sum_all_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_sum_disgusted_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_sum_fixation_length_All.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_sum_fixation_length_Disgusted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_sum_fixation_length_Neutral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_sum_fixation_length_White_Space.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_sum_neutral_difference_between_medians.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_threat__2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_All_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_All_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_All_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_All_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_All_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_Disgusted_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_Disgusted_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_Disgusted_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_Disgusted_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_Disgusted_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_Neutral_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_Neutral_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_Neutral_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_Neutral_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_Neutral_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_WS_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_WS_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_WS_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_WS_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_amount_WS_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_mean_AOIs_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_mean_AOIs_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_mean_AOIs_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_mean_AOIs_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_mean_AOIs_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_mean_All_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_mean_All_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_mean_All_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_mean_All_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_mean_All_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_mean_Disgusted_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_mean_Neutral_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_Disgusted_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_Disgusted_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_Disgusted_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_Disgusted_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_Disgusted_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_Neutral_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_Neutral_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_Neutral_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_Neutral_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_Neutral_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_WS_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_WS_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_WS_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_WS_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_amount_WS_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_mean_Disgusted_2coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_norm_mean_Neutral_1coeff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_D_DN2_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_D_DN2_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_D_DN2_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_D_DN_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_D_DN_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_D_DN_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_N_DN2_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_N_DN2_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_N_DN2_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_N_DN_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_N_DN_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_N_DN_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_WS_all_est_mean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_WS_all_est_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_trials_ratio_WS_all_est_std.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_var_ratio_D_DN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/variance.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DataImporting/visualize_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataImporting/visualize_features.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/Features_with_respect_to_trials.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ExtractedFeatures/Features_with_respect_to_trials.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/all_trials_data_features.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ExtractedFeatures/all_trials_data_features.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/data_features_for_each_matrix.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ExtractedFeatures/data_features_for_each_matrix.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dim_reduction/random_forest_selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/dim_reduction/random_forest_selection.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -95,35 +284,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ExtractFeatures.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py">
+      <file leaf-file-name="feature_selection_pipeline.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dim_reduction/feature_selection_pipeline.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="1009" selection-start-line="1009" selection-end-line="1009" />
+            <state relative-caret-position="92">
+              <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
               <folding>
-                <element signature="e#0#16#0" expanded="true" />
+                <element signature="e#1#19#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="visualize_features.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DataImporting/visualize_features.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_axes.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Anaconda/Lib/site-packages/matplotlib/axes/_axes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-139">
-              <caret line="7305" column="8" selection-start-line="7305" selection-start-column="8" selection-end-line="7305" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -131,10 +299,22 @@
       <file leaf-file-name="DataVisualization.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataImporting/DataVisualization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1004">
-              <caret line="122" column="4" selection-start-line="122" selection-start-column="4" selection-end-line="122" selection-end-column="4" />
+            <state relative-caret-position="211">
+              <caret line="214" column="32" lean-forward="true" selection-start-line="214" selection-start-column="32" selection-end-line="214" selection-end-column="32" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random_forest_selection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dim_reduction/random_forest_selection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,6 +350,7 @@
       <find>print</find>
       <find>get_p_disgusted_times_first_fixation_duration</find>
       <find>find_area</find>
+      <find>StandardScaler</find>
     </findStrings>
     <replaceStrings>
       <replace>low</replace>
@@ -212,16 +393,19 @@
         <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_each_matrix_features.py" />
         <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_all_trials_features.py" />
         <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" />
+        <option value="$PROJECT_DIR$/dim_reduction/RFE.py" />
+        <option value="$PROJECT_DIR$/dim_reduction/PCA_Obj.py" />
         <option value="$PROJECT_DIR$/DataImporting/visualize_features.py" />
         <option value="$PROJECT_DIR$/DataImporting/DataVisualization.py" />
+        <option value="$PROJECT_DIR$/dim_reduction/random_forest_selection.py" />
+        <option value="$PROJECT_DIR$/dim_reduction/feature_selection_pipeline.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -239,23 +423,7 @@
             <path>
               <item name="AnxietyClassifier" type="b2602c69:ProjectViewProjectNode" />
               <item name="AnxietyClassifier" type="462c0819:PsiDirectoryNode" />
-              <item name="CalculatingFeaturesFromExcel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnxietyClassifier" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnxietyClassifier" type="462c0819:PsiDirectoryNode" />
-              <item name="DataImporting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnxietyClassifier" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnxietyClassifier" type="462c0819:PsiDirectoryNode" />
-              <item name="DataImporting" type="462c0819:PsiDirectoryNode" />
-              <item name="visualizations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AnxietyClassifier" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AnxietyClassifier" type="462c0819:PsiDirectoryNode" />
-              <item name="ExtractedFeatures" type="462c0819:PsiDirectoryNode" />
+              <item name="dim_reduction" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -277,12 +445,13 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\PycharmProjects\AnxietyClassifier(2)" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\‏‏PycharmProjects\AnxietyClassifier\dim_reduction" />
       <recent name="C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\visualizations\Features_with_respect_to_trials" />
       <recent name="C:\‏‏PycharmProjects\AnxietyClassifier\CalculatingFeaturesFromExcel\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\AnxietyClassifier(2)" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -297,25 +466,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.visualize_features">
-    <configuration name="DataVisualization" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AnxietyClassifier(2)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataImporting" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataImporting/DataVisualization.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.feature_selection_pipeline">
     <configuration name="create_data_file_for_all_trials_features" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AnxietyClassifier(2)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -370,6 +521,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="feature_selection_pipeline" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnxietyClassifier(2)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dim_reduction" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dim_reduction/feature_selection_pipeline.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="visualize_features" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AnxietyClassifier(2)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -391,17 +560,17 @@
     <list>
       <item itemvalue="Python.visualize_features" />
       <item itemvalue="Python.create_data_file_for_all_trials_features" />
-      <item itemvalue="Python.DataVisualization" />
       <item itemvalue="Python.create_data_file_for_time_dependant_features" />
       <item itemvalue="Python.create_data_file_for_each_matrix_features" />
+      <item itemvalue="Python.feature_selection_pipeline" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.feature_selection_pipeline" />
         <item itemvalue="Python.visualize_features" />
         <item itemvalue="Python.create_data_file_for_each_matrix_features" />
         <item itemvalue="Python.create_data_file_for_time_dependant_features" />
         <item itemvalue="Python.create_data_file_for_all_trials_features" />
-        <item itemvalue="Python.DataVisualization" />
       </list>
     </recent_temporary>
   </component>
@@ -514,7 +683,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537469067856</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="&quot;quoth the raven never more&quot;">
+      <created>1537618385156</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1537618385156</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -560,14 +736,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23363096" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21354167" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3267974" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32838285" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37254903" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37745097" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32838285" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -578,27 +754,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32755905" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14934114" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5181102" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.35313532" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32838285" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32838285" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -672,7 +828,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/RunningAlgorithms/LOO.py</url>
-          <line>373</line>
+          <line>367</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -681,22 +837,22 @@
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/PCA.py</url>
+          <url>file://$PROJECT_DIR$/dim_reduction/PCA.py</url>
           <line>17</line>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/RunningAlgorithms/LOO_section2.py</url>
-          <line>143</line>
+          <line>127</line>
           <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/RunningAlgorithms/LOO_section2.py</url>
-          <line>145</line>
+          <line>129</line>
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/PCA.py</url>
+          <url>file://$PROJECT_DIR$/dim_reduction/PCA.py</url>
           <line>48</line>
           <option name="timeStamp" value="109" />
         </line-breakpoint>
@@ -746,11 +902,16 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="183" />
+      <option name="time" value="184" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>dataset</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>correlations</expression-string>
         <language-id>Python</language-id>
@@ -806,6 +967,26 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>dataset.column['group']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dataset.loc['group']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dataset['group']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dataset.group</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>ax.matshow(correlations</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -830,117 +1011,9 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>(positions[0].values[0], positions[1].values[0])</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>self.find_area(positions[0].values[0], positions[1].values[0])</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>positions[0].values[0]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>positions[0].values[0], positions[1].values[0]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>area</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/subplot_hist_trials_mean_All_est_mean.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/subplot_hist_trials_mean_All_2coeff.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/subplot_hist_trials_mean_All_1coeff.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://C:/Anaconda/Lib/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="2314" column="8" selection-start-line="2314" selection-start-column="8" selection-end-line="2314" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Anaconda/Lib/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="3007" column="43" selection-start-line="3007" selection-start-column="33" selection-end-line="3007" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/a_missing.txt" />
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/a_variance.txt" />
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/subplot_hist_trials_ratio_N_DN2_est_std.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/subplot_hist_trials_ratio_WS_all_est_phase.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/subplot_hist_trials_ratio_WS_all_est_std.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/subplot_hist_trials_norm_mean_Neutral_1coeff.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/subplot_hist_trials_norm_amount_Disgusted_2coeff.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/binary_hist_trials_norm_amount_WS_est_mean.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/subplot_hist_trials_amount_Neutral_2coeff.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/binary_hist_trials_mean_AOIs_est_std.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/binary_hist_trials_ratio_D_DN2_est_mean.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/binary_hist_trials_ratio_D_DN2_est_std.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/binary_hist_trials_ratio_WS_all_est_mean.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/binary_hist_trials_ratio_WS_all_est_phase.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/binary_hist_trials_amount_Disgusted_1coeff.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/binary_hist_trials_norm_amount_Neutral_est_phase.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/Features_with_respect_to_trials/binary_hist_trials_norm_amount_WS_est_std.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/variance.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/missing.txt" />
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_amount_fixation_All.png" />
-    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/binary_hist_sum_disgusted_difference_between_medians.png" />
-    <entry file="file://$PROJECT_DIR$/DataImporting/Data_Imputation.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/subplot_hist_neutral_-_2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1028,13 +1101,6 @@
     <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/all_trials_data_features/subplot_hist_p_disgusted_times_first_fixation_duration.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://C:/Anaconda/Lib/site-packages/matplotlib/axes/_axes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-139">
-          <caret line="7305" column="8" selection-start-line="7305" selection-start-column="8" selection-end-line="7305" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -1045,22 +1111,184 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/DataVisualization.py">
+    <entry file="file://C:/Anaconda/Lib/site-packages/matplotlib/axes/_axes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1004">
-          <caret line="122" column="4" selection-start-line="122" selection-start-column="4" selection-end-line="122" selection-end-column="4" />
+        <state relative-caret-position="-139">
+          <caret line="7305" column="8" selection-start-line="7305" selection-start-column="8" selection-end-line="7305" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RunningAlgorithms/LOO_section2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RunningAlgorithms/LOO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3213">
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dim_reduction/RFE.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="492" column="8" selection-start-line="492" selection-start-column="8" selection-end-line="492" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/decomposition/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="98" column="8" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/ImportData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Anaconda/Lib/site-packages/pandas/core/indexes/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="3743" selection-start-line="3743" selection-end-line="3743" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Anaconda/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="1517" column="4" selection-start-line="1517" selection-start-column="4" selection-end-line="1517" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/pca_explained_variance_graph.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_amount_of_first_fixations_on_threat.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_average_fixation_length_All.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_average_pupil_size_All.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_group.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_average_fixation_length_Neutral.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/subplot_hist_amount_fixation_Disgusted.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_mean_Disgusted_2coeff.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_norm_amount_WS_est_mean.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_trials_ratio_N_DN2_est_phase.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/binary_hist_var_ratio_D_DN.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/high_correlation.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24331" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/Data_Imputation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dim_reduction/PCA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dim_reduction/PCA_Obj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataImporting/visualize_features.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        <state relative-caret-position="714">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/variance.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="12" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/visualizations/subject_features_before_selection/missing.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1942" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataImporting/DataVisualization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="214" column="32" lean-forward="true" selection-start-line="214" selection-start-column="32" selection-end-line="214" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dim_reduction/random_forest_selection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dim_reduction/feature_selection_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

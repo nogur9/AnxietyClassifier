@@ -201,8 +201,9 @@ class DataVisualizationObj:
 
     def print_variance(self, path=None):
         df = self.dataset.dropna(axis=1)
-        max_abs_scaler = preprocessing.StandardScaler()
-        data = max_abs_scaler.fit_transform(df)
+        df = df.drop('group', 1)
+        standard_scaler = preprocessing.StandardScaler()
+        data = standard_scaler.fit_transform(df)
         selector = VarianceThreshold()
         selector.fit_transform(data)
         result = sorted(zip(list(df), selector.variances_), key=lambda x: x[1])
