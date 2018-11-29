@@ -37,6 +37,13 @@ class Data:
         PHQ9 = [self.demographic_dataset.PHQ[(self.fixation_dataset.Subject == subjects[i])] for i in range(len(subjects))]
         self.output_data_dict["PHQ9"] = PHQ9
 
+    def get_lsas(self):
+        subjects = list(sorted(set(self.fixation_dataset.Subject)))
+        lsas = []
+        for subject in subjects:
+            lsas.append([self.demographic_dataset['LSAS_Total'][(self.demographic_dataset.Subject == subject)]][0].values[0])
+        self.output_data_dict["LSAS"] = lsas
+
     def get_subject_number(self):
         subject_number = list(sorted(set(self.fixation_dataset.Subject)))
         self.output_data_dict["Subject_Number"] = subject_number
@@ -49,6 +56,30 @@ class Data:
         self.output_data_dict["group"] = group
 
     # feature extraction - features need to be computed
+    def get_Amits_feature(self):
+
+        subjects = list(sorted(set(self.fixation_dataset.Subject)))
+        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        print (len(trials[0]), len(trials[1]))
+        Sum_Disgusted = [np.nanmean([np.nansum(self.fixation_dataset.Fixation_Duration[
+                                                            (self.fixation_dataset.Subject == subjects[i]) & (
+                                                                    self.fixation_dataset.Trial == j) & (
+                                                                    self.fixation_dataset.AOI_Group == "D")]) for j
+                                                 in trials[i]]) for i in range(len(subjects))]
+
+        print([np.nansum([np.nansum(self.fixation_dataset.Fixation_Duration[
+                                                            (self.fixation_dataset.Subject == subjects[i]) & (
+                                                                    self.fixation_dataset.Trial == j) & (
+                                                                    self.fixation_dataset.AOI_Group == "D")]) for j
+                                                 in trials[i]]) for i in range(len(subjects))])
+
+        print (trials)
+        print([[np.nansum(self.fixation_dataset.Fixation_Duration[
+                                   (self.fixation_dataset.Subject == subjects[i]) & (
+                                           self.fixation_dataset.Trial == j) & (
+                                           self.fixation_dataset.AOI_Group == "D")]) for j
+                     in trials[i]] for i in range(len(subjects))])
+        self.output_data_dict["Amits"] = Sum_Disgusted
 
     def get_DT_each_stimulus_pet_trial(self):
         #       subjects = list(sorted(set(self.fixation_dataset.Subject)))
@@ -987,7 +1018,6 @@ class Data:
             p_disgusted_times_first_fixation_duration.append([])
             p_map = self.get_probability_distribution(0, subject)
             for j, trial in enumerate(trials[i]):
-                print(subject, trial)
                 fixation_index = 0
                 first_aoi = all_fixations_aoi[i][j].values[fixation_index]
                 first_fixation_duration = all_fixations_durations[i][j].values[fixation_index]
@@ -1010,3 +1040,44 @@ class Data:
 
         self.output_data_dict["p_disgusted_times_first_fixation_duration"] = \
             [np.mean(p_disgusted_times_first_fixation_duration[i]) for i in range(len(subjects))]
+
+
+    def get_all_good_features(self):
+        self.get_subject_number()
+        self.get_lsas()
+        self.get_group()
+        self.get_Amits_feature()
+        self.get_sum_fixation_length_Disgusted()
+        self.get_sum_fixation_length_Neutral()
+        self.get_sum_fixation_length_White_Space()
+        self.get_average_fixation_length_Disgusted()
+        self.get_average_fixation_length_Neutral()
+        self.get_average_fixation_length_White_Space()
+        self.get_amount_fixation_Disgusted()
+        self.get_amount_fixation_Neutral()
+        self.get_amount_fixation_White_Space()
+        self.get_STD_fixation_length_Disgusted()
+        self.get_STD_fixation_length_Neutral()
+        self.get_STD_fixation_length_White_Space()
+        self.get_STD_fixation_length_All()
+        self.get_ratio_D_DN()
+        self.get_ratio_N_DN()
+        self.get_ratio_WS_All()
+        self.get_ratio_D_DN_2()
+        self.get_ratio_N_DN_2()
+        self.get_amount_DN_transitions()
+        self.get_amount_ND_transitions()
+        self.get_amount_DD_transitions()
+        self.get_amount_NN_transitions()
+        self.get_amount_diff_AOI_transitions()
+        self.var_threat_precentage_between_trials()
+        self.get_average_pupil_size_Disgusted()
+        self.get_average_pupil_size_Neutral()
+        self.get_average_pupil_size_White_Space()
+        self.get_average_pupil_size_All()
+        self.get_STD_pupil_size_Disgusted()
+        self.get_STD_pupil_size_Neutral()
+        self.get_STD_pupil_size_White_Space()
+        self.get_STD_pupil_size_All()
+        self.get_mean_different_AOI_per_trial()
+        self.get_difference_between_medians()

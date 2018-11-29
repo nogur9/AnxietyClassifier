@@ -33,8 +33,11 @@ from sklearn.preprocessing import MinMaxScaler
 
 #defining enviroment variables
 SEED = 7
-SCORING = 'accuracy'
-PATH = "C:\‏‏PycharmProjects\AnxietyClassifier\Alls_data_NO.xlsx"
+SCORING = 'f1'
+#SCORING = 'accuracy'
+
+PATH =r"C:\‏‏PycharmProjects\AnxietyClassifier\ExtractedFeatures\data_features_for_each_matrix_features_processed_v2.csv"
+
 #PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\Alls_data_NO_specific_vars_corr.xlsx"
 #PATH = "C:\\Users\\user\\PycharmProjects\\AnxietyClassifier(2)\Alls_data.xlsx"
 SHEET_NAME = "Sheet1"
@@ -47,16 +50,16 @@ def get_data_no_pca (dataset):
     slitted psuedo randomly by a 20:80 ratio.
     '''
     dataset = imputing_avarage(dataset)
-    X_train = dataset.drop(['Age','group','PHQ9','Subject_Number'],1)
-    x2 = meow()
-    X_train = np.concatenate((X_train.values, x2), axis=1)
+    X_train = dataset.drop('group',1)
+#    x2 = meow()
+  #  X_train = np.concatenate((X_train.values, x2), axis=1)
 
     Y_train = dataset["group"]
 
     return X_train,Y_train
 
 def get_data (dateset):
-    X_train = PCA_transforme(dateset,130)
+    X_train = dateset.drop('group',1)
     Y_train = dateset["group"]
     return X_train,Y_train
 
@@ -143,20 +146,20 @@ def plot_results_RFE(results_list):
                                                   results_list[index][3], results_list[index][0],
                                                   results_list[index][1]))
     # print to xlsx
-    workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\LOO_RFE_all_0.05 new.xlsx')
+#    workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\LOO_RFE_all_0.05 new.xlsx')
     #workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\LOO_RFE_C&L_0.1.xlsx')
     # workbook = xlsxwriter.Workbook('C:\\Users\\user\\PycharmProjects\\AnxietyClassifier\\ExtractedFeatures\\LOO_RFE_C&L_0.1_age/PHQ.xlsx')
-    worksheet = workbook.add_worksheet()
-
-    col = 1
-    for result in results_list:
-        row = 0
-        for item in result:
-            worksheet.write(row, col, item)
-            row += 1
-        col += 1
-
-    workbook.close()
+    # worksheet = workbook.add_worksheet()
+    #
+    # col = 1
+    # for result in results_list:
+    #     row = 0
+    #     for item in result:
+    #         worksheet.write(row, col, item)
+    #         row += 1
+    #     col += 1
+    #
+    # workbook.close()
 
     # compare model types
     models_name = set([results_list[i][2] for i in range(len(results_list))])
@@ -178,7 +181,7 @@ def plot_results_RFE(results_list):
     plt.close()
 
 
-def RFE_cross_validation(models, dataset, prints=0):
+def RFE_cross_validation(models, dataset, prints=1):
     """
 
     :param models:List of classification models and their names.  
@@ -197,9 +200,9 @@ def RFE_cross_validation(models, dataset, prints=0):
             scaler = MinMaxScaler()
             X_train = scaler.fit_transform(X_train)
         loo = model_selection.LeaveOneOut()
-        rfecv = RFECV(estimator=model, step=1, cv=loo, scoring=SCORING)
+        rfecv = RFECV(estimator=model, step=1, scoring=SCORING)
         X_train_scaled = rfecv.fit_transform(X_train, Y_train)
-        cv_results = model_selection.cross_val_score(model, X_train_scaled, Y_train, cv=loo, scoring=SCORING)
+        cv_results = model_selection.cross_val_score(model, X_train_scaled, Y_train, scoring=SCORING)
         results.append([cv_results.mean(), cv_results.std(), model_name, rfecv.n_features_])
         if prints:
             print(cv_results)
@@ -358,13 +361,13 @@ def select_K_best_CV(models, scoring_models, dataset):
 
     X_train_all, Y_train_all = get_data(dataset)
     #X_train_all, Y_train_all = get_data_no_pca(dataset)
-    for k in range(4, 17):
+    for k in range(9,10):
 
         for score_name, scoring_model in scoring_models:
             select_feature = SelectKBest(scoring_model, k=k).fit(X_train_all, Y_train_all)
             X_train = select_feature.transform(X_train_all)
             for model_name, model in models:
-                #print("\nmodel={}".format(model_name))
+                print("\nmodel={}".format(model_name))
                 results_list.append(single_model_CV(model_name, model, k, score_name, X_train, Y_train_all))
     plot_select_K_best_results(results_list)
 
@@ -423,13 +426,15 @@ def test_set(dataset):
 
 def runner(path,sheet_name):
 
-    dataset = ImportData.refactor_labels(ImportData.get_data(path, sheet_name), "group")
-    SKB_models = get_select_K_best_models()
+    dataset = ImportData.refactor_labels(ImportData.get_data(path, sheet_name, csv=1), "group")
+    dataset.drop('Subject_Number', axis=1, inplace=True)
+    print(dataset.head(5))
+    #SKB_models = get_select_K_best_models()
     RFE_models = get_RFE_models()
-    SKB_scoring = get_seleck_K_best_scoring()
-   # RFE_cross_validation(RFE_models, dataset)
+    #SKB_scoring = get_seleck_K_best_scoring()
+    RFE_cross_validation(RFE_models, dataset)
 
-    select_K_best_CV(SKB_models, SKB_scoring, dataset)
+    #select_K_best_CV(SKB_models, SKB_scoring, dataset)
 
     #test_set(dataset)
 

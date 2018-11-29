@@ -16,7 +16,7 @@ def create_data_File_Features():
     print(1)
     data = Data(DATA_FILE_PATH, FIXATION_DATA_SHEET, DEMOGRAPHICS_SHEET)
     data.get_p_disgusted_times_first_fixation_duration()
-
+    data.get_Amits_feature()
     data.get_difference_between_medians()
     print("0.0.0.0.")
     data.get_average_pupil_size_Disgusted()

@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from pandas.plotting import scatter_matrix
 import matplotlib.patches as mpatches
-
+cols=10
 def get_data(path, sheet_name, csv=None):
     if csv:
         dataset = pd.read_csv(path, sep=",", engine='python')

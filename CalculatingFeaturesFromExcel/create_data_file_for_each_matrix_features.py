@@ -184,5 +184,5 @@ def create_data_File_Features_without_first_five_fixations():
         col += 1
 
     workbook.close()
-create_data_File_Features()
+
 #create_data_File_Features_without_first_five_fixations()

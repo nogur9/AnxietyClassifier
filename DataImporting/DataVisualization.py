@@ -1,6 +1,4 @@
-import random
 import string
-
 import numpy
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
@@ -9,7 +7,9 @@ import numpy as np
 from sklearn import preprocessing
 from sklearn.feature_selection import VarianceThreshold
 import os
+import pandas as pd
 from DataImporting.ImportData import refactor_labels
+from scipy import stats
 
 class DataVisualizationObj:
     dataset = None
@@ -191,6 +191,8 @@ class DataVisualizationObj:
 
     def print_missing_values(self, path=None):
         print("Missing Values")
+        df = self.dataset.dropna(axis=1)
+        print(df.shape)
         print(self.dataset.isnull().sum())
         result = [(name,self.dataset[name].isnull().sum()) for name in self.dataset.keys()]
         if path:
@@ -213,3 +215,22 @@ class DataVisualizationObj:
             with open(os.path.join(path, "variance.txt"),"w") as f:
                 for i in result:
                     f.write(str(i)+"\n")
+
+
+    def detect_outliers(self, path=None):
+        df = self.dataset.dropna(axis=1)
+        i, j, k, l = (0,0,0,0)
+        names = list(df)
+        names.remove('group')
+        for name in names:
+            tmp_df = df[(np.abs(df[name] - df[name].mean()) > (3 * df[name].std()))]
+            #print(tmp_df)
+            #print(name,"\n", tmp_df.shape, "\n", tmp_df.Subject_Number)
+
+
+    def describe(self):
+        print(self.dataset.shape)
+        print("separator")
+        print(self.dataset.describe())
+        print("separator")
+        print(self.dataset.groupby(self.group_column).describe())

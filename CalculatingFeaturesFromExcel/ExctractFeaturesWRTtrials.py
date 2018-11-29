@@ -23,7 +23,9 @@ class TrialsData:
         self.Trials_count = np.array([len(set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == j])) for j in
                                       sorted(set(self.fixation_dataset.Subject))])
 
-
+    def get_subject_number(self):
+        subject_number = list(sorted(set(self.fixation_dataset.Subject)))
+        self.output_data_dict["Subject_Number"] = subject_number
 
     def get_Ratios(self):
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
@@ -390,4 +392,14 @@ class TrialsData:
 
 
         return [mean_Disgusted, mean_Neutral, mean_WS,mean_All,norm_mean_Disgusted,norm_mean_Neutral,norm_mean_WS]
+
+    def get_all_good_features(self):
+        self.get_subject_number()
+        self.get_Ratios()
+        self.get_average_fixation_length_each_trial()
+        self.get_STD_fixation_length()
+        self.get_amount_fixation_length()
+        self.get_mean_different_AOI_per_trial()
+        self.get_sum_fixation_length()
+
 

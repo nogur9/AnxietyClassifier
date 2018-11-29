@@ -28,7 +28,11 @@ class PCA_Obj:
         plt.xlim(0,60)
         plt.grid()
         plt.savefig(path)
+        plt.close()
 
+    def print_components(self):
+        pca = PCA().fit(self.X)
+#        print(pd.DataFrame(pca.components_, columns=self.X.columns, index=['PC-1', 'PC-2']))
 
     def create_pca(self, k):
         pca = PCA(n_components=k)
@@ -40,7 +44,7 @@ class PCA_Obj:
     def save_pca_data(self,path, Y=None):
         self.create_new_df(predefined_info_columns=Y).to_csv(path)
 
-    def create_new_df(self, predefined_info_columns=None, group_column='group', subject_number_column= 'Subject_Number'):
+    def create_new_df(self, predefined_info_columns=None, group_column='group', subject_number_column='Subject_Number'):
         if not predefined_info_columns is None:
             info_columns = predefined_info_columns
         else:
