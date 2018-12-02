@@ -40,8 +40,8 @@ def meow (X, Y,prepro, pipeline,prepro_params, params_grid, saving = 1):
             if saving:
                 for value, hyperparam in zip(best_success_rate[3], hyper_params_names):
                     prepro.named_steps[hyperparam[0]].__dict__[hyperparam[1]] = value
-                save_classifier_pipeline(prepro)
-                save_prepossessing_pipeline(best_success_rate[2])
+                save_classifier_pipeline(best_success_rate[2])
+                save_prepossessing_pipeline(prepro)
 
 
 def get_reasults(X, Y,prepro, pipeline, param_grid, save=None):

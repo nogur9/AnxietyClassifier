@@ -122,7 +122,6 @@ class TrialsData:
         #add linear
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
         trials = sorted([set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects])
-        print(trials)
         All_fixations = [
             [self.fixation_dataset[
                  (self.fixation_dataset.Subject == subjects[i]) & (self.fixation_dataset.Trial == j)]

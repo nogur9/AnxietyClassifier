@@ -4,13 +4,14 @@ import datetime
 
 maps_path = "../OmersData/map.xlsx"
 maps = pd.read_excel(maps_path)
-
+Fixation_length_cutoff = 100
 
 def get_AOI_group(row):
     map_dict = {1: "N", 2: "D"}
 
     CURRENT_FIX_INTEREST_AREAS, imagefile = row.split('|')
     CURRENT_FIX_INTEREST_AREAS = eval(CURRENT_FIX_INTEREST_AREAS)
+    #print(CURRENT_FIX_INTEREST_AREAS)
     imagefile = imagefile.replace("_", " ")
     WS = "White Space"
     if CURRENT_FIX_INTEREST_AREAS == []:
@@ -26,7 +27,6 @@ class EyeLinkData:
     smi_to_eye_link_direct_tranform = {
 
         'Stimulus': 'imagefile',
-        'Area_of_Interest': 'CURRENT_FIX_INTEREST_AREAS',
         'Fixation_Duration': 'CURRENT_FIX_DURATION',
         'Position_X': 'CURRENT_FIX_X',
         'Position_Y': 'CURRENT_FIX_Y',
@@ -38,7 +38,8 @@ class EyeLinkData:
         self.df = pd.read_excel(data_path)
 
         # removing first fixations
-        self.df = self.df[self.df['CURRENT_FIX_INTEREST_AREA_PIXEL_AREA'] == 47089]
+        self.df = self.df[self.df['CURRENT_FIX_INTEREST_AREA_PIXEL_AREA'] != 3136]
+        self.df = self.df[self.df['CURRENT_FIX_DURATION'] > Fixation_length_cutoff]
 
 
     def transform_data(self, output_path=None):
@@ -54,6 +55,10 @@ class EyeLinkData:
         tmp = self.df['CURRENT_FIX_INTEREST_AREAS'] + '|' + self.df['imagefile']
         output_df['AOI_Group'] = tmp.apply(get_AOI_group)
 
+        # create AOI column
+        output_df['Area_of_Interest'] = self.df['CURRENT_FIX_INTEREST_AREAS'].apply(
+            lambda x: 'White Space' if len(x) == 3 else 'AOI {}'.format(eval(x)[0]))
+
         # get subject number
         output_df['Subject'] = self.df['RECORDING_SESSION_LABEL'].str.extract(r"^([0-9]+)")
 
@@ -64,9 +69,13 @@ class EyeLinkData:
         output_df['Trial'] = self.df['identifier'] + 30*(self.df['block_num'] - first_block_num)
 
         # writing the output DataFrame
-        output_df.to_excel(output_path, sheet_name="fixation_data")
+        excel_writer = pd.ExcelWriter(output_path, engine='xlsxwriter')
+
         demographic_df = pd.DataFrame(output_df['Subject'].unique(), columns=['Subject'])
-        demographic_df.to_excel(output_path, sheet_name="demographic")
+        demographic_df.to_excel(excel_writer, sheet_name="demographic")
+
+        output_df.to_excel(excel_writer, sheet_name="fixation_data")
+        excel_writer.save()
 
 path = "..\OmersData\Book1.xlsx"
 el = EyeLinkData(path)

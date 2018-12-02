@@ -7,7 +7,6 @@ def sine(data, plot=0):
     est_std_list = []
     est_phase_list = []
     est_mean_list = []
-    print([{range(60)[i], data[0][i]} for i in range(60)])
     for subject_data in data:
         N = len(subject_data)# number of data points
         t = np.linspace(0, 4*np.pi, N)
@@ -47,7 +46,6 @@ def linear(data, plot=0):
         x = range(N)
         y = np.array(subject_data)
         z = np.polyfit(x, y, 1)
-        print('Coefficients: \n', z)
         coeff1.append(z[0])
         coeff2.append(z[1])
         if plot:

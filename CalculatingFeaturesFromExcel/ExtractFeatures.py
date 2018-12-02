@@ -60,25 +60,12 @@ class Data:
 
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
         trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
-        print (len(trials[0]), len(trials[1]))
         Sum_Disgusted = [np.nanmean([np.nansum(self.fixation_dataset.Fixation_Duration[
                                                             (self.fixation_dataset.Subject == subjects[i]) & (
                                                                     self.fixation_dataset.Trial == j) & (
                                                                     self.fixation_dataset.AOI_Group == "D")]) for j
                                                  in trials[i]]) for i in range(len(subjects))]
 
-        print([np.nansum([np.nansum(self.fixation_dataset.Fixation_Duration[
-                                                            (self.fixation_dataset.Subject == subjects[i]) & (
-                                                                    self.fixation_dataset.Trial == j) & (
-                                                                    self.fixation_dataset.AOI_Group == "D")]) for j
-                                                 in trials[i]]) for i in range(len(subjects))])
-
-        print (trials)
-        print([[np.nansum(self.fixation_dataset.Fixation_Duration[
-                                   (self.fixation_dataset.Subject == subjects[i]) & (
-                                           self.fixation_dataset.Trial == j) & (
-                                           self.fixation_dataset.AOI_Group == "D")]) for j
-                     in trials[i]] for i in range(len(subjects))])
         self.output_data_dict["Amits"] = Sum_Disgusted
 
     def get_DT_each_stimulus_pet_trial(self):
@@ -1034,8 +1021,7 @@ class Data:
                                                                           self.fixation_dataset.Area_of_Interest == first_aoi)])
                 area = self.find_area(positions[0].values[0], positions[1].values[0])
                 p_disgusted_times_first_fixation_duration[i].append(p_map[area][0] * first_fixation_duration)
-                if (subject, trial) == (345, 22):
-                    print(i)
+
                 p_map = self.get_probability_distribution(trial, subject, last_probability_distribution=p_map)
 
         self.output_data_dict["p_disgusted_times_first_fixation_duration"] = \
@@ -1046,6 +1032,47 @@ class Data:
         self.get_subject_number()
         self.get_lsas()
         self.get_group()
+        self.get_Amits_feature()
+        self.get_sum_fixation_length_Disgusted()
+        self.get_sum_fixation_length_Neutral()
+        self.get_sum_fixation_length_White_Space()
+        self.get_average_fixation_length_Disgusted()
+        self.get_average_fixation_length_Neutral()
+        self.get_average_fixation_length_White_Space()
+        self.get_amount_fixation_Disgusted()
+        self.get_amount_fixation_Neutral()
+        self.get_amount_fixation_White_Space()
+        self.get_STD_fixation_length_Disgusted()
+        self.get_STD_fixation_length_Neutral()
+        self.get_STD_fixation_length_White_Space()
+        self.get_STD_fixation_length_All()
+        self.get_ratio_D_DN()
+        self.get_ratio_N_DN()
+        self.get_ratio_WS_All()
+        self.get_ratio_D_DN_2()
+        self.get_ratio_N_DN_2()
+        self.get_amount_DN_transitions()
+        self.get_amount_ND_transitions()
+        self.get_amount_DD_transitions()
+        self.get_amount_NN_transitions()
+        self.get_amount_diff_AOI_transitions()
+        self.var_threat_precentage_between_trials()
+        self.get_average_pupil_size_Disgusted()
+        self.get_average_pupil_size_Neutral()
+        self.get_average_pupil_size_White_Space()
+        self.get_average_pupil_size_All()
+        self.get_STD_pupil_size_Disgusted()
+        self.get_STD_pupil_size_Neutral()
+        self.get_STD_pupil_size_White_Space()
+        self.get_STD_pupil_size_All()
+        self.get_mean_different_AOI_per_trial()
+        self.get_difference_between_medians()
+
+
+
+    def get_features_for_prediction(self):
+
+        self.get_subject_number()
         self.get_Amits_feature()
         self.get_sum_fixation_length_Disgusted()
         self.get_sum_fixation_length_Neutral()

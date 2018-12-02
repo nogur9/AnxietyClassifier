@@ -7,7 +7,7 @@ if outliers:
     file_name = r"extracted_features_subjects_set_Updated,with_outlier_subjects_False_with_9029,9014,2018-10-29.xlsx"
     print("with the outliers")
 if not outliers:
-    file_name = r"..\OmersData\extracted eye link data 2018-11-29.xlsx"
+    file_name = r"extracted_features_subjects_set_Updated,with_outlier_subjects_False,2018-11-28.xlsx"
     print("without the outliers")
     X, Y = get_data(file_name)
     #print("naive classifier score {}".format(max(Y[Y == 0].count(), Y[Y == 1].count()) / len(Y)))

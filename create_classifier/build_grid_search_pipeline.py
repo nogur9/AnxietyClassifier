@@ -36,25 +36,18 @@ def build_full_pipeline():
 def get_full_params_grid():
     prepro_params = [
 
-        {'variance_threshold__threshold': [0, 0.015, 0.03]},
-        {'correlation_threshold__correlation_threshold': [0.7, 0.8]},
-        {'rfc__threshold': [15, 25, 32]},
-        {'pca__n_components': [7, 9, 11]}
+        {'variance_threshold__threshold': [0.01]},
+        {'correlation_threshold__correlation_threshold': [0.7]},
+        {'rfc__threshold': [15, 20]},
+        {'pca__n_components': [7]}
     ]
 
     params_grid = [
-
-
-
-
-
-
-         {'classifier':[SVC()],
-          'classifier__C':[0.001, 0.01, 0.1, 1, 10],
-          'classifier__kernel':['rbf', 'sigmoid'],
-          #'classifier__degree':[3, 5, 7, 9],
-          'classifier__gamma': [0.001, 0.01, 0.1, 1]
-          },
+         {'classifier': [SVC()],
+          'classifier__C':[1],
+          'classifier__kernel':['sigmoid'],
+          'classifier__gamma': [1]
+          }]
 
         #]
         #  {'classifier': [GradientBoostingClassifier()],
@@ -65,12 +58,12 @@ def get_full_params_grid():
         #                    "classifier__subsample": [0.5],
         #                    "classifier__max_depth":[5, 3, 7]
         #    },
-         {'classifier': [RandomForestClassifier()],
-                            'classifier__n_estimators': [200, 100],
-                            'classifier__max_features': ['log2', 'auto', None],
-                            'classifier__max_depth': [4,7, 10],
-                            'classifier__min_samples_split':[2, 4]
-                            }]
+        #  {'classifier': [RandomForestClassifier()],
+        #                     'classifier__n_estimators': [200, 100],
+        #                     'classifier__max_features': ['log2', 'auto', None],
+        #                     'classifier__max_depth': [4,7, 10],
+        #                     'classifier__min_samples_split':[2, 4]
+        #                     }]
 
     return prepro_params, params_grid
 
