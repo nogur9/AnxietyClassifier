@@ -33,13 +33,15 @@ class EyeLinkData:
         'Average_Pupil_Diameter': 'CURRENT_FIX_PUPIL',
         'Number': 'CURRENT_FIX_INDEX'}
 
-    def __init__(self, data_path):
+    def __init__(self, data_path, subj=None, block=None):
         data_path = data_path
         self.df = pd.read_excel(data_path)
-
+        print ("in init")
         # removing first fixations
         self.df = self.df[self.df['CURRENT_FIX_INTEREST_AREA_PIXEL_AREA'] != 3136]
         self.df = self.df[self.df['CURRENT_FIX_DURATION'] > Fixation_length_cutoff]
+        self.subj = subj
+        self.block = block
 
 
     def transform_data(self, output_path=None):
@@ -60,13 +62,19 @@ class EyeLinkData:
             lambda x: 'White Space' if len(x) == 3 else 'AOI {}'.format(eval(x)[0]))
 
         # get subject number
-        output_df['Subject'] = self.df['RECORDING_SESSION_LABEL'].str.extract(r"^([0-9]+)")
+        if self.subj is not None:
+            output_df['Subject'] = self.subj
+        else:
+            output_df['Subject'] = self.df['RECORDING_SESSION_LABEL'].str.extract(r"^([0-9]+)")
 
         # get Trial number
-        target_col = 'identifier'
-        self.df['block_num'] = pd.to_numeric(self.df['RECORDING_SESSION_LABEL'].str.extract(r"([0-9]+)$"))
-        first_block_num = min(self.df['block_num'].unique())
-        output_df['Trial'] = self.df['identifier'] + 30*(self.df['block_num'] - first_block_num)
+        if self.block is not None:
+            self.df['block_num'] = self.block
+            output_df['Trial'] = self.df['identifier']
+        else:
+            self.df['block_num'] = pd.to_numeric(self.df['RECORDING_SESSION_LABEL'].str.extract(r"([0-9]+)$"))
+            first_block_num = min(self.df['block_num'].unique())
+            output_df['Trial'] = self.df['identifier'] + 30*(self.df['block_num'] - first_block_num)
 
         # writing the output DataFrame
         excel_writer = pd.ExcelWriter(output_path, engine='xlsxwriter')
@@ -77,6 +85,8 @@ class EyeLinkData:
         output_df.to_excel(excel_writer, sheet_name="fixation_data")
         excel_writer.save()
 
-path = "..\OmersData\Book1.xlsx"
-el = EyeLinkData(path)
+path1 = "..\\test_data\machine learning data full dataset first 1.xlsx"
+path2 = "..\\test_data\machine learning data full dataset first 2.xlsx"
+path3 = "..\\test_data\machine learning data full dataset first 3.xlsx"
+el = EyeLinkData(path3, subj="3", block=13)
 el.transform_data()

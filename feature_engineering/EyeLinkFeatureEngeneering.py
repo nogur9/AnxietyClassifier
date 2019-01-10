@@ -12,7 +12,7 @@ FIXATION_DATA_SHEET = 'fixation_data'
 DEMOGRAPHICS_SHEET = 'demographic'
 
 
-def feature_engineering(data_file_path, saving_path=r'C:\‏‏PycharmProjects\AnxietyClassifier\ExtractedFeaturesFiles'):
+def feature_engineering(data_file_path, saving_path=r'C:\‏‏PycharmProjects\AnxietyClassifier\\test_data'):
 
     agg_features_extractor = Data(data_file_path, FIXATION_DATA_SHEET, DEMOGRAPHICS_SHEET)
     reg_features_extractor = TrialsData(data_file_path, FIXATION_DATA_SHEET, DEMOGRAPHICS_SHEET)
@@ -39,5 +39,5 @@ def feature_engineering(data_file_path, saving_path=r'C:\‏‏PycharmProjects\A
 
     workbook.close()
 
-
-feature_engineering("C:\‏‏PycharmProjects\AnxietyClassifier\OmersData\extracted eye link data 2018-12-02.xlsx")
+path = r"C:\‏‏PycharmProjects\AnxietyClassifier\OmersData\extracted eye link data 2019-01-07_subj3.xlsx"
+feature_engineering(path)
