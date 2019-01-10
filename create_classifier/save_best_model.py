@@ -3,12 +3,12 @@ import datetime
 
 
 def save_prepossessing_pipeline(pipe):
-    file_name = "models/prepossessing pipeline_{}".format(datetime.datetime.now().strftime('%Y-%m-%d'))
+    file_name = "models/prepossessing pipeline_final_100K{}".format(datetime.datetime.now().strftime('%Y-%m-%d'))
     dump(pipe, file_name+'.joblib')
 
 
 def save_classifier_pipeline(clf):
-    file_name = "models/classifier pipeline_{}".format(datetime.datetime.now().strftime('%Y-%m-%d'))
+    file_name = "models/classifier pipeline_final_100K{}".format(datetime.datetime.now().strftime('%Y-%m-%d'))
     dump(clf, file_name+'.joblib')
 
 

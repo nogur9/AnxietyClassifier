@@ -14,7 +14,7 @@ if not outliers:
     prepro, clf = build_full_pipeline()
 
 
-print("\n28_11_2018\n\n")
+print("\n03_12_2018, iter = 100000_finalrun\n\n")
 
 clf = 0
 if clf:
