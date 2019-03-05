@@ -3,7 +3,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 from DataImporting import ImportData
-
+import pandas as pd
 Fixation_length_cutoff = 100
 
 
@@ -15,10 +15,21 @@ class Data:
     demographic_dataset = None
 
     def __init__(self, path, fixation_dataset_sheet_name, demographic_dataset_sheet_name=None,
-                 grouping_function=np.nansum):
+                 grouping_function=np.nanmean):
 
         self.fixation_dataset = ImportData.get_data(path, fixation_dataset_sheet_name)
         self.fixation_dataset = self.fixation_dataset[self.fixation_dataset.Fixation_Duration > Fixation_length_cutoff]
+
+        #self.fixation_dataset = self.fixation_dataset.reindex(np.arange(len(self.fixation_dataset)))
+
+        # make it ignore fixation after the first 30
+        #trials = self.fixation_dataset.groupby("Subject")["Trial"].unique().apply(lambda x: x[29])
+        #ts = trials[self.fixation_dataset.Subject]
+        #ts.index = np.arange(len(trials[self.fixation_dataset.Subject]))
+        #indexer = self.fixation_dataset.Trial.reindex(np.arange(len(trials[self.fixation_dataset.Subject]))) < ts
+
+        # self.fixation_dataset = self.fixation_dataset[indexer]
+
         self.grouping_function = grouping_function
 
         if not demographic_dataset_sheet_name is None:
@@ -59,7 +70,7 @@ class Data:
     def get_Amits_feature(self):
 
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique()[:30] for i in subjects]
         Sum_Disgusted = [np.nanmean([np.nansum(self.fixation_dataset.Fixation_Duration[
                                                             (self.fixation_dataset.Subject == subjects[i]) & (
                                                                     self.fixation_dataset.Trial == j) & (
@@ -84,74 +95,74 @@ class Data:
                 self.output_data_dict[title_name] = [sum_fix]
 
     def get_sum_fixation_length_Disgusted(self):
-        norm_factor = self.get_sum_fixation_length_All()
+        #norm_factor = self.get_sum_fixation_length_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique() for i in subjects]
 
-        Sum_Disgusted = [self.grouping_function([np.sum(self.fixation_dataset.Fixation_Duration[
+        Sum_Disgusted = [np.nanmean([np.sum(self.fixation_dataset.Fixation_Duration[
                                                             (self.fixation_dataset.Subject == subjects[i]) & (
                                                                     self.fixation_dataset.Trial == j) & (
                                                                     self.fixation_dataset.AOI_Group == "D")]) for j
                                                  in trials[i]]) for i in range(len(subjects))]
         Sum_Disgusted = [0 if math.isnan(x) else x for x in Sum_Disgusted]
-        norm_disgusted = [Sum_Disgusted[i] / float(norm_factor[i]) for i in range(len(Sum_Disgusted))]
-        norm_disgusted = [0 if math.isnan(x) else x for x in norm_disgusted]
-        self.output_data_dict["sum_fixation_length_Disgusted"] = Sum_Disgusted
-        self.output_data_dict["normalized_sum_fixation_length_Disgusted"] = norm_disgusted
+        #norm_disgusted = [Sum_Disgusted[i] / float(norm_factor[i]) for i in range(len(Sum_Disgusted))]
+        #norm_disgusted = [0 if math.isnan(x) else x for x in norm_disgusted]
+        self.output_data_dict["avg_of_sum_fixation_length_Disgusted"] = Sum_Disgusted
+        #self.output_data_dict["normalized_sum_fixation_length_Disgusted"] = norm_disgusted
 
     def get_sum_fixation_length_Neutral(self):
-        norm_factor = self.get_sum_fixation_length_All()
+        #norm_factor = self.get_sum_fixation_length_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique() for i in subjects]
 
-        Sum_Neutral = [self.grouping_function([np.sum(self.fixation_dataset.Fixation_Duration[
+        Sum_Neutral = [np.nanmean([np.sum(self.fixation_dataset.Fixation_Duration[
                                                           (self.fixation_dataset.Subject == subjects[i]) & (
                                                                   self.fixation_dataset.Trial == j) & (
                                                                   self.fixation_dataset.AOI_Group == "N")]) for j in
                                                trials[i]]) for i in range(len(subjects))]
         Sum_Neutral = [0 if math.isnan(x) else x for x in Sum_Neutral]
-        norm_neutral = [Sum_Neutral[i] / float(norm_factor[i]) for i in range(len(Sum_Neutral))]
-        norm_neutral = [0 if math.isnan(x) else x for x in norm_neutral]
+        #norm_neutral = [Sum_Neutral[i] / float(norm_factor[i]) for i in range(len(Sum_Neutral))]
+        #norm_neutral = [0 if math.isnan(x) else x for x in norm_neutral]
 
-        self.output_data_dict["sum_fixation_length_Neutral"] = Sum_Neutral
-        self.output_data_dict["normalized_sum_fixation_length_Neutral"] = norm_neutral
+        self.output_data_dict["avg_of_sum_fixation_length_Neutral"] = Sum_Neutral
+        #self.output_data_dict["normalized_sum_fixation_length_Neutral"] = norm_neutral
 
     def get_sum_fixation_length_White_Space(self):
-        norm_factor = self.get_sum_fixation_length_All()
+        #norm_factor = self.get_sum_fixation_length_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique() for i in subjects]
 
-        Sum_White_Space = [self.grouping_function([np.nansum(self.fixation_dataset.Fixation_Duration[
+        Sum_White_Space = [np.nanmean([np.nansum(self.fixation_dataset.Fixation_Duration[
                                                                  (self.fixation_dataset.Subject == subjects[i]) & (
                                                                          self.fixation_dataset.Trial == j) & (
                                                                          self.fixation_dataset.AOI_Group == "White Space")])
                                                    for j in trials[i]]) for i in range(len(subjects))]
         Sum_White_Space = [0 if math.isnan(x) else x for x in Sum_White_Space]
-        norm_WS = [Sum_White_Space[i] / float(norm_factor[i]) for i in range(len(Sum_White_Space))]
-        norm_WS = [0 if math.isnan(x) else x for x in norm_WS]
-        self.output_data_dict["sum_fixation_length_White_Space"] = Sum_White_Space
+        #norm_WS = [Sum_White_Space[i] / float(norm_factor[i]) for i in range(len(Sum_White_Space))]
+        #norm_WS = [0 if math.isnan(x) else x for x in norm_WS]
+        self.output_data_dict["avg_of_sum_fixation_length_White_Space"] = Sum_White_Space
 
-        self.output_data_dict["normalized_sum_fixation_length_WS"] = norm_WS
+        #self.output_data_dict["normalized_sum_fixation_length_WS"] = norm_WS
 
     def get_sum_fixation_length_All(self):
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique() for i in subjects]
 
-        Sum_All = [self.grouping_function([np.sum(self.fixation_dataset.Fixation_Duration[
+        Sum_All = [np.nanmean([np.sum(self.fixation_dataset.Fixation_Duration[
                                                       (self.fixation_dataset.Subject == subjects[i]) & (
                                                               self.fixation_dataset.Trial == j)]) for j in
                                            trials[i]]) for i in range(len(subjects))]
         Sum_All = [0 if math.isnan(x) else x for x in Sum_All]
 
-        self.output_data_dict["sum_fixation_length_All"] = Sum_All
+        self.output_data_dict["avg_of_sum_fixation_length_All"] = Sum_All
         return Sum_All
 
     def get_average_fixation_length_Disgusted(self):
-        norm_factor = self.get_average_fixation_length_All()
+        # norm_factor = self.get_average_fixation_length_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
         mean_Disgusted = [np.mean(self.fixation_dataset.Fixation_Duration[
@@ -159,40 +170,40 @@ class Data:
                                               self.fixation_dataset.AOI_Group == "D")]) for i in
                           range(len(subjects))]
         mean_Disgusted = [0 if math.isnan(x) else x for x in mean_Disgusted]
-        norm_disgusted = [mean_Disgusted[i] / float(norm_factor[i]) for i in range(len(mean_Disgusted))]
-        norm_disgusted = [0 if math.isnan(x) else x for x in norm_disgusted]
+        # norm_disgusted = [mean_Disgusted[i] / float(norm_factor[i]) for i in range(len(mean_Disgusted))]
+        # norm_disgusted = [0 if math.isnan(x) else x for x in norm_disgusted]
 
         self.output_data_dict["average_fixation_length_Disgusted"] = mean_Disgusted
-        self.output_data_dict["normalized_mean_fixation_length_Disgusted"] = norm_disgusted
+        # self.output_data_dict["normalized_mean_fixation_length_Disgusted"] = norm_disgusted
 
     def get_average_fixation_length_Neutral(self):
-        norm_factor = self.get_average_fixation_length_All()
+        # norm_factor = self.get_average_fixation_length_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
         mean_Neutral = [np.mean(self.fixation_dataset.Fixation_Duration[
                                     (self.fixation_dataset.Subject == subjects[i]) & (
                                             self.fixation_dataset.AOI_Group == "N")]) for i in range(len(subjects))]
         mean_Neutral = [0 if math.isnan(x) else x for x in mean_Neutral]
-        norm_neutral = [mean_Neutral[i] / float(norm_factor[i]) for i in range(len(mean_Neutral))]
-        norm_neutral = [0 if math.isnan(x) else x for x in norm_neutral]
+        # norm_neutral = [mean_Neutral[i] / float(norm_factor[i]) for i in range(len(mean_Neutral))]
+        # norm_neutral = [0 if math.isnan(x) else x for x in norm_neutral]
 
         self.output_data_dict["average_fixation_length_Neutral"] = mean_Neutral
-        self.output_data_dict["normalized_mean_fixation_length_Neutral"] = norm_neutral
+        # self.output_data_dict["normalized_mean_fixation_length_Neutral"] = norm_neutral
 
     def get_average_fixation_length_White_Space(self):
 
-        norm_factor = self.get_average_fixation_length_All()
+        # norm_factor = self.get_average_fixation_length_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
         mean_White_Space = [np.mean(self.fixation_dataset.Fixation_Duration[
                                         (self.fixation_dataset.Subject == subjects[i]) & (
                                                 self.fixation_dataset.AOI_Group == "White Space")]) for i in
                             range(len(subjects))]
         mean_White_Space = [0 if math.isnan(x) else x for x in mean_White_Space]
-        norm_WS = [mean_White_Space[i] / float(norm_factor[i]) for i in range(len(mean_White_Space))]
-        norm_WS = [0 if math.isnan(x) else x for x in norm_WS]
+        # norm_WS = [mean_White_Space[i] / float(norm_factor[i]) for i in range(len(mean_White_Space))]
+        # norm_WS = [0 if math.isnan(x) else x for x in norm_WS]
 
         self.output_data_dict["average_fixation_length_White_Space"] = mean_White_Space
-        self.output_data_dict["normalized_mean_fixation_length_WS"] = norm_WS
+        # self.output_data_dict["normalized_mean_fixation_length_WS"] = norm_WS
 
     def get_average_fixation_length_All(self):
 
@@ -206,72 +217,72 @@ class Data:
         return mean_All
 
     def get_amount_fixation_Disgusted(self):
-        norm_factor = self.get_amount_fixation_All()
+        #norm_factor = self.get_amount_fixation_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique() for i in subjects]
 
-        amount_Disgusted = [self.grouping_function([len(self.fixation_dataset.Fixation_Duration[
+        amount_Disgusted = [np.nanmean([len(self.fixation_dataset.Fixation_Duration[
                                                             (self.fixation_dataset.Subject == subjects[i]) & (
                                                                     self.fixation_dataset.Trial == j) & (
                                                                     self.fixation_dataset.AOI_Group == "D")]) for j
                                                     in trials[i]]) for i in range(len(subjects))]
         amount_Disgusted = [0 if math.isnan(x) else x for x in amount_Disgusted]
-        norm_disgusted = [amount_Disgusted[i] / float(norm_factor[i]) for i in range(len(amount_Disgusted))]
-        norm_disgusted = [0 if math.isnan(x) else x for x in norm_disgusted]
+        #norm_disgusted = [amount_Disgusted[i] / float(norm_factor[i]) for i in range(len(amount_Disgusted))]
+        #norm_disgusted = [0 if math.isnan(x) else x for x in norm_disgusted]
 
-        self.output_data_dict["amount_fixation_Disgusted"] = amount_Disgusted
-        self.output_data_dict["normalized_amount_fixation_Disgusted"] = norm_disgusted
+        self.output_data_dict["avg_of_amount_fixation_Disgusted"] = amount_Disgusted
+        #self.output_data_dict["normalized_amount_fixation_Disgusted"] = norm_disgusted
 
     def get_amount_fixation_Neutral(self):
-        norm_factor = self.get_amount_fixation_All()
+        # norm_factor = self.get_amount_fixation_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique() for i in subjects]
 
-        amount_Neutral = [self.grouping_function([len(self.fixation_dataset.Fixation_Duration[
+        amount_Neutral = [np.nanmean([len(self.fixation_dataset.Fixation_Duration[
                                                           (self.fixation_dataset.Subject == subjects[i]) & (
                                                                   self.fixation_dataset.Trial == j) & (
                                                                   self.fixation_dataset.AOI_Group == "N")]) for j in
                                                   trials[i]]) for i in range(len(subjects))]
         amount_Neutral = [0 if math.isnan(x) else x for x in amount_Neutral]
-        norm_neutral = [amount_Neutral[i] / float(norm_factor[i]) for i in range(len(amount_Neutral))]
-        norm_neutral = [0 if math.isnan(x) else x for x in norm_neutral]
+        # norm_neutral = [amount_Neutral[i] / float(norm_factor[i]) for i in range(len(amount_Neutral))]
+        # norm_neutral = [0 if math.isnan(x) else x for x in norm_neutral]
 
-        self.output_data_dict["amount_fixation_Neutral"] = amount_Neutral
-        self.output_data_dict["normalized_amount_fixation_Neutral"] = norm_neutral
+        self.output_data_dict["avg_of_amount_fixation_Neutral"] = amount_Neutral
+        # self.output_data_dict["normalized_amount_fixation_Neutral"] = norm_neutral
 
     def get_amount_fixation_White_Space(self):
-        norm_factor = self.get_amount_fixation_All()
+        # norm_factor = self.get_amount_fixation_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique() for i in subjects]
 
-        amount_White_Space = [self.grouping_function([len(self.fixation_dataset.Fixation_Duration[
+        amount_White_Space = [np.nanmean([len(self.fixation_dataset.Fixation_Duration[
                                                               (self.fixation_dataset.Subject == subjects[i]) & (
                                                                       self.fixation_dataset.Trial == j) & (
                                                                       self.fixation_dataset.AOI_Group == "White Space")])
                                                       for j in trials[i]]) for i in range(len(subjects))]
         amount_White_Space = [0 if math.isnan(x) else x for x in amount_White_Space]
-        norm_WS = [amount_White_Space[i] / float(norm_factor[i]) for i in range(len(amount_White_Space))]
-        norm_WS = [0 if math.isnan(x) else x for x in norm_WS]
+        # norm_WS = [amount_White_Space[i] / float(norm_factor[i]) for i in range(len(amount_White_Space))]
+        #norm_WS = [0 if math.isnan(x) else x for x in norm_WS]
 
-        self.output_data_dict["amount_fixation_White_Space"] = amount_White_Space
-        self.output_data_dict["normalized_amount_fixation_WS"] = norm_WS
+        self.output_data_dict["avg_of_amount_fixation_White_Space"] = amount_White_Space
+        # self.output_data_dict["normalized_amount_fixation_WS"] = norm_WS
 
     def get_amount_fixation_All(self):
 
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique() for i in subjects]
 
-        amount_All = [self.grouping_function([len(self.fixation_dataset.Fixation_Duration[
+        amount_All = [np.nanmean([len(self.fixation_dataset.Fixation_Duration[
                                                       (self.fixation_dataset.Subject == subjects[i]) & (
                                                               self.fixation_dataset.Trial == j)]) for j in
                                               trials[i]]) for i in range(len(subjects))]
         amount_All = [0 if math.isnan(x) else x for x in amount_All]
 
-        self.output_data_dict["amount_fixation_All"] = amount_All
+        self.output_data_dict["avg_of_amount_fixation_All"] = amount_All
         return amount_All
 
     def get_STD_fixation_length_Disgusted(self):
@@ -319,7 +330,6 @@ class Data:
         :return: the ratio of the sum fixation length of disgusted and neutral fixations 
         """
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
 
         mean_Disgusted = [np.nanmean(self.fixation_dataset.Fixation_Duration[
                                          (self.fixation_dataset.Subject == subjects[i]) & (
@@ -342,7 +352,7 @@ class Data:
         :return: the ratio of the sum fixation length of disgusted and neutral fixations
         """
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        #trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique()[:30] for i in subjects]
 
         mean_Disgusted = [np.nanmean(self.fixation_dataset.Fixation_Duration[
                                          (self.fixation_dataset.Subject == subjects[i]) & (
@@ -365,7 +375,7 @@ class Data:
         :return: the ratio of the sum fixation length of disgusted and neutral fixations
         """
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        #trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique()[:30] for i in subjects]
 
         mean_Disgusted = [np.nanmean(self.fixation_dataset.Fixation_Duration[
                                          (self.fixation_dataset.Subject == subjects[i]) & (
@@ -390,7 +400,7 @@ class Data:
         :return: the ratio of the sum fixation length of disgusted and neutral fixations
         """
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        #trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique()[:30] for i in subjects]
 
         mean_Disgusted = [np.nanmean(self.fixation_dataset.Fixation_Duration[
                                          (self.fixation_dataset.Subject == subjects[i]) &
@@ -417,7 +427,7 @@ class Data:
         :return: the ratio of the sum fixation length of disgusted and neutral fixations
         """
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        #trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique()[:30] for i in subjects]
 
         mean_Disgusted = [np.nanmean(self.fixation_dataset.Fixation_Duration[
                                          (self.fixation_dataset.Subject == subjects[i]) &
@@ -558,10 +568,10 @@ class Data:
     def var_threat_precentage_between_trials(self):
         """
 
-        :return: the ratio of the sum fixation length of disgusted and neutral fixations
+        :return:
         """
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique() for i in subjects]
 
         Mean_Disgusted = [[np.nanmean(self.fixation_dataset.Fixation_Duration[
                                           (self.fixation_dataset.Subject == subjects[i]) &
@@ -581,7 +591,7 @@ class Data:
     def amount_of_first_fixations(self):
         # param - in each trial the cells are sorted by fixation start
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique()[:30] for i in subjects]
         All_fixations = [[self.fixation_dataset.AOI_Group[
                               (self.fixation_dataset.Subject == subjects[i]) & (self.fixation_dataset.Trial == j)]
                           for j in trials[i]] for i in range(len(subjects))]
@@ -600,7 +610,7 @@ class Data:
         # param - in each trial the cells are sorted by fixation start
 
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique()[:30] for i in subjects]
         All_fixations = [[self.fixation_dataset.AOI_Group[
                               (self.fixation_dataset.Subject == subjects[i]) & (self.fixation_dataset.Trial == j)]
                           for j in trials[i]] for i in range(len(subjects))]
@@ -616,21 +626,21 @@ class Data:
         self.output_data_dict["amount_of_second_fixations_on_WS"] = amount_WS
 
     def get_average_pupil_size_Disgusted(self):
-        norm_factor = self.get_average_pupil_size_All()
+        # norm_factor = self.get_average_pupil_size_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
         mean_Disgusted = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[
                                       (self.fixation_dataset.Subject == subjects[i]) & (
                                               self.fixation_dataset.AOI_Group == "D")]) for i in
                           range(len(subjects))]
         mean_Disgusted = [0 if math.isnan(x) else x for x in mean_Disgusted]
-        norm_disgusted = [mean_Disgusted[i] / float(norm_factor[i]) for i in range(len(mean_Disgusted))]
-        norm_disgusted = [0 if math.isnan(x) else x for x in norm_disgusted]
+        # norm_disgusted = [mean_Disgusted[i] / float(norm_factor[i]) for i in range(len(mean_Disgusted))]
+        # norm_disgusted = [0 if math.isnan(x) else x for x in norm_disgusted]
 
         self.output_data_dict["average_pupil_size_Disgusted"] = mean_Disgusted
-        self.output_data_dict["normalized_mean_pupil_size_Disgusted"] = norm_disgusted
+        # self.output_data_dict["normalized_mean_pupil_size_Disgusted"] = norm_disgusted
 
     def get_average_pupil_size_Neutral(self):
-        norm_factor = self.get_average_pupil_size_All()
+        # norm_factor = self.get_average_pupil_size_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
         mean_Neutral = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[
@@ -638,25 +648,25 @@ class Data:
                                             self.fixation_dataset.AOI_Group == "N")]) for i in
                         range(len(subjects))]
         mean_Neutral = [0 if math.isnan(x) else x for x in mean_Neutral]
-        norm_neutral = [mean_Neutral[i] / float(norm_factor[i]) for i in range(len(mean_Neutral))]
-        norm_neutral = [0 if math.isnan(x) else x for x in norm_neutral]
+        # norm_neutral = [mean_Neutral[i] / float(norm_factor[i]) for i in range(len(mean_Neutral))]
+        # norm_neutral = [0 if math.isnan(x) else x for x in norm_neutral]
 
         self.output_data_dict["average_pupil_size_Neutral"] = mean_Neutral
-        self.output_data_dict["normalized_mean_pupil_size_Neutral"] = norm_neutral
+#        self.output_data_dict["normalized_mean_pupil_size_Neutral"] = norm_neutral
 
     def get_average_pupil_size_White_Space(self):
-        norm_factor = self.get_average_pupil_size_All()
+        # norm_factor = self.get_average_pupil_size_All()
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
         mean_White_Space = [np.mean(self.fixation_dataset.Average_Pupil_Diameter[
                                         (self.fixation_dataset.Subject == subjects[i]) & (
                                                 self.fixation_dataset.AOI_Group == "White Space")]) for i in
                             range(len(subjects))]
         mean_White_Space = [0 if math.isnan(x) else x for x in mean_White_Space]
-        norm_WS = [mean_White_Space[i] / float(norm_factor[i]) for i in range(len(mean_White_Space))]
-        norm_WS = [0 if math.isnan(x) else x for x in norm_WS]
+        # norm_WS = [mean_White_Space[i] / float(norm_factor[i]) for i in range(len(mean_White_Space))]
+        # norm_WS = [0 if math.isnan(x) else x for x in norm_WS]
 
         self.output_data_dict["average_pupil_size_White_Space"] = mean_White_Space
-        self.output_data_dict["normalized_mean_pupil_size_WS"] = norm_WS
+        # self.output_data_dict["normalized_mean_pupil_size_WS"] = norm_WS
 
     def get_average_pupil_size_All(self):
 
@@ -716,7 +726,7 @@ class Data:
 
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique()[:30] for i in subjects]
 
         mean_AOIs = [np.nanmean([len(set(self.fixation_dataset.Area_of_Interest[
                                              (self.fixation_dataset.Subject == subjects[i]) & (
@@ -729,7 +739,7 @@ class Data:
     def get_difference_between_medians(self):
 
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique()[:30] for i in subjects]
         medians = [[np.median(self.fixation_dataset.Number[(self.fixation_dataset.Subject == subjects[i]) &
                                                            (self.fixation_dataset.Trial == j)])
                     for j in trials[i]] for i in range(len(subjects))]
@@ -992,7 +1002,7 @@ class Data:
     def get_p_disgusted_times_first_fixation_duration(self):
         subjects = list(sorted(set(self.fixation_dataset.Subject)))
 
-        trials = [set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]
+        trials = [(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique() for i in subjects]
         all_fixations_aoi = [[self.fixation_dataset.Area_of_Interest[(self.fixation_dataset.Subject == subjects[i]) &
                                                                      (self.fixation_dataset.Trial == j)] for j in
                               trials[i]] for i in range(len(subjects))]
@@ -1070,41 +1080,83 @@ class Data:
 
 
 
-    def get_features_for_prediction(self):
+
+    def get_matrix_count_independant_features(self):
 
         self.get_subject_number()
-        self.get_Amits_feature()
+        self.get_lsas()
+        self.get_group()
+
         self.get_sum_fixation_length_Disgusted()
         self.get_sum_fixation_length_Neutral()
         self.get_sum_fixation_length_White_Space()
+
         self.get_average_fixation_length_Disgusted()
         self.get_average_fixation_length_Neutral()
         self.get_average_fixation_length_White_Space()
+
         self.get_amount_fixation_Disgusted()
         self.get_amount_fixation_Neutral()
         self.get_amount_fixation_White_Space()
+
         self.get_STD_fixation_length_Disgusted()
         self.get_STD_fixation_length_Neutral()
         self.get_STD_fixation_length_White_Space()
         self.get_STD_fixation_length_All()
+
         self.get_ratio_D_DN()
         self.get_ratio_N_DN()
-        self.get_ratio_WS_All()
-        self.get_ratio_D_DN_2()
-        self.get_ratio_N_DN_2()
-        self.get_amount_DN_transitions()
-        self.get_amount_ND_transitions()
-        self.get_amount_DD_transitions()
-        self.get_amount_NN_transitions()
-        self.get_amount_diff_AOI_transitions()
+
         self.var_threat_precentage_between_trials()
+
         self.get_average_pupil_size_Disgusted()
         self.get_average_pupil_size_Neutral()
         self.get_average_pupil_size_White_Space()
         self.get_average_pupil_size_All()
+
         self.get_STD_pupil_size_Disgusted()
         self.get_STD_pupil_size_Neutral()
         self.get_STD_pupil_size_White_Space()
         self.get_STD_pupil_size_All()
+
         self.get_mean_different_AOI_per_trial()
-        self.get_difference_between_medians()
+
+
+
+    def get_features_for_prediction(self):
+        self.get_subject_number()
+
+        self.get_sum_fixation_length_Disgusted()
+        self.get_sum_fixation_length_Neutral()
+        self.get_sum_fixation_length_White_Space()
+
+        self.get_average_fixation_length_Disgusted()
+        self.get_average_fixation_length_Neutral()
+        self.get_average_fixation_length_White_Space()
+
+        self.get_amount_fixation_Disgusted()
+        self.get_amount_fixation_Neutral()
+        self.get_amount_fixation_White_Space()
+
+        self.get_STD_fixation_length_Disgusted()
+        self.get_STD_fixation_length_Neutral()
+        self.get_STD_fixation_length_White_Space()
+        self.get_STD_fixation_length_All()
+
+        self.get_ratio_D_DN()
+        self.get_ratio_N_DN()
+
+        self.var_threat_precentage_between_trials()
+
+        self.get_average_pupil_size_Disgusted()
+        self.get_average_pupil_size_Neutral()
+        self.get_average_pupil_size_White_Space()
+        self.get_average_pupil_size_All()
+
+        self.get_STD_pupil_size_Disgusted()
+        self.get_STD_pupil_size_Neutral()
+        self.get_STD_pupil_size_White_Space()
+        self.get_STD_pupil_size_All()
+
+        self.get_mean_different_AOI_per_trial()
+

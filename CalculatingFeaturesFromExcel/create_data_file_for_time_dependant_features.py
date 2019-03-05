@@ -33,7 +33,7 @@ def create_features_file():
     print(10)
     trials_controls.get_STD_fixation_length()
     print(11)
-    trials_controls.get_amount_fixation_length()
+    trials_controls.get_amount_fixations()
     print(12)
     trials_controls.get_mean_different_AOI_per_trial()
     print(13)

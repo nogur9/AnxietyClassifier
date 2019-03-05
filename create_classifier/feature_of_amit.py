@@ -191,7 +191,7 @@ def STD_feature_importance(path=""):
     feature_importance = get_feature_importance(X, Y)
     importance_zip = sorted(zip(feature_importance, list(X)), key=lambda x: x[0], reverse=True)
     print (importance_zip)
-    if 0:
+    if 1:
         #cutoff high correlation
         corr_matrix = X.corr().abs()
         high_corr = [feature for feature in range(len(corr_matrix['Amits'])) if (np.abs(corr_matrix['Amits'][feature]) > 0.7 and corr_matrix['Amits'].index[feature] != 'Amits')]
@@ -212,12 +212,12 @@ def STD_feature_importance(path=""):
         print("mean",np.mean(places_list),"std", np.std(places_list))
 
 
-file_path = r"C:\‏‏PycharmProjects\AnxietyClassifier\ExtractedFeaturesFiles\extracted_features_subjects_set_Updated,with_outlier_subjects_False_with_9029,9014,2018-10-29.xlsx"
+file_path = r"C:\‏‏PycharmProjects\AnxietyClassifier\ExtractedFeaturesFiles\extracted_features_subjects_set_Updated,with_outlier_subjects_False,2019-01-21.xlsx"
 #plot_amit_scatter(file_path)
 #create_two_hists_by_group(file_path)
 #get_featue_description(file_path)
 #get_outliers(file_path)
 #feature_importance(file_path)
 STD_feature_importance(file_path)
-#classify(file_path)
+classify(file_path)
 #regg(file_path)

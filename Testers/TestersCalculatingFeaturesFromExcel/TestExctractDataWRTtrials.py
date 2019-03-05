@@ -34,7 +34,7 @@ class TestFeatureExctraction(unittest.TestCase):
     def test_get_amount_fixation(self):
         self.Data_Object = ExctractFeaturesWRTtrials.TrialsData(Test_Data_path, FIXATION_DATA_SHEET)
         # act
-        ans = self.Data_Object.get_amount_fixation_length()
+        ans = self.Data_Object.get_amount_fixations()
         print(ans)
         print([[[9,6],[8,4]],[[9,8],[5,10]],[[1,2],[2,1]],[[19,16],[15,15]],[[0.47368,0.375],[0.5333,0.2666]],[[0.4736,0.5],[0.3333,0.67777]],[[0.0526,0.125],[0.1333,0.06667]]])
         # assert

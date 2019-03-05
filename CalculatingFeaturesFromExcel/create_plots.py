@@ -54,7 +54,7 @@ def runner():
     high_results_ratio = high_data_object.get_Ratios()
     linear(high_results_ratio[1], plot=1)
     high_results_avg = high_data_object.get_average_fixation_length_each_trial()
-    high_results_amounts = high_data_object.get_amount_fixation_length()
+    high_results_amounts = high_data_object.get_amount_fixations()
     high_results_aois = high_data_object.get_mean_different_AOI_per_trial()
     high_results_sums = high_data_object.get_sum_fixation_length()
     high_results_std = high_data_object.get_STD_fixation_length()

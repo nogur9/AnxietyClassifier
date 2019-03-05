@@ -18,13 +18,13 @@ def get_only_updated_subjects():
 
 FIXATION_DATA_SHEET = 'fixation_data'
 DEMOGRAPHICS_SHEET = 'demographic'
-DATA_FILE_PATH = r"C:\‏‏PycharmProjects\AnxietyClassifier\AmitsData\data_1128.xlsx"
+DATA_FILE_PATH = r"C:\‏‏PycharmProjects\AnxietyClassifier\AmitsData\fixations_training_data.xlsx"
 
 
 def feature_engineering(subjects_set='Updated', use_outlier_subjects=None, file_name=None, saving_path=r'C:\‏‏PycharmProjects\AnxietyClassifier\ExtractedFeaturesFiles'):
 
     agg_features_extractor = Data(DATA_FILE_PATH, FIXATION_DATA_SHEET, DEMOGRAPHICS_SHEET)
-    reg_features_extractor = TrialsData(DATA_FILE_PATH, FIXATION_DATA_SHEET, DEMOGRAPHICS_SHEET)
+    # reg_features_extractor = TrialsData(DATA_FILE_PATH, FIXATION_DATA_SHEET, DEMOGRAPHICS_SHEET)
 
     excluding_subjects_list = []
 
@@ -41,18 +41,18 @@ def feature_engineering(subjects_set='Updated', use_outlier_subjects=None, file_
         excluding_subjects_list.extend(get_outlier_subjects())
 
 
-    agg_features_extractor.get_all_good_features()
-    reg_features_extractor.get_all_good_features()
+    agg_features_extractor.get_matrix_count_independant_features()
+    # reg_features_extractor.get_matrix_count_independant_features()
     agg_features_df = pd.DataFrame(agg_features_extractor.output_data_dict)
-    reg_features_df =pd.DataFrame(reg_features_extractor.output_data_dict)
-    combained_features = agg_features_df.merge(reg_features_df, left_on='Subject_Number', right_on='Subject_Number')
+    # reg_features_df =pd.DataFrame(reg_features_extractor.output_data_dict)
+    combained_features = agg_features_df  # .merge(reg_features_df, left_on='Subject_Number', right_on='Subject_Number')
 
 
     combained_features = combained_features[combained_features['Subject_Number'].map(lambda x: x not in excluding_subjects_list)]
 
 
     if file_name is None:
-        file_name = "extracted_features_subjects_set_{},with_outlier_subjects_{},{}".format(subjects_set,use_outlier_subjects,datetime.datetime.now().strftime('%Y-%m-%d'))
+        file_name = "training set with sum, amount no reg no norm {}".format(datetime.datetime.now().strftime('%Y-%m-%d'))
     workbook = xlsxwriter.Workbook(os.path.join(saving_path,'{}.xlsx'.format(file_name)), options={'nan_inf_to_errors':True})
 
     worksheet = workbook.add_worksheet()

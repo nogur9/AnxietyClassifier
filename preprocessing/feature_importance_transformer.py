@@ -9,13 +9,13 @@ import datetime
 
 
 def get_feature_importance(X, Y):
-    model = RandomForestClassifier()
+    model = RandomForestClassifier(n_estimators=100)
     model.fit(X, Y)
     return model.feature_importances_
 
 class FeatureImportanceTransformer(BaseEstimator, TransformerMixin):
 
-    def __init__(self, num_of_feature=15, num_of_iterations=100000):
+    def __init__(self, num_of_feature=15, num_of_iterations=1000):
 
         self.num_of_feature = num_of_feature
         self.num_of_iterations = num_of_iterations

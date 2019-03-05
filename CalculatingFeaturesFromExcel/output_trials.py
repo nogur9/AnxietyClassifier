@@ -33,7 +33,7 @@ def create_Controls_File_Features():
     print(10)
     Trials_Controls.get_STD_fixation_length()
     print(11)
-    Trials_Controls.get_amount_fixation_length()
+    Trials_Controls.get_amount_fixations()
     print(12)
     Trials_Controls.get_mean_different_AOI_per_trial()
     print(13)
@@ -77,7 +77,7 @@ def create_SAD_File_Features():
     Trials_SAD.get_average_fixation_length_each_trial()
     Trials_SAD.get_STD_fixation_length()
     Trials_SAD.get_Ratios()
-    Trials_SAD.get_amount_fixation_length()
+    Trials_SAD.get_amount_fixations()
     Trials_SAD.get_mean_different_AOI_per_trial()
 
 

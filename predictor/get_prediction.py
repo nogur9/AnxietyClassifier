@@ -1,10 +1,10 @@
 from create_classifier.save_best_model import load_classifier_pipeline, load_prepossessing_pipeline
 import pandas as pd
 import os
-
+import numpy as np
 def load_clf(date):
 
-    prepro = load_prepossessing_pipeline(f"C:\‏‏PycharmProjects\AnxietyClassifier\create_classifier\models\prepossessing pipeline_final_100K{date}.joblib")
+    prepro = load_prepossessing_pipeline(f"C:\‏‏PycharmProjects\AnxietyClassifier\create_classifier\models\prepossessing pipeline_final_100K2019-02-12.joblib")
     clf = load_classifier_pipeline(f"C:\‏‏PycharmProjects\AnxietyClassifier\create_classifier\models\classifier pipeline_final_100K{date}.joblib")
     return prepro, clf
 
@@ -13,15 +13,16 @@ def load_data():
     # features file of the subjeect's data
 
     dir_path = "C:\‏‏PycharmProjects\AnxietyClassifier\\test_data"
-    #file_name = "extracted_eye_link_features_subjects__[998 999]_2018-12-02.xlsx"
-    file_name = r"extracted_eye_link_features_subjects__2019-01-07.xlsx"
+    file_name = r"full_test_set.xlsx"
+    #file_name = r"extracted_eye_link_features_subjects__2019-01-15.xlsx"
     df = pd.read_excel(os.path.join(dir_path, file_name), sheet_name='Sheet1')
     return df
 
 def predict(x1):
-    x1 = x1.reshape((1, -1))
-    prepro, clf = load_clf("2018-12-03")
+    x1 = np.array(x1).reshape((1, -1))
+    prepro, clf = load_clf("2019-02-12")
     x1 = prepro.transform(x1)
+    print(x1)
     y_pred = clf.predict(x1)
     return y_pred
 
@@ -53,7 +54,7 @@ def main():
     results = split_to_subjects(df)
     results['group'] = results.predicted_class.apply(from_classes_to_labels)
     print(results)
-    results.to_excel("100K_results_extracted_eye_link_features_subjects__2019-01-07.xlsx")
+    results.to_excel("extracted_eye_link_features_subjects__2019-01-15_predicted.xlsx")
 
 
 

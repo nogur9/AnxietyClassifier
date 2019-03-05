@@ -46,7 +46,7 @@ class EyeLinkData:
 
     def transform_data(self, output_path=None):
         # init
-        output_path = "..\OmersData\extracted eye link data {}.xlsx".format(datetime.datetime.now().strftime('%Y-%m-%d'))
+        output_path = "..\OmersData\extracted eye link data Omer{}.xlsx".format(datetime.datetime.now().strftime('%Y-%m-%d'))
         output_df = pd.DataFrame()
 
         # direct transformation columns
@@ -65,11 +65,11 @@ class EyeLinkData:
         if self.subj is not None:
             output_df['Subject'] = self.subj
         else:
-            output_df['Subject'] = self.df['RECORDING_SESSION_LABEL'].str.extract(r"^([0-9]+)")
+            output_df['Subject'] = self.df['RECORDING_SESSION_LABEL'].astype('str').str.extract(r"^([0-9]+)")
 
         # get Trial number
         if self.block is not None:
-            self.df['block_num'] = self.block
+            #self.df['block_num'] = self.block
             output_df['Trial'] = self.df['identifier']
         else:
             self.df['block_num'] = pd.to_numeric(self.df['RECORDING_SESSION_LABEL'].str.extract(r"([0-9]+)$"))
@@ -84,9 +84,10 @@ class EyeLinkData:
 
         output_df.to_excel(excel_writer, sheet_name="fixation_data")
         excel_writer.save()
+path = "C:\\‏‏PycharmProjects\\AnxietyClassifier\\100_training_set\\noga_3_3_19.xlsx"
 
-path1 = "..\\test_data\machine learning data full dataset first 1.xlsx"
-path2 = "..\\test_data\machine learning data full dataset first 2.xlsx"
-path3 = "..\\test_data\machine learning data full dataset first 3.xlsx"
-el = EyeLinkData(path3, subj="3", block=13)
+#path1 = "..\\test_data\machine learning data full dataset first 1.xlsx"
+#path2 = "..\\test_data\machine learning data full dataset first 2.xlsx"
+#path3 = "..\\test_data\machine learning data full dataset first 3.xlsx"
+el = EyeLinkData(path, block = 13)
 el.transform_data()

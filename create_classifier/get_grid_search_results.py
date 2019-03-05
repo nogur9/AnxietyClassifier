@@ -31,6 +31,7 @@ def meow (X, Y,prepro, pipeline,prepro_params, params_grid, saving = 1):
 
                 clf = GridSearchCV(pipeline, params_grid, cv=cv, scoring=score)
                 clf.fit(copy_X, Y)
+                print(clf.best_params_)
                 success_rate_list.append((clf.best_score_, clf.cv_results_['std_test_score'][clf.best_index_], clf.best_estimator_, prepro_hyper_params))
 
             best_success_rate = sorted(success_rate_list, key=lambda x:x[0], reverse=True)[0]
