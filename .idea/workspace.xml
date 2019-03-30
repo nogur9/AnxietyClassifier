@@ -1,144 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8cbd6c00-86b4-4b9b-a5d9-24e55f5ebdb6" name="Default" comment="&quot;quoth the raven never more&quot;">
+    <list default="true" id="8cbd6c00-86b4-4b9b-a5d9-24e55f5ebdb6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/100_training_set/Gal Training Set Final.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/100_training_set/Omer Training Set.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/100_training_set/Omer Training Set.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/100_training_set/noga_3_3_19.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/100_training_set/noga_3_3_19.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/100_training_set/training_set.100.sav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AmitsData/.ipynb_checkpoints/eye tracker lstm-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AmitsData/eye tracker lstm.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AmitsData/fixations_training_data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtractedFeaturesFiles/training set with reg features.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtractedFeaturesFiles/training set with sum, amount no reg 2019-02-25.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtractedFeaturesFiles/training set with sum, amount no reg no norm 2019-02-25.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtractedFeaturesFiles/training_set.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtractedFeaturesFiles/training_set_100.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtractedFeaturesFiles/training_set_2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/Book1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/Book2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/עוד מצגת/title.pptx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OmersData/extracted eye link data 2019-01-07_subj0.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OmersData/extracted eye link data 2019-01-14_with_5011.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OmersData/extracted eye link data Gal2019-02-28.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OmersData/extracted eye link data Omer2019-02-28.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OmersData/extracted eye link data Omer2019-03-03.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analysis/2019-01-17 17_19_19-AnxietyClassifier [C__‏‏PycharmProjects_AnxietyClassifier] - ..._create_classifi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analysis/2019-01-18 14_56_29-AnxietyClassifier [C__‏‏PycharmProjects_AnxietyClassifier] - ..._create_classifi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analysis/2019-01-21 22_37_43-AnxietyClassifier [C__‏‏PycharmProjects_AnxietyClassifier] - ..._create_classifi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analysis/2019-01-22 19_47_54-AnxietyClassifier [C__‏‏PycharmProjects_AnxietyClassifier] - ..._create_classifi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/feature_importance_final_100000iter_simple_corr_size_11.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/feature_importance_final_100000iter_simple_corr_size_110.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/feature_importance_final_100000iter_simple_corr_size_112.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/feature_importance_final_100000iter_simple_corr_size_16.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/feature_importance_final_100000iter_simple_corr_size_49.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/feature_importance_final_100000iter_simple_corr_size_50.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/feature_importance_final_100000iter_simple_corr_size_59.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/feature_importance_final_100000iter_simple_corr_size_63.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/feature_importance_final_100000iter_simple_corr_size_81.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/feature_importance_final_100000iter_simple_corr_size_86.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/feature_importance_final_100000iter_simple_corr_size_94.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/feature_importance_final_100000iter_simple_corr_size_95.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/models/classifier pipeline_final_100K2019-02-12.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/models/classifier pipeline_final_100K2019-02-13.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/models/classifier pipeline_final_100K2019-02-14.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/models/classifier pipeline_final_100K2019-02-15.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/models/prepossessing pipeline_final_100K2019-02-12.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/models/prepossessing pipeline_final_100K2019-02-13.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/models/prepossessing pipeline_final_100K2019-02-14.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_classifier/models/prepossessing pipeline_final_100K2019-02-15.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predictor/100K_results_extracted_eye_link_features_subjects__2019-01-15.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predictor/extracted_eye_link_features_subjects__2019-01-15_predicted.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predictor/meow.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/Untitled.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__2019-02-14_subj1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__2019-02-14_subj2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__2019-02-14_subj3.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__2019-02-14_subjs.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__2019-02-25_subj0.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__2019-02-25_subj1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__2019-02-25_subj2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__2019-02-25_subj3.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__2019-02-28_gal.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__2019-02-28_omer.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__2019-03-03_omer.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/full_test_set.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/full_test_set_2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/full_test_set_no_reg_features_no_norm.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/full_test_set_with_reg_features.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final-feature2_0.72-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final-feature3_-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final-feature4_-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final-feature5_-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final-feature6_-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final-feature7_-Copy2-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final-feature7_-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final-feature8_-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final-feature9_-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-0.68-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-Copy1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-Copy2-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-Copy3-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-Copy4-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-Copy5-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-Copy6-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-Copy7-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-Copy9-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-feature0_0-Copy1.73-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-feature0_0-Copy2.73-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-feature0_0-Copy3.73-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-feature0_0-Copy4.73-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-feature0_0-Copy6.73-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-feature0_0-Copy7.73-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-feature0_0-Copy8.73-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-feature0_0-Copy9.73-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final1-feature0_0.73-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final2-Copy1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final2-Copy2-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final2-Copy3-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final2-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final2-l1-Copy1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final2-l1-Copy2-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final2-l1-Copy3-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final2-l1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/final3-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/gboost-PCARFE before_10cv_0.72_loo_0.7-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/good-Copy1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/good-Copy2-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/good-Copy3-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/good-Copy4-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/good-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/grid search-Copy1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/grid search-Copy2-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/grid search-Copy3-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/grid search-Copy4-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/grid search-GB-Copy2-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/grid search-GB-Copy3-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/grid search-GB-Copy4-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/grid search-GB-Copy5-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/grid search-GB-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/grid search-SVC_0.64-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/grid search-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/svc-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/training -checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost-PCA-rfe_after_10cv_0.65-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost-PCA-rfe_before-reg_feature-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost-PCA-rfe_before_10cv_0.72-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost-PCA_10cv_0-Copy1.74-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost-PCA_10cv_0.74-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost-PCA_with_reg_features__10cv_0.65-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_RFE_loo_0.617-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_0.73-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy10-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy11-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy12-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy13-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy14-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy15-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy16-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy17-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy18-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy19-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy2-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy4-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy5-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy6-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy7-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy8-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-Copy9-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout_loo100_0.725-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout_shuffle_column-Copy1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_no_pca_loo_holdout_shuffle_column-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_pca_than_rfe_0.69-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_random features-Copy1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_random features-Copy2-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_random features-Copy3-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_random features-Copy4-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_random features-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_rfe_than_pca_loo 0.69-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/GridSearch_VotingClassifier_Oversample.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/bartpy_pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/build_grid_search_pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final-feature2_0.72.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final-feature3_.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final-feature4_.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final-feature5_.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final-feature6_.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final-feature7_-Copy2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final-feature7_.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final-feature8_.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final-feature9_.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-0.68.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-Copy1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-Copy2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-Copy3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-Copy4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-Copy5.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-Copy6.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-Copy7.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-Copy9.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-feature0_0-Copy1.73.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-feature0_0-Copy2.73.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-feature0_0-Copy3.73.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-feature0_0-Copy4.73.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-feature0_0-Copy6.73.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-feature0_0-Copy7.73.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-feature0_0-Copy8.73.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-feature0_0-Copy9.73.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1-feature0_0.73.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final2-Copy1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final2-Copy2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final2-Copy3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final2-l1-Copy1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final2-l1-Copy2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final2-l1-Copy3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final2-l1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/final3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/full_test_set.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/full_test_set_2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/full_test_set_no_reg_features_no_norm.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/gboost-PCARFE before_10cv_0.72_loo_0.7.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/good.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-Copy1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-Copy2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-Copy3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-Copy4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy5.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-SVC_0.64.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/remove_high_correlation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/run_grid_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/svc.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/training .ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/training set with reg features.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/training set with sum, amount no reg 2019-02-25.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/training set with sum, amount no reg no norm 2019-02-25.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/training_set.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/training_set_100.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/training_set_2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgb random features.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost-PCA-rfe_after_10cv_0.65.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost-PCA-rfe_before-reg_feature.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost-PCA-rfe_before_10cv_0.72.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost-PCA_10cv_0-Copy1.74.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost-PCA_10cv_0.74.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost-PCA_with_reg_features__10cv_0.65.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_RFE_loo_0.617.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_0.73.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy10.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy11.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy12.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy13.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy14.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy15.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy16.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy17.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy18.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy19.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy5.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy6.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy7.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy8.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout-Copy9.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout_loo100_0.725.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout_shuffle_column-Copy1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_no_pca_loo_holdout_shuffle_column.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_pca_than_rfe_0.69.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_rfe_than_pca_loo 0.69.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/~$full_test_set.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_data/predictions.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testset.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train set.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AmitsData/data_1128.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExctractFeaturesWRTtrials.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExctractFeaturesWRTtrials.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_time_dependant_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_time_dependant_features.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_plots.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_plots.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/output_trials.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/output_trials.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/Features_with_respect_to_trials.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/data_features_10_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/data_features_for_each_matrix.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/data_features_for_each_matrix_features_processed_v1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/data_features_for_each_matrix_features_processed_v2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/data_features_for_each_matrix_v1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/subject_features_after_pca_v1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/subject_features_after_pca_v2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/subject_features_after_pca_v3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/subject_features_after_pca_v4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/subject_features_after_pca_v5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/subject_features_before_selection.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/subject_features_before_selection_continus.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/subject_features_processed_v1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/subject_features_processed_v2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/subject_features_processed_v3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/subject_features_processed_v4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeatures/subject_features_processed_v5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeaturesFiles/Book1_low.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeaturesFiles/extracted_eye_link_features_subjects__[998 999]_2018-11-29.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeaturesFiles/extracted_eye_link_features_subjects__[998 999]_2018-12-02.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeaturesFiles/extracted_features_subjects_set_Amits,with_outlier_subjects_True,2018-10-28.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeaturesFiles/extracted_features_subjects_set_Updated,with_outlier_subjects_False,2018-10-28.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeaturesFiles/extracted_features_subjects_set_Updated,with_outlier_subjects_False,2018-10-29.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeaturesFiles/extracted_features_subjects_set_Updated,with_outlier_subjects_False,2018-11-27.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeaturesFiles/extracted_features_subjects_set_Updated,with_outlier_subjects_False,2018-11-28.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtractedFeaturesFiles/extracted_features_subjects_set_Updated,with_outlier_subjects_False_with_9029,9014,2018-10-29.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OmersData/extracted eye link data 2019-01-07_subj1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/OmersData/extracted eye link data 2019-01-07_subj1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OmersData/extracted eye link data 2019-01-07_subj2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/OmersData/extracted eye link data 2019-01-07_subj2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OmersData/extracted eye link data 2019-01-07_subj3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/OmersData/extracted eye link data 2019-01-07_subj3.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testers/TestersCalculatingFeaturesFromExcel/TestExctractDataWRTtrials.py" beforeDir="false" afterPath="$PROJECT_DIR$/Testers/TestersCalculatingFeaturesFromExcel/TestExctractDataWRTtrials.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/build_grid_search_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_classifier/build_grid_search_pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_simple_corr_size_41.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_simple_corr_size_42.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_simple_corr_size_60.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_simple_corr_size_62.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_simple_corr_size_79.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_simple_corr_size_83.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_size_36.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_size_40.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_size_41.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_size_46.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_size_53.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_size_55.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_size_58.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_size_70.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10000_size_72.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_simple_corr_size_41.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_simple_corr_size_42.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_simple_corr_size_60.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_simple_corr_size_62.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_simple_corr_size_79.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_simple_corr_size_83.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_size_36.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_size_40.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_size_41.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_size_46.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_size_53.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_size_55.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_size_58.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_size_70.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_1000_size_72.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_simple_corr_size_41.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_simple_corr_size_42.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_simple_corr_size_60.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_simple_corr_size_62.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_simple_corr_size_79.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_simple_corr_size_83.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_size_36.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_size_40.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_size_41.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_size_46.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_size_53.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_size_55.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_size_58.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_size_70.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_100_size_72.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10_simple_corr_size_41.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10_simple_corr_size_42.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10_simple_corr_size_60.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10_simple_corr_size_62.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10_simple_corr_size_79.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10_simple_corr_size_83.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_10_size_55.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_size_36.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_size_40.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_size_41.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_size_46.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_size_52.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_size_53.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_size_55.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_size_58.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_size_63.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_size_64.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_size_70.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_size_72.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_size_77.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_importance_size_79.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/feature_of_amit.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_classifier/feature_of_amit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/get_grid_search_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_classifier/get_grid_search_results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/classifier pipeline_2018-11-25.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/classifier pipeline_2018-11-29.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/classifier pipeline_2018-12-01.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/classifier pipeline_2018-12-02.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/classifier pipeline_2018-12-03.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/classifier pipeline_2018-12-04.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/classifier pipeline_final_100K2018-12-03.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/classifier pipeline_final_10K2018-12-03.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/prepossessing pipeline_2018-11-25.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/prepossessing pipeline_2018-11-29.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/prepossessing pipeline_2018-12-01.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/prepossessing pipeline_2018-12-02.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/prepossessing pipeline_2018-12-03.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/prepossessing pipeline_2018-12-04.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/prepossessing pipeline_final_100K2018-12-03.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/models/prepossessing pipeline_final_10K2018-12-03.joblib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_classifier/run_grid_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_classifier/run_grid_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature_engineering/feature_engineering.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_engineering/feature_engineering.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictor/get_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/get_prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessing/feature_importance_transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessing/feature_importance_transformer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__2019-01-07.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__[1]_2019-01-07 - Copy.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__[1]_2019-01-07.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__[2]_2019-01-07.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__[3]_2019-01-07.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/machine learning data full dataset first 1.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/machine learning data full dataset first 2.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/machine learning data full dataset first 3.xlsx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -149,67 +287,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="run_grid_search.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/create_classifier/run_grid_search.py">
+      <file leaf-file-name="final-feature2_0.72.ipynb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/final-feature2_0.72.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bartpy_pipeline.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/bartpy_pipeline.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xgb random features.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/xgb random features.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Corr.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preprocessing/Corr.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
               <folding>
-                <element signature="e#1#131#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EyeLinkFeatureEngeneering.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="42" column="102" selection-start-line="42" selection-start-column="102" selection-end-line="42" selection-end-column="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eye_link_feature_extractor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feature_engineering.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature_engineering/feature_engineering.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="54" column="65" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExtractFeatures.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1581">
-              <caret line="98" column="52" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build_grid_search_pipeline.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/create_classifier/build_grid_search_pipeline.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#71#0" expanded="true" />
+                <element signature="e#0#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -227,7 +334,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dataset</find>
       <find>refactor_labels</find>
       <find>get_p_disgusted_times_first_fixation_duration</find>
       <find>find_area</find>
@@ -249,14 +355,15 @@
       <find>print</find>
       <find>transform</find>
       <find>Fixation_length_cutoff</find>
-      <find>trials = sorted</find>
-      <find>[set(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]) for i in subjects]</find>
+      <find />
+      <find />
       <find>ALL</find>
       <find>WS</find>
       <find>N_DN2</find>
       <find>D_DN2</find>
       <find>30</find>
       <find>self.df['block_num']</find>
+      <find>bart</find>
     </findStrings>
     <replaceStrings>
       <replace>low</replace>
@@ -265,7 +372,7 @@
       <replace>data</replace>
       <replace>self.dataset</replace>
       <replace>self</replace>
-      <replace>[(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique()[:30] for i in subjects]</replace>
+      <replace />
       <replace>WS</replace>
       <replace>Disgusted</replace>
       <replace>Neutral</replace>
@@ -281,8 +388,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DataImporting/cleanData.pyi" />
-        <option value="$PROJECT_DIR$/Testers/TestExtractFeaturesForEachMatrix.py" />
         <option value="$PROJECT_DIR$/Testers/TestersCalculatingFeaturesFromExcel/TestLoopOverData.py" />
         <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/create_data_file_for_time_dependant_features.py" />
         <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeaturesForEachMatrix.py" />
@@ -332,6 +437,8 @@
         <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" />
         <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py" />
         <option value="$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py" />
+        <option value="$PROJECT_DIR$/test_data/new_pipeline/bartpy_pipeline.py" />
+        <option value="$PROJECT_DIR$/test_data/new_pipeline/xgb random features.py" />
       </list>
     </option>
   </component>
@@ -345,6 +452,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -355,18 +463,18 @@
             <path>
               <item name="AnxietyClassifier" type="b2602c69:ProjectViewProjectNode" />
               <item name="AnxietyClassifier" type="462c0819:PsiDirectoryNode" />
-              <item name="feature_engineering" type="462c0819:PsiDirectoryNode" />
+              <item name="test_data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AnxietyClassifier" type="b2602c69:ProjectViewProjectNode" />
               <item name="AnxietyClassifier" type="462c0819:PsiDirectoryNode" />
-              <item name="preprocessing" type="462c0819:PsiDirectoryNode" />
+              <item name="test_data" type="462c0819:PsiDirectoryNode" />
+              <item name="new_pipeline" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,14 +492,14 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\PycharmProjects\AnxietyClassifier(2)" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\‏‏PycharmProjects\AnxietyClassifier\feature_engineering" />
       <recent name="C:\‏‏PycharmProjects\AnxietyClassifier\dim_reduction" />
       <recent name="C:\‏‏PycharmProjects\AnxietyClassifier\DataImporting\visualizations\Features_with_respect_to_trials" />
       <recent name="C:\‏‏PycharmProjects\AnxietyClassifier\CalculatingFeaturesFromExcel\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\AnxietyClassifier(2)" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -406,7 +514,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.EyeLinkFeatureEngeneering">
+  <component name="RunManager" selected="Python.bartpy_pipeline">
     <configuration name="EyeLinkFeatureEngeneering" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AnxietyClassifier(2)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -420,6 +528,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="bartpy_pipeline" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnxietyClassifier(2)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_data/new_pipeline" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_data/new_pipeline/bartpy_pipeline.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -461,24 +587,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="get_prediction" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AnxietyClassifier(2)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/predictor" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predictor/get_prediction.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="run_grid_search" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AnxietyClassifier(2)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -500,17 +608,17 @@
     <list>
       <item itemvalue="Python.run_grid_search" />
       <item itemvalue="Python.EyeLinkFeatureEngeneering" />
-      <item itemvalue="Python.get_prediction" />
       <item itemvalue="Python.feature_engineering" />
       <item itemvalue="Python.eye_link_feature_extractor" />
+      <item itemvalue="Python.bartpy_pipeline" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bartpy_pipeline" />
         <item itemvalue="Python.EyeLinkFeatureEngeneering" />
         <item itemvalue="Python.eye_link_feature_extractor" />
         <item itemvalue="Python.feature_engineering" />
         <item itemvalue="Python.run_grid_search" />
-        <item itemvalue="Python.get_prediction" />
       </list>
     </recent_temporary>
   </component>
@@ -679,7 +787,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547121617038</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="&quot;quoth the raven never more&quot;">
+      <created>1551778118904</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1551778118904</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -725,44 +840,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0036603222" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49834985" visible="true" weight="0.19642857" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50223213" side_tool="true" weight="0.37678856" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3267974" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49776787" weight="0.3418124" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" weight="0.3267974" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49925596" weight="0.40222576" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32591414" />
-    </layout>
-    <layout-to-restore>
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49776787" weight="0.3418124" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3267974" />
+      <window_info id="Structure" order="1" sideWeight="0.50165015" side_tool="true" weight="0.29389882" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" weight="0.3267974" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49925596" weight="0.40222576" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.008784773" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49776787" visible="true" weight="0.3290938" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49925596" weight="0.40222576" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" weight="0.3267974" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50223213" side_tool="true" weight="0.37678856" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3267974" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3267974" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1065,81 +1162,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_engineering/feature_engineering.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/ImportData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="60" selection-start-line="60" selection-end-line="65" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="68" column="48" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_classifier/run_grid_search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="102" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataImporting/ImportData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="60" selection-start-line="60" selection-end-line="65" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predictor/get_prediction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_classifier/run_grid_search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preprocessing/feature_importance_transformer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="104" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_classifier/build_grid_search_pipeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="62" lean-forward="true" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/create_classifier/run_grid_search.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1210,41 +1232,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/utils/validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="452" selection-start-line="452" selection-end-line="452" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/decomposition/pca.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="347" selection-start-line="347" selection-end-line="347" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/feature_selection/variance_threshold.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preprocessing/remove_high_correlation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="70" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preprocessing/preprocessing_pipeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/utils/validation.py" />
+    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/decomposition/pca.py" />
+    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/feature_selection/variance_threshold.py" />
     <entry file="file://$PROJECT_DIR$/create_classifier/features_as_LSAS.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1258,13 +1248,7 @@
     <entry file="file://$PROJECT_DIR$/create_classifier/grid_search.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/preprocessing/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="386" selection-start-line="386" selection-end-line="386" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/preprocessing/data.py" />
     <entry file="file://$PROJECT_DIR$/create_classifier/save_best_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1279,20 +1263,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Anaconda/Lib/site-packages/pandas/core/indexing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="1497" selection-start-line="1497" selection-end-line="1497" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/pipeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="450" selection-start-line="450" selection-end-line="450" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Anaconda/Lib/site-packages/pandas/core/indexing.py" />
+    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/pipeline.py" />
     <entry file="file://$PROJECT_DIR$/DataImporting/ImportData.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -1348,13 +1320,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/utils/metaestimators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Anaconda/Lib/site-packages/sklearn/utils/metaestimators.py" />
     <entry file="file://$PROJECT_DIR$/create_classifier/get_grid_search_results.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1369,13 +1335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preprocessing/Corr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/create_classifier/run_grid_search.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1386,27 +1345,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create_classifier/build_grid_search_pipeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExctractFeaturesWRTtrials.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="129" column="47" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_engineering/feature_engineering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="54" column="65" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -1420,9 +1362,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/preprocessing_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/remove_invalid_columns_transformer.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_classifier/build_grid_search_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
+        <state relative-caret-position="524">
           <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -1430,10 +1396,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py">
+    <entry file="file://$PROJECT_DIR$/preprocessing/Corr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="42" column="102" selection-start-line="42" selection-start-column="102" selection-end-line="42" selection-end-column="102" />
+        <state relative-caret-position="221">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_engineering/feature_engineering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="54" column="65" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/remove_high_correlation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/final1-feature0_0.73.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/final1.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/final1-0.68.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/final1-Copy1.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/final1-feature0_0-Copy1.73.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/final1-feature0_0-Copy2.73.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/final-feature2_0.72.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/xgb random features.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/bartpy_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
         </state>
       </provider>
     </entry>
