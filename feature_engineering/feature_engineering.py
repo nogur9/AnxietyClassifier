@@ -18,10 +18,10 @@ def get_only_updated_subjects():
 
 FIXATION_DATA_SHEET = 'fixation_data'
 DEMOGRAPHICS_SHEET = 'demographic'
-DATA_FILE_PATH = r"C:\‏‏PycharmProjects\AnxietyClassifier\AmitsData\fixations_training_data.xlsx"
+DATA_FILE_PATH = r"C:\‏‏PycharmProjects\AnxietyClassifier\100_training_set\fixations_training_data.xlsx"
 
 
-def feature_engineering(subjects_set='Updated', use_outlier_subjects=None, file_name=None, saving_path=r'C:\‏‏PycharmProjects\AnxietyClassifier\ExtractedFeaturesFiles'):
+def feature_engineering(subjects_set='Updated', use_outlier_subjects=None, file_name=None, saving_path=r'C:\‏‏PycharmProjects\AnxietyClassifier\100_training_set\feature_engineering_output'):
 
     agg_features_extractor = Data(DATA_FILE_PATH, FIXATION_DATA_SHEET, DEMOGRAPHICS_SHEET)
     # reg_features_extractor = TrialsData(DATA_FILE_PATH, FIXATION_DATA_SHEET, DEMOGRAPHICS_SHEET)
@@ -52,7 +52,7 @@ def feature_engineering(subjects_set='Updated', use_outlier_subjects=None, file_
 
 
     if file_name is None:
-        file_name = "training set with sum, amount no reg no norm {}".format(datetime.datetime.now().strftime('%Y-%m-%d'))
+        file_name = "training set cutoff30{}".format(datetime.datetime.now().strftime('%Y-%m-%d'))
     workbook = xlsxwriter.Workbook(os.path.join(saving_path,'{}.xlsx'.format(file_name)), options={'nan_inf_to_errors':True})
 
     worksheet = workbook.add_worksheet()

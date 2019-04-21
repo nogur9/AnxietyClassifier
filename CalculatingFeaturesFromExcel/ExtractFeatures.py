@@ -20,15 +20,27 @@ class Data:
         self.fixation_dataset = ImportData.get_data(path, fixation_dataset_sheet_name)
         self.fixation_dataset = self.fixation_dataset[self.fixation_dataset.Fixation_Duration > Fixation_length_cutoff]
 
-        #self.fixation_dataset = self.fixation_dataset.reindex(np.arange(len(self.fixation_dataset)))
+        # remove problematic subject
+        self.fixation_dataset = self.fixation_dataset[self.fixation_dataset["Subject"] != 8015]
+
+        try:
+            self.fixation_dataset = self.fixation_dataset[self.fixation_dataset["Trial"] != "."]
+        except TypeError:
+            pass
+
+
+        self.fixation_dataset.index= np.arange(len(self.fixation_dataset))
+
 
         # make it ignore fixation after the first 30
-        #trials = self.fixation_dataset.groupby("Subject")["Trial"].unique().apply(lambda x: x[29])
-        #ts = trials[self.fixation_dataset.Subject]
-        #ts.index = np.arange(len(trials[self.fixation_dataset.Subject]))
-        #indexer = self.fixation_dataset.Trial.reindex(np.arange(len(trials[self.fixation_dataset.Subject]))) < ts
-
-        # self.fixation_dataset = self.fixation_dataset[indexer]
+        try:
+            trials = self.fixation_dataset.groupby("Subject")["Trial"].unique().apply(lambda x: x[29])
+            ts = trials[self.fixation_dataset.Subject]
+            ts.index = np.arange(len(trials[self.fixation_dataset.Subject]))
+            indexer = self.fixation_dataset.Trial < ts
+            self.fixation_dataset = self.fixation_dataset[indexer]
+        except IndexError:
+            pass
 
         self.grouping_function = grouping_function
 

@@ -1,17 +1,21 @@
 import numpy as np
 import pandas as pd
 import datetime
+import xlsxwriter
 
-maps_path = "../OmersData/map.xlsx"
-maps = pd.read_excel(maps_path)
+omers_maps_path = "../OmersData/Omers_map.xlsx"
+gals_map_path = "../OmersData/Gals_map.xlsx"
+maps = pd.read_excel(gals_map_path)
 Fixation_length_cutoff = 100
 
 def get_AOI_group(row):
-    map_dict = {1: "N", 2: "D"}
+    map_dict = {1: "N", 2: "D", "NE": "N", "DI": "D"}
 
     CURRENT_FIX_INTEREST_AREAS, imagefile = row.split('|')
     CURRENT_FIX_INTEREST_AREAS = eval(CURRENT_FIX_INTEREST_AREAS)
-    #print(CURRENT_FIX_INTEREST_AREAS)
+    print(CURRENT_FIX_INTEREST_AREAS)
+    print(imagefile)
+
     imagefile = imagefile.replace("_", " ")
     WS = "White Space"
     if CURRENT_FIX_INTEREST_AREAS == []:
@@ -19,7 +23,7 @@ def get_AOI_group(row):
     else:
         aoi = maps[maps['SlideImage'] == imagefile]['Cell' + str(CURRENT_FIX_INTEREST_AREAS[0])]
         aoi = aoi.values[0]
-
+        print(map_dict[aoi])
         return map_dict[aoi]
 
 class EyeLinkData:
@@ -38,7 +42,7 @@ class EyeLinkData:
         self.df = pd.read_excel(data_path)
         print ("in init")
         # removing first fixations
-        self.df = self.df[self.df['CURRENT_FIX_INTEREST_AREA_PIXEL_AREA'] != 3136]
+        self.df = self.df[self.df['CURRENT_FIX_INDEX'] != 1]
         self.df = self.df[self.df['CURRENT_FIX_DURATION'] > Fixation_length_cutoff]
         self.subj = subj
         self.block = block
@@ -46,7 +50,7 @@ class EyeLinkData:
 
     def transform_data(self, output_path=None):
         # init
-        output_path = "..\OmersData\extracted eye link data Omer{}.xlsx".format(datetime.datetime.now().strftime('%Y-%m-%d'))
+        output_path = "C:\‏‏PycharmProjects\AnxietyClassifier\\100_training_set\eyelink_proccessor_output\gals training set {}.xlsx".format(datetime.datetime.now().strftime('%Y-%m-%d'))
         output_df = pd.DataFrame()
 
         # direct transformation columns
@@ -76,7 +80,7 @@ class EyeLinkData:
             first_block_num = min(self.df['block_num'].unique())
             output_df['Trial'] = self.df['identifier'] + 30*(self.df['block_num'] - first_block_num)
 
-        # writing the output DataFrame
+        # writing the output Data/Frame
         excel_writer = pd.ExcelWriter(output_path, engine='xlsxwriter')
 
         demographic_df = pd.DataFrame(output_df['Subject'].unique(), columns=['Subject'])
@@ -84,7 +88,7 @@ class EyeLinkData:
 
         output_df.to_excel(excel_writer, sheet_name="fixation_data")
         excel_writer.save()
-path = "C:\\‏‏PycharmProjects\\AnxietyClassifier\\100_training_set\\noga_3_3_19.xlsx"
+path = "C:\‏‏PycharmProjects\AnxietyClassifier\\100_training_set\\Gal Training Set Final.xlsx"
 
 #path1 = "..\\test_data\machine learning data full dataset first 1.xlsx"
 #path2 = "..\\test_data\machine learning data full dataset first 2.xlsx"

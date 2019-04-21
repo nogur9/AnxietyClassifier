@@ -2,32 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cbd6c00-86b4-4b9b-a5d9-24e55f5ebdb6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/features.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/checking_specific_features_with_xgboos_of_copy_6-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/checking_specific_features_with_xgboost-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/checking_specific_features_with_xgboost_copy_5-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/checking_specific_features_with_xgboost_copy_5_version_2-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/checking_specific_features_with_xgboost_copy_7-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/predict-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_random features-Copy5-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_random features-Copy6-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_random features-Copy7-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_random features-Copy8-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/xgboost_random features-Copy9-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/checking_specific_features_with_xgboos_of_copy_6.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/checking_specific_features_with_xgboost.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/checking_specific_features_with_xgboost_copy_5.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/checking_specific_features_with_xgboost_copy_5_version_2.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/checking_specific_features_with_xgboost_copy_7.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/predict.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy5.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy6.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy7.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy8.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy9.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/bartpy_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/bartpy_pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy4.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy4.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature_engineering/feature_engineering.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_engineering/feature_engineering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/predict-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/checking_specific_features_with_xgboos_of_copy_6.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/checking_specific_features_with_xgboos_of_copy_6.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/checking_specific_features_with_xgboost_copy_5.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/checking_specific_features_with_xgboost_copy_5.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/final-feature3_.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/final-feature3_.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy3.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy4.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy4.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy3.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy4.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy4.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy5.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy5.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/predict.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy6.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy6.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy7.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy7.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy9.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy9.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,80 +31,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bartpy_pipeline.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/bartpy_pipeline.py">
+      <file leaf-file-name="ExtractFeatures.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="119" column="40" lean-forward="true" selection-start-line="119" selection-start-column="40" selection-end-line="119" selection-end-column="40" />
+            <state relative-caret-position="340">
+              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding>
-                <element signature="e#0#56#0" expanded="true" />
+                <element signature="e#0#16#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_prediction.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/predictor/get_prediction.py">
+      <file leaf-file-name="feature_engineering.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feature_engineering/feature_engineering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="816">
+              <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eye_link_feature_extractor.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="45" column="83" selection-start-line="45" selection-start-column="83" selection-end-line="45" selection-end-column="83" />
               <folding>
-                <element signature="e#0#99#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="save_best_model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/create_classifier/save_best_model.py">
+      <file leaf-file-name="EyeLinkFeatureEngeneering.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sklearnmodel.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/bartpy/sklearnmodel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/bartpy/model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="final-feature2_0.72.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/final-feature2_0.72.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Corr.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/preprocessing/Corr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -227,12 +184,12 @@
         <option value="$PROJECT_DIR$/create_classifier/run_grid_search.py" />
         <option value="$PROJECT_DIR$/create_classifier/build_grid_search_pipeline.py" />
         <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExctractFeaturesWRTtrials.py" />
-        <option value="$PROJECT_DIR$/feature_engineering/feature_engineering.py" />
-        <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" />
-        <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py" />
-        <option value="$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py" />
         <option value="$PROJECT_DIR$/test_data/new_pipeline/xgb random features.py" />
         <option value="$PROJECT_DIR$/test_data/new_pipeline/bartpy_pipeline.py" />
+        <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" />
+        <option value="$PROJECT_DIR$/feature_engineering/feature_engineering.py" />
+        <option value="$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py" />
+        <option value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py" />
       </list>
     </option>
   </component>
@@ -245,7 +202,25 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AnxietyClassifier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnxietyClassifier" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnxietyClassifier" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnxietyClassifier" type="462c0819:PsiDirectoryNode" />
+              <item name="feature_engineering" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/‏‏PycharmProjects/AnxietyClassifier/create_classifier/build_grid_search_pipeline.py" />
@@ -284,7 +259,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bartpy_pipeline">
+  <component name="RunManager" selected="Python.EyeLinkFeatureEngeneering">
+    <configuration name="ExtractFeatures" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AnxietyClassifier(2)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CalculatingFeaturesFromExcel" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="EyeLinkFeatureEngeneering" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AnxietyClassifier(2)" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -357,38 +350,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="run_grid_search" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AnxietyClassifier(2)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/create_classifier" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create_classifier/run_grid_search.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list>
-      <item itemvalue="Python.run_grid_search" />
       <item itemvalue="Python.EyeLinkFeatureEngeneering" />
       <item itemvalue="Python.feature_engineering" />
       <item itemvalue="Python.eye_link_feature_extractor" />
       <item itemvalue="Python.bartpy_pipeline" />
+      <item itemvalue="Python.ExtractFeatures" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.bartpy_pipeline" />
         <item itemvalue="Python.EyeLinkFeatureEngeneering" />
         <item itemvalue="Python.eye_link_feature_extractor" />
         <item itemvalue="Python.feature_engineering" />
-        <item itemvalue="Python.run_grid_search" />
+        <item itemvalue="Python.ExtractFeatures" />
+        <item itemvalue="Python.bartpy_pipeline" />
       </list>
     </recent_temporary>
   </component>
@@ -571,7 +546,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553971263597</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="&quot;quoth the raven never more&quot;">
+      <created>1554615309846</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1554615309846</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -618,16 +600,16 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49834985" visible="true" weight="0.19642857" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49834985" weight="0.19642857" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50223213" side_tool="true" weight="0.37678856" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49776787" weight="0.34158415" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3267974" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49776787" weight="0.34158415" />
       <window_info id="Structure" order="1" sideWeight="0.50165015" side_tool="true" weight="0.29389882" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" weight="0.3267974" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49925596" weight="0.4009901" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49925596" weight="0.4009901" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -639,21 +621,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49834985" visible="true" weight="0.19642857" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49834985" visible="true" weight="0.19642857" />
       <window_info id="Structure" order="1" sideWeight="0.50165015" side_tool="true" weight="0.29389882" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49776787" visible="true" weight="0.34158415" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3267974" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49776787" weight="0.34158415" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49925596" weight="0.40222576" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49925596" weight="0.4009901" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" weight="0.3267974" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50223213" side_tool="true" weight="0.37678856" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32591414" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32591414" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3267974" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -763,7 +745,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
-          <line>994</line>
+          <line>1002</line>
           <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -812,11 +794,6 @@
           <option name="timeStamp" value="289" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
-          <line>100</line>
-          <option name="timeStamp" value="293" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/create_classifier/run_grid_search.py</url>
           <line>18</line>
           <option name="timeStamp" value="307" />
@@ -827,19 +804,24 @@
           <option name="timeStamp" value="308" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="309" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py</url>
-          <line>74</line>
+          <line>78</line>
           <option name="timeStamp" value="311" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py</url>
-          <line>67</line>
+          <line>71</line>
           <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="329" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -852,63 +834,68 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="315" />
+      <option name="time" value="331" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>bool(y_train_2)</expression-string>
+        <expression-string>self.fixation_dataset[self.fixation_dataset.Subject ==5031].Trial.unique()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.df['RECORDING_SESSION_LABEL'].astype('str').str.extract(r&quot;^([0-9]+)&quot;)</expression-string>
+        <expression-string>self.fixation_dataset[self.fixation_dataset.Subject ==5030].Trial.unique()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.df['block_num']</expression-string>
+        <expression-string>self.fixation_dataset[self.fixation_dataset.Subject == 8015].Trial.unique()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.df['RECORDING_SESSION_LABEL'].str.extract(r&quot;([0-9])&quot;)</expression-string>
+        <expression-string>self.fixation_dataset.groupby(&quot;Subject&quot;)[&quot;Trial&quot;].unique().apply(lambda x: x[29])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.df['RECORDING_SESSION_LABEL'].str.extract(r&quot;([0-9]+)&quot;)</expression-string>
+        <expression-string>self.fixation_dataset.groupby(&quot;Subject&quot;)[&quot;Trial&quot;].unique()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.df['RECORDING_SESSION_LABEL']</expression-string>
+        <expression-string>self.fixation_dataset.Subject.unique()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.df['RECORDING_SESSION_LABEL'].str.extract(r&quot;([0-9]+)$&quot;)</expression-string>
+        <expression-string>self.fixation_dataset[self.fixation_dataset.Subject == 8014].Trial.unique()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>a</expression-string>
+        <expression-string>self.fixation_dataset[self.fixation_dataset.Subject == 8010].Trial.unique()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>subjects</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>[self.demographic_dataset['LSAS_Total'][(self.demographic_dataset.Subject == subject)]][0].values[0]</expression-string>
+        <expression-string>self.fixation_dataset[self.fixation_dataset.Subject==5021].Trial.unique()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>self.fixation_dataset[indexer]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.fixation_dataset.Trial.reindex(np.arange(len(trials[self.fixation_dataset.Subject]))) &lt; ts</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>(y_train_2.astype(bool))</expression-string>
         <language-id>Python</language-id>
@@ -946,11 +933,6 @@
       </expression>
       <expression>
         <expression-string>[(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique[:30] for i in subjects]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>[(self.fixation_dataset.Trial[self.fixation_dataset.Subject == i]).unique for i in subjects]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1067,23 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="98" column="52" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/preprocessing/preprocessing_pipeline.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1098,23 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_engineering/feature_engineering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="54" column="65" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -1172,9 +1120,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1215,8 +1160,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/predictor/get_prediction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="68">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding>
             <element signature="e#0#99#0" expanded="true" />
           </folding>
@@ -1225,30 +1170,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/create_classifier/save_best_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/bartpy/sklearnmodel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
+        <state relative-caret-position="714">
           <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_data/new_pipeline/bartpy_pipeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="119" column="40" lean-forward="true" selection-start-line="119" selection-start-column="40" selection-end-line="119" selection-end-column="40" />
+        <state relative-caret-position="1649">
+          <caret line="119" column="40" selection-start-line="119" selection-start-column="40" selection-end-line="119" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_engineering/feature_engineering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding>
-            <element signature="e#0#56#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="45" column="83" selection-start-line="45" selection-start-column="83" selection-end-line="45" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

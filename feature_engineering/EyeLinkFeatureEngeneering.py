@@ -12,19 +12,16 @@ FIXATION_DATA_SHEET = 'fixation_data'
 DEMOGRAPHICS_SHEET = 'demographic'
 
 
-def feature_engineering(data_file_path, saving_path=r'C:\‏‏PycharmProjects\AnxietyClassifier\test_data'):
+def feature_engineering(data_file_path, saving_path="C:\‏‏PycharmProjects\AnxietyClassifier\\100_training_set\\feature_engineering_output"):
 
     agg_features_extractor = Data(data_file_path, FIXATION_DATA_SHEET, DEMOGRAPHICS_SHEET)
-   # reg_features_extractor = TrialsData(data_file_path, FIXATION_DATA_SHEET, DEMOGRAPHICS_SHEET)
 
     agg_features_extractor.get_features_for_prediction()
-    #reg_features_extractor.get_matrix_count_independant_features()
 
     agg_features_df = pd.DataFrame(agg_features_extractor.output_data_dict)
-    #reg_features_df = pd.DataFrame(reg_features_extractor.output_data_dict)
-    combained_features = agg_features_df # .merge(reg_features_df, left_on='Subject_Number', right_on='Subject_Number')
+    combained_features = agg_features_df
 
-    file_name = "extracted_eye_link_features_subjects__{}_omer.xlsx".format(datetime.datetime.now().strftime('%Y-%m-%d'))
+    file_name = "extracted_eye_link_features_gals_training_set_cutoff_30__{}.xlsx".format(datetime.datetime.now().strftime('%Y-%m-%d'))
 
     workbook = xlsxwriter.Workbook(os.path.join(saving_path, file_name), options={'nan_inf_to_errors': True})
 
@@ -40,5 +37,5 @@ def feature_engineering(data_file_path, saving_path=r'C:\‏‏PycharmProjects\A
 
     workbook.close()
 
-path = r"C:\‏‏PycharmProjects\AnxietyClassifier\OmersData\extracted eye link data Omer2019-03-03.xlsx"
+path = r"C:\‏‏PycharmProjects\AnxietyClassifier\100_training_set\eyelink_proccessor_output\\gals training set 2019-04-17.xlsx"
 feature_engineering(path)
