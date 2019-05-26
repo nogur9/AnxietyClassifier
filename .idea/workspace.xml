@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cbd6c00-86b4-4b9b-a5d9-24e55f5ebdb6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/test_data/extracted_eye_link_features_subjects__2019-01-15.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/ExtractFeatures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_engineering/EyeLinkFeatureEngeneering.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature_engineering/feature_engineering.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_engineering/feature_engineering.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/.ipynb_checkpoints/predict-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/checking_specific_features_with_xgboos_of_copy_6.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/checking_specific_features_with_xgboos_of_copy_6.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/checking_specific_features_with_xgboost_copy_5.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/checking_specific_features_with_xgboost_copy_5.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/final-feature3_.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/final-feature3_.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy3.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy4.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/good-Copy4.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy3.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy4.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy4.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy5.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/grid search-GB-Copy5.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/predict.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy6.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy6.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy7.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy7.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy9.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/new_pipeline/xgboost_random features-Copy9.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,8 +38,8 @@
       <file leaf-file-name="eye_link_feature_extractor.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="45" column="83" selection-start-line="45" selection-start-column="83" selection-end-line="45" selection-end-column="83" />
+            <state relative-caret-position="434">
+              <caret line="83" column="71" lean-forward="true" selection-start-line="83" selection-start-column="71" selection-end-line="83" selection-end-column="71" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -553,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554615309846</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="&quot;quoth the raven never more&quot;">
+      <created>1555852067497</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1555852067497</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -599,8 +589,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49834985" weight="0.19642857" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49834985" visible="true" weight="0.19642857" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50223213" side_tool="true" weight="0.37678856" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -621,21 +612,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49834985" visible="true" weight="0.19642857" />
       <window_info id="Structure" order="1" sideWeight="0.50165015" side_tool="true" weight="0.29389882" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49776787" weight="0.34158415" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32591414" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3267974" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49925596" weight="0.4009901" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925596" weight="0.3267974" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50223213" side_tool="true" weight="0.37678856" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32591414" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3267974" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1215,8 +1206,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CalculatingFeaturesFromExcel/eye_link_feature_extractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="45" column="83" selection-start-line="45" selection-start-column="83" selection-end-line="45" selection-end-column="83" />
+        <state relative-caret-position="434">
+          <caret line="83" column="71" lean-forward="true" selection-start-line="83" selection-start-column="71" selection-end-line="83" selection-end-column="71" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
